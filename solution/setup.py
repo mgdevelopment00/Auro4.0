@@ -49,6 +49,7 @@ setup(
         'console_scripts': [
             'robot_controller = solution.robot_controller:main',
             'data_logger = solution.data_logger:main',
+            'move = solution.move:main'
         ],
     },
 )

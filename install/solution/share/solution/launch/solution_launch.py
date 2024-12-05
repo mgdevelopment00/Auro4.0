@@ -1,0 +1,1 @@
+/home/auro/Auro/build/solution/launch/solution_launch.py

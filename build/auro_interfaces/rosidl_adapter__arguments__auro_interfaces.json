@@ -1,0 +1,10 @@
+{
+  "package_name": "auro_interfaces",
+  "non_idl_tuples": [
+    "/home/auro/Auro/auro_interfaces:msg/StringWithPose.msg",
+    "/home/auro/Auro/auro_interfaces:msg/Item.msg",
+    "/home/auro/Auro/auro_interfaces:msg/ItemList.msg",
+    "/home/auro/Auro/auro_interfaces:msg/Direction.msg",
+    "/home/auro/Auro/auro_interfaces:srv/ItemRequest.srv"
+  ]
+}

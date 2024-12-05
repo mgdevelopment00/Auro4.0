@@ -1,0 +1,5 @@
+[console_scripts]
+data_logger = solution.data_logger:main
+move = solution.move:main
+robot_controller = solution.robot_controller:main
+

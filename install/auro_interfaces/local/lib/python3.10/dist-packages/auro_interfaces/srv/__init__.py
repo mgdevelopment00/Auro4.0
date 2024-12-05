@@ -1,0 +1,1 @@
+/home/auro/Auro/build/auro_interfaces/rosidl_generator_py/auro_interfaces/srv/__init__.py

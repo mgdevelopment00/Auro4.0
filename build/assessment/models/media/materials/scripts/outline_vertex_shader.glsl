@@ -1,0 +1,1 @@
+/home/auro/Auro/assessment/models/media/materials/scripts/outline_vertex_shader.glsl

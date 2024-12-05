@@ -1,0 +1,1 @@
+/home/auro/Auro/assessment_interfaces/msg/ItemList.msg

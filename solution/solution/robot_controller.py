@@ -22,7 +22,8 @@ class RobotController(Node):
         self.timer = self.create_timer(self.timer_period, self.control_loop)
 
     def control_loop(self):
-        self.get_logger().info(f"Initial pose - x: {self.initial_x}, y: {self.initial_y}, yaw: {self.initial_yaw}")
+    	pass
+        #self.get_logger().info(f"Initial pose - x: {self.initial_x}, y: {self.initial_y}, yaw: {self.initial_yaw}")
 
 
     def destroy_node(self):
