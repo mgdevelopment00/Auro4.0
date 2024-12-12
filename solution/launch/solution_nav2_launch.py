@@ -47,8 +47,9 @@ def robot_controller_actions(context : LaunchContext):
 
              Node(
                  package='solution',
-                 executable='simple_commander',
-                 output='screen'),
+                 executable='route_planner',
+                 output='screen',
+                 parameters=[initial_poses[robot_name]]),
 
         ])
 
