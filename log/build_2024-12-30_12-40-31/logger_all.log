@@ -1,0 +1,369 @@
+[0.344s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install']
+[0.345s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7fe8aaf42fe0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7fe8aaf42230>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7fe8aaf42230>>, mixin_verb=('build',))
+[0.685s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.685s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.685s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.685s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.685s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.685s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.685s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/auro/Auro'
+[0.685s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.685s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.685s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.685s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.685s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.685s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.685s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.686s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.686s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.703s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.703s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.703s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.703s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.703s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.703s] Level 1:colcon.colcon_core.package_identification:_identify(assessment) by extensions ['ignore', 'ignore_ament_install']
+[0.703s] Level 1:colcon.colcon_core.package_identification:_identify(assessment) by extension 'ignore'
+[0.703s] Level 1:colcon.colcon_core.package_identification:_identify(assessment) by extension 'ignore_ament_install'
+[0.703s] Level 1:colcon.colcon_core.package_identification:_identify(assessment) by extensions ['colcon_pkg']
+[0.703s] Level 1:colcon.colcon_core.package_identification:_identify(assessment) by extension 'colcon_pkg'
+[0.703s] Level 1:colcon.colcon_core.package_identification:_identify(assessment) by extensions ['colcon_meta']
+[0.703s] Level 1:colcon.colcon_core.package_identification:_identify(assessment) by extension 'colcon_meta'
+[0.703s] Level 1:colcon.colcon_core.package_identification:_identify(assessment) by extensions ['ros']
+[0.703s] Level 1:colcon.colcon_core.package_identification:_identify(assessment) by extension 'ros'
+[0.708s] DEBUG:colcon.colcon_core.package_identification:Package 'assessment' with type 'ros.ament_python' and name 'assessment'
+[0.708s] Level 1:colcon.colcon_core.package_identification:_identify(assessment_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[0.708s] Level 1:colcon.colcon_core.package_identification:_identify(assessment_interfaces) by extension 'ignore'
+[0.708s] Level 1:colcon.colcon_core.package_identification:_identify(assessment_interfaces) by extension 'ignore_ament_install'
+[0.708s] Level 1:colcon.colcon_core.package_identification:_identify(assessment_interfaces) by extensions ['colcon_pkg']
+[0.708s] Level 1:colcon.colcon_core.package_identification:_identify(assessment_interfaces) by extension 'colcon_pkg'
+[0.708s] Level 1:colcon.colcon_core.package_identification:_identify(assessment_interfaces) by extensions ['colcon_meta']
+[0.708s] Level 1:colcon.colcon_core.package_identification:_identify(assessment_interfaces) by extension 'colcon_meta'
+[0.708s] Level 1:colcon.colcon_core.package_identification:_identify(assessment_interfaces) by extensions ['ros']
+[0.708s] Level 1:colcon.colcon_core.package_identification:_identify(assessment_interfaces) by extension 'ros'
+[0.709s] DEBUG:colcon.colcon_core.package_identification:Package 'assessment_interfaces' with type 'ros.ament_cmake' and name 'assessment_interfaces'
+[0.709s] Level 1:colcon.colcon_core.package_identification:_identify(auro_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[0.709s] Level 1:colcon.colcon_core.package_identification:_identify(auro_interfaces) by extension 'ignore'
+[0.709s] Level 1:colcon.colcon_core.package_identification:_identify(auro_interfaces) by extension 'ignore_ament_install'
+[0.709s] Level 1:colcon.colcon_core.package_identification:_identify(auro_interfaces) by extensions ['colcon_pkg']
+[0.709s] Level 1:colcon.colcon_core.package_identification:_identify(auro_interfaces) by extension 'colcon_pkg'
+[0.709s] Level 1:colcon.colcon_core.package_identification:_identify(auro_interfaces) by extensions ['colcon_meta']
+[0.709s] Level 1:colcon.colcon_core.package_identification:_identify(auro_interfaces) by extension 'colcon_meta'
+[0.709s] Level 1:colcon.colcon_core.package_identification:_identify(auro_interfaces) by extensions ['ros']
+[0.709s] Level 1:colcon.colcon_core.package_identification:_identify(auro_interfaces) by extension 'ros'
+[0.710s] DEBUG:colcon.colcon_core.package_identification:Package 'auro_interfaces' with type 'ros.ament_cmake' and name 'auro_interfaces'
+[0.710s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.710s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.710s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.710s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.710s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.710s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.711s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.711s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.711s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.711s] Level 1:colcon.colcon_core.package_identification:_identify(solution) by extensions ['ignore', 'ignore_ament_install']
+[0.711s] Level 1:colcon.colcon_core.package_identification:_identify(solution) by extension 'ignore'
+[0.711s] Level 1:colcon.colcon_core.package_identification:_identify(solution) by extension 'ignore_ament_install'
+[0.711s] Level 1:colcon.colcon_core.package_identification:_identify(solution) by extensions ['colcon_pkg']
+[0.711s] Level 1:colcon.colcon_core.package_identification:_identify(solution) by extension 'colcon_pkg'
+[0.711s] Level 1:colcon.colcon_core.package_identification:_identify(solution) by extensions ['colcon_meta']
+[0.711s] Level 1:colcon.colcon_core.package_identification:_identify(solution) by extension 'colcon_meta'
+[0.711s] Level 1:colcon.colcon_core.package_identification:_identify(solution) by extensions ['ros']
+[0.711s] Level 1:colcon.colcon_core.package_identification:_identify(solution) by extension 'ros'
+[0.712s] DEBUG:colcon.colcon_core.package_identification:Package 'solution' with type 'ros.ament_python' and name 'solution'
+[0.712s] Level 1:colcon.colcon_core.package_identification:_identify(tf_relay) by extensions ['ignore', 'ignore_ament_install']
+[0.712s] Level 1:colcon.colcon_core.package_identification:_identify(tf_relay) by extension 'ignore'
+[0.712s] Level 1:colcon.colcon_core.package_identification:_identify(tf_relay) by extension 'ignore_ament_install'
+[0.712s] Level 1:colcon.colcon_core.package_identification:_identify(tf_relay) by extensions ['colcon_pkg']
+[0.712s] Level 1:colcon.colcon_core.package_identification:_identify(tf_relay) by extension 'colcon_pkg'
+[0.712s] Level 1:colcon.colcon_core.package_identification:_identify(tf_relay) by extensions ['colcon_meta']
+[0.712s] Level 1:colcon.colcon_core.package_identification:_identify(tf_relay) by extension 'colcon_meta'
+[0.712s] Level 1:colcon.colcon_core.package_identification:_identify(tf_relay) by extensions ['ros']
+[0.712s] Level 1:colcon.colcon_core.package_identification:_identify(tf_relay) by extension 'ros'
+[0.713s] DEBUG:colcon.colcon_core.package_identification:Package 'tf_relay' with type 'ros.ament_python' and name 'tf_relay'
+[0.713s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.713s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.713s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.713s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.713s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.770s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.770s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.776s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 15 installed packages in /home/auro/turtlebot3_ws/install
+[0.779s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 398 installed packages in /opt/ros/humble
+[0.782s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.878s] Level 5:colcon.colcon_core.verb:set package 'assessment_interfaces' build argument 'cmake_args' from command line to 'None'
+[0.878s] Level 5:colcon.colcon_core.verb:set package 'assessment_interfaces' build argument 'cmake_target' from command line to 'None'
+[0.878s] Level 5:colcon.colcon_core.verb:set package 'assessment_interfaces' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.878s] Level 5:colcon.colcon_core.verb:set package 'assessment_interfaces' build argument 'cmake_clean_cache' from command line to 'False'
+[0.878s] Level 5:colcon.colcon_core.verb:set package 'assessment_interfaces' build argument 'cmake_clean_first' from command line to 'False'
+[0.878s] Level 5:colcon.colcon_core.verb:set package 'assessment_interfaces' build argument 'cmake_force_configure' from command line to 'False'
+[0.878s] Level 5:colcon.colcon_core.verb:set package 'assessment_interfaces' build argument 'ament_cmake_args' from command line to 'None'
+[0.878s] Level 5:colcon.colcon_core.verb:set package 'assessment_interfaces' build argument 'catkin_cmake_args' from command line to 'None'
+[0.878s] Level 5:colcon.colcon_core.verb:set package 'assessment_interfaces' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.878s] DEBUG:colcon.colcon_core.verb:Building package 'assessment_interfaces' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/auro/Auro/build/assessment_interfaces', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/auro/Auro/install/assessment_interfaces', 'merge_install': False, 'path': '/home/auro/Auro/assessment_interfaces', 'symlink_install': True, 'test_result_base': None}
+[0.879s] Level 5:colcon.colcon_core.verb:set package 'auro_interfaces' build argument 'cmake_args' from command line to 'None'
+[0.879s] Level 5:colcon.colcon_core.verb:set package 'auro_interfaces' build argument 'cmake_target' from command line to 'None'
+[0.879s] Level 5:colcon.colcon_core.verb:set package 'auro_interfaces' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.879s] Level 5:colcon.colcon_core.verb:set package 'auro_interfaces' build argument 'cmake_clean_cache' from command line to 'False'
+[0.879s] Level 5:colcon.colcon_core.verb:set package 'auro_interfaces' build argument 'cmake_clean_first' from command line to 'False'
+[0.879s] Level 5:colcon.colcon_core.verb:set package 'auro_interfaces' build argument 'cmake_force_configure' from command line to 'False'
+[0.879s] Level 5:colcon.colcon_core.verb:set package 'auro_interfaces' build argument 'ament_cmake_args' from command line to 'None'
+[0.879s] Level 5:colcon.colcon_core.verb:set package 'auro_interfaces' build argument 'catkin_cmake_args' from command line to 'None'
+[0.879s] Level 5:colcon.colcon_core.verb:set package 'auro_interfaces' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.879s] DEBUG:colcon.colcon_core.verb:Building package 'auro_interfaces' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/auro/Auro/build/auro_interfaces', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/auro/Auro/install/auro_interfaces', 'merge_install': False, 'path': '/home/auro/Auro/auro_interfaces', 'symlink_install': True, 'test_result_base': None}
+[0.879s] Level 5:colcon.colcon_core.verb:set package 'solution' build argument 'cmake_args' from command line to 'None'
+[0.879s] Level 5:colcon.colcon_core.verb:set package 'solution' build argument 'cmake_target' from command line to 'None'
+[0.879s] Level 5:colcon.colcon_core.verb:set package 'solution' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.879s] Level 5:colcon.colcon_core.verb:set package 'solution' build argument 'cmake_clean_cache' from command line to 'False'
+[0.879s] Level 5:colcon.colcon_core.verb:set package 'solution' build argument 'cmake_clean_first' from command line to 'False'
+[0.880s] Level 5:colcon.colcon_core.verb:set package 'solution' build argument 'cmake_force_configure' from command line to 'False'
+[0.880s] Level 5:colcon.colcon_core.verb:set package 'solution' build argument 'ament_cmake_args' from command line to 'None'
+[0.880s] Level 5:colcon.colcon_core.verb:set package 'solution' build argument 'catkin_cmake_args' from command line to 'None'
+[0.880s] Level 5:colcon.colcon_core.verb:set package 'solution' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.880s] DEBUG:colcon.colcon_core.verb:Building package 'solution' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/auro/Auro/build/solution', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/auro/Auro/install/solution', 'merge_install': False, 'path': '/home/auro/Auro/solution', 'symlink_install': True, 'test_result_base': None}
+[0.880s] Level 5:colcon.colcon_core.verb:set package 'tf_relay' build argument 'cmake_args' from command line to 'None'
+[0.880s] Level 5:colcon.colcon_core.verb:set package 'tf_relay' build argument 'cmake_target' from command line to 'None'
+[0.880s] Level 5:colcon.colcon_core.verb:set package 'tf_relay' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.880s] Level 5:colcon.colcon_core.verb:set package 'tf_relay' build argument 'cmake_clean_cache' from command line to 'False'
+[0.880s] Level 5:colcon.colcon_core.verb:set package 'tf_relay' build argument 'cmake_clean_first' from command line to 'False'
+[0.880s] Level 5:colcon.colcon_core.verb:set package 'tf_relay' build argument 'cmake_force_configure' from command line to 'False'
+[0.880s] Level 5:colcon.colcon_core.verb:set package 'tf_relay' build argument 'ament_cmake_args' from command line to 'None'
+[0.880s] Level 5:colcon.colcon_core.verb:set package 'tf_relay' build argument 'catkin_cmake_args' from command line to 'None'
+[0.880s] Level 5:colcon.colcon_core.verb:set package 'tf_relay' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.880s] DEBUG:colcon.colcon_core.verb:Building package 'tf_relay' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/auro/Auro/build/tf_relay', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/auro/Auro/install/tf_relay', 'merge_install': False, 'path': '/home/auro/Auro/tf_relay', 'symlink_install': True, 'test_result_base': None}
+[0.881s] Level 5:colcon.colcon_core.verb:set package 'assessment' build argument 'cmake_args' from command line to 'None'
+[0.881s] Level 5:colcon.colcon_core.verb:set package 'assessment' build argument 'cmake_target' from command line to 'None'
+[0.881s] Level 5:colcon.colcon_core.verb:set package 'assessment' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.881s] Level 5:colcon.colcon_core.verb:set package 'assessment' build argument 'cmake_clean_cache' from command line to 'False'
+[0.881s] Level 5:colcon.colcon_core.verb:set package 'assessment' build argument 'cmake_clean_first' from command line to 'False'
+[0.881s] Level 5:colcon.colcon_core.verb:set package 'assessment' build argument 'cmake_force_configure' from command line to 'False'
+[0.881s] Level 5:colcon.colcon_core.verb:set package 'assessment' build argument 'ament_cmake_args' from command line to 'None'
+[0.881s] Level 5:colcon.colcon_core.verb:set package 'assessment' build argument 'catkin_cmake_args' from command line to 'None'
+[0.881s] Level 5:colcon.colcon_core.verb:set package 'assessment' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.881s] DEBUG:colcon.colcon_core.verb:Building package 'assessment' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/auro/Auro/build/assessment', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/auro/Auro/install/assessment', 'merge_install': False, 'path': '/home/auro/Auro/assessment', 'symlink_install': True, 'test_result_base': None}
+[0.881s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.883s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.884s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/auro/Auro/auro_interfaces' with build type 'ament_cmake'
+[0.884s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/auro/Auro/auro_interfaces'
+[0.891s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.891s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.891s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.898s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/auro/Auro/assessment_interfaces' with build type 'ament_cmake'
+[0.899s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/auro/Auro/assessment_interfaces'
+[0.899s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.900s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.908s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/auro/Auro/solution' with build type 'ament_python'
+[0.908s] Level 1:colcon.colcon_core.shell:create_environment_hook('solution', 'ament_prefix_path')
+[0.909s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/auro/Auro/install/solution/share/solution/hook/ament_prefix_path.ps1'
+[0.910s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/auro/Auro/install/solution/share/solution/hook/ament_prefix_path.dsv'
+[0.911s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/auro/Auro/install/solution/share/solution/hook/ament_prefix_path.sh'
+[0.913s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.913s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.921s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/auro/Auro/tf_relay' with build type 'ament_python'
+[0.921s] Level 1:colcon.colcon_core.shell:create_environment_hook('tf_relay', 'ament_prefix_path')
+[0.922s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/auro/Auro/install/tf_relay/share/tf_relay/hook/ament_prefix_path.ps1'
+[0.924s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/auro/Auro/install/tf_relay/share/tf_relay/hook/ament_prefix_path.dsv'
+[0.925s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/auro/Auro/install/tf_relay/share/tf_relay/hook/ament_prefix_path.sh'
+[0.926s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.926s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.939s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/auro/Auro/build/auro_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/auro/turtlebot3_ws/install/turtlebot3_teleop:/home/auro/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --build /home/auro/Auro/build/auro_interfaces -- -j4 -l4
+[0.949s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/auro/Auro/build/assessment_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/auro/turtlebot3_ws/install/turtlebot3_teleop:/home/auro/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --build /home/auro/Auro/build/assessment_interfaces -- -j4 -l4
+[1.334s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/auro/Auro/solution'
+[1.335s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.335s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.685s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/auro/Auro/tf_relay'
+[1.686s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.686s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.377s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/auro/Auro/build/solution': PYTHONPATH=/home/auro/Auro/build/solution/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/auro/Auro/install/solution/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/auro/Auro/build/solution/build --no-deps symlink_data
+[2.389s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/auro/Auro/build/tf_relay': PYTHONPATH=/home/auro/Auro/build/tf_relay/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/auro/Auro/install/tf_relay/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/auro/Auro/build/tf_relay/build --no-deps symlink_data
+[3.278s] Level 1:colcon.colcon_core.shell:create_environment_hook('solution', 'pythonpath_develop')
+[3.279s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/auro/Auro/build/solution/share/solution/hook/pythonpath_develop.ps1'
+[3.280s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/auro/Auro/build/solution/share/solution/hook/pythonpath_develop.dsv'
+[3.284s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/auro/Auro/build/solution' returned '0': PYTHONPATH=/home/auro/Auro/build/solution/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/auro/Auro/install/solution/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/auro/Auro/build/solution/build --no-deps symlink_data
+[3.284s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/auro/Auro/build/solution/share/solution/hook/pythonpath_develop.sh'
+[3.305s] Level 1:colcon.colcon_core.environment:checking '/home/auro/Auro/install/solution' for CMake module files
+[3.306s] Level 1:colcon.colcon_core.environment:checking '/home/auro/Auro/install/solution' for CMake config files
+[3.306s] Level 1:colcon.colcon_core.environment:checking '/home/auro/Auro/install/solution/lib'
+[3.307s] Level 1:colcon.colcon_core.environment:checking '/home/auro/Auro/install/solution/bin'
+[3.307s] Level 1:colcon.colcon_core.environment:checking '/home/auro/Auro/install/solution/lib/pkgconfig/solution.pc'
+[3.307s] Level 1:colcon.colcon_core.environment:checking '/home/auro/Auro/install/solution/lib/python3.10/site-packages'
+[3.307s] Level 1:colcon.colcon_core.shell:create_environment_hook('solution', 'pythonpath')
+[3.308s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/auro/Auro/install/solution/share/solution/hook/pythonpath.ps1'
+[3.309s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/auro/Auro/install/solution/share/solution/hook/pythonpath.dsv'
+[3.309s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/auro/Auro/install/solution/share/solution/hook/pythonpath.sh'
+[3.310s] Level 1:colcon.colcon_core.environment:checking '/home/auro/Auro/install/solution/bin'
+[3.311s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(solution)
+[3.311s] INFO:colcon.colcon_core.shell:Creating package script '/home/auro/Auro/install/solution/share/solution/package.ps1'
+[3.318s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/auro/Auro/install/solution/share/solution/package.dsv'
+[3.321s] INFO:colcon.colcon_core.shell:Creating package script '/home/auro/Auro/install/solution/share/solution/package.sh'
+[3.323s] INFO:colcon.colcon_core.shell:Creating package script '/home/auro/Auro/install/solution/share/solution/package.bash'
+[3.327s] INFO:colcon.colcon_core.shell:Creating package script '/home/auro/Auro/install/solution/share/solution/package.zsh'
+[3.334s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/auro/Auro/install/solution/share/colcon-core/packages/solution)
+[3.342s] Level 1:colcon.colcon_core.shell:create_environment_hook('tf_relay', 'pythonpath_develop')
+[3.344s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/auro/Auro/build/tf_relay' returned '0': PYTHONPATH=/home/auro/Auro/build/tf_relay/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/auro/Auro/install/tf_relay/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/auro/Auro/build/tf_relay/build --no-deps symlink_data
+[3.345s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/auro/Auro/build/tf_relay/share/tf_relay/hook/pythonpath_develop.ps1'
+[3.363s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/auro/Auro/build/tf_relay/share/tf_relay/hook/pythonpath_develop.dsv'
+[3.365s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/auro/Auro/build/tf_relay/share/tf_relay/hook/pythonpath_develop.sh'
+[3.366s] Level 1:colcon.colcon_core.environment:checking '/home/auro/Auro/install/tf_relay' for CMake module files
+[3.367s] Level 1:colcon.colcon_core.environment:checking '/home/auro/Auro/install/tf_relay' for CMake config files
+[3.374s] Level 1:colcon.colcon_core.environment:checking '/home/auro/Auro/install/tf_relay/lib'
+[3.375s] Level 1:colcon.colcon_core.environment:checking '/home/auro/Auro/install/tf_relay/bin'
+[3.375s] Level 1:colcon.colcon_core.environment:checking '/home/auro/Auro/install/tf_relay/lib/pkgconfig/tf_relay.pc'
+[3.376s] Level 1:colcon.colcon_core.environment:checking '/home/auro/Auro/install/tf_relay/lib/python3.10/site-packages'
+[3.376s] Level 1:colcon.colcon_core.shell:create_environment_hook('tf_relay', 'pythonpath')
+[3.376s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/auro/Auro/install/tf_relay/share/tf_relay/hook/pythonpath.ps1'
+[3.377s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/auro/Auro/install/tf_relay/share/tf_relay/hook/pythonpath.dsv'
+[3.378s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/auro/Auro/install/tf_relay/share/tf_relay/hook/pythonpath.sh'
+[3.379s] Level 1:colcon.colcon_core.environment:checking '/home/auro/Auro/install/tf_relay/bin'
+[3.379s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(tf_relay)
+[3.379s] INFO:colcon.colcon_core.shell:Creating package script '/home/auro/Auro/install/tf_relay/share/tf_relay/package.ps1'
+[3.380s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/auro/Auro/install/tf_relay/share/tf_relay/package.dsv'
+[3.384s] INFO:colcon.colcon_core.shell:Creating package script '/home/auro/Auro/install/tf_relay/share/tf_relay/package.sh'
+[3.385s] INFO:colcon.colcon_core.shell:Creating package script '/home/auro/Auro/install/tf_relay/share/tf_relay/package.bash'
+[3.386s] INFO:colcon.colcon_core.shell:Creating package script '/home/auro/Auro/install/tf_relay/share/tf_relay/package.zsh'
+[3.389s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/auro/Auro/install/tf_relay/share/colcon-core/packages/tf_relay)
+[11.595s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/auro/Auro/build/auro_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/auro/turtlebot3_ws/install/turtlebot3_teleop:/home/auro/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --build /home/auro/Auro/build/auro_interfaces -- -j4 -l4
+[11.825s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/auro/Auro/build/auro_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/auro/turtlebot3_ws/install/turtlebot3_teleop:/home/auro/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --install /home/auro/Auro/build/auro_interfaces
+[11.984s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(auro_interfaces)
+[11.984s] Level 1:colcon.colcon_core.environment:checking '/home/auro/Auro/install/auro_interfaces' for CMake module files
+[11.985s] Level 1:colcon.colcon_core.environment:checking '/home/auro/Auro/install/auro_interfaces' for CMake config files
+[11.987s] Level 1:colcon.colcon_core.shell:create_environment_hook('auro_interfaces', 'cmake_prefix_path')
+[11.987s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/auro/Auro/install/auro_interfaces/share/auro_interfaces/hook/cmake_prefix_path.ps1'
+[11.988s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/auro/Auro/install/auro_interfaces/share/auro_interfaces/hook/cmake_prefix_path.dsv'
+[11.989s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/auro/Auro/install/auro_interfaces/share/auro_interfaces/hook/cmake_prefix_path.sh'
+[11.990s] Level 1:colcon.colcon_core.environment:checking '/home/auro/Auro/install/auro_interfaces/lib'
+[11.990s] Level 1:colcon.colcon_core.shell:create_environment_hook('auro_interfaces', 'ld_library_path_lib')
+[11.991s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/auro/Auro/install/auro_interfaces/share/auro_interfaces/hook/ld_library_path_lib.ps1'
+[11.991s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/auro/Auro/install/auro_interfaces/share/auro_interfaces/hook/ld_library_path_lib.dsv'
+[11.992s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/auro/Auro/install/auro_interfaces/share/auro_interfaces/hook/ld_library_path_lib.sh'
+[11.992s] Level 1:colcon.colcon_core.environment:checking '/home/auro/Auro/install/auro_interfaces/bin'
+[11.993s] Level 1:colcon.colcon_core.environment:checking '/home/auro/Auro/install/auro_interfaces/lib/pkgconfig/auro_interfaces.pc'
+[11.993s] Level 1:colcon.colcon_core.environment:checking '/home/auro/Auro/install/auro_interfaces/lib/python3.10/site-packages'
+[11.993s] Level 1:colcon.colcon_core.environment:checking '/home/auro/Auro/install/auro_interfaces/bin'
+[11.994s] INFO:colcon.colcon_core.shell:Creating package script '/home/auro/Auro/install/auro_interfaces/share/auro_interfaces/package.ps1'
+[11.995s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/auro/Auro/install/auro_interfaces/share/auro_interfaces/package.dsv'
+[11.995s] INFO:colcon.colcon_core.shell:Creating package script '/home/auro/Auro/install/auro_interfaces/share/auro_interfaces/package.sh'
+[12.008s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/auro/Auro/build/auro_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/auro/turtlebot3_ws/install/turtlebot3_teleop:/home/auro/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --install /home/auro/Auro/build/auro_interfaces
+[12.009s] INFO:colcon.colcon_core.shell:Creating package script '/home/auro/Auro/install/auro_interfaces/share/auro_interfaces/package.bash'
+[12.010s] INFO:colcon.colcon_core.shell:Creating package script '/home/auro/Auro/install/auro_interfaces/share/auro_interfaces/package.zsh'
+[12.010s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/auro/Auro/install/auro_interfaces/share/colcon-core/packages/auro_interfaces)
+[12.316s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(auro_interfaces)
+[12.316s] Level 1:colcon.colcon_core.environment:checking '/home/auro/Auro/install/auro_interfaces' for CMake module files
+[12.318s] Level 1:colcon.colcon_core.environment:checking '/home/auro/Auro/install/auro_interfaces' for CMake config files
+[12.319s] Level 1:colcon.colcon_core.shell:create_environment_hook('auro_interfaces', 'cmake_prefix_path')
+[12.319s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/auro/Auro/install/auro_interfaces/share/auro_interfaces/hook/cmake_prefix_path.ps1'
+[12.320s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/auro/Auro/install/auro_interfaces/share/auro_interfaces/hook/cmake_prefix_path.dsv'
+[12.321s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/auro/Auro/install/auro_interfaces/share/auro_interfaces/hook/cmake_prefix_path.sh'
+[12.322s] Level 1:colcon.colcon_core.environment:checking '/home/auro/Auro/install/auro_interfaces/lib'
+[12.322s] Level 1:colcon.colcon_core.shell:create_environment_hook('auro_interfaces', 'ld_library_path_lib')
+[12.322s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/auro/Auro/install/auro_interfaces/share/auro_interfaces/hook/ld_library_path_lib.ps1'
+[12.323s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/auro/Auro/install/auro_interfaces/share/auro_interfaces/hook/ld_library_path_lib.dsv'
+[12.324s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/auro/Auro/install/auro_interfaces/share/auro_interfaces/hook/ld_library_path_lib.sh'
+[12.324s] Level 1:colcon.colcon_core.environment:checking '/home/auro/Auro/install/auro_interfaces/bin'
+[12.325s] Level 1:colcon.colcon_core.environment:checking '/home/auro/Auro/install/auro_interfaces/lib/pkgconfig/auro_interfaces.pc'
+[12.325s] Level 1:colcon.colcon_core.environment:checking '/home/auro/Auro/install/auro_interfaces/lib/python3.10/site-packages'
+[12.325s] Level 1:colcon.colcon_core.environment:checking '/home/auro/Auro/install/auro_interfaces/bin'
+[12.326s] INFO:colcon.colcon_core.shell:Creating package script '/home/auro/Auro/install/auro_interfaces/share/auro_interfaces/package.ps1'
+[12.327s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/auro/Auro/install/auro_interfaces/share/auro_interfaces/package.dsv'
+[12.328s] INFO:colcon.colcon_core.shell:Creating package script '/home/auro/Auro/install/auro_interfaces/share/auro_interfaces/package.sh'
+[12.328s] INFO:colcon.colcon_core.shell:Creating package script '/home/auro/Auro/install/auro_interfaces/share/auro_interfaces/package.bash'
+[12.329s] INFO:colcon.colcon_core.shell:Creating package script '/home/auro/Auro/install/auro_interfaces/share/auro_interfaces/package.zsh'
+[12.330s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/auro/Auro/install/auro_interfaces/share/colcon-core/packages/auro_interfaces)
+[12.331s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/auro/Auro/assessment' with build type 'ament_python'
+[12.331s] Level 1:colcon.colcon_core.shell:create_environment_hook('assessment', 'ament_prefix_path')
+[12.331s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/auro/Auro/install/assessment/share/assessment/hook/ament_prefix_path.ps1'
+[12.333s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/auro/Auro/install/assessment/share/assessment/hook/ament_prefix_path.dsv'
+[12.333s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/auro/Auro/install/assessment/share/assessment/hook/ament_prefix_path.sh'
+[12.335s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[12.335s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[12.755s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/auro/Auro/assessment'
+[12.755s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[12.755s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[12.763s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/auro/Auro/build/assessment_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/auro/turtlebot3_ws/install/turtlebot3_teleop:/home/auro/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --build /home/auro/Auro/build/assessment_interfaces -- -j4 -l4
+[13.067s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/auro/Auro/build/assessment_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/auro/turtlebot3_ws/install/turtlebot3_teleop:/home/auro/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --install /home/auro/Auro/build/assessment_interfaces
+[13.204s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(assessment_interfaces)
+[13.205s] Level 1:colcon.colcon_core.environment:checking '/home/auro/Auro/install/assessment_interfaces' for CMake module files
+[13.205s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/auro/Auro/build/assessment_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/auro/turtlebot3_ws/install/turtlebot3_teleop:/home/auro/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --install /home/auro/Auro/build/assessment_interfaces
+[13.206s] Level 1:colcon.colcon_core.environment:checking '/home/auro/Auro/install/assessment_interfaces' for CMake config files
+[13.208s] Level 1:colcon.colcon_core.shell:create_environment_hook('assessment_interfaces', 'cmake_prefix_path')
+[13.208s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/auro/Auro/install/assessment_interfaces/share/assessment_interfaces/hook/cmake_prefix_path.ps1'
+[13.209s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/auro/Auro/install/assessment_interfaces/share/assessment_interfaces/hook/cmake_prefix_path.dsv'
+[13.210s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/auro/Auro/install/assessment_interfaces/share/assessment_interfaces/hook/cmake_prefix_path.sh'
+[13.211s] Level 1:colcon.colcon_core.environment:checking '/home/auro/Auro/install/assessment_interfaces/lib'
+[13.211s] Level 1:colcon.colcon_core.shell:create_environment_hook('assessment_interfaces', 'ld_library_path_lib')
+[13.212s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/auro/Auro/install/assessment_interfaces/share/assessment_interfaces/hook/ld_library_path_lib.ps1'
+[13.213s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/auro/Auro/install/assessment_interfaces/share/assessment_interfaces/hook/ld_library_path_lib.dsv'
+[13.214s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/auro/Auro/install/assessment_interfaces/share/assessment_interfaces/hook/ld_library_path_lib.sh'
+[13.215s] Level 1:colcon.colcon_core.environment:checking '/home/auro/Auro/install/assessment_interfaces/bin'
+[13.215s] Level 1:colcon.colcon_core.environment:checking '/home/auro/Auro/install/assessment_interfaces/lib/pkgconfig/assessment_interfaces.pc'
+[13.215s] Level 1:colcon.colcon_core.environment:checking '/home/auro/Auro/install/assessment_interfaces/lib/python3.10/site-packages'
+[13.216s] Level 1:colcon.colcon_core.environment:checking '/home/auro/Auro/install/assessment_interfaces/bin'
+[13.216s] INFO:colcon.colcon_core.shell:Creating package script '/home/auro/Auro/install/assessment_interfaces/share/assessment_interfaces/package.ps1'
+[13.217s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/auro/Auro/install/assessment_interfaces/share/assessment_interfaces/package.dsv'
+[13.218s] INFO:colcon.colcon_core.shell:Creating package script '/home/auro/Auro/install/assessment_interfaces/share/assessment_interfaces/package.sh'
+[13.218s] INFO:colcon.colcon_core.shell:Creating package script '/home/auro/Auro/install/assessment_interfaces/share/assessment_interfaces/package.bash'
+[13.219s] INFO:colcon.colcon_core.shell:Creating package script '/home/auro/Auro/install/assessment_interfaces/share/assessment_interfaces/package.zsh'
+[13.220s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/auro/Auro/install/assessment_interfaces/share/colcon-core/packages/assessment_interfaces)
+[13.260s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/auro/Auro/build/assessment': AMENT_PREFIX_PATH=/home/auro/Auro/install/auro_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/auro/Auro/install/auro_interfaces:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/auro/Auro/install/auro_interfaces/lib:/home/auro/turtlebot3_ws/install/turtlebot3_msgs/lib:/home/auro/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/lib:/home/auro/turtlebot3_ws/install/dynamixel_sdk/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/home/auro/Auro/build/assessment/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/auro/Auro/install/assessment/lib/python3.10/site-packages:/home/auro/Auro/install/auro_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/auro/Auro/build/assessment/build --no-deps symlink_data
+[13.547s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(assessment_interfaces)
+[13.548s] Level 1:colcon.colcon_core.environment:checking '/home/auro/Auro/install/assessment_interfaces' for CMake module files
+[13.548s] Level 1:colcon.colcon_core.environment:checking '/home/auro/Auro/install/assessment_interfaces' for CMake config files
+[13.550s] Level 1:colcon.colcon_core.shell:create_environment_hook('assessment_interfaces', 'cmake_prefix_path')
+[13.550s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/auro/Auro/install/assessment_interfaces/share/assessment_interfaces/hook/cmake_prefix_path.ps1'
+[13.552s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/auro/Auro/install/assessment_interfaces/share/assessment_interfaces/hook/cmake_prefix_path.dsv'
+[13.552s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/auro/Auro/install/assessment_interfaces/share/assessment_interfaces/hook/cmake_prefix_path.sh'
+[13.554s] Level 1:colcon.colcon_core.environment:checking '/home/auro/Auro/install/assessment_interfaces/lib'
+[13.554s] Level 1:colcon.colcon_core.shell:create_environment_hook('assessment_interfaces', 'ld_library_path_lib')
+[13.554s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/auro/Auro/install/assessment_interfaces/share/assessment_interfaces/hook/ld_library_path_lib.ps1'
+[13.555s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/auro/Auro/install/assessment_interfaces/share/assessment_interfaces/hook/ld_library_path_lib.dsv'
+[13.555s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/auro/Auro/install/assessment_interfaces/share/assessment_interfaces/hook/ld_library_path_lib.sh'
+[13.555s] Level 1:colcon.colcon_core.environment:checking '/home/auro/Auro/install/assessment_interfaces/bin'
+[13.556s] Level 1:colcon.colcon_core.environment:checking '/home/auro/Auro/install/assessment_interfaces/lib/pkgconfig/assessment_interfaces.pc'
+[13.556s] Level 1:colcon.colcon_core.environment:checking '/home/auro/Auro/install/assessment_interfaces/lib/python3.10/site-packages'
+[13.556s] Level 1:colcon.colcon_core.environment:checking '/home/auro/Auro/install/assessment_interfaces/bin'
+[13.557s] INFO:colcon.colcon_core.shell:Creating package script '/home/auro/Auro/install/assessment_interfaces/share/assessment_interfaces/package.ps1'
+[13.557s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/auro/Auro/install/assessment_interfaces/share/assessment_interfaces/package.dsv'
+[13.558s] INFO:colcon.colcon_core.shell:Creating package script '/home/auro/Auro/install/assessment_interfaces/share/assessment_interfaces/package.sh'
+[13.559s] INFO:colcon.colcon_core.shell:Creating package script '/home/auro/Auro/install/assessment_interfaces/share/assessment_interfaces/package.bash'
+[13.559s] INFO:colcon.colcon_core.shell:Creating package script '/home/auro/Auro/install/assessment_interfaces/share/assessment_interfaces/package.zsh'
+[13.560s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/auro/Auro/install/assessment_interfaces/share/colcon-core/packages/assessment_interfaces)
+[13.898s] Level 1:colcon.colcon_core.shell:create_environment_hook('assessment', 'pythonpath_develop')
+[13.899s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/auro/Auro/build/assessment/share/assessment/hook/pythonpath_develop.ps1'
+[13.899s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/auro/Auro/build/assessment' returned '0': AMENT_PREFIX_PATH=/home/auro/Auro/install/auro_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/auro/Auro/install/auro_interfaces:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/auro/Auro/install/auro_interfaces/lib:/home/auro/turtlebot3_ws/install/turtlebot3_msgs/lib:/home/auro/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/lib:/home/auro/turtlebot3_ws/install/dynamixel_sdk/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/home/auro/Auro/build/assessment/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/auro/Auro/install/assessment/lib/python3.10/site-packages:/home/auro/Auro/install/auro_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/auro/Auro/build/assessment/build --no-deps symlink_data
+[13.900s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/auro/Auro/build/assessment/share/assessment/hook/pythonpath_develop.dsv'
+[13.901s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/auro/Auro/build/assessment/share/assessment/hook/pythonpath_develop.sh'
+[13.902s] Level 1:colcon.colcon_core.environment:checking '/home/auro/Auro/install/assessment' for CMake module files
+[13.902s] Level 1:colcon.colcon_core.environment:checking '/home/auro/Auro/install/assessment' for CMake config files
+[13.904s] Level 1:colcon.colcon_core.environment:checking '/home/auro/Auro/install/assessment/lib'
+[13.904s] Level 1:colcon.colcon_core.environment:checking '/home/auro/Auro/install/assessment/bin'
+[13.904s] Level 1:colcon.colcon_core.environment:checking '/home/auro/Auro/install/assessment/lib/pkgconfig/assessment.pc'
+[13.904s] Level 1:colcon.colcon_core.environment:checking '/home/auro/Auro/install/assessment/lib/python3.10/site-packages'
+[13.904s] Level 1:colcon.colcon_core.shell:create_environment_hook('assessment', 'pythonpath')
+[13.904s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/auro/Auro/install/assessment/share/assessment/hook/pythonpath.ps1'
+[13.905s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/auro/Auro/install/assessment/share/assessment/hook/pythonpath.dsv'
+[13.905s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/auro/Auro/install/assessment/share/assessment/hook/pythonpath.sh'
+[13.906s] Level 1:colcon.colcon_core.environment:checking '/home/auro/Auro/install/assessment/bin'
+[13.906s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(assessment)
+[13.907s] INFO:colcon.colcon_core.shell:Creating package script '/home/auro/Auro/install/assessment/share/assessment/package.ps1'
+[13.907s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/auro/Auro/install/assessment/share/assessment/package.dsv'
+[13.908s] INFO:colcon.colcon_core.shell:Creating package script '/home/auro/Auro/install/assessment/share/assessment/package.sh'
+[13.909s] INFO:colcon.colcon_core.shell:Creating package script '/home/auro/Auro/install/assessment/share/assessment/package.bash'
+[13.909s] INFO:colcon.colcon_core.shell:Creating package script '/home/auro/Auro/install/assessment/share/assessment/package.zsh'
+[13.910s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/auro/Auro/install/assessment/share/colcon-core/packages/assessment)
+[13.910s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[13.911s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[13.911s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[13.911s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[13.928s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[13.928s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[13.928s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[13.955s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[13.955s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/auro/Auro/install/local_setup.ps1'
+[13.957s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/auro/Auro/install/_local_setup_util_ps1.py'
+[13.959s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/auro/Auro/install/setup.ps1'
+[13.970s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/auro/Auro/install/local_setup.sh'
+[13.972s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/auro/Auro/install/_local_setup_util_sh.py'
+[13.973s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/auro/Auro/install/setup.sh'
+[13.978s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/auro/Auro/install/local_setup.bash'
+[13.979s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/auro/Auro/install/setup.bash'
+[13.982s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/auro/Auro/install/local_setup.zsh'
+[13.983s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/auro/Auro/install/setup.zsh'

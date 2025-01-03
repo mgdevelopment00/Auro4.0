@@ -1,0 +1,20 @@
+[1.013s] Invoking command in '/home/auro/Auro/build/assessment': LD_LIBRARY_PATH=/home/auro/Auro/install/auro_interfaces/lib:/home/auro/Auro/install/assessment_interfaces/lib:/home/auro/turtlebot3_ws/install/turtlebot3_msgs/lib:/home/auro/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/lib:/home/auro/turtlebot3_ws/install/dynamixel_sdk/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/home/auro/Auro/build/assessment/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/auro/Auro/install/assessment/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/auro/Auro/build/assessment/build --no-deps symlink_data
+[1.368s] running develop
+[1.582s] running egg_info
+[1.582s] writing assessment.egg-info/PKG-INFO
+[1.583s] writing dependency_links to assessment.egg-info/dependency_links.txt
+[1.583s] writing entry points to assessment.egg-info/entry_points.txt
+[1.583s] writing requirements to assessment.egg-info/requires.txt
+[1.583s] writing top-level names to assessment.egg-info/top_level.txt
+[1.586s] reading manifest file 'assessment.egg-info/SOURCES.txt'
+[1.588s] writing manifest file 'assessment.egg-info/SOURCES.txt'
+[1.590s] running build_ext
+[1.590s] Creating /home/auro/Auro/install/assessment/lib/python3.10/site-packages/assessment.egg-link (link to .)
+[1.592s] Installing item_manager script to /home/auro/Auro/install/assessment/lib/assessment
+[1.592s] Installing item_sensor script to /home/auro/Auro/install/assessment/lib/assessment
+[1.592s] Installing robot_sensor script to /home/auro/Auro/install/assessment/lib/assessment
+[1.592s] Installing zone_sensor script to /home/auro/Auro/install/assessment/lib/assessment
+[1.595s] 
+[1.595s] Installed /home/auro/Auro/build/assessment
+[1.595s] running symlink_data
+[1.650s] Invoked command in '/home/auro/Auro/build/assessment' returned '0': LD_LIBRARY_PATH=/home/auro/Auro/install/auro_interfaces/lib:/home/auro/Auro/install/assessment_interfaces/lib:/home/auro/turtlebot3_ws/install/turtlebot3_msgs/lib:/home/auro/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/lib:/home/auro/turtlebot3_ws/install/dynamixel_sdk/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/home/auro/Auro/build/assessment/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/auro/Auro/install/assessment/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/auro/Auro/build/assessment/build --no-deps symlink_data

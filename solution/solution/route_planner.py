@@ -26,18 +26,20 @@ class RoutePlanner(Node):
             time.sleep(1)
 
         self.timer = self.create_timer(1.0, self.timer_loop)
-
+        
+    
+    #Basic move towards point
     def timer_loop(self):
         match self.state:
             case State.NOT_SENT:
                 self.get_logger().info(f"sending stuff")
                 msg = String()
-                msg.data = "3.0, 2.0, 1.0"  # in (x, y, w) form
-                self.publisher.publish(msg)
+                msg.data = "p,-3.5, 0.0, 0.0, 0"  # in (x, y, w, angle) form
+                #self.publisher.publish(msg)
                 self.state = State.SENT
             case _:
                 pass
-
+ 
 def main(args=None):
     rclpy.init(args=args)
 

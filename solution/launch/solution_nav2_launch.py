@@ -50,6 +50,12 @@ def robot_controller_actions(context : LaunchContext):
                  executable='route_planner',
                  output='screen',
                  parameters=[initial_poses[robot_name]]),
+                 
+             Node(
+                 package='solution',
+                 executable='robot_vision',
+                 output='screen',
+                 parameters=[{"robot_name": robot_name}]),
 
         ])
 
@@ -79,7 +85,7 @@ def generate_launch_description():
     
     declare_experiment_duration_cmd = DeclareLaunchArgument(
         'experiment_duration',
-        default_value='300.0',
+        default_value='30000.0',
         description='Experiment duration in seconds')
     
     declare_data_log_path_cmd = DeclareLaunchArgument(
@@ -121,8 +127,8 @@ def generate_launch_description():
                           'map': map,
                           'params_file': params,
                           'headless': 'false',
-                          'limit_real_time_factor': 'true',
-                          'wait_for_items': 'false',
+                          'limit_real_time_factor': 'false',
+                          'wait_for_items': 'true',
                           # 'extra_gazebo_args': '--verbose',
                           }.items()
     )

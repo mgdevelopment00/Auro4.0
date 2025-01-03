@@ -49,7 +49,8 @@ setup(
         'console_scripts': [
             'robot_controller = solution.robot_controller:main',
             'data_logger = solution.data_logger:main',
-            'route_planner = solution.route_planner:main'
+            'route_planner = solution.route_planner:main',
+            'robot_vision = solution.robot_vision:main'
         ],
     },
 )
