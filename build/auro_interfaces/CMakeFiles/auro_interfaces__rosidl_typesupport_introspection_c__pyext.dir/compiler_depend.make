@@ -262,8 +262,19 @@ CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl
   rosidl_generator_c/auro_interfaces/msg/detail/direction__functions.h \
   rosidl_generator_c/auro_interfaces/srv/detail/item_request__type_support.h \
   rosidl_generator_c/auro_interfaces/srv/detail/item_request__struct.h \
-  rosidl_generator_c/auro_interfaces/srv/detail/item_request__functions.h
+  rosidl_generator_c/auro_interfaces/srv/detail/item_request__functions.h \
+  rosidl_generator_c/auro_interfaces/action/detail/move__type_support.h \
+  rosidl_generator_c/auro_interfaces/action/detail/move__struct.h \
+  /opt/ros/humble/include/unique_identifier_msgs/unique_identifier_msgs/msg/detail/uuid__struct.h \
+  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.h \
+  rosidl_generator_c/auro_interfaces/action/detail/move__functions.h
 
+
+/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.h:
+
+rosidl_generator_c/auro_interfaces/action/detail/move__struct.h:
+
+rosidl_generator_c/auro_interfaces/action/detail/move__type_support.h:
 
 rosidl_generator_c/auro_interfaces/srv/detail/item_request__functions.h:
 
@@ -470,6 +481,8 @@ rosidl_generator_c/auro_interfaces/msg/detail/item_list__struct.h:
 /usr/include/x86_64-linux-gnu/bits/types/__FILE.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/clock_t.h:
+
+/opt/ros/humble/include/unique_identifier_msgs/unique_identifier_msgs/msg/detail/uuid__struct.h:
 
 /usr/include/python3.10/objimpl.h:
 
@@ -710,6 +723,8 @@ rosidl_generator_c/auro_interfaces/srv/detail/item_request__type_support.h:
 /usr/include/python3.10/descrobject.h:
 
 /usr/include/python3.10/genericaliasobject.h:
+
+rosidl_generator_c/auro_interfaces/action/detail/move__functions.h:
 
 /usr/include/stdint.h:
 

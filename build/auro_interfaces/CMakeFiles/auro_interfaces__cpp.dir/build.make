@@ -86,6 +86,10 @@ CMakeFiles/auro_interfaces__cpp: rosidl_generator_cpp/auro_interfaces/srv/item_r
 CMakeFiles/auro_interfaces__cpp: rosidl_generator_cpp/auro_interfaces/srv/detail/item_request__builder.hpp
 CMakeFiles/auro_interfaces__cpp: rosidl_generator_cpp/auro_interfaces/srv/detail/item_request__struct.hpp
 CMakeFiles/auro_interfaces__cpp: rosidl_generator_cpp/auro_interfaces/srv/detail/item_request__traits.hpp
+CMakeFiles/auro_interfaces__cpp: rosidl_generator_cpp/auro_interfaces/action/move.hpp
+CMakeFiles/auro_interfaces__cpp: rosidl_generator_cpp/auro_interfaces/action/detail/move__builder.hpp
+CMakeFiles/auro_interfaces__cpp: rosidl_generator_cpp/auro_interfaces/action/detail/move__struct.hpp
+CMakeFiles/auro_interfaces__cpp: rosidl_generator_cpp/auro_interfaces/action/detail/move__traits.hpp
 
 rosidl_generator_cpp/auro_interfaces/msg/string_with_pose.hpp: /opt/ros/humble/lib/rosidl_generator_cpp/rosidl_generator_cpp
 rosidl_generator_cpp/auro_interfaces/msg/string_with_pose.hpp: /opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_generator_cpp/__init__.py
@@ -107,6 +111,7 @@ rosidl_generator_cpp/auro_interfaces/msg/string_with_pose.hpp: rosidl_adapter/au
 rosidl_generator_cpp/auro_interfaces/msg/string_with_pose.hpp: rosidl_adapter/auro_interfaces/msg/ItemList.idl
 rosidl_generator_cpp/auro_interfaces/msg/string_with_pose.hpp: rosidl_adapter/auro_interfaces/msg/Direction.idl
 rosidl_generator_cpp/auro_interfaces/msg/string_with_pose.hpp: rosidl_adapter/auro_interfaces/srv/ItemRequest.idl
+rosidl_generator_cpp/auro_interfaces/msg/string_with_pose.hpp: rosidl_adapter/auro_interfaces/action/Move.idl
 rosidl_generator_cpp/auro_interfaces/msg/string_with_pose.hpp: /opt/ros/humble/share/geometry_msgs/msg/Accel.idl
 rosidl_generator_cpp/auro_interfaces/msg/string_with_pose.hpp: /opt/ros/humble/share/geometry_msgs/msg/AccelStamped.idl
 rosidl_generator_cpp/auro_interfaces/msg/string_with_pose.hpp: /opt/ros/humble/share/geometry_msgs/msg/AccelWithCovariance.idl
@@ -167,6 +172,13 @@ rosidl_generator_cpp/auro_interfaces/msg/string_with_pose.hpp: /opt/ros/humble/s
 rosidl_generator_cpp/auro_interfaces/msg/string_with_pose.hpp: /opt/ros/humble/share/std_msgs/msg/UInt64MultiArray.idl
 rosidl_generator_cpp/auro_interfaces/msg/string_with_pose.hpp: /opt/ros/humble/share/std_msgs/msg/UInt8.idl
 rosidl_generator_cpp/auro_interfaces/msg/string_with_pose.hpp: /opt/ros/humble/share/std_msgs/msg/UInt8MultiArray.idl
+rosidl_generator_cpp/auro_interfaces/msg/string_with_pose.hpp: /opt/ros/humble/share/action_msgs/msg/GoalInfo.idl
+rosidl_generator_cpp/auro_interfaces/msg/string_with_pose.hpp: /opt/ros/humble/share/action_msgs/msg/GoalStatus.idl
+rosidl_generator_cpp/auro_interfaces/msg/string_with_pose.hpp: /opt/ros/humble/share/action_msgs/msg/GoalStatusArray.idl
+rosidl_generator_cpp/auro_interfaces/msg/string_with_pose.hpp: /opt/ros/humble/share/action_msgs/srv/CancelGoal.idl
+rosidl_generator_cpp/auro_interfaces/msg/string_with_pose.hpp: /opt/ros/humble/share/builtin_interfaces/msg/Duration.idl
+rosidl_generator_cpp/auro_interfaces/msg/string_with_pose.hpp: /opt/ros/humble/share/builtin_interfaces/msg/Time.idl
+rosidl_generator_cpp/auro_interfaces/msg/string_with_pose.hpp: /opt/ros/humble/share/unique_identifier_msgs/msg/UUID.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/auro/Auro/build/auro_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code for ROS interfaces"
 	/usr/bin/python3 /opt/ros/humble/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp --generator-arguments-file /home/auro/Auro/build/auro_interfaces/rosidl_generator_cpp__arguments.json
 
@@ -227,7 +239,23 @@ rosidl_generator_cpp/auro_interfaces/srv/detail/item_request__struct.hpp: rosidl
 rosidl_generator_cpp/auro_interfaces/srv/detail/item_request__traits.hpp: rosidl_generator_cpp/auro_interfaces/msg/string_with_pose.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/auro_interfaces/srv/detail/item_request__traits.hpp
 
+rosidl_generator_cpp/auro_interfaces/action/move.hpp: rosidl_generator_cpp/auro_interfaces/msg/string_with_pose.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/auro_interfaces/action/move.hpp
+
+rosidl_generator_cpp/auro_interfaces/action/detail/move__builder.hpp: rosidl_generator_cpp/auro_interfaces/msg/string_with_pose.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/auro_interfaces/action/detail/move__builder.hpp
+
+rosidl_generator_cpp/auro_interfaces/action/detail/move__struct.hpp: rosidl_generator_cpp/auro_interfaces/msg/string_with_pose.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/auro_interfaces/action/detail/move__struct.hpp
+
+rosidl_generator_cpp/auro_interfaces/action/detail/move__traits.hpp: rosidl_generator_cpp/auro_interfaces/msg/string_with_pose.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/auro_interfaces/action/detail/move__traits.hpp
+
 auro_interfaces__cpp: CMakeFiles/auro_interfaces__cpp
+auro_interfaces__cpp: rosidl_generator_cpp/auro_interfaces/action/detail/move__builder.hpp
+auro_interfaces__cpp: rosidl_generator_cpp/auro_interfaces/action/detail/move__struct.hpp
+auro_interfaces__cpp: rosidl_generator_cpp/auro_interfaces/action/detail/move__traits.hpp
+auro_interfaces__cpp: rosidl_generator_cpp/auro_interfaces/action/move.hpp
 auro_interfaces__cpp: rosidl_generator_cpp/auro_interfaces/msg/detail/direction__builder.hpp
 auro_interfaces__cpp: rosidl_generator_cpp/auro_interfaces/msg/detail/direction__struct.hpp
 auro_interfaces__cpp: rosidl_generator_cpp/auro_interfaces/msg/detail/direction__traits.hpp

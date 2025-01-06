@@ -1,0 +1,20 @@
+[2.263s] Invoking command in '/home/auro/Auro/build/solution': PYTHONPATH=/home/auro/Auro/build/solution/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/auro/Auro/install/solution/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/auro/Auro/build/solution/build --no-deps symlink_data
+[2.948s] running develop
+[3.362s] running egg_info
+[3.362s] writing solution.egg-info/PKG-INFO
+[3.363s] writing dependency_links to solution.egg-info/dependency_links.txt
+[3.365s] writing entry points to solution.egg-info/entry_points.txt
+[3.366s] writing requirements to solution.egg-info/requires.txt
+[3.366s] writing top-level names to solution.egg-info/top_level.txt
+[3.369s] reading manifest file 'solution.egg-info/SOURCES.txt'
+[3.371s] writing manifest file 'solution.egg-info/SOURCES.txt'
+[3.375s] running build_ext
+[3.379s] Creating /home/auro/Auro/install/solution/lib/python3.10/site-packages/solution.egg-link (link to .)
+[3.380s] Installing data_logger script to /home/auro/Auro/install/solution/lib/solution
+[3.380s] Installing robot_controller script to /home/auro/Auro/install/solution/lib/solution
+[3.380s] Installing robot_vision script to /home/auro/Auro/install/solution/lib/solution
+[3.380s] Installing route_planner script to /home/auro/Auro/install/solution/lib/solution
+[3.380s] 
+[3.380s] Installed /home/auro/Auro/build/solution
+[3.380s] running symlink_data
+[3.809s] Invoked command in '/home/auro/Auro/build/solution' returned '0': PYTHONPATH=/home/auro/Auro/build/solution/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/auro/Auro/install/solution/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/auro/Auro/build/solution/build --no-deps symlink_data

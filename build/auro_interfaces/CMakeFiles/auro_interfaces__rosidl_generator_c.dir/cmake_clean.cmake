@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/action/detail/move__functions.c.o"
+  "CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/action/detail/move__functions.c.o.d"
   "CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/msg/detail/direction__functions.c.o"
   "CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/msg/detail/direction__functions.c.o.d"
   "CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/msg/detail/item__functions.c.o"
@@ -11,6 +13,11 @@ file(REMOVE_RECURSE
   "CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/item_request__functions.c.o.d"
   "libauro_interfaces__rosidl_generator_c.pdb"
   "libauro_interfaces__rosidl_generator_c.so"
+  "rosidl_generator_c/auro_interfaces/action/detail/move__functions.c"
+  "rosidl_generator_c/auro_interfaces/action/detail/move__functions.h"
+  "rosidl_generator_c/auro_interfaces/action/detail/move__struct.h"
+  "rosidl_generator_c/auro_interfaces/action/detail/move__type_support.h"
+  "rosidl_generator_c/auro_interfaces/action/move.h"
   "rosidl_generator_c/auro_interfaces/msg/detail/direction__functions.c"
   "rosidl_generator_c/auro_interfaces/msg/detail/direction__functions.h"
   "rosidl_generator_c/auro_interfaces/msg/detail/direction__struct.h"

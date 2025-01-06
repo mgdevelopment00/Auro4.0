@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/auro_interfaces/action/detail/move__type_support.c.o"
+  "CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/auro_interfaces/action/detail/move__type_support.c.o.d"
   "CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/auro_interfaces/msg/detail/direction__type_support.c.o"
   "CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/auro_interfaces/msg/detail/direction__type_support.c.o.d"
   "CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/auro_interfaces/msg/detail/item__type_support.c.o"
@@ -11,6 +13,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/auro_interfaces/srv/detail/item_request__type_support.c.o.d"
   "libauro_interfaces__rosidl_typesupport_introspection_c.pdb"
   "libauro_interfaces__rosidl_typesupport_introspection_c.so"
+  "rosidl_typesupport_introspection_c/auro_interfaces/action/detail/move__rosidl_typesupport_introspection_c.h"
+  "rosidl_typesupport_introspection_c/auro_interfaces/action/detail/move__type_support.c"
   "rosidl_typesupport_introspection_c/auro_interfaces/msg/detail/direction__rosidl_typesupport_introspection_c.h"
   "rosidl_typesupport_introspection_c/auro_interfaces/msg/detail/direction__type_support.c"
   "rosidl_typesupport_introspection_c/auro_interfaces/msg/detail/item__rosidl_typesupport_introspection_c.h"

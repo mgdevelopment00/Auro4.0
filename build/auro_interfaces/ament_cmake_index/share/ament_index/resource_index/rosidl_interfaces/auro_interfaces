@@ -1,3 +1,5 @@
+action/Move.action
+action/Move.idl
 msg/Direction.idl
 msg/Direction.msg
 msg/Item.idl

@@ -373,6 +373,9 @@ ament_cmake_symlink_install_files("/home/auro/Auro/auro_interfaces" FILES "/home
 # install(FILES "/home/auro/Auro/build/auro_interfaces/rosidl_adapter/auro_interfaces/srv/ItemRequest.idl" "DESTINATION" "share/auro_interfaces/srv")
 ament_cmake_symlink_install_files("/home/auro/Auro/auro_interfaces" FILES "/home/auro/Auro/build/auro_interfaces/rosidl_adapter/auro_interfaces/srv/ItemRequest.idl" "DESTINATION" "share/auro_interfaces/srv")
 
+# install(FILES "/home/auro/Auro/build/auro_interfaces/rosidl_adapter/auro_interfaces/action/Move.idl" "DESTINATION" "share/auro_interfaces/action")
+ament_cmake_symlink_install_files("/home/auro/Auro/auro_interfaces" FILES "/home/auro/Auro/build/auro_interfaces/rosidl_adapter/auro_interfaces/action/Move.idl" "DESTINATION" "share/auro_interfaces/action")
+
 # install(FILES "/home/auro/Auro/auro_interfaces/msg/StringWithPose.msg" "DESTINATION" "share/auro_interfaces/msg")
 ament_cmake_symlink_install_files("/home/auro/Auro/auro_interfaces" FILES "/home/auro/Auro/auro_interfaces/msg/StringWithPose.msg" "DESTINATION" "share/auro_interfaces/msg")
 
@@ -393,6 +396,9 @@ ament_cmake_symlink_install_files("/home/auro/Auro/auro_interfaces" FILES "/home
 
 # install(FILES "/home/auro/Auro/build/auro_interfaces/rosidl_cmake/srv/ItemRequest_Response.msg" "DESTINATION" "share/auro_interfaces/srv")
 ament_cmake_symlink_install_files("/home/auro/Auro/auro_interfaces" FILES "/home/auro/Auro/build/auro_interfaces/rosidl_cmake/srv/ItemRequest_Response.msg" "DESTINATION" "share/auro_interfaces/srv")
+
+# install(FILES "/home/auro/Auro/auro_interfaces/action/Move.action" "DESTINATION" "share/auro_interfaces/action")
+ament_cmake_symlink_install_files("/home/auro/Auro/auro_interfaces" FILES "/home/auro/Auro/auro_interfaces/action/Move.action" "DESTINATION" "share/auro_interfaces/action")
 
 # install(FILES "/home/auro/Auro/build/auro_interfaces/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/auro_interfaces" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 ament_cmake_symlink_install_files("/home/auro/Auro/auro_interfaces" FILES "/home/auro/Auro/build/auro_interfaces/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/auro_interfaces" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")

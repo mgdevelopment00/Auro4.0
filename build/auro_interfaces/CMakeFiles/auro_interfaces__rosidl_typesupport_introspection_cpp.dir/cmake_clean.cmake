@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/auro_interfaces/action/detail/move__type_support.cpp.o"
+  "CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/auro_interfaces/action/detail/move__type_support.cpp.o.d"
   "CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/auro_interfaces/msg/detail/direction__type_support.cpp.o"
   "CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/auro_interfaces/msg/detail/direction__type_support.cpp.o.d"
   "CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/auro_interfaces/msg/detail/item__type_support.cpp.o"
@@ -11,6 +13,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/item_request__type_support.cpp.o.d"
   "libauro_interfaces__rosidl_typesupport_introspection_cpp.pdb"
   "libauro_interfaces__rosidl_typesupport_introspection_cpp.so"
+  "rosidl_typesupport_introspection_cpp/auro_interfaces/action/detail/move__rosidl_typesupport_introspection_cpp.hpp"
+  "rosidl_typesupport_introspection_cpp/auro_interfaces/action/detail/move__type_support.cpp"
   "rosidl_typesupport_introspection_cpp/auro_interfaces/msg/detail/direction__rosidl_typesupport_introspection_cpp.hpp"
   "rosidl_typesupport_introspection_cpp/auro_interfaces/msg/detail/direction__type_support.cpp"
   "rosidl_typesupport_introspection_cpp/auro_interfaces/msg/detail/item__rosidl_typesupport_introspection_cpp.hpp"

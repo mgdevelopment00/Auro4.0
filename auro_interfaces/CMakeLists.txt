@@ -20,8 +20,12 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/ItemList.msg"
   "msg/Direction.msg"
   "srv/ItemRequest.srv"
+  "srv/Sector.src"
+  "action/Move.action"
   DEPENDENCIES geometry_msgs
 )
+
+
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)

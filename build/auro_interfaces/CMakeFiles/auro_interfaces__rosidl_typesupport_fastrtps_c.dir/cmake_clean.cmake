@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/auro_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/auro_interfaces/action/detail/move__type_support_c.cpp.o"
+  "CMakeFiles/auro_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/auro_interfaces/action/detail/move__type_support_c.cpp.o.d"
   "CMakeFiles/auro_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/auro_interfaces/msg/detail/direction__type_support_c.cpp.o"
   "CMakeFiles/auro_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/auro_interfaces/msg/detail/direction__type_support_c.cpp.o.d"
   "CMakeFiles/auro_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/auro_interfaces/msg/detail/item__type_support_c.cpp.o"
@@ -11,6 +13,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/auro_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/auro_interfaces/srv/detail/item_request__type_support_c.cpp.o.d"
   "libauro_interfaces__rosidl_typesupport_fastrtps_c.pdb"
   "libauro_interfaces__rosidl_typesupport_fastrtps_c.so"
+  "rosidl_typesupport_fastrtps_c/auro_interfaces/action/detail/move__rosidl_typesupport_fastrtps_c.h"
+  "rosidl_typesupport_fastrtps_c/auro_interfaces/action/detail/move__type_support_c.cpp"
   "rosidl_typesupport_fastrtps_c/auro_interfaces/msg/detail/direction__rosidl_typesupport_fastrtps_c.h"
   "rosidl_typesupport_fastrtps_c/auro_interfaces/msg/detail/direction__type_support_c.cpp"
   "rosidl_typesupport_fastrtps_c/auro_interfaces/msg/detail/item__rosidl_typesupport_fastrtps_c.h"

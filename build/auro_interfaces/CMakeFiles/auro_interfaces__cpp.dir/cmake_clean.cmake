@@ -1,5 +1,9 @@
 file(REMOVE_RECURSE
   "CMakeFiles/auro_interfaces__cpp"
+  "rosidl_generator_cpp/auro_interfaces/action/detail/move__builder.hpp"
+  "rosidl_generator_cpp/auro_interfaces/action/detail/move__struct.hpp"
+  "rosidl_generator_cpp/auro_interfaces/action/detail/move__traits.hpp"
+  "rosidl_generator_cpp/auro_interfaces/action/move.hpp"
   "rosidl_generator_cpp/auro_interfaces/msg/detail/direction__builder.hpp"
   "rosidl_generator_cpp/auro_interfaces/msg/detail/direction__struct.hpp"
   "rosidl_generator_cpp/auro_interfaces/msg/detail/direction__traits.hpp"

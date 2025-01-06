@@ -1,0 +1,20 @@
+// generated from rosidl_adapter/resource/action.idl.em
+// with input from auro_interfaces/action/Move.action
+// generated code does not contain a copyright notice
+
+
+module auro_interfaces {
+  module action {
+    struct Move_Goal {
+      double x;
+
+      double y;
+    };
+    struct Move_Result {
+      string status;
+    };
+    struct Move_Feedback {
+      string progress;
+    };
+  };
+};

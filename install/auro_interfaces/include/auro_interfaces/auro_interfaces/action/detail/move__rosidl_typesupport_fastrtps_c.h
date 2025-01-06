@@ -1,0 +1,1 @@
+/home/auro/Auro/build/auro_interfaces/rosidl_typesupport_fastrtps_c/auro_interfaces/action/detail/move__rosidl_typesupport_fastrtps_c.h

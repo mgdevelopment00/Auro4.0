@@ -7,7 +7,8 @@
     "/home/auro/Auro/build/auro_interfaces/rosidl_adapter/auro_interfaces:msg/Item.idl",
     "/home/auro/Auro/build/auro_interfaces/rosidl_adapter/auro_interfaces:msg/ItemList.idl",
     "/home/auro/Auro/build/auro_interfaces/rosidl_adapter/auro_interfaces:msg/Direction.idl",
-    "/home/auro/Auro/build/auro_interfaces/rosidl_adapter/auro_interfaces:srv/ItemRequest.idl"
+    "/home/auro/Auro/build/auro_interfaces/rosidl_adapter/auro_interfaces:srv/ItemRequest.idl",
+    "/home/auro/Auro/build/auro_interfaces/rosidl_adapter/auro_interfaces:action/Move.idl"
   ],
   "ros_interface_dependencies": [
     "geometry_msgs:/opt/ros/humble/share/geometry_msgs/msg/Accel.idl",
@@ -69,7 +70,14 @@
     "std_msgs:/opt/ros/humble/share/std_msgs/msg/UInt64.idl",
     "std_msgs:/opt/ros/humble/share/std_msgs/msg/UInt64MultiArray.idl",
     "std_msgs:/opt/ros/humble/share/std_msgs/msg/UInt8.idl",
-    "std_msgs:/opt/ros/humble/share/std_msgs/msg/UInt8MultiArray.idl"
+    "std_msgs:/opt/ros/humble/share/std_msgs/msg/UInt8MultiArray.idl",
+    "action_msgs:/opt/ros/humble/share/action_msgs/msg/GoalInfo.idl",
+    "action_msgs:/opt/ros/humble/share/action_msgs/msg/GoalStatus.idl",
+    "action_msgs:/opt/ros/humble/share/action_msgs/msg/GoalStatusArray.idl",
+    "action_msgs:/opt/ros/humble/share/action_msgs/srv/CancelGoal.idl",
+    "builtin_interfaces:/opt/ros/humble/share/builtin_interfaces/msg/Duration.idl",
+    "builtin_interfaces:/opt/ros/humble/share/builtin_interfaces/msg/Time.idl",
+    "unique_identifier_msgs:/opt/ros/humble/share/unique_identifier_msgs/msg/UUID.idl"
   ],
   "target_dependencies": [
     "/opt/ros/humble/lib/rosidl_typesupport_fastrtps_c/rosidl_typesupport_fastrtps_c",
@@ -85,6 +93,7 @@
     "/home/auro/Auro/build/auro_interfaces/rosidl_adapter/auro_interfaces/msg/ItemList.idl",
     "/home/auro/Auro/build/auro_interfaces/rosidl_adapter/auro_interfaces/msg/Direction.idl",
     "/home/auro/Auro/build/auro_interfaces/rosidl_adapter/auro_interfaces/srv/ItemRequest.idl",
+    "/home/auro/Auro/build/auro_interfaces/rosidl_adapter/auro_interfaces/action/Move.idl",
     "/opt/ros/humble/share/geometry_msgs/msg/Accel.idl",
     "/opt/ros/humble/share/geometry_msgs/msg/AccelStamped.idl",
     "/opt/ros/humble/share/geometry_msgs/msg/AccelWithCovariance.idl",
@@ -144,6 +153,13 @@
     "/opt/ros/humble/share/std_msgs/msg/UInt64.idl",
     "/opt/ros/humble/share/std_msgs/msg/UInt64MultiArray.idl",
     "/opt/ros/humble/share/std_msgs/msg/UInt8.idl",
-    "/opt/ros/humble/share/std_msgs/msg/UInt8MultiArray.idl"
+    "/opt/ros/humble/share/std_msgs/msg/UInt8MultiArray.idl",
+    "/opt/ros/humble/share/action_msgs/msg/GoalInfo.idl",
+    "/opt/ros/humble/share/action_msgs/msg/GoalStatus.idl",
+    "/opt/ros/humble/share/action_msgs/msg/GoalStatusArray.idl",
+    "/opt/ros/humble/share/action_msgs/srv/CancelGoal.idl",
+    "/opt/ros/humble/share/builtin_interfaces/msg/Duration.idl",
+    "/opt/ros/humble/share/builtin_interfaces/msg/Time.idl",
+    "/opt/ros/humble/share/unique_identifier_msgs/msg/UUID.idl"
   ]
 }

@@ -129,6 +129,7 @@ def generate_launch_description():
                           'headless': 'false',
                           'limit_real_time_factor': 'false',
                           'wait_for_items': 'true',
+                          'use_sim_time': 'true'
                           # 'extra_gazebo_args': '--verbose',
                           }.items()
     )

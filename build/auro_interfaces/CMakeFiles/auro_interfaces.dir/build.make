@@ -73,6 +73,7 @@ CMakeFiles/auro_interfaces: /home/auro/Auro/auro_interfaces/msg/Direction.msg
 CMakeFiles/auro_interfaces: /home/auro/Auro/auro_interfaces/srv/ItemRequest.srv
 CMakeFiles/auro_interfaces: rosidl_cmake/srv/ItemRequest_Request.msg
 CMakeFiles/auro_interfaces: rosidl_cmake/srv/ItemRequest_Response.msg
+CMakeFiles/auro_interfaces: /home/auro/Auro/auro_interfaces/action/Move.action
 CMakeFiles/auro_interfaces: /opt/ros/humble/share/geometry_msgs/msg/Accel.idl
 CMakeFiles/auro_interfaces: /opt/ros/humble/share/geometry_msgs/msg/AccelStamped.idl
 CMakeFiles/auro_interfaces: /opt/ros/humble/share/geometry_msgs/msg/AccelWithCovariance.idl
@@ -103,6 +104,10 @@ CMakeFiles/auro_interfaces: /opt/ros/humble/share/geometry_msgs/msg/Vector3Stamp
 CMakeFiles/auro_interfaces: /opt/ros/humble/share/geometry_msgs/msg/VelocityStamped.idl
 CMakeFiles/auro_interfaces: /opt/ros/humble/share/geometry_msgs/msg/Wrench.idl
 CMakeFiles/auro_interfaces: /opt/ros/humble/share/geometry_msgs/msg/WrenchStamped.idl
+CMakeFiles/auro_interfaces: /opt/ros/humble/share/action_msgs/msg/GoalInfo.idl
+CMakeFiles/auro_interfaces: /opt/ros/humble/share/action_msgs/msg/GoalStatus.idl
+CMakeFiles/auro_interfaces: /opt/ros/humble/share/action_msgs/msg/GoalStatusArray.idl
+CMakeFiles/auro_interfaces: /opt/ros/humble/share/action_msgs/srv/CancelGoal.idl
 
 auro_interfaces: CMakeFiles/auro_interfaces
 auro_interfaces: CMakeFiles/auro_interfaces.dir/build.make
