@@ -1,39 +1,59 @@
 import sys
 import time
+import math
 
 import rclpy
 from rclpy.node import Node
 from rclpy.executors import ExternalShutdownException
-from auro_interface.srv import Sector
+from auro_interfaces.srv import Sector
 
 from std_msgs.msg import String
 
 from enum import Enum
 
+"""
 class State(Enum):
     NOT_SENT = 0
     SENT = 1
+"""
 
-class RouteManager(Node):
+class RobotManager(Node):
     def __init__(self):
-        super().__init__('route_manager')
+        super().__init__('robot_manager')
         
-        self.available_sectors = ["blue"]
-        self.sector_claim = {}
+        self.available_sectors = ["cyan", "purple", "pink", "green"]
+        self.sectors = {"cyan": [-3.5, 2.4], "pink": [2.5, 2.4], "purple": [-3.5, -2.4], "green": [2.5, -2.4]}
         
-        self.sector_service = self.create_service(Sector, 'robot1/sector_service', self.service_sector)
+        self.sector_service = self.create_service(Sector, '/sector_service', self.service_sector)
     
     
     
     def service_sector(self, request, response):
-        robot_id = request.data.robot_id
-        sector = request.data.sector_name
+        robot_id = request.robot_id
+        current_x = request.x
+        current_y = request.y
+        closest_sector = None
+        lowest_distance = 100000000
+        
+        for sector in self.available_sectors:
+           sector_cords = self.sectors.get(sector, -1)
+           distance = math.sqrt((sector_cords[0]-current_x)**2 + (sector_cords[1]-current_y)**2)
+           
+           if distance < lowest_distance:
+               lowest_distance = distance
+               closest_sector = sector
+        
+        self.available_sectors.remove(closest_sector)
+        chosen_sector = self.sectors[closest_sector]
+        response.x = chosen_sector[0]
+        response.y = chosen_sector[1]
+        return response
         
         
 def main(args=None):
     rclpy.init(args=args)
 
-    node = RouteManager()
+    node = RobotManager()
 
     try:
         rclpy.spin(node)

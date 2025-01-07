@@ -1,0 +1,21 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from auro_interfaces/srv/Sector.srv
+// generated code does not contain a copyright notice
+
+
+module auro_interfaces {
+  module srv {
+    struct Sector_Request {
+      string robot_id;
+
+      double x;
+
+      double y;
+    };
+    struct Sector_Response {
+      double x;
+
+      double y;
+    };
+  };
+};

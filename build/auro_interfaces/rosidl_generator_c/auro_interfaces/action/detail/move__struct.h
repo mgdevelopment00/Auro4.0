@@ -22,6 +22,7 @@ typedef struct auro_interfaces__action__Move_Goal
 {
   double x;
   double y;
+  double angle;
 } auro_interfaces__action__Move_Goal;
 
 // Struct for a sequence of auro_interfaces__action__Move_Goal.

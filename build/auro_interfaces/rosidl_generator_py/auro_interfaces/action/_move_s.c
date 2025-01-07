@@ -68,6 +68,15 @@ bool auro_interfaces__action__move__goal__convert_from_py(PyObject * _pymsg, voi
     ros_message->y = PyFloat_AS_DOUBLE(field);
     Py_DECREF(field);
   }
+  {  // angle
+    PyObject * field = PyObject_GetAttrString(_pymsg, "angle");
+    if (!field) {
+      return false;
+    }
+    assert(PyFloat_Check(field));
+    ros_message->angle = PyFloat_AS_DOUBLE(field);
+    Py_DECREF(field);
+  }
 
   return true;
 }
@@ -106,6 +115,17 @@ PyObject * auro_interfaces__action__move__goal__convert_to_py(void * raw_ros_mes
     field = PyFloat_FromDouble(ros_message->y);
     {
       int rc = PyObject_SetAttrString(_pymessage, "y", field);
+      Py_DECREF(field);
+      if (rc) {
+        return NULL;
+      }
+    }
+  }
+  {  // angle
+    PyObject * field = NULL;
+    field = PyFloat_FromDouble(ros_message->angle);
+    {
+      int rc = PyObject_SetAttrString(_pymessage, "angle", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;

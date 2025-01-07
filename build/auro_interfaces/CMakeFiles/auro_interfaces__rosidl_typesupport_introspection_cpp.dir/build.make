@@ -82,6 +82,7 @@ rosidl_typesupport_introspection_cpp/auro_interfaces/msg/detail/string_with_pose
 rosidl_typesupport_introspection_cpp/auro_interfaces/msg/detail/string_with_pose__rosidl_typesupport_introspection_cpp.hpp: rosidl_adapter/auro_interfaces/msg/ItemList.idl
 rosidl_typesupport_introspection_cpp/auro_interfaces/msg/detail/string_with_pose__rosidl_typesupport_introspection_cpp.hpp: rosidl_adapter/auro_interfaces/msg/Direction.idl
 rosidl_typesupport_introspection_cpp/auro_interfaces/msg/detail/string_with_pose__rosidl_typesupport_introspection_cpp.hpp: rosidl_adapter/auro_interfaces/srv/ItemRequest.idl
+rosidl_typesupport_introspection_cpp/auro_interfaces/msg/detail/string_with_pose__rosidl_typesupport_introspection_cpp.hpp: rosidl_adapter/auro_interfaces/srv/Sector.idl
 rosidl_typesupport_introspection_cpp/auro_interfaces/msg/detail/string_with_pose__rosidl_typesupport_introspection_cpp.hpp: rosidl_adapter/auro_interfaces/action/Move.idl
 rosidl_typesupport_introspection_cpp/auro_interfaces/msg/detail/string_with_pose__rosidl_typesupport_introspection_cpp.hpp: /opt/ros/humble/share/geometry_msgs/msg/Accel.idl
 rosidl_typesupport_introspection_cpp/auro_interfaces/msg/detail/string_with_pose__rosidl_typesupport_introspection_cpp.hpp: /opt/ros/humble/share/geometry_msgs/msg/AccelStamped.idl
@@ -165,6 +166,9 @@ rosidl_typesupport_introspection_cpp/auro_interfaces/msg/detail/direction__rosid
 rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/item_request__rosidl_typesupport_introspection_cpp.hpp: rosidl_typesupport_introspection_cpp/auro_interfaces/msg/detail/string_with_pose__rosidl_typesupport_introspection_cpp.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/item_request__rosidl_typesupport_introspection_cpp.hpp
 
+rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/sector__rosidl_typesupport_introspection_cpp.hpp: rosidl_typesupport_introspection_cpp/auro_interfaces/msg/detail/string_with_pose__rosidl_typesupport_introspection_cpp.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/sector__rosidl_typesupport_introspection_cpp.hpp
+
 rosidl_typesupport_introspection_cpp/auro_interfaces/action/detail/move__rosidl_typesupport_introspection_cpp.hpp: rosidl_typesupport_introspection_cpp/auro_interfaces/msg/detail/string_with_pose__rosidl_typesupport_introspection_cpp.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_cpp/auro_interfaces/action/detail/move__rosidl_typesupport_introspection_cpp.hpp
 
@@ -182,6 +186,9 @@ rosidl_typesupport_introspection_cpp/auro_interfaces/msg/detail/direction__type_
 
 rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/item_request__type_support.cpp: rosidl_typesupport_introspection_cpp/auro_interfaces/msg/detail/string_with_pose__rosidl_typesupport_introspection_cpp.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/item_request__type_support.cpp
+
+rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/sector__type_support.cpp: rosidl_typesupport_introspection_cpp/auro_interfaces/msg/detail/string_with_pose__rosidl_typesupport_introspection_cpp.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/sector__type_support.cpp
 
 rosidl_typesupport_introspection_cpp/auro_interfaces/action/detail/move__type_support.cpp: rosidl_typesupport_introspection_cpp/auro_interfaces/msg/detail/string_with_pose__rosidl_typesupport_introspection_cpp.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_cpp/auro_interfaces/action/detail/move__type_support.cpp
@@ -256,10 +263,24 @@ CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_type
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/item_request__type_support.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/auro/Auro/build/auro_interfaces/rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/item_request__type_support.cpp -o CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/item_request__type_support.cpp.s
 
+CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/sector__type_support.cpp.o: CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_cpp.dir/flags.make
+CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/sector__type_support.cpp.o: rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/sector__type_support.cpp
+CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/sector__type_support.cpp.o: CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_cpp.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/auro/Auro/build/auro_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/sector__type_support.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/sector__type_support.cpp.o -MF CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/sector__type_support.cpp.o.d -o CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/sector__type_support.cpp.o -c /home/auro/Auro/build/auro_interfaces/rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/sector__type_support.cpp
+
+CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/sector__type_support.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/sector__type_support.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/auro/Auro/build/auro_interfaces/rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/sector__type_support.cpp > CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/sector__type_support.cpp.i
+
+CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/sector__type_support.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/sector__type_support.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/auro/Auro/build/auro_interfaces/rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/sector__type_support.cpp -o CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/sector__type_support.cpp.s
+
 CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/auro_interfaces/action/detail/move__type_support.cpp.o: CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_cpp.dir/flags.make
 CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/auro_interfaces/action/detail/move__type_support.cpp.o: rosidl_typesupport_introspection_cpp/auro_interfaces/action/detail/move__type_support.cpp
 CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/auro_interfaces/action/detail/move__type_support.cpp.o: CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_cpp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/auro/Auro/build/auro_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/auro_interfaces/action/detail/move__type_support.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/auro/Auro/build/auro_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/auro_interfaces/action/detail/move__type_support.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/auro_interfaces/action/detail/move__type_support.cpp.o -MF CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/auro_interfaces/action/detail/move__type_support.cpp.o.d -o CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/auro_interfaces/action/detail/move__type_support.cpp.o -c /home/auro/Auro/build/auro_interfaces/rosidl_typesupport_introspection_cpp/auro_interfaces/action/detail/move__type_support.cpp
 
 CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/auro_interfaces/action/detail/move__type_support.cpp.i: cmake_force
@@ -277,6 +298,7 @@ auro_interfaces__rosidl_typesupport_introspection_cpp_OBJECTS = \
 "CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/auro_interfaces/msg/detail/item_list__type_support.cpp.o" \
 "CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/auro_interfaces/msg/detail/direction__type_support.cpp.o" \
 "CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/item_request__type_support.cpp.o" \
+"CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/sector__type_support.cpp.o" \
 "CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/auro_interfaces/action/detail/move__type_support.cpp.o"
 
 # External object files for target auro_interfaces__rosidl_typesupport_introspection_cpp
@@ -287,6 +309,7 @@ libauro_interfaces__rosidl_typesupport_introspection_cpp.so: CMakeFiles/auro_int
 libauro_interfaces__rosidl_typesupport_introspection_cpp.so: CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/auro_interfaces/msg/detail/item_list__type_support.cpp.o
 libauro_interfaces__rosidl_typesupport_introspection_cpp.so: CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/auro_interfaces/msg/detail/direction__type_support.cpp.o
 libauro_interfaces__rosidl_typesupport_introspection_cpp.so: CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/item_request__type_support.cpp.o
+libauro_interfaces__rosidl_typesupport_introspection_cpp.so: CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/sector__type_support.cpp.o
 libauro_interfaces__rosidl_typesupport_introspection_cpp.so: CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/auro_interfaces/action/detail/move__type_support.cpp.o
 libauro_interfaces__rosidl_typesupport_introspection_cpp.so: CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_cpp.dir/build.make
 libauro_interfaces__rosidl_typesupport_introspection_cpp.so: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_introspection_cpp.so
@@ -299,7 +322,7 @@ libauro_interfaces__rosidl_typesupport_introspection_cpp.so: /opt/ros/humble/lib
 libauro_interfaces__rosidl_typesupport_introspection_cpp.so: /opt/ros/humble/lib/librosidl_runtime_c.so
 libauro_interfaces__rosidl_typesupport_introspection_cpp.so: /opt/ros/humble/lib/librcutils.so
 libauro_interfaces__rosidl_typesupport_introspection_cpp.so: CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_cpp.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/auro/Auro/build/auro_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX shared library libauro_interfaces__rosidl_typesupport_introspection_cpp.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/auro/Auro/build/auro_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX shared library libauro_interfaces__rosidl_typesupport_introspection_cpp.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_cpp.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -322,6 +345,8 @@ CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_cpp.dir/depend: ros
 CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_cpp.dir/depend: rosidl_typesupport_introspection_cpp/auro_interfaces/msg/detail/string_with_pose__type_support.cpp
 CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_cpp.dir/depend: rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/item_request__rosidl_typesupport_introspection_cpp.hpp
 CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_cpp.dir/depend: rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/item_request__type_support.cpp
+CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_cpp.dir/depend: rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/sector__rosidl_typesupport_introspection_cpp.hpp
+CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_cpp.dir/depend: rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/sector__type_support.cpp
 	cd /home/auro/Auro/build/auro_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/auro/Auro/auro_interfaces /home/auro/Auro/auro_interfaces /home/auro/Auro/build/auro_interfaces /home/auro/Auro/build/auro_interfaces /home/auro/Auro/build/auro_interfaces/CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_cpp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_cpp.dir/depend
 

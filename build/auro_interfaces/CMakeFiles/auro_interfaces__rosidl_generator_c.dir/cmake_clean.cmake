@@ -11,6 +11,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/msg/detail/string_with_pose__functions.c.o.d"
   "CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/item_request__functions.c.o"
   "CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/item_request__functions.c.o.d"
+  "CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/sector__functions.c.o"
+  "CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/sector__functions.c.o.d"
   "libauro_interfaces__rosidl_generator_c.pdb"
   "libauro_interfaces__rosidl_generator_c.so"
   "rosidl_generator_c/auro_interfaces/action/detail/move__functions.c"
@@ -42,7 +44,12 @@ file(REMOVE_RECURSE
   "rosidl_generator_c/auro_interfaces/srv/detail/item_request__functions.h"
   "rosidl_generator_c/auro_interfaces/srv/detail/item_request__struct.h"
   "rosidl_generator_c/auro_interfaces/srv/detail/item_request__type_support.h"
+  "rosidl_generator_c/auro_interfaces/srv/detail/sector__functions.c"
+  "rosidl_generator_c/auro_interfaces/srv/detail/sector__functions.h"
+  "rosidl_generator_c/auro_interfaces/srv/detail/sector__struct.h"
+  "rosidl_generator_c/auro_interfaces/srv/detail/sector__type_support.h"
   "rosidl_generator_c/auro_interfaces/srv/item_request.h"
+  "rosidl_generator_c/auro_interfaces/srv/sector.h"
 )
 
 # Per-language clean rules from dependency scanning.

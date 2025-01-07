@@ -29,6 +29,8 @@ set(CMAKE_MULTIPLE_OUTPUT_PAIRS
   "/home/auro/Auro/build/auro_interfaces/rosidl_generator_py/auro_interfaces/srv/__init__.py" "/home/auro/Auro/build/auro_interfaces/rosidl_generator_py/auro_interfaces/_auro_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c"
   "/home/auro/Auro/build/auro_interfaces/rosidl_generator_py/auro_interfaces/srv/_item_request.py" "/home/auro/Auro/build/auro_interfaces/rosidl_generator_py/auro_interfaces/_auro_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c"
   "/home/auro/Auro/build/auro_interfaces/rosidl_generator_py/auro_interfaces/srv/_item_request_s.c" "/home/auro/Auro/build/auro_interfaces/rosidl_generator_py/auro_interfaces/_auro_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c"
+  "/home/auro/Auro/build/auro_interfaces/rosidl_generator_py/auro_interfaces/srv/_sector.py" "/home/auro/Auro/build/auro_interfaces/rosidl_generator_py/auro_interfaces/_auro_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c"
+  "/home/auro/Auro/build/auro_interfaces/rosidl_generator_py/auro_interfaces/srv/_sector_s.c" "/home/auro/Auro/build/auro_interfaces/rosidl_generator_py/auro_interfaces/_auro_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c"
   )
 
 

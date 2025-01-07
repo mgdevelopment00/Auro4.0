@@ -1,0 +1,17 @@
+[1.350s] Invoking command in '/home/auro/Auro/build/tf_relay': PYTHONPATH=/home/auro/Auro/build/tf_relay/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/auro/Auro/install/tf_relay/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/auro/Auro/build/tf_relay/build --no-deps symlink_data
+[1.754s] running develop
+[1.984s] running egg_info
+[1.984s] writing tf_relay.egg-info/PKG-INFO
+[1.984s] writing dependency_links to tf_relay.egg-info/dependency_links.txt
+[1.984s] writing entry points to tf_relay.egg-info/entry_points.txt
+[1.985s] writing requirements to tf_relay.egg-info/requires.txt
+[1.985s] writing top-level names to tf_relay.egg-info/top_level.txt
+[1.988s] reading manifest file 'tf_relay.egg-info/SOURCES.txt'
+[1.989s] writing manifest file 'tf_relay.egg-info/SOURCES.txt'
+[1.993s] running build_ext
+[1.994s] Creating /home/auro/Auro/install/tf_relay/lib/python3.10/site-packages/tf-relay.egg-link (link to .)
+[1.994s] Installing relay script to /home/auro/Auro/install/tf_relay/lib/tf_relay
+[1.994s] 
+[1.996s] Installed /home/auro/Auro/build/tf_relay
+[1.996s] running symlink_data
+[2.376s] Invoked command in '/home/auro/Auro/build/tf_relay' returned '0': PYTHONPATH=/home/auro/Auro/build/tf_relay/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/auro/Auro/install/tf_relay/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/auro/Auro/build/tf_relay/build --no-deps symlink_data

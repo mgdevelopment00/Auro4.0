@@ -40,6 +40,7 @@ struct Move_Goal_
     {
       this->x = 0.0;
       this->y = 0.0;
+      this->angle = 0.0;
     }
   }
 
@@ -51,6 +52,7 @@ struct Move_Goal_
     {
       this->x = 0.0;
       this->y = 0.0;
+      this->angle = 0.0;
     }
   }
 
@@ -61,6 +63,9 @@ struct Move_Goal_
   using _y_type =
     double;
   _y_type y;
+  using _angle_type =
+    double;
+  _angle_type angle;
 
   // setters for named parameter idiom
   Type & set__x(
@@ -73,6 +78,12 @@ struct Move_Goal_
     const double & _arg)
   {
     this->y = _arg;
+    return *this;
+  }
+  Type & set__angle(
+    const double & _arg)
+  {
+    this->angle = _arg;
     return *this;
   }
 
@@ -122,6 +133,9 @@ struct Move_Goal_
       return false;
     }
     if (this->y != other.y) {
+      return false;
+    }
+    if (this->angle != other.angle) {
       return false;
     }
     return true;

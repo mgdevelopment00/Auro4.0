@@ -143,6 +143,12 @@ def generate_launch_description():
         arguments=['--path', data_log_path,
                    '--filename', data_log_filename,
                    '--random_seed', random_seed])
+    
+    robot_manager_cmd = Node(
+        package='solution',
+        executable='robot_manager',
+        output='screen',
+        arguments=[])
 
     timeout_cmd = RosTimer(                                         
             period = experiment_duration,
@@ -161,6 +167,7 @@ def generate_launch_description():
     ld.add_action(declare_data_log_path_cmd)
     ld.add_action(declare_data_log_filename_cmd)
 
+    ld.add_action(robot_manager_cmd)
     ld.add_action(assessment_cmd)
     ld.add_action(robot_controller_cmd)
     ld.add_action(data_logger_cmd)

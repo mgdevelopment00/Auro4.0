@@ -222,6 +222,9 @@ CMakeFiles/auro_interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/
  /home/auro/Auro/build/auro_interfaces/rosidl_generator_c/auro_interfaces/srv/detail/item_request__type_support.h \
  /home/auro/Auro/build/auro_interfaces/rosidl_generator_c/auro_interfaces/srv/detail/item_request__struct.h \
  /home/auro/Auro/build/auro_interfaces/rosidl_generator_c/auro_interfaces/srv/detail/item_request__functions.h \
+ /home/auro/Auro/build/auro_interfaces/rosidl_generator_c/auro_interfaces/srv/detail/sector__type_support.h \
+ /home/auro/Auro/build/auro_interfaces/rosidl_generator_c/auro_interfaces/srv/detail/sector__struct.h \
+ /home/auro/Auro/build/auro_interfaces/rosidl_generator_c/auro_interfaces/srv/detail/sector__functions.h \
  /home/auro/Auro/build/auro_interfaces/rosidl_generator_c/auro_interfaces/action/detail/move__type_support.h \
  /home/auro/Auro/build/auro_interfaces/rosidl_generator_c/auro_interfaces/action/detail/move__struct.h \
  /opt/ros/humble/include/unique_identifier_msgs/unique_identifier_msgs/msg/detail/uuid__struct.h \

@@ -86,6 +86,10 @@ CMakeFiles/auro_interfaces__cpp: rosidl_generator_cpp/auro_interfaces/srv/item_r
 CMakeFiles/auro_interfaces__cpp: rosidl_generator_cpp/auro_interfaces/srv/detail/item_request__builder.hpp
 CMakeFiles/auro_interfaces__cpp: rosidl_generator_cpp/auro_interfaces/srv/detail/item_request__struct.hpp
 CMakeFiles/auro_interfaces__cpp: rosidl_generator_cpp/auro_interfaces/srv/detail/item_request__traits.hpp
+CMakeFiles/auro_interfaces__cpp: rosidl_generator_cpp/auro_interfaces/srv/sector.hpp
+CMakeFiles/auro_interfaces__cpp: rosidl_generator_cpp/auro_interfaces/srv/detail/sector__builder.hpp
+CMakeFiles/auro_interfaces__cpp: rosidl_generator_cpp/auro_interfaces/srv/detail/sector__struct.hpp
+CMakeFiles/auro_interfaces__cpp: rosidl_generator_cpp/auro_interfaces/srv/detail/sector__traits.hpp
 CMakeFiles/auro_interfaces__cpp: rosidl_generator_cpp/auro_interfaces/action/move.hpp
 CMakeFiles/auro_interfaces__cpp: rosidl_generator_cpp/auro_interfaces/action/detail/move__builder.hpp
 CMakeFiles/auro_interfaces__cpp: rosidl_generator_cpp/auro_interfaces/action/detail/move__struct.hpp
@@ -111,6 +115,7 @@ rosidl_generator_cpp/auro_interfaces/msg/string_with_pose.hpp: rosidl_adapter/au
 rosidl_generator_cpp/auro_interfaces/msg/string_with_pose.hpp: rosidl_adapter/auro_interfaces/msg/ItemList.idl
 rosidl_generator_cpp/auro_interfaces/msg/string_with_pose.hpp: rosidl_adapter/auro_interfaces/msg/Direction.idl
 rosidl_generator_cpp/auro_interfaces/msg/string_with_pose.hpp: rosidl_adapter/auro_interfaces/srv/ItemRequest.idl
+rosidl_generator_cpp/auro_interfaces/msg/string_with_pose.hpp: rosidl_adapter/auro_interfaces/srv/Sector.idl
 rosidl_generator_cpp/auro_interfaces/msg/string_with_pose.hpp: rosidl_adapter/auro_interfaces/action/Move.idl
 rosidl_generator_cpp/auro_interfaces/msg/string_with_pose.hpp: /opt/ros/humble/share/geometry_msgs/msg/Accel.idl
 rosidl_generator_cpp/auro_interfaces/msg/string_with_pose.hpp: /opt/ros/humble/share/geometry_msgs/msg/AccelStamped.idl
@@ -239,6 +244,18 @@ rosidl_generator_cpp/auro_interfaces/srv/detail/item_request__struct.hpp: rosidl
 rosidl_generator_cpp/auro_interfaces/srv/detail/item_request__traits.hpp: rosidl_generator_cpp/auro_interfaces/msg/string_with_pose.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/auro_interfaces/srv/detail/item_request__traits.hpp
 
+rosidl_generator_cpp/auro_interfaces/srv/sector.hpp: rosidl_generator_cpp/auro_interfaces/msg/string_with_pose.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/auro_interfaces/srv/sector.hpp
+
+rosidl_generator_cpp/auro_interfaces/srv/detail/sector__builder.hpp: rosidl_generator_cpp/auro_interfaces/msg/string_with_pose.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/auro_interfaces/srv/detail/sector__builder.hpp
+
+rosidl_generator_cpp/auro_interfaces/srv/detail/sector__struct.hpp: rosidl_generator_cpp/auro_interfaces/msg/string_with_pose.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/auro_interfaces/srv/detail/sector__struct.hpp
+
+rosidl_generator_cpp/auro_interfaces/srv/detail/sector__traits.hpp: rosidl_generator_cpp/auro_interfaces/msg/string_with_pose.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/auro_interfaces/srv/detail/sector__traits.hpp
+
 rosidl_generator_cpp/auro_interfaces/action/move.hpp: rosidl_generator_cpp/auro_interfaces/msg/string_with_pose.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/auro_interfaces/action/move.hpp
 
@@ -275,7 +292,11 @@ auro_interfaces__cpp: rosidl_generator_cpp/auro_interfaces/msg/string_with_pose.
 auro_interfaces__cpp: rosidl_generator_cpp/auro_interfaces/srv/detail/item_request__builder.hpp
 auro_interfaces__cpp: rosidl_generator_cpp/auro_interfaces/srv/detail/item_request__struct.hpp
 auro_interfaces__cpp: rosidl_generator_cpp/auro_interfaces/srv/detail/item_request__traits.hpp
+auro_interfaces__cpp: rosidl_generator_cpp/auro_interfaces/srv/detail/sector__builder.hpp
+auro_interfaces__cpp: rosidl_generator_cpp/auro_interfaces/srv/detail/sector__struct.hpp
+auro_interfaces__cpp: rosidl_generator_cpp/auro_interfaces/srv/detail/sector__traits.hpp
 auro_interfaces__cpp: rosidl_generator_cpp/auro_interfaces/srv/item_request.hpp
+auro_interfaces__cpp: rosidl_generator_cpp/auro_interfaces/srv/sector.hpp
 auro_interfaces__cpp: CMakeFiles/auro_interfaces__cpp.dir/build.make
 .PHONY : auro_interfaces__cpp
 

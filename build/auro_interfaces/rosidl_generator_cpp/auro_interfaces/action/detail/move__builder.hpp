@@ -21,16 +21,32 @@ namespace action
 namespace builder
 {
 
+class Init_Move_Goal_angle
+{
+public:
+  explicit Init_Move_Goal_angle(::auro_interfaces::action::Move_Goal & msg)
+  : msg_(msg)
+  {}
+  ::auro_interfaces::action::Move_Goal angle(::auro_interfaces::action::Move_Goal::_angle_type arg)
+  {
+    msg_.angle = std::move(arg);
+    return std::move(msg_);
+  }
+
+private:
+  ::auro_interfaces::action::Move_Goal msg_;
+};
+
 class Init_Move_Goal_y
 {
 public:
   explicit Init_Move_Goal_y(::auro_interfaces::action::Move_Goal & msg)
   : msg_(msg)
   {}
-  ::auro_interfaces::action::Move_Goal y(::auro_interfaces::action::Move_Goal::_y_type arg)
+  Init_Move_Goal_angle y(::auro_interfaces::action::Move_Goal::_y_type arg)
   {
     msg_.y = std::move(arg);
-    return std::move(msg_);
+    return Init_Move_Goal_angle(msg_);
   }
 
 private:

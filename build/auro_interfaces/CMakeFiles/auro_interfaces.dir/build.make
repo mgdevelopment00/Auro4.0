@@ -73,6 +73,9 @@ CMakeFiles/auro_interfaces: /home/auro/Auro/auro_interfaces/msg/Direction.msg
 CMakeFiles/auro_interfaces: /home/auro/Auro/auro_interfaces/srv/ItemRequest.srv
 CMakeFiles/auro_interfaces: rosidl_cmake/srv/ItemRequest_Request.msg
 CMakeFiles/auro_interfaces: rosidl_cmake/srv/ItemRequest_Response.msg
+CMakeFiles/auro_interfaces: /home/auro/Auro/auro_interfaces/srv/Sector.srv
+CMakeFiles/auro_interfaces: rosidl_cmake/srv/Sector_Request.msg
+CMakeFiles/auro_interfaces: rosidl_cmake/srv/Sector_Response.msg
 CMakeFiles/auro_interfaces: /home/auro/Auro/auro_interfaces/action/Move.action
 CMakeFiles/auro_interfaces: /opt/ros/humble/share/geometry_msgs/msg/Accel.idl
 CMakeFiles/auro_interfaces: /opt/ros/humble/share/geometry_msgs/msg/AccelStamped.idl

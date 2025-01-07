@@ -19,6 +19,7 @@ auro_interfaces__action__Move_Goal__init(auro_interfaces__action__Move_Goal * ms
   }
   // x
   // y
+  // angle
   return true;
 }
 
@@ -30,6 +31,7 @@ auro_interfaces__action__Move_Goal__fini(auro_interfaces__action__Move_Goal * ms
   }
   // x
   // y
+  // angle
 }
 
 bool
@@ -44,6 +46,10 @@ auro_interfaces__action__Move_Goal__are_equal(const auro_interfaces__action__Mov
   }
   // y
   if (lhs->y != rhs->y) {
+    return false;
+  }
+  // angle
+  if (lhs->angle != rhs->angle) {
     return false;
   }
   return true;
@@ -61,6 +67,8 @@ auro_interfaces__action__Move_Goal__copy(
   output->x = input->x;
   // y
   output->y = input->y;
+  // angle
+  output->angle = input->angle;
   return true;
 }
 

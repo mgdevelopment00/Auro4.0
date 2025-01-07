@@ -56,8 +56,8 @@ class RobotController(Node):
 
         self.navigator.setInitialPose(initial_pose)
         self.navigator.waitUntilNav2Active()
-        self.rotation_time = 1  # Time to rotate (in seconds)
-        self.angular_speed = 0.0174  # Angular speed for rotation
+        self.rotation_time = 0.1  # Time to rotate (in seconds)
+        self.angular_speed = 0.174/2 # Angular speed for rotation
         self.goal_reached = False
 
         self.create_subscription(String, 'route', self.route_detected, 10)
@@ -77,13 +77,14 @@ class RobotController(Node):
             self.state = State.BUSY
             target_x = goal_handle.request.x
             target_y = goal_handle.request.y
+            target_angle = goal_handle.request.angle
          
             goal_pose = PoseStamped()
             goal_pose.header.frame_id = 'map'
             goal_pose.header.stamp = self.get_clock().now().to_msg()
             goal_pose.pose.position.x = target_x
             goal_pose.pose.position.y = target_y
-            #goal_pose.pose.orientation = self.calculate_quaternion(self.a)
+            goal_pose.pose.orientation = self.calculate_quaternion(target_angle)
 
             self.navigator.goToPose(goal_pose)
             self.state = State.NAVIGATING

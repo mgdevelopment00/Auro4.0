@@ -74,6 +74,7 @@ auro_interfaces__py/CMakeFiles/auro_interfaces__py: rosidl_generator_py/auro_int
 auro_interfaces__py/CMakeFiles/auro_interfaces__py: rosidl_generator_py/auro_interfaces/msg/_item_list.py
 auro_interfaces__py/CMakeFiles/auro_interfaces__py: rosidl_generator_py/auro_interfaces/msg/_direction.py
 auro_interfaces__py/CMakeFiles/auro_interfaces__py: rosidl_generator_py/auro_interfaces/srv/_item_request.py
+auro_interfaces__py/CMakeFiles/auro_interfaces__py: rosidl_generator_py/auro_interfaces/srv/_sector.py
 auro_interfaces__py/CMakeFiles/auro_interfaces__py: rosidl_generator_py/auro_interfaces/action/_move.py
 auro_interfaces__py/CMakeFiles/auro_interfaces__py: rosidl_generator_py/auro_interfaces/msg/__init__.py
 auro_interfaces__py/CMakeFiles/auro_interfaces__py: rosidl_generator_py/auro_interfaces/srv/__init__.py
@@ -83,6 +84,7 @@ auro_interfaces__py/CMakeFiles/auro_interfaces__py: rosidl_generator_py/auro_int
 auro_interfaces__py/CMakeFiles/auro_interfaces__py: rosidl_generator_py/auro_interfaces/msg/_item_list_s.c
 auro_interfaces__py/CMakeFiles/auro_interfaces__py: rosidl_generator_py/auro_interfaces/msg/_direction_s.c
 auro_interfaces__py/CMakeFiles/auro_interfaces__py: rosidl_generator_py/auro_interfaces/srv/_item_request_s.c
+auro_interfaces__py/CMakeFiles/auro_interfaces__py: rosidl_generator_py/auro_interfaces/srv/_sector_s.c
 auro_interfaces__py/CMakeFiles/auro_interfaces__py: rosidl_generator_py/auro_interfaces/action/_move_s.c
 
 rosidl_generator_py/auro_interfaces/_auro_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/lib/rosidl_generator_py/rosidl_generator_py
@@ -103,6 +105,7 @@ rosidl_generator_py/auro_interfaces/_auro_interfaces_s.ep.rosidl_typesupport_fas
 rosidl_generator_py/auro_interfaces/_auro_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/auro_interfaces/msg/ItemList.idl
 rosidl_generator_py/auro_interfaces/_auro_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/auro_interfaces/msg/Direction.idl
 rosidl_generator_py/auro_interfaces/_auro_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/auro_interfaces/srv/ItemRequest.idl
+rosidl_generator_py/auro_interfaces/_auro_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/auro_interfaces/srv/Sector.idl
 rosidl_generator_py/auro_interfaces/_auro_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/auro_interfaces/action/Move.idl
 rosidl_generator_py/auro_interfaces/_auro_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/geometry_msgs/msg/Accel.idl
 rosidl_generator_py/auro_interfaces/_auro_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/geometry_msgs/msg/AccelStamped.idl
@@ -195,6 +198,9 @@ rosidl_generator_py/auro_interfaces/msg/_direction.py: rosidl_generator_py/auro_
 rosidl_generator_py/auro_interfaces/srv/_item_request.py: rosidl_generator_py/auro_interfaces/_auro_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/auro_interfaces/srv/_item_request.py
 
+rosidl_generator_py/auro_interfaces/srv/_sector.py: rosidl_generator_py/auro_interfaces/_auro_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/auro_interfaces/srv/_sector.py
+
 rosidl_generator_py/auro_interfaces/action/_move.py: rosidl_generator_py/auro_interfaces/_auro_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/auro_interfaces/action/_move.py
 
@@ -222,6 +228,9 @@ rosidl_generator_py/auro_interfaces/msg/_direction_s.c: rosidl_generator_py/auro
 rosidl_generator_py/auro_interfaces/srv/_item_request_s.c: rosidl_generator_py/auro_interfaces/_auro_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/auro_interfaces/srv/_item_request_s.c
 
+rosidl_generator_py/auro_interfaces/srv/_sector_s.c: rosidl_generator_py/auro_interfaces/_auro_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/auro_interfaces/srv/_sector_s.c
+
 rosidl_generator_py/auro_interfaces/action/_move_s.c: rosidl_generator_py/auro_interfaces/_auro_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/auro_interfaces/action/_move_s.c
 
@@ -244,6 +253,8 @@ auro_interfaces__py: rosidl_generator_py/auro_interfaces/msg/_string_with_pose_s
 auro_interfaces__py: rosidl_generator_py/auro_interfaces/srv/__init__.py
 auro_interfaces__py: rosidl_generator_py/auro_interfaces/srv/_item_request.py
 auro_interfaces__py: rosidl_generator_py/auro_interfaces/srv/_item_request_s.c
+auro_interfaces__py: rosidl_generator_py/auro_interfaces/srv/_sector.py
+auro_interfaces__py: rosidl_generator_py/auro_interfaces/srv/_sector_s.c
 auro_interfaces__py: auro_interfaces__py/CMakeFiles/auro_interfaces__py.dir/build.make
 .PHONY : auro_interfaces__py
 

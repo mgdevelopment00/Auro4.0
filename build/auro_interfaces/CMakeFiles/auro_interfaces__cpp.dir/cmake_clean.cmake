@@ -23,7 +23,11 @@ file(REMOVE_RECURSE
   "rosidl_generator_cpp/auro_interfaces/srv/detail/item_request__builder.hpp"
   "rosidl_generator_cpp/auro_interfaces/srv/detail/item_request__struct.hpp"
   "rosidl_generator_cpp/auro_interfaces/srv/detail/item_request__traits.hpp"
+  "rosidl_generator_cpp/auro_interfaces/srv/detail/sector__builder.hpp"
+  "rosidl_generator_cpp/auro_interfaces/srv/detail/sector__struct.hpp"
+  "rosidl_generator_cpp/auro_interfaces/srv/detail/sector__traits.hpp"
   "rosidl_generator_cpp/auro_interfaces/srv/item_request.hpp"
+  "rosidl_generator_cpp/auro_interfaces/srv/sector.hpp"
 )
 
 # Per-language clean rules from dependency scanning.

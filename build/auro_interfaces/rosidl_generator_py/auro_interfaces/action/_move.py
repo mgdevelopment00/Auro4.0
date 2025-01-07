@@ -59,14 +59,17 @@ class Move_Goal(metaclass=Metaclass_Move_Goal):
     __slots__ = [
         '_x',
         '_y',
+        '_angle',
     ]
 
     _fields_and_field_types = {
         'x': 'double',
         'y': 'double',
+        'angle': 'double',
     }
 
     SLOT_TYPES = (
+        rosidl_parser.definition.BasicType('double'),  # noqa: E501
         rosidl_parser.definition.BasicType('double'),  # noqa: E501
         rosidl_parser.definition.BasicType('double'),  # noqa: E501
     )
@@ -77,6 +80,7 @@ class Move_Goal(metaclass=Metaclass_Move_Goal):
             ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
         self.x = kwargs.get('x', float())
         self.y = kwargs.get('y', float())
+        self.angle = kwargs.get('angle', float())
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -110,6 +114,8 @@ class Move_Goal(metaclass=Metaclass_Move_Goal):
         if self.x != other.x:
             return False
         if self.y != other.y:
+            return False
+        if self.angle != other.angle:
             return False
         return True
 
@@ -147,6 +153,21 @@ class Move_Goal(metaclass=Metaclass_Move_Goal):
             assert not (value < -1.7976931348623157e+308 or value > 1.7976931348623157e+308) or math.isinf(value), \
                 "The 'y' field must be a double in [-1.7976931348623157e+308, 1.7976931348623157e+308]"
         self._y = value
+
+    @builtins.property
+    def angle(self):
+        """Message field 'angle'."""
+        return self._angle
+
+    @angle.setter
+    def angle(self, value):
+        if __debug__:
+            assert \
+                isinstance(value, float), \
+                "The 'angle' field must be of type 'float'"
+            assert not (value < -1.7976931348623157e+308 or value > 1.7976931348623157e+308) or math.isinf(value), \
+                "The 'angle' field must be a double in [-1.7976931348623157e+308, 1.7976931348623157e+308]"
+        self._angle = value
 
 
 # Import statements for member types

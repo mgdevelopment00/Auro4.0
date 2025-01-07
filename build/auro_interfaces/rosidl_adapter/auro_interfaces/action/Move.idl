@@ -9,6 +9,8 @@ module auro_interfaces {
       double x;
 
       double y;
+
+      double angle;
     };
     struct Move_Result {
       string status;

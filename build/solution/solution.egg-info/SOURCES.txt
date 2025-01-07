@@ -8,8 +8,10 @@ launch/solution_nav2_launch.py
 params/custom_nav2_params_namespaced.yaml
 resource/solution
 solution/__init__.py
+solution/collision_avoidance.py
 solution/data_logger.py
 solution/robot_controller.py
+solution/robot_manager.py
 solution/robot_vision.py
 solution/route_planner.py
 solution.egg-info/PKG-INFO

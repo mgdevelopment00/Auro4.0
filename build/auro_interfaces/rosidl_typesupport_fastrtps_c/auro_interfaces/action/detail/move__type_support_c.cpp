@@ -59,6 +59,11 @@ static bool _Move_Goal__cdr_serialize(
     cdr << ros_message->y;
   }
 
+  // Field name: angle
+  {
+    cdr << ros_message->angle;
+  }
+
   return true;
 }
 
@@ -79,6 +84,11 @@ static bool _Move_Goal__cdr_deserialize(
   // Field name: y
   {
     cdr >> ros_message->y;
+  }
+
+  // Field name: angle
+  {
+    cdr >> ros_message->angle;
   }
 
   return true;
@@ -107,6 +117,12 @@ size_t get_serialized_size_auro_interfaces__action__Move_Goal(
   // field.name y
   {
     size_t item_size = sizeof(ros_message->y);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // field.name angle
+  {
+    size_t item_size = sizeof(ros_message->angle);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -155,6 +171,14 @@ size_t max_serialized_size_auro_interfaces__action__Move_Goal(
     current_alignment += array_size * sizeof(uint64_t) +
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
   }
+  // member: angle
+  {
+    size_t array_size = 1;
+
+    last_member_size = array_size * sizeof(uint64_t);
+    current_alignment += array_size * sizeof(uint64_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
+  }
 
   size_t ret_val = current_alignment - initial_alignment;
   if (is_plain) {
@@ -164,7 +188,7 @@ size_t max_serialized_size_auro_interfaces__action__Move_Goal(
     using DataType = auro_interfaces__action__Move_Goal;
     is_plain =
       (
-      offsetof(DataType, y) +
+      offsetof(DataType, angle) +
       last_member_size
       ) == ret_val;
   }

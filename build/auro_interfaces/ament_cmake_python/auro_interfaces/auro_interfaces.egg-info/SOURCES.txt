@@ -13,3 +13,4 @@ auro_interfaces/msg/_item_list.py
 auro_interfaces/msg/_string_with_pose.py
 auro_interfaces/srv/__init__.py
 auro_interfaces/srv/_item_request.py
+auro_interfaces/srv/_sector.py

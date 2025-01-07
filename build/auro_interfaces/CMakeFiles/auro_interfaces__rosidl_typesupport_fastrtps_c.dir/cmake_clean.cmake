@@ -11,6 +11,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/auro_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/auro_interfaces/msg/detail/string_with_pose__type_support_c.cpp.o.d"
   "CMakeFiles/auro_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/auro_interfaces/srv/detail/item_request__type_support_c.cpp.o"
   "CMakeFiles/auro_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/auro_interfaces/srv/detail/item_request__type_support_c.cpp.o.d"
+  "CMakeFiles/auro_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/auro_interfaces/srv/detail/sector__type_support_c.cpp.o"
+  "CMakeFiles/auro_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/auro_interfaces/srv/detail/sector__type_support_c.cpp.o.d"
   "libauro_interfaces__rosidl_typesupport_fastrtps_c.pdb"
   "libauro_interfaces__rosidl_typesupport_fastrtps_c.so"
   "rosidl_typesupport_fastrtps_c/auro_interfaces/action/detail/move__rosidl_typesupport_fastrtps_c.h"
@@ -25,6 +27,8 @@ file(REMOVE_RECURSE
   "rosidl_typesupport_fastrtps_c/auro_interfaces/msg/detail/string_with_pose__type_support_c.cpp"
   "rosidl_typesupport_fastrtps_c/auro_interfaces/srv/detail/item_request__rosidl_typesupport_fastrtps_c.h"
   "rosidl_typesupport_fastrtps_c/auro_interfaces/srv/detail/item_request__type_support_c.cpp"
+  "rosidl_typesupport_fastrtps_c/auro_interfaces/srv/detail/sector__rosidl_typesupport_fastrtps_c.h"
+  "rosidl_typesupport_fastrtps_c/auro_interfaces/srv/detail/sector__type_support_c.cpp"
 )
 
 # Per-language clean rules from dependency scanning.

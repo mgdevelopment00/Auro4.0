@@ -17,6 +17,8 @@ file(REMOVE_RECURSE
   "../rosidl_generator_py/auro_interfaces/srv/__init__.py"
   "../rosidl_generator_py/auro_interfaces/srv/_item_request.py"
   "../rosidl_generator_py/auro_interfaces/srv/_item_request_s.c"
+  "../rosidl_generator_py/auro_interfaces/srv/_sector.py"
+  "../rosidl_generator_py/auro_interfaces/srv/_sector_s.c"
   "CMakeFiles/auro_interfaces__py"
 )
 

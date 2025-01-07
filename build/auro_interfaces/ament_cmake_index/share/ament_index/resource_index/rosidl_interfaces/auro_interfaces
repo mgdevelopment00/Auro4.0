@@ -12,3 +12,7 @@ srv/ItemRequest.idl
 srv/ItemRequest.srv
 srv/ItemRequest_Request.msg
 srv/ItemRequest_Response.msg
+srv/Sector.idl
+srv/Sector.srv
+srv/Sector_Request.msg
+srv/Sector_Response.msg

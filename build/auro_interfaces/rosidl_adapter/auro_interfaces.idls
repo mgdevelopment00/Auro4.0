@@ -3,4 +3,5 @@
 /home/auro/Auro/build/auro_interfaces/rosidl_adapter/auro_interfaces:msg/ItemList.idl
 /home/auro/Auro/build/auro_interfaces/rosidl_adapter/auro_interfaces:msg/Direction.idl
 /home/auro/Auro/build/auro_interfaces/rosidl_adapter/auro_interfaces:srv/ItemRequest.idl
+/home/auro/Auro/build/auro_interfaces/rosidl_adapter/auro_interfaces:srv/Sector.idl
 /home/auro/Auro/build/auro_interfaces/rosidl_adapter/auro_interfaces:action/Move.idl

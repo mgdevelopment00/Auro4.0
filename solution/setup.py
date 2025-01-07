@@ -50,7 +50,8 @@ setup(
             'robot_controller = solution.robot_controller:main',
             'data_logger = solution.data_logger:main',
             'route_planner = solution.route_planner:main',
-            'robot_vision = solution.robot_vision:main'
+            'robot_vision = solution.robot_vision:main',
+            'robot_manager = solution.robot_manager:main'
         ],
     },
 )

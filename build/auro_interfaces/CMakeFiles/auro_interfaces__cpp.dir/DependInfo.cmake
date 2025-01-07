@@ -34,7 +34,11 @@ set(CMAKE_MULTIPLE_OUTPUT_PAIRS
   "/home/auro/Auro/build/auro_interfaces/rosidl_generator_cpp/auro_interfaces/srv/detail/item_request__builder.hpp" "/home/auro/Auro/build/auro_interfaces/rosidl_generator_cpp/auro_interfaces/msg/string_with_pose.hpp"
   "/home/auro/Auro/build/auro_interfaces/rosidl_generator_cpp/auro_interfaces/srv/detail/item_request__struct.hpp" "/home/auro/Auro/build/auro_interfaces/rosidl_generator_cpp/auro_interfaces/msg/string_with_pose.hpp"
   "/home/auro/Auro/build/auro_interfaces/rosidl_generator_cpp/auro_interfaces/srv/detail/item_request__traits.hpp" "/home/auro/Auro/build/auro_interfaces/rosidl_generator_cpp/auro_interfaces/msg/string_with_pose.hpp"
+  "/home/auro/Auro/build/auro_interfaces/rosidl_generator_cpp/auro_interfaces/srv/detail/sector__builder.hpp" "/home/auro/Auro/build/auro_interfaces/rosidl_generator_cpp/auro_interfaces/msg/string_with_pose.hpp"
+  "/home/auro/Auro/build/auro_interfaces/rosidl_generator_cpp/auro_interfaces/srv/detail/sector__struct.hpp" "/home/auro/Auro/build/auro_interfaces/rosidl_generator_cpp/auro_interfaces/msg/string_with_pose.hpp"
+  "/home/auro/Auro/build/auro_interfaces/rosidl_generator_cpp/auro_interfaces/srv/detail/sector__traits.hpp" "/home/auro/Auro/build/auro_interfaces/rosidl_generator_cpp/auro_interfaces/msg/string_with_pose.hpp"
   "/home/auro/Auro/build/auro_interfaces/rosidl_generator_cpp/auro_interfaces/srv/item_request.hpp" "/home/auro/Auro/build/auro_interfaces/rosidl_generator_cpp/auro_interfaces/msg/string_with_pose.hpp"
+  "/home/auro/Auro/build/auro_interfaces/rosidl_generator_cpp/auro_interfaces/srv/sector.hpp" "/home/auro/Auro/build/auro_interfaces/rosidl_generator_cpp/auro_interfaces/msg/string_with_pose.hpp"
   )
 
 
