@@ -22,7 +22,7 @@ class RobotManager(Node):
         super().__init__('robot_manager')
         
         self.available_sectors = ["cyan", "purple", "pink", "green"]
-        self.sectors = {"cyan": [-3.5, 2.4], "pink": [2.5, 2.4], "purple": [-3.5, -2.4], "green": [2.5, -2.4]}
+        self.sectors = {"cyan": [-3.5, 2.2], "pink": [2.5, 2.2], "purple": [-3.5, -2.2], "green": [2.5, -2.2]}
         
         self.sector_service = self.create_service(Sector, '/sector_service', self.service_sector)
     

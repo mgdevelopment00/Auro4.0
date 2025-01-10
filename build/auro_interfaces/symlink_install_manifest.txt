@@ -20,7 +20,11 @@
 /home/auro/Auro/install/auro_interfaces/include/auro_interfaces/auro_interfaces/msg/item_list.h
 /home/auro/Auro/install/auro_interfaces/include/auro_interfaces/auro_interfaces/msg/rosidl_generator_c__visibility_control.h
 /home/auro/Auro/install/auro_interfaces/include/auro_interfaces/auro_interfaces/msg/string_with_pose.h
+/home/auro/Auro/install/auro_interfaces/include/auro_interfaces/auro_interfaces/srv/check_goal.h
 /home/auro/Auro/install/auro_interfaces/include/auro_interfaces/auro_interfaces/srv/collision.h
+/home/auro/Auro/install/auro_interfaces/include/auro_interfaces/auro_interfaces/srv/detail/check_goal__functions.h
+/home/auro/Auro/install/auro_interfaces/include/auro_interfaces/auro_interfaces/srv/detail/check_goal__struct.h
+/home/auro/Auro/install/auro_interfaces/include/auro_interfaces/auro_interfaces/srv/detail/check_goal__type_support.h
 /home/auro/Auro/install/auro_interfaces/include/auro_interfaces/auro_interfaces/srv/detail/collision__functions.h
 /home/auro/Auro/install/auro_interfaces/include/auro_interfaces/auro_interfaces/srv/detail/collision__struct.h
 /home/auro/Auro/install/auro_interfaces/include/auro_interfaces/auro_interfaces/srv/detail/collision__type_support.h
@@ -40,6 +44,7 @@
 /home/auro/Auro/install/auro_interfaces/include/auro_interfaces/auro_interfaces/msg/detail/item_list__rosidl_typesupport_fastrtps_c.h
 /home/auro/Auro/install/auro_interfaces/include/auro_interfaces/auro_interfaces/msg/detail/string_with_pose__rosidl_typesupport_fastrtps_c.h
 /home/auro/Auro/install/auro_interfaces/include/auro_interfaces/auro_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+/home/auro/Auro/install/auro_interfaces/include/auro_interfaces/auro_interfaces/srv/detail/check_goal__rosidl_typesupport_fastrtps_c.h
 /home/auro/Auro/install/auro_interfaces/include/auro_interfaces/auro_interfaces/srv/detail/collision__rosidl_typesupport_fastrtps_c.h
 /home/auro/Auro/install/auro_interfaces/include/auro_interfaces/auro_interfaces/srv/detail/item_request__rosidl_typesupport_fastrtps_c.h
 /home/auro/Auro/install/auro_interfaces/include/auro_interfaces/auro_interfaces/srv/detail/sector__rosidl_typesupport_fastrtps_c.h
@@ -63,7 +68,11 @@
 /home/auro/Auro/install/auro_interfaces/include/auro_interfaces/auro_interfaces/msg/item.hpp
 /home/auro/Auro/install/auro_interfaces/include/auro_interfaces/auro_interfaces/msg/item_list.hpp
 /home/auro/Auro/install/auro_interfaces/include/auro_interfaces/auro_interfaces/msg/string_with_pose.hpp
+/home/auro/Auro/install/auro_interfaces/include/auro_interfaces/auro_interfaces/srv/check_goal.hpp
 /home/auro/Auro/install/auro_interfaces/include/auro_interfaces/auro_interfaces/srv/collision.hpp
+/home/auro/Auro/install/auro_interfaces/include/auro_interfaces/auro_interfaces/srv/detail/check_goal__builder.hpp
+/home/auro/Auro/install/auro_interfaces/include/auro_interfaces/auro_interfaces/srv/detail/check_goal__struct.hpp
+/home/auro/Auro/install/auro_interfaces/include/auro_interfaces/auro_interfaces/srv/detail/check_goal__traits.hpp
 /home/auro/Auro/install/auro_interfaces/include/auro_interfaces/auro_interfaces/srv/detail/collision__builder.hpp
 /home/auro/Auro/install/auro_interfaces/include/auro_interfaces/auro_interfaces/srv/detail/collision__struct.hpp
 /home/auro/Auro/install/auro_interfaces/include/auro_interfaces/auro_interfaces/srv/detail/collision__traits.hpp
@@ -81,6 +90,7 @@
 /home/auro/Auro/install/auro_interfaces/include/auro_interfaces/auro_interfaces/msg/detail/item_list__rosidl_typesupport_fastrtps_cpp.hpp
 /home/auro/Auro/install/auro_interfaces/include/auro_interfaces/auro_interfaces/msg/detail/string_with_pose__rosidl_typesupport_fastrtps_cpp.hpp
 /home/auro/Auro/install/auro_interfaces/include/auro_interfaces/auro_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+/home/auro/Auro/install/auro_interfaces/include/auro_interfaces/auro_interfaces/srv/detail/check_goal__rosidl_typesupport_fastrtps_cpp.hpp
 /home/auro/Auro/install/auro_interfaces/include/auro_interfaces/auro_interfaces/srv/detail/collision__rosidl_typesupport_fastrtps_cpp.hpp
 /home/auro/Auro/install/auro_interfaces/include/auro_interfaces/auro_interfaces/srv/detail/item_request__rosidl_typesupport_fastrtps_cpp.hpp
 /home/auro/Auro/install/auro_interfaces/include/auro_interfaces/auro_interfaces/srv/detail/sector__rosidl_typesupport_fastrtps_cpp.hpp
@@ -90,6 +100,7 @@
 /home/auro/Auro/install/auro_interfaces/include/auro_interfaces/auro_interfaces/msg/detail/item_list__rosidl_typesupport_introspection_c.h
 /home/auro/Auro/install/auro_interfaces/include/auro_interfaces/auro_interfaces/msg/detail/string_with_pose__rosidl_typesupport_introspection_c.h
 /home/auro/Auro/install/auro_interfaces/include/auro_interfaces/auro_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+/home/auro/Auro/install/auro_interfaces/include/auro_interfaces/auro_interfaces/srv/detail/check_goal__rosidl_typesupport_introspection_c.h
 /home/auro/Auro/install/auro_interfaces/include/auro_interfaces/auro_interfaces/srv/detail/collision__rosidl_typesupport_introspection_c.h
 /home/auro/Auro/install/auro_interfaces/include/auro_interfaces/auro_interfaces/srv/detail/item_request__rosidl_typesupport_introspection_c.h
 /home/auro/Auro/install/auro_interfaces/include/auro_interfaces/auro_interfaces/srv/detail/sector__rosidl_typesupport_introspection_c.h
@@ -98,6 +109,7 @@
 /home/auro/Auro/install/auro_interfaces/include/auro_interfaces/auro_interfaces/msg/detail/item__rosidl_typesupport_introspection_cpp.hpp
 /home/auro/Auro/install/auro_interfaces/include/auro_interfaces/auro_interfaces/msg/detail/item_list__rosidl_typesupport_introspection_cpp.hpp
 /home/auro/Auro/install/auro_interfaces/include/auro_interfaces/auro_interfaces/msg/detail/string_with_pose__rosidl_typesupport_introspection_cpp.hpp
+/home/auro/Auro/install/auro_interfaces/include/auro_interfaces/auro_interfaces/srv/detail/check_goal__rosidl_typesupport_introspection_cpp.hpp
 /home/auro/Auro/install/auro_interfaces/include/auro_interfaces/auro_interfaces/srv/detail/collision__rosidl_typesupport_introspection_cpp.hpp
 /home/auro/Auro/install/auro_interfaces/include/auro_interfaces/auro_interfaces/srv/detail/item_request__rosidl_typesupport_introspection_cpp.hpp
 /home/auro/Auro/install/auro_interfaces/include/auro_interfaces/auro_interfaces/srv/detail/sector__rosidl_typesupport_introspection_cpp.hpp
@@ -128,6 +140,8 @@
 /home/auro/Auro/install/auro_interfaces/local/lib/python3.10/dist-packages/auro_interfaces/msg/_string_with_pose.py
 /home/auro/Auro/install/auro_interfaces/local/lib/python3.10/dist-packages/auro_interfaces/msg/_string_with_pose_s.c
 /home/auro/Auro/install/auro_interfaces/local/lib/python3.10/dist-packages/auro_interfaces/srv/__init__.py
+/home/auro/Auro/install/auro_interfaces/local/lib/python3.10/dist-packages/auro_interfaces/srv/_check_goal.py
+/home/auro/Auro/install/auro_interfaces/local/lib/python3.10/dist-packages/auro_interfaces/srv/_check_goal_s.c
 /home/auro/Auro/install/auro_interfaces/local/lib/python3.10/dist-packages/auro_interfaces/srv/_collision.py
 /home/auro/Auro/install/auro_interfaces/local/lib/python3.10/dist-packages/auro_interfaces/srv/_collision_s.c
 /home/auro/Auro/install/auro_interfaces/local/lib/python3.10/dist-packages/auro_interfaces/srv/_item_request.py
@@ -145,6 +159,7 @@
 /home/auro/Auro/install/auro_interfaces/share/auro_interfaces/srv/Sector.idl
 /home/auro/Auro/install/auro_interfaces/share/auro_interfaces/srv/Collision.idl
 /home/auro/Auro/install/auro_interfaces/share/auro_interfaces/action/Move.idl
+/home/auro/Auro/install/auro_interfaces/share/auro_interfaces/srv/CheckGoal.idl
 /home/auro/Auro/install/auro_interfaces/share/auro_interfaces/msg/StringWithPose.msg
 /home/auro/Auro/install/auro_interfaces/share/auro_interfaces/msg/Item.msg
 /home/auro/Auro/install/auro_interfaces/share/auro_interfaces/msg/ItemList.msg
@@ -159,6 +174,9 @@
 /home/auro/Auro/install/auro_interfaces/share/auro_interfaces/srv/Collision_Request.msg
 /home/auro/Auro/install/auro_interfaces/share/auro_interfaces/srv/Collision_Response.msg
 /home/auro/Auro/install/auro_interfaces/share/auro_interfaces/action/Move.action
+/home/auro/Auro/install/auro_interfaces/share/auro_interfaces/srv/CheckGoal.srv
+/home/auro/Auro/install/auro_interfaces/share/auro_interfaces/srv/CheckGoal_Request.msg
+/home/auro/Auro/install/auro_interfaces/share/auro_interfaces/srv/CheckGoal_Response.msg
 /home/auro/Auro/install/auro_interfaces/share/ament_index/resource_index/package_run_dependencies/auro_interfaces
 /home/auro/Auro/install/auro_interfaces/share/ament_index/resource_index/parent_prefix_path/auro_interfaces
 /home/auro/Auro/install/auro_interfaces/share/auro_interfaces/environment/ament_prefix_path.sh

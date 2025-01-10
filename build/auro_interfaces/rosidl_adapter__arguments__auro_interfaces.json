@@ -8,6 +8,7 @@
     "/home/auro/Auro/auro_interfaces:srv/ItemRequest.srv",
     "/home/auro/Auro/auro_interfaces:srv/Sector.srv",
     "/home/auro/Auro/auro_interfaces:srv/Collision.srv",
-    "/home/auro/Auro/auro_interfaces:action/Move.action"
+    "/home/auro/Auro/auro_interfaces:action/Move.action",
+    "/home/auro/Auro/auro_interfaces:srv/CheckGoal.srv"
   ]
 }

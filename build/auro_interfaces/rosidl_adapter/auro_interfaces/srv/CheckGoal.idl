@@ -1,0 +1,17 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from auro_interfaces/srv/CheckGoal.srv
+// generated code does not contain a copyright notice
+
+
+module auro_interfaces {
+  module srv {
+    struct CheckGoal_Request {
+      double x;
+
+      double y;
+    };
+    struct CheckGoal_Response {
+      boolean obstacle;
+    };
+  };
+};

@@ -6,3 +6,4 @@
 /home/auro/Auro/build/auro_interfaces/rosidl_adapter/auro_interfaces:srv/Sector.idl
 /home/auro/Auro/build/auro_interfaces/rosidl_adapter/auro_interfaces:srv/Collision.idl
 /home/auro/Auro/build/auro_interfaces/rosidl_adapter/auro_interfaces:action/Move.idl
+/home/auro/Auro/build/auro_interfaces/rosidl_adapter/auro_interfaces:srv/CheckGoal.idl

@@ -80,6 +80,9 @@ CMakeFiles/auro_interfaces: /home/auro/Auro/auro_interfaces/srv/Collision.srv
 CMakeFiles/auro_interfaces: rosidl_cmake/srv/Collision_Request.msg
 CMakeFiles/auro_interfaces: rosidl_cmake/srv/Collision_Response.msg
 CMakeFiles/auro_interfaces: /home/auro/Auro/auro_interfaces/action/Move.action
+CMakeFiles/auro_interfaces: /home/auro/Auro/auro_interfaces/srv/CheckGoal.srv
+CMakeFiles/auro_interfaces: rosidl_cmake/srv/CheckGoal_Request.msg
+CMakeFiles/auro_interfaces: rosidl_cmake/srv/CheckGoal_Response.msg
 CMakeFiles/auro_interfaces: /opt/ros/humble/share/geometry_msgs/msg/Accel.idl
 CMakeFiles/auro_interfaces: /opt/ros/humble/share/geometry_msgs/msg/AccelStamped.idl
 CMakeFiles/auro_interfaces: /opt/ros/humble/share/geometry_msgs/msg/AccelWithCovariance.idl

@@ -10,7 +10,8 @@
     "/home/auro/Auro/build/auro_interfaces/rosidl_adapter/auro_interfaces:srv/ItemRequest.idl",
     "/home/auro/Auro/build/auro_interfaces/rosidl_adapter/auro_interfaces:srv/Sector.idl",
     "/home/auro/Auro/build/auro_interfaces/rosidl_adapter/auro_interfaces:srv/Collision.idl",
-    "/home/auro/Auro/build/auro_interfaces/rosidl_adapter/auro_interfaces:action/Move.idl"
+    "/home/auro/Auro/build/auro_interfaces/rosidl_adapter/auro_interfaces:action/Move.idl",
+    "/home/auro/Auro/build/auro_interfaces/rosidl_adapter/auro_interfaces:srv/CheckGoal.idl"
   ],
   "ros_interface_dependencies": [
     "geometry_msgs:/opt/ros/humble/share/geometry_msgs/msg/Accel.idl",
@@ -98,6 +99,7 @@
     "/home/auro/Auro/build/auro_interfaces/rosidl_adapter/auro_interfaces/srv/Sector.idl",
     "/home/auro/Auro/build/auro_interfaces/rosidl_adapter/auro_interfaces/srv/Collision.idl",
     "/home/auro/Auro/build/auro_interfaces/rosidl_adapter/auro_interfaces/action/Move.idl",
+    "/home/auro/Auro/build/auro_interfaces/rosidl_adapter/auro_interfaces/srv/CheckGoal.idl",
     "/opt/ros/humble/share/geometry_msgs/msg/Accel.idl",
     "/opt/ros/humble/share/geometry_msgs/msg/AccelStamped.idl",
     "/opt/ros/humble/share/geometry_msgs/msg/AccelWithCovariance.idl",

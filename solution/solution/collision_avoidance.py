@@ -6,11 +6,12 @@ import os
 import rclpy
 from rclpy.node import Node
 from rclpy.executors import ExternalShutdownException
-from auro_interfaces.srv import Sector, Collision
+from auro_interfaces.srv import Sector, Collision, CheckGoal
 from auro_interfaces.action import Move
 from sensor_msgs.msg import LaserScan
 from rclpy.qos import QoSPresetProfiles
 from rclpy.action import ActionClient
+from nav2_msgs.srv import GetCostmap
 import logging
 
 from std_msgs.msg import String
@@ -18,7 +19,7 @@ from std_msgs.msg import String
 from enum import Enum
 
 
-SCAN_THRESHOLD = 0.35
+SCAN_THRESHOLD = 0.55
 SCAN_FRONT = 0
 SCAN_LEFT = 1
 SCAN_BACK = 2
@@ -40,22 +41,66 @@ class CollisionAvoidance(Node):
             
         self.scan_triggered = [False] * 4
         
+        self.declare_parameter("robot_name", "default")
+        self.robot_name = self.get_parameter("robot_name").get_parameter_value().string_value
+        self.costmap = None
+        self.costmap_information = None
         
-        self.logger = logging.getLogger('collision_avoidance')
+        self.logger = logging.getLogger('collision_avoidance ' + self.robot_name)
         self.logger.setLevel(logging.DEBUG)
         current_directory = os.getcwd()
-        log_file_path = os.path.join(current_directory, 'collision_avoidance.log')
+        log_file_path = os.path.join(current_directory, 'collision_avoidance'  + self.robot_name + '.log')
         handler = logging.FileHandler(log_file_path)
         handler.setLevel(logging.DEBUG)
         formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
         handler.setFormatter(formatter)
         self.logger.addHandler(handler)
         
-        self.logger.info("firing up")
-            
+
         self.avoidance_server = self.create_service(Collision, '/collision_avoidance', self.service_collision)
-        self.moved = False
+        self.check_costmap_service = self.create_service(CheckGoal, '/check_goal', self.service_check_goal) # come back
+        self.costmap_client = self.create_client(GetCostmap, '/' + self.robot_name + '/global_costmap/get_costmap')
         
+        while not self.costmap_client.wait_for_service(timeout_sec=1.0):
+            self.logger.info("Waiting for server")
+        
+        self.create_timer(30.0, self.get_costmap)
+            
+    
+    def service_check_goal(self, request, response):
+       self.logger.info(self.costmap)
+       if self.costmap == None:
+          response.obstacle = True
+          return response
+    
+       x = request.x
+       y = request.y
+       info = self.costmap_information
+       point = int((y-info.origin.position.y)/info.resolution) * info.size_x + int((x-info.origin.position.x)/info.resolution)
+       cost = self.costmap.data[point]
+        
+       #Not in obstacle
+       if cost <= 110:
+          response.obstacle = False
+       else:
+          response.obstacle = True
+        
+       return response
+            
+            
+    def get_costmap(self):
+        request = GetCostmap.Request()
+        future = self.costmap_client.call_async(request)
+        future.add_done_callback(self.get_costmap_callback)
+    
+    def get_costmap_callback(self, future):
+        result = future.result()
+        
+        if result:
+           self.costmap = result.map
+           self.costmap_information = result.map.metadata
+        else:
+           self.logger.info("Error retrieving map")
      
         
         
@@ -70,11 +115,7 @@ class CollisionAvoidance(Node):
         self.scan_triggered[SCAN_BACK]  = min(back_ranges)  < SCAN_THRESHOLD
         self.scan_triggered[SCAN_RIGHT] = min(right_ranges) < SCAN_THRESHOLD
         
-        self.logger.info(min(front_ranges) < SCAN_THRESHOLD)
-        self.logger.info(min(left_ranges)  < SCAN_THRESHOLD)
-        self.logger.info(min(back_ranges)  < SCAN_THRESHOLD)
-        self.logger.info(min(right_ranges) < SCAN_THRESHOLD)
-        
+
     
     def service_collision(self, request, response):
         response.success = False
@@ -97,13 +138,9 @@ class CollisionAvoidance(Node):
            response.direction = "BACK"
            response.success = True 
         
-        self.logger.info("Direction: " + str(response.direction))
-        self.logger.info("Success: " + str(response.success))
-        
-        
         return response
-           
-
+    
+ 
         
 def main(args=None):
     rclpy.init(args=args)

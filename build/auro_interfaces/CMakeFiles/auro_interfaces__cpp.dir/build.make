@@ -98,6 +98,10 @@ CMakeFiles/auro_interfaces__cpp: rosidl_generator_cpp/auro_interfaces/action/mov
 CMakeFiles/auro_interfaces__cpp: rosidl_generator_cpp/auro_interfaces/action/detail/move__builder.hpp
 CMakeFiles/auro_interfaces__cpp: rosidl_generator_cpp/auro_interfaces/action/detail/move__struct.hpp
 CMakeFiles/auro_interfaces__cpp: rosidl_generator_cpp/auro_interfaces/action/detail/move__traits.hpp
+CMakeFiles/auro_interfaces__cpp: rosidl_generator_cpp/auro_interfaces/srv/check_goal.hpp
+CMakeFiles/auro_interfaces__cpp: rosidl_generator_cpp/auro_interfaces/srv/detail/check_goal__builder.hpp
+CMakeFiles/auro_interfaces__cpp: rosidl_generator_cpp/auro_interfaces/srv/detail/check_goal__struct.hpp
+CMakeFiles/auro_interfaces__cpp: rosidl_generator_cpp/auro_interfaces/srv/detail/check_goal__traits.hpp
 
 rosidl_generator_cpp/auro_interfaces/msg/string_with_pose.hpp: /opt/ros/humble/lib/rosidl_generator_cpp/rosidl_generator_cpp
 rosidl_generator_cpp/auro_interfaces/msg/string_with_pose.hpp: /opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_generator_cpp/__init__.py
@@ -122,6 +126,7 @@ rosidl_generator_cpp/auro_interfaces/msg/string_with_pose.hpp: rosidl_adapter/au
 rosidl_generator_cpp/auro_interfaces/msg/string_with_pose.hpp: rosidl_adapter/auro_interfaces/srv/Sector.idl
 rosidl_generator_cpp/auro_interfaces/msg/string_with_pose.hpp: rosidl_adapter/auro_interfaces/srv/Collision.idl
 rosidl_generator_cpp/auro_interfaces/msg/string_with_pose.hpp: rosidl_adapter/auro_interfaces/action/Move.idl
+rosidl_generator_cpp/auro_interfaces/msg/string_with_pose.hpp: rosidl_adapter/auro_interfaces/srv/CheckGoal.idl
 rosidl_generator_cpp/auro_interfaces/msg/string_with_pose.hpp: /opt/ros/humble/share/geometry_msgs/msg/Accel.idl
 rosidl_generator_cpp/auro_interfaces/msg/string_with_pose.hpp: /opt/ros/humble/share/geometry_msgs/msg/AccelStamped.idl
 rosidl_generator_cpp/auro_interfaces/msg/string_with_pose.hpp: /opt/ros/humble/share/geometry_msgs/msg/AccelWithCovariance.idl
@@ -285,6 +290,18 @@ rosidl_generator_cpp/auro_interfaces/action/detail/move__struct.hpp: rosidl_gene
 rosidl_generator_cpp/auro_interfaces/action/detail/move__traits.hpp: rosidl_generator_cpp/auro_interfaces/msg/string_with_pose.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/auro_interfaces/action/detail/move__traits.hpp
 
+rosidl_generator_cpp/auro_interfaces/srv/check_goal.hpp: rosidl_generator_cpp/auro_interfaces/msg/string_with_pose.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/auro_interfaces/srv/check_goal.hpp
+
+rosidl_generator_cpp/auro_interfaces/srv/detail/check_goal__builder.hpp: rosidl_generator_cpp/auro_interfaces/msg/string_with_pose.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/auro_interfaces/srv/detail/check_goal__builder.hpp
+
+rosidl_generator_cpp/auro_interfaces/srv/detail/check_goal__struct.hpp: rosidl_generator_cpp/auro_interfaces/msg/string_with_pose.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/auro_interfaces/srv/detail/check_goal__struct.hpp
+
+rosidl_generator_cpp/auro_interfaces/srv/detail/check_goal__traits.hpp: rosidl_generator_cpp/auro_interfaces/msg/string_with_pose.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/auro_interfaces/srv/detail/check_goal__traits.hpp
+
 auro_interfaces__cpp: CMakeFiles/auro_interfaces__cpp
 auro_interfaces__cpp: rosidl_generator_cpp/auro_interfaces/action/detail/move__builder.hpp
 auro_interfaces__cpp: rosidl_generator_cpp/auro_interfaces/action/detail/move__struct.hpp
@@ -306,7 +323,11 @@ auro_interfaces__cpp: rosidl_generator_cpp/auro_interfaces/msg/direction.hpp
 auro_interfaces__cpp: rosidl_generator_cpp/auro_interfaces/msg/item.hpp
 auro_interfaces__cpp: rosidl_generator_cpp/auro_interfaces/msg/item_list.hpp
 auro_interfaces__cpp: rosidl_generator_cpp/auro_interfaces/msg/string_with_pose.hpp
+auro_interfaces__cpp: rosidl_generator_cpp/auro_interfaces/srv/check_goal.hpp
 auro_interfaces__cpp: rosidl_generator_cpp/auro_interfaces/srv/collision.hpp
+auro_interfaces__cpp: rosidl_generator_cpp/auro_interfaces/srv/detail/check_goal__builder.hpp
+auro_interfaces__cpp: rosidl_generator_cpp/auro_interfaces/srv/detail/check_goal__struct.hpp
+auro_interfaces__cpp: rosidl_generator_cpp/auro_interfaces/srv/detail/check_goal__traits.hpp
 auro_interfaces__cpp: rosidl_generator_cpp/auro_interfaces/srv/detail/collision__builder.hpp
 auro_interfaces__cpp: rosidl_generator_cpp/auro_interfaces/srv/detail/collision__struct.hpp
 auro_interfaces__cpp: rosidl_generator_cpp/auro_interfaces/srv/detail/collision__traits.hpp

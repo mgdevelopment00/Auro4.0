@@ -71,6 +71,7 @@ class RobotController(Node):
         self.rotate_service = self.create_service(SetBool, '/rotate_robot', self.service_rotate)
         self.move_action_server = ActionServer(self, Move,  self.robot_name + '/move_robot', self.move_callback)
     
+    
     def goal_callback(self, goal_request):
          if self.state != State.BUSY:
             return GoalResponse.ACCEPT
@@ -79,6 +80,9 @@ class RobotController(Node):
     
     
     def move_callback(self, goal_handle):
+         result_msg = Move.Result()
+         result_msg.status = "Executing"
+         
          if not self.state == State.BUSY:
             self.state = State.BUSY
             target_x = goal_handle.request.x
@@ -90,7 +94,7 @@ class RobotController(Node):
             goal_pose.header.stamp = self.get_clock().now().to_msg()
             goal_pose.pose.position.x = target_x
             goal_pose.pose.position.y = target_y
-            goal_pose.pose.orientation = self.calculate_quaternion(target_angle)
+            goal_pose.pose.orientation = self.calculate_quaternion(0.0)
             
             self.logger.info("target x: " + str(target_x))
             self.logger.info("target y: " + str(target_y))
@@ -99,8 +103,6 @@ class RobotController(Node):
             self.state = State.NAVIGATING
             self.goal_handle = goal_handle
          
-            result_msg = Move.Result()
-            result_msg.status = "Executing"
             goal_reached = False
          
             self.move_timer = self.create_timer(2, self.get_updates)
@@ -114,13 +116,17 @@ class RobotController(Node):
             if result == TaskResult.SUCCEEDED:
                 result_msg.status = "Target Reached"
                 self.goal_handle.succeed()
+            elif result == TaskResult.ABORTED:
+                result_msg.status = "Target Aborted"
+                self.goal_handle.abort()
             else:
                 result_msg.status = "Target not Reached"
                 self.goal_handle.abort()
+         else:
+            result_msg.status = "Target not accepted"
+            self.goal_handle.abort()
          
-         
-            return result_msg
-         return -1
+         return result_msg
          
 
     def get_updates(self):

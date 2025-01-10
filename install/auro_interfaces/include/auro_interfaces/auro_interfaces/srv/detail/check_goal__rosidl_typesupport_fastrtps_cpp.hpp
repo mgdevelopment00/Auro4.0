@@ -1,0 +1,1 @@
+/home/auro/Auro/build/auro_interfaces/rosidl_typesupport_fastrtps_cpp/auro_interfaces/srv/detail/check_goal__rosidl_typesupport_fastrtps_cpp.hpp

@@ -1,0 +1,246 @@
+[0.063s] Invoking command in '/home/auro/Auro/build/assessment_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/auro/Auro/install/tf_relay:/home/auro/Auro/install/solution:/home/auro/Auro/install/assessment:/home/auro/turtlebot3_ws/install/turtlebot3_teleop:/home/auro/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --build /home/auro/Auro/build/assessment_interfaces -- -j4 -l4
+[1.051s] [  1%] Built target assessment_interfaces__cpp
+[1.052s] [  1%] Built target ament_cmake_python_symlink_assessment_interfaces
+[1.052s] [ 12%] Built target assessment_interfaces__rosidl_typesupport_fastrtps_cpp
+[1.052s] [ 24%] Built target assessment_interfaces__rosidl_typesupport_introspection_cpp
+[1.052s] running egg_info
+[1.052s] writing assessment_interfaces.egg-info/PKG-INFO
+[1.052s] writing dependency_links to assessment_interfaces.egg-info/dependency_links.txt
+[1.052s] writing top-level names to assessment_interfaces.egg-info/top_level.txt
+[1.052s] reading manifest file 'assessment_interfaces.egg-info/SOURCES.txt'
+[1.054s] writing manifest file 'assessment_interfaces.egg-info/SOURCES.txt'
+[1.055s] [ 24%] Built target ament_cmake_python_build_assessment_interfaces_egg
+[1.055s] [ 35%] Built target assessment_interfaces__rosidl_typesupport_cpp
+[1.055s] [ 47%] Built target assessment_interfaces__rosidl_generator_c
+[1.055s] [ 58%] Built target assessment_interfaces__rosidl_typesupport_fastrtps_c
+[1.055s] [ 70%] Built target assessment_interfaces__rosidl_typesupport_c
+[1.063s] [ 82%] Built target assessment_interfaces__rosidl_typesupport_introspection_c
+[1.098s] [ 82%] Built target assessment_interfaces
+[1.134s] [ 83%] Built target assessment_interfaces__py
+[1.222s] [ 93%] Built target assessment_interfaces__rosidl_generator_py
+[1.277s] [ 95%] Built target assessment_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[1.350s] [ 97%] Built target assessment_interfaces__rosidl_typesupport_c__pyext
+[1.393s] [100%] Built target assessment_interfaces__rosidl_typesupport_introspection_c__pyext
+[1.436s] Invoked command in '/home/auro/Auro/build/assessment_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/auro/Auro/install/tf_relay:/home/auro/Auro/install/solution:/home/auro/Auro/install/assessment:/home/auro/turtlebot3_ws/install/turtlebot3_teleop:/home/auro/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --build /home/auro/Auro/build/assessment_interfaces -- -j4 -l4
+[2.184s] Invoking command in '/home/auro/Auro/build/assessment_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/auro/Auro/install/tf_relay:/home/auro/Auro/install/solution:/home/auro/Auro/install/assessment:/home/auro/turtlebot3_ws/install/turtlebot3_teleop:/home/auro/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --install /home/auro/Auro/build/assessment_interfaces
+[2.228s] -- Install configuration: ""
+[2.228s] -- Execute custom install script
+[2.229s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/share/ament_index/resource_index/rosidl_interfaces/assessment_interfaces
+[2.229s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item__functions.h
+[2.229s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item__struct.h
+[2.229s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item__type_support.h
+[2.229s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item_holder__functions.h
+[2.229s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item_holder__struct.h
+[2.229s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item_holder__type_support.h
+[2.229s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item_holders__functions.h
+[2.229s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item_holders__struct.h
+[2.229s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item_holders__type_support.h
+[2.229s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item_list__functions.h
+[2.230s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item_list__struct.h
+[2.230s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item_list__type_support.h
+[2.230s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item_log__functions.h
+[2.230s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item_log__struct.h
+[2.230s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item_log__type_support.h
+[2.230s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/robot__functions.h
+[2.230s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/robot__struct.h
+[2.230s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/robot__type_support.h
+[2.230s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/robot_list__functions.h
+[2.230s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/robot_list__struct.h
+[2.230s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/robot_list__type_support.h
+[2.230s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/zone__functions.h
+[2.231s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/zone__struct.h
+[2.231s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/zone__type_support.h
+[2.231s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/zone_list__functions.h
+[2.234s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/zone_list__struct.h
+[2.234s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/zone_list__type_support.h
+[2.234s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/item.h
+[2.234s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/item_holder.h
+[2.235s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/item_holders.h
+[2.235s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/item_list.h
+[2.235s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/item_log.h
+[2.235s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/robot.h
+[2.235s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/robot_list.h
+[2.235s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/rosidl_generator_c__visibility_control.h
+[2.235s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/zone.h
+[2.235s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/zone_list.h
+[2.235s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/share/assessment_interfaces/environment/library_path.sh
+[2.235s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/share/assessment_interfaces/environment/library_path.dsv
+[2.235s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item__rosidl_typesupport_fastrtps_c.h
+[2.236s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item_holder__rosidl_typesupport_fastrtps_c.h
+[2.236s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item_holders__rosidl_typesupport_fastrtps_c.h
+[2.236s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item_list__rosidl_typesupport_fastrtps_c.h
+[2.236s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item_log__rosidl_typesupport_fastrtps_c.h
+[2.236s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/robot__rosidl_typesupport_fastrtps_c.h
+[2.236s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/robot_list__rosidl_typesupport_fastrtps_c.h
+[2.236s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/zone__rosidl_typesupport_fastrtps_c.h
+[2.236s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/zone_list__rosidl_typesupport_fastrtps_c.h
+[2.236s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[2.236s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item__rosidl_typesupport_introspection_c.h
+[2.236s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item_holder__rosidl_typesupport_introspection_c.h
+[2.236s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item_holders__rosidl_typesupport_introspection_c.h
+[2.237s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item_list__rosidl_typesupport_introspection_c.h
+[2.237s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item_log__rosidl_typesupport_introspection_c.h
+[2.237s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/robot__rosidl_typesupport_introspection_c.h
+[2.237s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/robot_list__rosidl_typesupport_introspection_c.h
+[2.237s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/zone__rosidl_typesupport_introspection_c.h
+[2.237s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/zone_list__rosidl_typesupport_introspection_c.h
+[2.237s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[2.237s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item__builder.hpp
+[2.237s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item__struct.hpp
+[2.237s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item__traits.hpp
+[2.238s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item_holder__builder.hpp
+[2.238s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item_holder__struct.hpp
+[2.238s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item_holder__traits.hpp
+[2.238s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item_holders__builder.hpp
+[2.238s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item_holders__struct.hpp
+[2.238s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item_holders__traits.hpp
+[2.238s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item_list__builder.hpp
+[2.238s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item_list__struct.hpp
+[2.238s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item_list__traits.hpp
+[2.238s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item_log__builder.hpp
+[2.238s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item_log__struct.hpp
+[2.239s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item_log__traits.hpp
+[2.239s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/robot__builder.hpp
+[2.239s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/robot__struct.hpp
+[2.239s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/robot__traits.hpp
+[2.239s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/robot_list__builder.hpp
+[2.239s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/robot_list__struct.hpp
+[2.239s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/robot_list__traits.hpp
+[2.239s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/zone__builder.hpp
+[2.239s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/zone__struct.hpp
+[2.239s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/zone__traits.hpp
+[2.239s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/zone_list__builder.hpp
+[2.240s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/zone_list__struct.hpp
+[2.240s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/zone_list__traits.hpp
+[2.240s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/item.hpp
+[2.240s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/item_holder.hpp
+[2.240s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/item_holders.hpp
+[2.240s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/item_list.hpp
+[2.240s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/item_log.hpp
+[2.240s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/robot.hpp
+[2.240s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/robot_list.hpp
+[2.241s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/zone.hpp
+[2.241s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/zone_list.hpp
+[2.241s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item__rosidl_typesupport_fastrtps_cpp.hpp
+[2.241s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item_holder__rosidl_typesupport_fastrtps_cpp.hpp
+[2.241s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item_holders__rosidl_typesupport_fastrtps_cpp.hpp
+[2.241s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item_list__rosidl_typesupport_fastrtps_cpp.hpp
+[2.241s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item_log__rosidl_typesupport_fastrtps_cpp.hpp
+[2.241s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/robot__rosidl_typesupport_fastrtps_cpp.hpp
+[2.241s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/robot_list__rosidl_typesupport_fastrtps_cpp.hpp
+[2.241s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/zone__rosidl_typesupport_fastrtps_cpp.hpp
+[2.241s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/zone_list__rosidl_typesupport_fastrtps_cpp.hpp
+[2.242s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[2.242s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item__rosidl_typesupport_introspection_cpp.hpp
+[2.242s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item_holder__rosidl_typesupport_introspection_cpp.hpp
+[2.242s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item_holders__rosidl_typesupport_introspection_cpp.hpp
+[2.242s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item_list__rosidl_typesupport_introspection_cpp.hpp
+[2.242s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item_log__rosidl_typesupport_introspection_cpp.hpp
+[2.242s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/robot__rosidl_typesupport_introspection_cpp.hpp
+[2.242s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/robot_list__rosidl_typesupport_introspection_cpp.hpp
+[2.242s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/zone__rosidl_typesupport_introspection_cpp.hpp
+[2.242s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/zone_list__rosidl_typesupport_introspection_cpp.hpp
+[2.242s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/share/assessment_interfaces/environment/pythonpath.sh
+[2.243s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/share/assessment_interfaces/environment/pythonpath.dsv
+[2.243s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/local/lib/python3.10/dist-packages/assessment_interfaces-0.0.0-py3.10.egg-info/PKG-INFO
+[2.243s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/local/lib/python3.10/dist-packages/assessment_interfaces-0.0.0-py3.10.egg-info/SOURCES.txt
+[2.243s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/local/lib/python3.10/dist-packages/assessment_interfaces-0.0.0-py3.10.egg-info/dependency_links.txt
+[2.243s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/local/lib/python3.10/dist-packages/assessment_interfaces-0.0.0-py3.10.egg-info/top_level.txt
+[2.243s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/local/lib/python3.10/dist-packages/assessment_interfaces/__init__.py
+[2.243s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/local/lib/python3.10/dist-packages/assessment_interfaces/_assessment_interfaces_s.ep.rosidl_typesupport_c.c
+[2.243s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/local/lib/python3.10/dist-packages/assessment_interfaces/_assessment_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+[2.243s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/local/lib/python3.10/dist-packages/assessment_interfaces/_assessment_interfaces_s.ep.rosidl_typesupport_introspection_c.c
+[2.243s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/local/lib/python3.10/dist-packages/assessment_interfaces/assessment_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[2.243s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/local/lib/python3.10/dist-packages/assessment_interfaces/assessment_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[2.244s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/local/lib/python3.10/dist-packages/assessment_interfaces/assessment_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[2.244s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/local/lib/python3.10/dist-packages/assessment_interfaces/libassessment_interfaces__rosidl_generator_py.so
+[2.244s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/local/lib/python3.10/dist-packages/assessment_interfaces/msg/__init__.py
+[2.244s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/local/lib/python3.10/dist-packages/assessment_interfaces/msg/_item.py
+[2.244s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/local/lib/python3.10/dist-packages/assessment_interfaces/msg/_item_holder.py
+[2.244s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/local/lib/python3.10/dist-packages/assessment_interfaces/msg/_item_holder_s.c
+[2.244s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/local/lib/python3.10/dist-packages/assessment_interfaces/msg/_item_holders.py
+[2.244s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/local/lib/python3.10/dist-packages/assessment_interfaces/msg/_item_holders_s.c
+[2.244s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/local/lib/python3.10/dist-packages/assessment_interfaces/msg/_item_list.py
+[2.244s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/local/lib/python3.10/dist-packages/assessment_interfaces/msg/_item_list_s.c
+[2.244s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/local/lib/python3.10/dist-packages/assessment_interfaces/msg/_item_log.py
+[2.245s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/local/lib/python3.10/dist-packages/assessment_interfaces/msg/_item_log_s.c
+[2.245s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/local/lib/python3.10/dist-packages/assessment_interfaces/msg/_item_s.c
+[2.245s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/local/lib/python3.10/dist-packages/assessment_interfaces/msg/_robot.py
+[2.245s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/local/lib/python3.10/dist-packages/assessment_interfaces/msg/_robot_list.py
+[2.245s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/local/lib/python3.10/dist-packages/assessment_interfaces/msg/_robot_list_s.c
+[2.245s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/local/lib/python3.10/dist-packages/assessment_interfaces/msg/_robot_s.c
+[2.245s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/local/lib/python3.10/dist-packages/assessment_interfaces/msg/_zone.py
+[2.245s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/local/lib/python3.10/dist-packages/assessment_interfaces/msg/_zone_list.py
+[2.245s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/local/lib/python3.10/dist-packages/assessment_interfaces/msg/_zone_list_s.c
+[2.245s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/local/lib/python3.10/dist-packages/assessment_interfaces/msg/_zone_s.c
+[2.245s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/local/lib/python3.10/dist-packages/assessment_interfaces/assessment_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[2.246s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/local/lib/python3.10/dist-packages/assessment_interfaces/assessment_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[2.246s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/local/lib/python3.10/dist-packages/assessment_interfaces/assessment_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[2.246s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/share/assessment_interfaces/msg/ItemLog.idl
+[2.246s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/share/assessment_interfaces/msg/ItemHolder.idl
+[2.246s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/share/assessment_interfaces/msg/ItemHolders.idl
+[2.246s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/share/assessment_interfaces/msg/Item.idl
+[2.246s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/share/assessment_interfaces/msg/ItemList.idl
+[2.246s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/share/assessment_interfaces/msg/Zone.idl
+[2.246s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/share/assessment_interfaces/msg/ZoneList.idl
+[2.246s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/share/assessment_interfaces/msg/Robot.idl
+[2.246s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/share/assessment_interfaces/msg/RobotList.idl
+[2.247s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/share/assessment_interfaces/msg/ItemLog.msg
+[2.247s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/share/assessment_interfaces/msg/ItemHolder.msg
+[2.247s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/share/assessment_interfaces/msg/ItemHolders.msg
+[2.247s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/share/assessment_interfaces/msg/Item.msg
+[2.247s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/share/assessment_interfaces/msg/ItemList.msg
+[2.247s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/share/assessment_interfaces/msg/Zone.msg
+[2.247s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/share/assessment_interfaces/msg/ZoneList.msg
+[2.247s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/share/assessment_interfaces/msg/Robot.msg
+[2.247s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/share/assessment_interfaces/msg/RobotList.msg
+[2.247s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/share/ament_index/resource_index/package_run_dependencies/assessment_interfaces
+[2.247s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/share/ament_index/resource_index/parent_prefix_path/assessment_interfaces
+[2.248s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/share/assessment_interfaces/environment/ament_prefix_path.sh
+[2.248s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/share/assessment_interfaces/environment/ament_prefix_path.dsv
+[2.248s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/share/assessment_interfaces/environment/path.sh
+[2.248s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/share/assessment_interfaces/environment/path.dsv
+[2.248s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/share/assessment_interfaces/local_setup.bash
+[2.248s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/share/assessment_interfaces/local_setup.sh
+[2.248s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/share/assessment_interfaces/local_setup.zsh
+[2.248s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/share/assessment_interfaces/local_setup.dsv
+[2.248s] -- Symlinking: /home/auro/Auro/install/assessment_interfaces/share/assessment_interfaces/package.dsv
+[2.273s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/share/ament_index/resource_index/packages/assessment_interfaces
+[2.274s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/share/assessment_interfaces/cmake/rosidl_cmake-extras.cmake
+[2.279s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/share/assessment_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+[2.279s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/share/assessment_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+[2.280s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/share/assessment_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+[2.281s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/share/assessment_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[2.283s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/share/assessment_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+[2.284s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/share/assessment_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[2.284s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/share/assessment_interfaces/cmake/assessment_interfacesConfig.cmake
+[2.285s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/share/assessment_interfaces/cmake/assessment_interfacesConfig-version.cmake
+[2.285s] -- Up-to-date symlink: /home/auro/Auro/install/assessment_interfaces/share/assessment_interfaces/package.xml
+[2.288s] -- Up-to-date: /home/auro/Auro/install/assessment_interfaces/lib/libassessment_interfaces__rosidl_generator_c.so
+[2.290s] -- Up-to-date: /home/auro/Auro/install/assessment_interfaces/lib/libassessment_interfaces__rosidl_typesupport_fastrtps_c.so
+[2.290s] -- Up-to-date: /home/auro/Auro/install/assessment_interfaces/lib/libassessment_interfaces__rosidl_typesupport_introspection_c.so
+[2.291s] -- Up-to-date: /home/auro/Auro/install/assessment_interfaces/lib/libassessment_interfaces__rosidl_typesupport_c.so
+[2.293s] -- Up-to-date: /home/auro/Auro/install/assessment_interfaces/lib/libassessment_interfaces__rosidl_typesupport_fastrtps_cpp.so
+[2.294s] -- Up-to-date: /home/auro/Auro/install/assessment_interfaces/lib/libassessment_interfaces__rosidl_typesupport_introspection_cpp.so
+[2.294s] -- Up-to-date: /home/auro/Auro/install/assessment_interfaces/lib/libassessment_interfaces__rosidl_typesupport_cpp.so
+[2.390s] Listing '/home/auro/Auro/install/assessment_interfaces/local/lib/python3.10/dist-packages/assessment_interfaces'...
+[2.390s] Listing '/home/auro/Auro/install/assessment_interfaces/local/lib/python3.10/dist-packages/assessment_interfaces/msg'...
+[2.400s] -- Up-to-date: /home/auro/Auro/install/assessment_interfaces/lib/libassessment_interfaces__rosidl_generator_py.so
+[2.401s] -- Up-to-date: /home/auro/Auro/install/assessment_interfaces/share/assessment_interfaces/cmake/export_assessment_interfaces__rosidl_generator_cExport.cmake
+[2.401s] -- Up-to-date: /home/auro/Auro/install/assessment_interfaces/share/assessment_interfaces/cmake/export_assessment_interfaces__rosidl_generator_cExport-noconfig.cmake
+[2.402s] -- Up-to-date: /home/auro/Auro/install/assessment_interfaces/share/assessment_interfaces/cmake/export_assessment_interfaces__rosidl_typesupport_fastrtps_cExport.cmake
+[2.402s] -- Up-to-date: /home/auro/Auro/install/assessment_interfaces/share/assessment_interfaces/cmake/export_assessment_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[2.402s] -- Up-to-date: /home/auro/Auro/install/assessment_interfaces/share/assessment_interfaces/cmake/assessment_interfaces__rosidl_typesupport_introspection_cExport.cmake
+[2.403s] -- Up-to-date: /home/auro/Auro/install/assessment_interfaces/share/assessment_interfaces/cmake/assessment_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[2.403s] -- Up-to-date: /home/auro/Auro/install/assessment_interfaces/share/assessment_interfaces/cmake/assessment_interfaces__rosidl_typesupport_cExport.cmake
+[2.403s] -- Up-to-date: /home/auro/Auro/install/assessment_interfaces/share/assessment_interfaces/cmake/assessment_interfaces__rosidl_typesupport_cExport-noconfig.cmake
+[2.403s] -- Up-to-date: /home/auro/Auro/install/assessment_interfaces/share/assessment_interfaces/cmake/export_assessment_interfaces__rosidl_generator_cppExport.cmake
+[2.404s] -- Up-to-date: /home/auro/Auro/install/assessment_interfaces/share/assessment_interfaces/cmake/export_assessment_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake
+[2.404s] -- Up-to-date: /home/auro/Auro/install/assessment_interfaces/share/assessment_interfaces/cmake/export_assessment_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[2.404s] -- Up-to-date: /home/auro/Auro/install/assessment_interfaces/share/assessment_interfaces/cmake/assessment_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+[2.405s] -- Up-to-date: /home/auro/Auro/install/assessment_interfaces/share/assessment_interfaces/cmake/assessment_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[2.405s] -- Up-to-date: /home/auro/Auro/install/assessment_interfaces/share/assessment_interfaces/cmake/assessment_interfaces__rosidl_typesupport_cppExport.cmake
+[2.405s] -- Up-to-date: /home/auro/Auro/install/assessment_interfaces/share/assessment_interfaces/cmake/assessment_interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+[2.405s] -- Up-to-date: /home/auro/Auro/install/assessment_interfaces/share/assessment_interfaces/cmake/export_assessment_interfaces__rosidl_generator_pyExport.cmake
+[2.406s] -- Up-to-date: /home/auro/Auro/install/assessment_interfaces/share/assessment_interfaces/cmake/export_assessment_interfaces__rosidl_generator_pyExport-noconfig.cmake
+[2.416s] Invoked command in '/home/auro/Auro/build/assessment_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/auro/Auro/install/tf_relay:/home/auro/Auro/install/solution:/home/auro/Auro/install/assessment:/home/auro/turtlebot3_ws/install/turtlebot3_teleop:/home/auro/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --install /home/auro/Auro/build/assessment_interfaces

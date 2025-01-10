@@ -3,10 +3,12 @@ import time
 import os
 import rclpy
 import math
+import random
 from rclpy.node import Node
 from rclpy.executors import ExternalShutdownException
 from assessment_interfaces.msg import ItemList
-from auro_interfaces.srv import ItemRequest, Sector, Collision
+from auro_interfaces.srv import ItemRequest, Sector, Collision, CheckGoal
+from geometry_msgs.msg import Quaternion
 from auro_interfaces.action import Move
 import logging
 from rclpy.action import ActionClient
@@ -14,9 +16,7 @@ from example_interfaces.srv import SetBool
 from std_msgs.msg import String
 from enum import Enum
 from functools import partial
-
-
-# Rotate count gets too high
+from nav_msgs.msg import Odometry
 
 class State(Enum):
     FINDING_TARGET = 1
@@ -30,6 +30,8 @@ class State(Enum):
     SPIN_CHECK = 9
     COLLISION_AVOIDANCE = 10
     BACKING_UP = 11
+    RANDOM_WALK = 12
+    GOING_RANDOM_POSITION = 13
 
 class RobotVision(Node):
     def __init__(self):
@@ -59,9 +61,11 @@ class RobotVision(Node):
         
         self.declare_parameter('x', 0.0)
         self.declare_parameter('y', 0.0)
+        self.declare_parameter('yaw', 0.0)
         self.x = self.get_parameter('x').get_parameter_value().double_value
         self.y = self.get_parameter('y').get_parameter_value().double_value
-
+        self.yaw = self.get_parameter('yaw').get_parameter_value().double_value
+        
         self.state = State.FINDING_TARGET
         self.ball_diameter = 0.075 * 2
         self.item_subscription = self.create_subscription(ItemList, 'items', self.control_loop, 1)
@@ -72,6 +76,10 @@ class RobotVision(Node):
         self.move_client = ActionClient(self, Move, self.robot_name + '/move_robot')
         self.sector_client = self.create_client(Sector, '/sector_service')
         self.collision_client = self.create_client(Collision, '/collision_avoidance')
+        self.odom_subscriber = self.create_subscription(Odometry, '/' + self.robot_name + '/odom', self.odom_callback, 10)
+        self.check_costmap_client = self.create_client(CheckGoal, '/check_goal')
+        self.last_moved = None
+        
         
         self.start_time = self.get_clock().now()
         self.sector = None
@@ -85,6 +93,9 @@ class RobotVision(Node):
         self.balls_collected = 0
         self.rotation_direction = None
         self.load_up_time = 10
+        self.same_ball_count = 0
+        self.random_walk_x = None
+        self.random_walk_y = None
         
         while not self.pick_up_client.wait_for_service(timeout_sec=1.0):
             #self.logger.info("Waiting for server")
@@ -95,7 +106,17 @@ class RobotVision(Node):
             
         while not self.move_client.wait_for_server(timeout_sec=1.0):
             pass
-        
+    
+    
+    
+    def odom_callback(self, msg):
+        self.pose = msg.pose.pose
+        x = self.pose.orientation.x
+        y = self.pose.orientation.y
+        z = self.pose.orientation.z
+        w = self.pose.orientation.w
+         
+        self.yaw = math.atan2(2.0 * (y * x + w * z), w**2 + x**2 - y**2 - z**2)
         
     def rotate_callback(self, future):
         try:
@@ -103,10 +124,8 @@ class RobotVision(Node):
             
             if response.success:
                 if self.rotation_direction == "left":
-                   self.logger.info("rotate count: " + str(self.rotate_count))
                    self.rotate_count -= 1
                 elif self.rotation_direction == "right":
-                   self.logger.info("rotate count: " + str(self.rotate_count))
                    self.rotate_count += 1
                 
                 self.rotation_direction = None
@@ -139,12 +158,14 @@ class RobotVision(Node):
             self.logger.info(e)
 
     
-    def calculate_position(self, s_x, s_y, angle, distance):
-        new_x = s_x + distance * math.cos(angle)
-        new_y = s_y + distance * math.sin(angle)
+    def calculate_position(self, s_x, s_y, distance):
+        new_x = s_x + distance * math.cos(self.yaw)
+        new_y = s_y + distance * math.sin(self.yaw)
         
         return new_x, new_y
         
+        
+        #Add logic that stops the robot from moving back and forward
     
     def calculate_distance(self, perceived_diameter):
         return (self.ball_diameter * 530.4)/perceived_diameter + 0.25
@@ -187,33 +208,43 @@ class RobotVision(Node):
     def feedback_callback(self, feedback_msg): 
         self.logger.info(f'Feedback: {feedback_msg.feedback.progress}')
         
-    def get_result_callback(self, future): 
-        result = future.result().result 
+    def get_result_callback(self, future):
+        result = future.result().result
         self.logger.info(f'Result: {result.status}')
-        
-        self.logger.info(self.state.name)
-        
-        if self.previous_state == State.ALIGNED_WITH_TARGET:
-           self.state = State.PICKING_UP_BALL
-        elif self.previous_state == State.GOING_TO_ZONE:
-           self.state = State.DROPPING_OFF_BALL
-        elif self.previous_state == State.DROPPING_OFF_BALL:
-           self.state = State.HEADING_TO_PREVIOUS
-        elif self.previous_state == State.HEADING_TO_PREVIOUS:
-           self.state = State.FINDING_TARGET
-        elif self.previous_state == State.BACKING_UP:
-           self.state = State.GOING_TO_ZONE
     
-    
+        if result.status == "Target Reached":
+            self.last_moved = self.get_clock().now() 
+            
+            if self.previous_state == State.ALIGNED_WITH_TARGET:
+                self.state = State.PICKING_UP_BALL
+            elif self.previous_state == State.GOING_TO_ZONE:
+                self.state = State.DROPPING_OFF_BALL
+            elif self.previous_state == State.DROPPING_OFF_BALL:
+                self.state = State.HEADING_TO_PREVIOUS
+            elif self.previous_state == State.HEADING_TO_PREVIOUS:
+                self.state = State.FINDING_TARGET
+            elif self.previous_state == State.BACKING_UP:
+                self.state = State.GOING_TO_ZONE
+            elif self.previous_state == State.GOING_RANDOM_POSITION:
+                self.state = State.FINDING_TARGET
+        elif result.status == "Target Aborted":
+            self.state = State.COLLISION_AVOIDANCE
+
+           
+
     def collision_callback(self, future):
         result = future.result()
+        
+        if self.previous_ball[0] == None:
+           self.previous_ball[0] = self.x + 0.2
+           self.previous_ball[1] = self.y + 0.2
 
         if result.success:
            self.collision_direction = result.direction
            self.state = State.BACKING_UP
         else:
-           self.previous_ball[0] = self.x
-           self.previous_ball[1] = self.y
+           self.previous_ball[0] = self.x + 0.2
+           self.previous_ball[1] = self.y + 0.2
            self.state = State.GOING_TO_ZONE
           
            
@@ -226,44 +257,68 @@ class RobotVision(Node):
     def set_to_busy(self, previous_state):
         self.state = State.BUSY
         self.previous_state = previous_state
+    
+    def random_walk_callback(self, future):
+        result = future.result()
+        
+        if result.obstacle:
+           # There is an obstacle in the way
+           self.state = State.RANDOM_WALK
+        else:
+           self.state = State.GOING_RANDOM_POSITION
+           
+    
         
     def control_loop(self, msg):
         data = msg.data
-        self.logger.info(data)
+        
         
         match self.state:
         
             case State.FINDING_TARGET:
+                
                 if (self.get_clock().now() - self.start_time).nanoseconds / 10e9 < self.load_up_time:
                      return
                 
                 self.set_to_busy(State.FINDING_TARGET)
                 data = msg.data
-                largest_diameter = -1
-                closest_x = None
+                closest_x = math.inf
                 
                 for i in range(len(data)):
                     colour = data[i].colour
                     diameter = data[i].diameter
+                    chosen_diameter = -1
                     x = data[i].x
                     
+                    self.logger.info(self.rotate_count)
                     
                     distance = self.calculate_distance(diameter)
-                    theta = math.radians(self.rotate_count/2)
-                    calculated_x, calculated_y = self.calculate_position(self.x, self.y, theta, distance)
+                    calculated_x, calculated_y = self.calculate_position(self.x, self.y, distance)
+                    
+                    if self.last_moved:
+                       if (self.get_clock().now() - self.last_moved).nanoseconds / 10e9 > 150:
+                           self.state = State.RANDOM_WALK
+                           return
+                    
+                    if abs(self.rotate_count) == 610:
+                       #One full rotation and nothing found
+                       rotate_count = 0
+                       self.state = State.RANDOM_WALK
+                       return
+                    
                     
                     if colour != self.colour or self.is_ball_collected(calculated_x, calculated_y):
-                        self.logger.info("Same ball")
                         continue
+                    
                         
-                    if diameter > largest_diameter:
-                        largest_diameter = diameter
+                    if abs(x) < abs(closest_x):
+                        self.largest_diameter = diameter
+                        chosen_diameter = diameter
                         closest_x = x
                 
-                self.largest_diameter = largest_diameter
-                
-                if largest_diameter == -1:
+                if closest_x == math.inf:
                     self.state = State.SPIN_CHECK
+                    return
 
                 if closest_x:
                     if abs(closest_x) >= 12:
@@ -288,10 +343,11 @@ class RobotVision(Node):
             case State.ALIGNED_WITH_TARGET:
                 self.set_to_busy(State.ALIGNED_WITH_TARGET)
                 distance = self.calculate_distance(self.largest_diameter)
-                angle = math.radians(self.rotate_count/2)
+                self.logger.info("diameter: " + str(self.largest_diameter))
+                self.logger.info("distance: " + str(distance))
                 self.rotate_count = 0
                 
-                new_x, new_y = self.calculate_position(self.x, self.y, angle, distance)
+                new_x, new_y = self.calculate_position(self.x, self.y, distance)
                 self.x = new_x
                 self.y = new_y
                 
@@ -334,13 +390,15 @@ class RobotVision(Node):
                 elif self.collision_direction == "RIGHT":
                     angle = -90
                 
-                new_x, new_y = self.calculate_position(self.x, self.y, angle, 1)
+                new_x, new_y = self.calculate_position(self.x, self.y, 0.75)
                 self.x = new_x
                 self.y = new_y
                 msg = Move.Goal()
                 msg.angle = 0.0
                 msg.x = new_x
                 msg.y = new_y
+                
+                self.logger.info("COLLISION AVOIDANCE TRIGGERED")
                 
                 self.collision_direction = None
                 self._send_goal_future = self.move_client.send_goal_async(msg, feedback_callback=self.feedback_callback)
@@ -391,13 +449,46 @@ class RobotVision(Node):
             case State.SPIN_CHECK:
                 self.set_to_busy(State.SPIN_CHECK)
                 request = SetBool.Request()
-                self.rotation_direction = "right"
-                request.data = True
+                self.rotation_direction = "left"
+                request.data = False
                 
                 future = self.rotate_client.call_async(request)
                 future.add_done_callback(self.rotate_callback)
+            
+            case State.RANDOM_WALK:
+                self.set_to_busy(State.RANDOM_WALK)
                 
+                if self.colour == "GREEN":
+                   rand_x = random.uniform(0, 2.2)
+                   rand_y = random.uniform(0, -2)
+                elif self.colour == "RED":
+                   rand_x = random.uniform(-2.2, 2)
+                   rand_y = random.uniform(0, -3.2)
+
+                elif self.colour == "BLUE":
+                   rand_x = random.uniform(0, 2.2)
+                   rand_y = random.uniform(0, 2)
                 
+       
+                request = CheckGoal.Request()
+                request.x = rand_x
+                request.y = rand_y
+                self.random_walk_x = rand_x
+                self.random_walk_y = rand_y
+                future = self.check_costmap_client.call_async(request)
+                future.add_done_callback(self.random_walk_callback)
+                
+            case State.GOING_RANDOM_POSITION:
+                self.set_to_busy(State.GOING_RANDOM_POSITION)
+                msg = Move.Goal()
+                
+                msg.x = float(self.random_walk_x)
+                msg.y = float(self.random_walk_y)
+                self.x = self.random_walk_x
+                self.y = self.random_walk_y
+                msg.angle = 0.0
+                self._send_goal_future = self.move_client.send_goal_async(msg, feedback_callback=self.feedback_callback)
+                self._send_goal_future.add_done_callback(self.goal_response_callback)
                 
                 
 def main(args=None):

@@ -1,0 +1,21 @@
+[1.796s] Invoking command in '/home/auro/Auro/build/solution': PYTHONPATH=/home/auro/Auro/build/solution/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/auro/Auro/install/solution/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/auro/Auro/build/solution/build --no-deps symlink_data
+[2.313s] running develop
+[2.607s] running egg_info
+[2.608s] writing solution.egg-info/PKG-INFO
+[2.611s] writing dependency_links to solution.egg-info/dependency_links.txt
+[2.611s] writing entry points to solution.egg-info/entry_points.txt
+[2.612s] writing requirements to solution.egg-info/requires.txt
+[2.612s] writing top-level names to solution.egg-info/top_level.txt
+[2.616s] reading manifest file 'solution.egg-info/SOURCES.txt'
+[2.618s] writing manifest file 'solution.egg-info/SOURCES.txt'
+[2.622s] running build_ext
+[2.623s] Creating /home/auro/Auro/install/solution/lib/python3.10/site-packages/solution.egg-link (link to .)
+[2.625s] Installing collision_avoidance script to /home/auro/Auro/install/solution/lib/solution
+[2.625s] Installing data_logger script to /home/auro/Auro/install/solution/lib/solution
+[2.627s] Installing robot_controller script to /home/auro/Auro/install/solution/lib/solution
+[2.627s] Installing robot_manager script to /home/auro/Auro/install/solution/lib/solution
+[2.627s] Installing robot_vision script to /home/auro/Auro/install/solution/lib/solution
+[2.627s] 
+[2.627s] Installed /home/auro/Auro/build/solution
+[2.627s] running symlink_data
+[2.713s] Invoked command in '/home/auro/Auro/build/solution' returned '0': PYTHONPATH=/home/auro/Auro/build/solution/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/auro/Auro/install/solution/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/auro/Auro/build/solution/build --no-deps symlink_data
