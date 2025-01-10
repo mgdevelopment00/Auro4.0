@@ -8,6 +8,10 @@ msg/ItemList.idl
 msg/ItemList.msg
 msg/StringWithPose.idl
 msg/StringWithPose.msg
+srv/Collision.idl
+srv/Collision.srv
+srv/Collision_Request.msg
+srv/Collision_Response.msg
 srv/ItemRequest.idl
 srv/ItemRequest.srv
 srv/ItemRequest_Request.msg

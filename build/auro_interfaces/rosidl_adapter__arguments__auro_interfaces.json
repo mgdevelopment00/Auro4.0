@@ -7,6 +7,7 @@
     "/home/auro/Auro/auro_interfaces:msg/Direction.msg",
     "/home/auro/Auro/auro_interfaces:srv/ItemRequest.srv",
     "/home/auro/Auro/auro_interfaces:srv/Sector.srv",
+    "/home/auro/Auro/auro_interfaces:srv/Collision.srv",
     "/home/auro/Auro/auro_interfaces:action/Move.action"
   ]
 }

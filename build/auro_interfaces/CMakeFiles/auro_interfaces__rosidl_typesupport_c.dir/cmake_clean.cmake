@@ -9,6 +9,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/auro_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/auro_interfaces/msg/item_list__type_support.cpp.o.d"
   "CMakeFiles/auro_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/auro_interfaces/msg/string_with_pose__type_support.cpp.o"
   "CMakeFiles/auro_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/auro_interfaces/msg/string_with_pose__type_support.cpp.o.d"
+  "CMakeFiles/auro_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/auro_interfaces/srv/collision__type_support.cpp.o"
+  "CMakeFiles/auro_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/auro_interfaces/srv/collision__type_support.cpp.o.d"
   "CMakeFiles/auro_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/auro_interfaces/srv/item_request__type_support.cpp.o"
   "CMakeFiles/auro_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/auro_interfaces/srv/item_request__type_support.cpp.o.d"
   "CMakeFiles/auro_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/auro_interfaces/srv/sector__type_support.cpp.o"
@@ -20,6 +22,7 @@ file(REMOVE_RECURSE
   "rosidl_typesupport_c/auro_interfaces/msg/item__type_support.cpp"
   "rosidl_typesupport_c/auro_interfaces/msg/item_list__type_support.cpp"
   "rosidl_typesupport_c/auro_interfaces/msg/string_with_pose__type_support.cpp"
+  "rosidl_typesupport_c/auro_interfaces/srv/collision__type_support.cpp"
   "rosidl_typesupport_c/auro_interfaces/srv/item_request__type_support.cpp"
   "rosidl_typesupport_c/auro_interfaces/srv/sector__type_support.cpp"
 )

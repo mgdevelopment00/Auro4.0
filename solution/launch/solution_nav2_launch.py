@@ -43,20 +43,19 @@ def robot_controller_actions(context : LaunchContext):
                 # prefix=['wt.exe --window 0 new-tab wsl.exe -e bash -ic'], # Opens in new tab
                 # prefix=['wt.exe wsl.exe -e bash -ic'], # Opens in new window
                 output='screen',
-                parameters=[initial_poses[robot_name]]),
-
-             Node(
-                 package='solution',
-                 executable='route_planner',
-                 output='screen',
-                 parameters=[initial_poses[robot_name]]),
+                parameters=[initial_poses[robot_name], {"robot_name": robot_name}]),
                  
              Node(
                  package='solution',
                  executable='robot_vision',
                  output='screen',
+                 parameters=[initial_poses[robot_name], {"robot_name": robot_name}]),
+             
+             Node(
+                 package='solution',
+                 executable='collision_avoidance',
+                 output='screen',
                  parameters=[{"robot_name": robot_name}]),
-
         ])
 
         actions.append(group)

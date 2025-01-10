@@ -1,0 +1,1 @@
+/home/auro/Auro/build/auro_interfaces/rosidl_cmake/srv/Collision_Response.msg

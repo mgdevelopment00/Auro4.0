@@ -1,0 +1,24 @@
+[0.042s] Invoking command in '/home/auro/Auro/build/assessment_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/auro/Auro/install/tf_relay:/home/auro/Auro/install/solution:/home/auro/Auro/install/assessment:/home/auro/turtlebot3_ws/install/turtlebot3_teleop:/home/auro/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --build /home/auro/Auro/build/assessment_interfaces -- -j4 -l4
+[0.476s] [  1%] Built target assessment_interfaces__cpp
+[0.476s] [ 12%] Built target assessment_interfaces__rosidl_generator_c
+[0.476s] [ 12%] Built target ament_cmake_python_symlink_assessment_interfaces
+[0.476s] [ 24%] Built target assessment_interfaces__rosidl_typesupport_cpp
+[0.476s] [ 35%] Built target assessment_interfaces__rosidl_typesupport_fastrtps_cpp
+[0.476s] [ 47%] Built target assessment_interfaces__rosidl_typesupport_introspection_cpp
+[0.476s] [ 58%] Built target assessment_interfaces__rosidl_typesupport_fastrtps_c
+[0.477s] [ 70%] Built target assessment_interfaces__rosidl_typesupport_introspection_c
+[0.477s] [ 82%] Built target assessment_interfaces__rosidl_typesupport_c
+[0.477s] [ 82%] Built target assessment_interfaces
+[0.477s] [ 83%] Built target assessment_interfaces__py
+[0.477s] [ 93%] Built target assessment_interfaces__rosidl_generator_py
+[0.477s] [ 95%] Built target assessment_interfaces__rosidl_typesupport_c__pyext
+[0.477s] [ 97%] Built target assessment_interfaces__rosidl_typesupport_introspection_c__pyext
+[0.477s] [100%] Built target assessment_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[0.612s] running egg_info
+[0.612s] writing assessment_interfaces.egg-info/PKG-INFO
+[0.613s] writing dependency_links to assessment_interfaces.egg-info/dependency_links.txt
+[0.613s] writing top-level names to assessment_interfaces.egg-info/top_level.txt
+[0.616s] reading manifest file 'assessment_interfaces.egg-info/SOURCES.txt'
+[0.618s] writing manifest file 'assessment_interfaces.egg-info/SOURCES.txt'
+[0.658s] [100%] Built target ament_cmake_python_build_assessment_interfaces_egg
+[0.821s] Invoked command in '/home/auro/Auro/build/assessment_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/auro/Auro/install/tf_relay:/home/auro/Auro/install/solution:/home/auro/Auro/install/assessment:/home/auro/turtlebot3_ws/install/turtlebot3_teleop:/home/auro/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --build /home/auro/Auro/build/assessment_interfaces -- -j4 -l4

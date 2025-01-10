@@ -266,6 +266,9 @@ CMakeFiles/auro_interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/
   rosidl_generator_c/auro_interfaces/srv/detail/sector__type_support.h \
   rosidl_generator_c/auro_interfaces/srv/detail/sector__struct.h \
   rosidl_generator_c/auro_interfaces/srv/detail/sector__functions.h \
+  rosidl_generator_c/auro_interfaces/srv/detail/collision__type_support.h \
+  rosidl_generator_c/auro_interfaces/srv/detail/collision__struct.h \
+  rosidl_generator_c/auro_interfaces/srv/detail/collision__functions.h \
   rosidl_generator_c/auro_interfaces/action/detail/move__type_support.h \
   rosidl_generator_c/auro_interfaces/action/detail/move__struct.h \
   /opt/ros/humble/include/unique_identifier_msgs/unique_identifier_msgs/msg/detail/uuid__struct.h \
@@ -277,7 +280,13 @@ CMakeFiles/auro_interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/
 
 rosidl_generator_c/auro_interfaces/action/detail/move__struct.h:
 
+rosidl_generator_c/auro_interfaces/srv/detail/collision__functions.h:
+
 rosidl_generator_c/auro_interfaces/action/detail/move__type_support.h:
+
+rosidl_generator_c/auro_interfaces/srv/detail/collision__struct.h:
+
+rosidl_generator_c/auro_interfaces/srv/detail/collision__type_support.h:
 
 rosidl_generator_c/auro_interfaces/srv/detail/sector__struct.h:
 

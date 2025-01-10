@@ -13,7 +13,6 @@ solution/data_logger.py
 solution/robot_controller.py
 solution/robot_manager.py
 solution/robot_vision.py
-solution/route_planner.py
 solution.egg-info/PKG-INFO
 solution.egg-info/SOURCES.txt
 solution.egg-info/dependency_links.txt

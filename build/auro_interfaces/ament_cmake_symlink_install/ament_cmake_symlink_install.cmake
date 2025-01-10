@@ -376,6 +376,9 @@ ament_cmake_symlink_install_files("/home/auro/Auro/auro_interfaces" FILES "/home
 # install(FILES "/home/auro/Auro/build/auro_interfaces/rosidl_adapter/auro_interfaces/srv/Sector.idl" "DESTINATION" "share/auro_interfaces/srv")
 ament_cmake_symlink_install_files("/home/auro/Auro/auro_interfaces" FILES "/home/auro/Auro/build/auro_interfaces/rosidl_adapter/auro_interfaces/srv/Sector.idl" "DESTINATION" "share/auro_interfaces/srv")
 
+# install(FILES "/home/auro/Auro/build/auro_interfaces/rosidl_adapter/auro_interfaces/srv/Collision.idl" "DESTINATION" "share/auro_interfaces/srv")
+ament_cmake_symlink_install_files("/home/auro/Auro/auro_interfaces" FILES "/home/auro/Auro/build/auro_interfaces/rosidl_adapter/auro_interfaces/srv/Collision.idl" "DESTINATION" "share/auro_interfaces/srv")
+
 # install(FILES "/home/auro/Auro/build/auro_interfaces/rosidl_adapter/auro_interfaces/action/Move.idl" "DESTINATION" "share/auro_interfaces/action")
 ament_cmake_symlink_install_files("/home/auro/Auro/auro_interfaces" FILES "/home/auro/Auro/build/auro_interfaces/rosidl_adapter/auro_interfaces/action/Move.idl" "DESTINATION" "share/auro_interfaces/action")
 
@@ -408,6 +411,15 @@ ament_cmake_symlink_install_files("/home/auro/Auro/auro_interfaces" FILES "/home
 
 # install(FILES "/home/auro/Auro/build/auro_interfaces/rosidl_cmake/srv/Sector_Response.msg" "DESTINATION" "share/auro_interfaces/srv")
 ament_cmake_symlink_install_files("/home/auro/Auro/auro_interfaces" FILES "/home/auro/Auro/build/auro_interfaces/rosidl_cmake/srv/Sector_Response.msg" "DESTINATION" "share/auro_interfaces/srv")
+
+# install(FILES "/home/auro/Auro/auro_interfaces/srv/Collision.srv" "DESTINATION" "share/auro_interfaces/srv")
+ament_cmake_symlink_install_files("/home/auro/Auro/auro_interfaces" FILES "/home/auro/Auro/auro_interfaces/srv/Collision.srv" "DESTINATION" "share/auro_interfaces/srv")
+
+# install(FILES "/home/auro/Auro/build/auro_interfaces/rosidl_cmake/srv/Collision_Request.msg" "DESTINATION" "share/auro_interfaces/srv")
+ament_cmake_symlink_install_files("/home/auro/Auro/auro_interfaces" FILES "/home/auro/Auro/build/auro_interfaces/rosidl_cmake/srv/Collision_Request.msg" "DESTINATION" "share/auro_interfaces/srv")
+
+# install(FILES "/home/auro/Auro/build/auro_interfaces/rosidl_cmake/srv/Collision_Response.msg" "DESTINATION" "share/auro_interfaces/srv")
+ament_cmake_symlink_install_files("/home/auro/Auro/auro_interfaces" FILES "/home/auro/Auro/build/auro_interfaces/rosidl_cmake/srv/Collision_Response.msg" "DESTINATION" "share/auro_interfaces/srv")
 
 # install(FILES "/home/auro/Auro/auro_interfaces/action/Move.action" "DESTINATION" "share/auro_interfaces/action")
 ament_cmake_symlink_install_files("/home/auro/Auro/auro_interfaces" FILES "/home/auro/Auro/auro_interfaces/action/Move.action" "DESTINATION" "share/auro_interfaces/action")

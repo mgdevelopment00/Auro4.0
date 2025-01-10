@@ -1,0 +1,22 @@
+[1.556s] Invoking command in '/home/auro/Auro/build/solution': PYTHONPATH=/home/auro/Auro/build/solution/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/auro/Auro/install/solution/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/auro/Auro/build/solution/build --no-deps symlink_data
+[2.039s] running develop
+[2.328s] running egg_info
+[2.328s] writing solution.egg-info/PKG-INFO
+[2.329s] writing dependency_links to solution.egg-info/dependency_links.txt
+[2.329s] writing entry points to solution.egg-info/entry_points.txt
+[2.329s] writing requirements to solution.egg-info/requires.txt
+[2.329s] writing top-level names to solution.egg-info/top_level.txt
+[2.333s] reading manifest file 'solution.egg-info/SOURCES.txt'
+[2.334s] writing manifest file 'solution.egg-info/SOURCES.txt'
+[2.336s] running build_ext
+[2.337s] Creating /home/auro/Auro/install/solution/lib/python3.10/site-packages/solution.egg-link (link to .)
+[2.338s] Installing collision_avoidance script to /home/auro/Auro/install/solution/lib/solution
+[2.338s] Installing data_logger script to /home/auro/Auro/install/solution/lib/solution
+[2.338s] Installing robot_controller script to /home/auro/Auro/install/solution/lib/solution
+[2.339s] Installing robot_manager script to /home/auro/Auro/install/solution/lib/solution
+[2.339s] Installing robot_vision script to /home/auro/Auro/install/solution/lib/solution
+[2.340s] Installing route_planner script to /home/auro/Auro/install/solution/lib/solution
+[2.340s] 
+[2.341s] Installed /home/auro/Auro/build/solution
+[2.341s] running symlink_data
+[2.816s] Invoked command in '/home/auro/Auro/build/solution' returned '0': PYTHONPATH=/home/auro/Auro/build/solution/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/auro/Auro/install/solution/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/auro/Auro/build/solution/build --no-deps symlink_data

@@ -25,34 +25,41 @@ class RobotController(Node):
 
     def __init__(self):
         super().__init__('robot_controller')
-
+        
+        self.declare_parameter("robot_name", "default")
+        self.robot_name = self.get_parameter("robot_name").get_parameter_value().string_value
+        
         self.state = State.SET_GOAL
         self.navigator = BasicNavigator()
         self.declare_parameter('x', 0.0)
         self.declare_parameter('y', 0.0)
-        self.declare_parameter('yaw', 0.0)  # Initial Yaw might be used later
+        self.declare_parameter('yaw', 0.0)
         
-        self.logger = logging.getLogger('controller') 
+        
+        
+        self.logger = logging.getLogger('controller ' + self.robot_name) 
         self.logger.setLevel(logging.DEBUG)  
         current_directory = os.getcwd()
-        log_file_path = os.path.join(current_directory, 'robot_controller.log') 
+        log_file_path = os.path.join(current_directory, 'robot_controller' + self.robot_name + '.log') 
         handler = logging.FileHandler(log_file_path) 
         handler.setLevel(logging.DEBUG) 
-        formatter = logging.Formatter('')  # Configure the formatter
+        formatter = logging.Formatter('') 
         handler.setFormatter(formatter)
-        self.logger.addHandler(handler)  # Make sure to add the handler to the logger
-        
-        self.initial_x = self.get_parameter('x').get_parameter_value().double_value
-        self.initial_y = self.get_parameter('y').get_parameter_value().double_value
-        self.initial_yaw = self.get_parameter('yaw').get_parameter_value().double_value
+        self.logger.addHandler(handler)
+       
+
+        self.x = self.get_parameter('x').get_parameter_value().double_value
+        self.y = self.get_parameter('y').get_parameter_value().double_value
+        self.yaw = self.get_parameter('yaw').get_parameter_value().double_value
+
         self.rotating = False
 
         initial_pose = PoseStamped()
         initial_pose.header.frame_id = 'map'
         initial_pose.header.stamp = self.get_clock().now().to_msg()
-        initial_pose.pose.position.x = self.initial_x
-        initial_pose.pose.position.y = self.initial_y
-        initial_pose.pose.orientation = self.calculate_quaternion(self.initial_yaw)
+        initial_pose.pose.position.x = self.x
+        initial_pose.pose.position.y = self.y
+        initial_pose.pose.orientation = self.calculate_quaternion(self.yaw)
 
         self.navigator.setInitialPose(initial_pose)
         self.navigator.waitUntilNav2Active()
@@ -60,10 +67,9 @@ class RobotController(Node):
         self.angular_speed = 0.174/2 # Angular speed for rotation
         self.goal_reached = False
 
-        self.create_subscription(String, 'route', self.route_detected, 10)
         self.twist_publisher = self.create_publisher(Twist, 'cmd_vel', 1)
-        self.rotate_service = self.create_service(SetBool, 'robot1/rotate_robot', self.service_rotate)
-        self.move_action_server = ActionServer(self, Move, 'robot1/move_robot', self.move_callback)
+        self.rotate_service = self.create_service(SetBool, '/rotate_robot', self.service_rotate)
+        self.move_action_server = ActionServer(self, Move,  self.robot_name + '/move_robot', self.move_callback)
     
     def goal_callback(self, goal_request):
          if self.state != State.BUSY:
@@ -85,6 +91,9 @@ class RobotController(Node):
             goal_pose.pose.position.x = target_x
             goal_pose.pose.position.y = target_y
             goal_pose.pose.orientation = self.calculate_quaternion(target_angle)
+            
+            self.logger.info("target x: " + str(target_x))
+            self.logger.info("target y: " + str(target_y))
 
             self.navigator.goToPose(goal_pose)
             self.state = State.NAVIGATING
@@ -123,34 +132,6 @@ class RobotController(Node):
              self.goal_handle.publish_feedback(feedback_msg)
              self.logger.info(f'Feedback: {feedback_msg.progress}')
                
-    
-    def route_detected(self, msg):
-        data = msg.data.split(",")
-        try:
-            if data[0][0] == "p":  # Move to point command
-                self.x = float(data[1])
-                self.y = float(data[2])
-                self.w = float(data[3])
-                self.a = float(data[4])
-            elif data[0][0] == "f":  # Forward command
-                pass
-        except ValueError:
-            self.get_logger().error(f"Invalid data received: {msg.data}")
-            return
-            
-        if data[0] == "p":
-            goal_pose = PoseStamped()
-            goal_pose.header.frame_id = 'map'
-            goal_pose.header.stamp = self.get_clock().now().to_msg()
-            goal_pose.pose.position.x = self.x
-            goal_pose.pose.position.y = self.y
-            goal_pose.pose.orientation = self.calculate_quaternion(self.a)
-
-            self.navigator.goToPose(goal_pose)
-            self.state = State.NAVIGATING
-            
- 
-                  
             
     def start_rotation_right(self):
          new_twist = Twist()
@@ -160,7 +141,6 @@ class RobotController(Node):
     
          
     def start_rotation_left(self):
-         self.logger.info("Rotating once")
          new_twist = Twist()
          new_twist.linear.x = 0.0
          new_twist.angular.z = -self.angular_speed

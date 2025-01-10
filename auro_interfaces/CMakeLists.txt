@@ -21,6 +21,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/Direction.msg"
   "srv/ItemRequest.srv"
   "srv/Sector.srv"
+  "srv/Collision.srv"
   "action/Move.action"
   DEPENDENCIES geometry_msgs
 )

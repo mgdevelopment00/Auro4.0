@@ -1,7 +1,7 @@
 [console_scripts]
+collision_avoidance = solution.collision_avoidance:main
 data_logger = solution.data_logger:main
 robot_controller = solution.robot_controller:main
 robot_manager = solution.robot_manager:main
 robot_vision = solution.robot_vision:main
-route_planner = solution.route_planner:main
 
