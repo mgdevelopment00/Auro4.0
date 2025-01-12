@@ -14,5 +14,8 @@ auro_interfaces/msg/_string_with_pose.py
 auro_interfaces/srv/__init__.py
 auro_interfaces/srv/_check_goal.py
 auro_interfaces/srv/_collision.py
+auro_interfaces/srv/_find_target.py
 auro_interfaces/srv/_item_request.py
-auro_interfaces/srv/_sector.py
+auro_interfaces/srv/_rotate.py
+auro_interfaces/srv/_task.py
+auro_interfaces/srv/_zone_request.py

@@ -1,1 +1,1 @@
-/home/auro/Auro/build/auro_interfaces/rosidl_generator_py/auro_interfaces/action/__init__.py
+/home/auro/Auro_Revised/build/auro_interfaces/rosidl_generator_py/auro_interfaces/action/__init__.py

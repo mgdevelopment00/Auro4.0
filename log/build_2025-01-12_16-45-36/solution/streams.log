@@ -1,0 +1,36 @@
+[1.279s] Invoking command in '/home/auro/Auro_Revised/build/solution': PYTHONPATH=/home/auro/Auro_Revised/build/solution/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/auro/Auro_Revised/install/solution/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/auro/Auro_Revised/build/solution/build --no-deps symlink_data
+[1.632s] running develop
+[1.841s] running egg_info
+[1.841s] creating solution.egg-info
+[1.841s] writing solution.egg-info/PKG-INFO
+[1.841s] writing dependency_links to solution.egg-info/dependency_links.txt
+[1.841s] writing entry points to solution.egg-info/entry_points.txt
+[1.842s] writing requirements to solution.egg-info/requires.txt
+[1.842s] writing top-level names to solution.egg-info/top_level.txt
+[1.842s] writing manifest file 'solution.egg-info/SOURCES.txt'
+[1.845s] reading manifest file 'solution.egg-info/SOURCES.txt'
+[1.845s] writing manifest file 'solution.egg-info/SOURCES.txt'
+[1.847s] running build_ext
+[1.847s] Creating /home/auro/Auro_Revised/install/solution/lib/python3.10/site-packages/solution.egg-link (link to .)
+[1.849s] Installing collision_avoidance script to /home/auro/Auro_Revised/install/solution/lib/solution
+[1.849s] Installing data_logger script to /home/auro/Auro_Revised/install/solution/lib/solution
+[1.849s] Installing robot_controller script to /home/auro/Auro_Revised/install/solution/lib/solution
+[1.849s] Installing robot_manager script to /home/auro/Auro_Revised/install/solution/lib/solution
+[1.849s] Installing robot_vision script to /home/auro/Auro_Revised/install/solution/lib/solution
+[1.850s] 
+[1.850s] Installed /home/auro/Auro_Revised/build/solution
+[1.850s] running symlink_data
+[1.851s] creating /home/auro/Auro_Revised/install/solution/share/ament_index
+[1.852s] creating /home/auro/Auro_Revised/install/solution/share/ament_index/resource_index
+[1.852s] creating /home/auro/Auro_Revised/install/solution/share/ament_index/resource_index/packages
+[1.852s] symbolically linking /home/auro/Auro_Revised/build/solution/resource/solution -> /home/auro/Auro_Revised/install/solution/share/ament_index/resource_index/packages
+[1.852s] symbolically linking /home/auro/Auro_Revised/build/solution/package.xml -> /home/auro/Auro_Revised/install/solution/share/solution
+[1.852s] creating /home/auro/Auro_Revised/install/solution/share/solution/launch
+[1.852s] symbolically linking /home/auro/Auro_Revised/build/solution/launch/solution_launch.py -> /home/auro/Auro_Revised/install/solution/share/solution/launch/
+[1.852s] symbolically linking /home/auro/Auro_Revised/build/solution/launch/solution_nav2_launch.py -> /home/auro/Auro_Revised/install/solution/share/solution/launch/
+[1.852s] creating /home/auro/Auro_Revised/install/solution/share/solution/config
+[1.853s] symbolically linking /home/auro/Auro_Revised/build/solution/config/initial_poses.yaml -> /home/auro/Auro_Revised/install/solution/share/solution/config/
+[1.853s] symbolically linking /home/auro/Auro_Revised/build/solution/config/custom_rviz_windows.yaml -> /home/auro/Auro_Revised/install/solution/share/solution/config/
+[1.853s] creating /home/auro/Auro_Revised/install/solution/share/solution/params
+[1.853s] symbolically linking /home/auro/Auro_Revised/build/solution/params/custom_nav2_params_namespaced.yaml -> /home/auro/Auro_Revised/install/solution/share/solution/params/
+[1.917s] Invoked command in '/home/auro/Auro_Revised/build/solution' returned '0': PYTHONPATH=/home/auro/Auro_Revised/build/solution/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/auro/Auro_Revised/install/solution/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/auro/Auro_Revised/build/solution/build --no-deps symlink_data

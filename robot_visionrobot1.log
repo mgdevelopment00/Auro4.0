@@ -1,193 +1,200 @@
-2025-01-10 20:59:06,459 - vision robot1 - INFO - Feedback: Current position: (-3.042201735138413, -2.010475351698418, 0.009999999999999997)
-2025-01-10 20:59:10,422 - vision robot1 - INFO - Feedback: Current position: (-2.5420635253555353, -2.012096970722284, 0.01)
-2025-01-10 20:59:13,864 - vision robot1 - INFO - Feedback: Current position: (-2.057695203807798, -2.0046936567615243, 0.009999999999999998)
-2025-01-10 20:59:17,400 - vision robot1 - INFO - Feedback: Current position: (-1.5695057131678276, -2.003241993214483, 0.009999999999999998)
-2025-01-10 20:59:20,798 - vision robot1 - INFO - Feedback: Current position: (-1.0290341763432762, -2.0157670018451053, 0.009999999999999998)
-2025-01-10 20:59:24,095 - vision robot1 - INFO - Feedback: Current position: (-0.5460350379334082, -2.0195733288498454, 0.01)
-2025-01-10 20:59:27,606 - vision robot1 - INFO - Feedback: Current position: (-0.06288422214887479, -2.0059474142034177, 0.010000000000000002)
-2025-01-10 20:59:31,562 - vision robot1 - INFO - Feedback: Current position: (0.40871573391467253, -2.0000407861023466, 0.009999999999999998)
-2025-01-10 20:59:35,200 - vision robot1 - INFO - Feedback: Current position: (0.9231364272096183, -2.002297927119059, 0.009999999999999998)
-2025-01-10 20:59:39,472 - vision robot1 - INFO - Feedback: Current position: (1.446063918772908, -1.931879144524094, 0.01)
-2025-01-10 20:59:43,574 - vision robot1 - INFO - Feedback: Current position: (1.7495767202174264, -1.8400780835565431, 0.009999999999999997)
-2025-01-10 20:59:43,836 - vision robot1 - INFO - Result: Target Reached
-2025-01-10 21:00:57,108 - vision robot1 - INFO - -271
-2025-01-10 21:00:57,144 - vision robot1 - INFO - -271
-2025-01-10 21:00:57,182 - vision robot1 - INFO - -271
-2025-01-10 21:00:57,281 - vision robot1 - INFO - -272
-2025-01-10 21:00:57,421 - vision robot1 - INFO - -272
-2025-01-10 21:00:57,574 - vision robot1 - INFO - -273
-2025-01-10 21:00:57,666 - vision robot1 - INFO - -274
-2025-01-10 21:00:57,810 - vision robot1 - INFO - -274
-2025-01-10 21:00:57,964 - vision robot1 - INFO - -275
-2025-01-10 21:00:58,063 - vision robot1 - INFO - -275
-2025-01-10 21:00:58,125 - vision robot1 - INFO - -275
-2025-01-10 21:00:58,233 - vision robot1 - INFO - -276
-2025-01-10 21:00:58,328 - vision robot1 - INFO - -276
-2025-01-10 21:00:58,414 - vision robot1 - INFO - -276
-2025-01-10 21:00:58,554 - vision robot1 - INFO - -277
-2025-01-10 21:00:58,729 - vision robot1 - INFO - -278
-2025-01-10 21:00:58,836 - vision robot1 - INFO - -279
-2025-01-10 21:00:58,931 - vision robot1 - INFO - -280
-2025-01-10 21:00:59,046 - vision robot1 - INFO - -280
-2025-01-10 21:00:59,132 - vision robot1 - INFO - -281
-2025-01-10 21:00:59,231 - vision robot1 - INFO - -281
-2025-01-10 21:00:59,343 - vision robot1 - INFO - -282
-2025-01-10 21:00:59,418 - vision robot1 - INFO - -282
-2025-01-10 21:00:59,475 - vision robot1 - INFO - -282
-2025-01-10 21:00:59,698 - vision robot1 - INFO - -282
-2025-01-10 21:00:59,772 - vision robot1 - INFO - -283
-2025-01-10 21:00:59,934 - vision robot1 - INFO - -283
-2025-01-10 21:01:00,002 - vision robot1 - INFO - -284
-2025-01-10 21:01:00,163 - vision robot1 - INFO - -284
-2025-01-10 21:01:00,238 - vision robot1 - INFO - -285
-2025-01-10 21:01:00,239 - vision robot1 - INFO - -285
-2025-01-10 21:01:00,326 - vision robot1 - INFO - -285
-2025-01-10 21:01:00,326 - vision robot1 - INFO - -285
-2025-01-10 21:01:00,405 - vision robot1 - INFO - -285
-2025-01-10 21:01:00,410 - vision robot1 - INFO - -285
-2025-01-10 21:01:00,485 - vision robot1 - INFO - -286
-2025-01-10 21:01:00,485 - vision robot1 - INFO - -286
-2025-01-10 21:01:00,577 - vision robot1 - INFO - -286
-2025-01-10 21:01:00,577 - vision robot1 - INFO - -286
-2025-01-10 21:01:00,672 - vision robot1 - INFO - -286
-2025-01-10 21:01:00,672 - vision robot1 - INFO - -286
-2025-01-10 21:01:00,809 - vision robot1 - INFO - -286
-2025-01-10 21:01:00,809 - vision robot1 - INFO - -286
-2025-01-10 21:01:00,906 - vision robot1 - INFO - -287
-2025-01-10 21:01:00,907 - vision robot1 - INFO - -287
-2025-01-10 21:01:00,940 - vision robot1 - INFO - -287
-2025-01-10 21:01:00,940 - vision robot1 - INFO - -287
-2025-01-10 21:01:01,058 - vision robot1 - INFO - -287
-2025-01-10 21:01:01,061 - vision robot1 - INFO - -287
-2025-01-10 21:01:01,143 - vision robot1 - INFO - -288
-2025-01-10 21:01:01,143 - vision robot1 - INFO - -288
-2025-01-10 21:01:01,248 - vision robot1 - INFO - -288
-2025-01-10 21:01:01,249 - vision robot1 - INFO - -288
-2025-01-10 21:01:01,360 - vision robot1 - INFO - -289
-2025-01-10 21:01:01,360 - vision robot1 - INFO - -289
-2025-01-10 21:01:01,478 - vision robot1 - INFO - -289
-2025-01-10 21:01:01,478 - vision robot1 - INFO - -289
-2025-01-10 21:01:01,606 - vision robot1 - INFO - -290
-2025-01-10 21:01:01,607 - vision robot1 - INFO - -290
-2025-01-10 21:01:01,656 - vision robot1 - INFO - -290
-2025-01-10 21:01:01,656 - vision robot1 - INFO - -290
-2025-01-10 21:01:01,787 - vision robot1 - INFO - -290
-2025-01-10 21:01:01,787 - vision robot1 - INFO - -290
-2025-01-10 21:01:01,890 - vision robot1 - INFO - -291
-2025-01-10 21:01:01,892 - vision robot1 - INFO - -291
-2025-01-10 21:01:02,008 - vision robot1 - INFO - -291
-2025-01-10 21:01:02,008 - vision robot1 - INFO - -291
-2025-01-10 21:01:02,130 - vision robot1 - INFO - diameter: 266
-2025-01-10 21:01:02,130 - vision robot1 - INFO - distance: 0.5490977443609022
-2025-01-10 21:01:02,130 - vision robot1 - INFO - 1.4531231425286522
-2025-01-10 21:01:02,130 - vision robot1 - INFO - -1.9831112989980006
-2025-01-10 21:01:05,893 - vision robot1 - INFO - Feedback: Current position: (1.6739018221407598, -1.9186081707048421, 0.010000000000000002)
-2025-01-10 21:01:09,740 - vision robot1 - INFO - Feedback: Current position: (1.6676355992761915, -1.9218750082675584, 0.010000000000000004)
-2025-01-10 21:01:12,254 - vision robot1 - INFO - Result: Target Reached
-2025-01-10 21:01:16,051 - vision robot1 - INFO - Feedback: Current position: (2.061412715319606, -2.0446322361219855, 0.009999999999999998)
-2025-01-10 21:01:20,085 - vision robot1 - INFO - Result: Target Reached
-2025-01-10 21:01:20,242 - vision robot1 - INFO - dropped off
-2025-01-10 21:01:23,388 - vision robot1 - INFO - Feedback: Current position: (2.30314102112087, -2.05881620366374, 0.009999999999999995)
-2025-01-10 21:01:26,733 - vision robot1 - INFO - Feedback: Current position: (1.9799665257152186, -1.7675031716458833, 0.009999999999999998)
-2025-01-10 21:01:30,546 - vision robot1 - INFO - Feedback: Current position: (1.8882476830519606, -1.7464458300819574, 0.01)
-2025-01-10 21:01:34,509 - vision robot1 - INFO - Feedback: Current position: (1.8876065529334465, -1.7182721100276819, 0.009999999999999998)
-2025-01-10 21:01:38,239 - vision robot1 - INFO - Feedback: Current position: (1.8831605197221317, -1.7814967344390724, 0.010000000000000002)
-2025-01-10 21:01:42,462 - vision robot1 - INFO - Feedback: Current position: (1.8720446041856613, -1.7539566314829735, 0.010000000000000005)
-2025-01-10 21:01:45,563 - vision robot1 - INFO - Result: Target Reached
-2025-01-10 21:05:58,901 - vision robot1 - INFO - 0
-2025-01-10 21:05:59,459 - vision robot1 - INFO - -1
-2025-01-10 21:05:59,913 - vision robot1 - INFO - -1
-2025-01-10 21:06:00,735 - vision robot1 - INFO - -2
-2025-01-10 21:06:00,735 - vision robot1 - INFO - -2
-2025-01-10 21:06:01,296 - vision robot1 - INFO - -2
-2025-01-10 21:06:01,297 - vision robot1 - INFO - -2
-2025-01-10 21:06:01,911 - vision robot1 - INFO - -3
-2025-01-10 21:06:01,912 - vision robot1 - INFO - -3
-2025-01-10 21:06:02,479 - vision robot1 - INFO - -3
-2025-01-10 21:06:03,033 - vision robot1 - INFO - -4
-2025-01-10 21:06:03,498 - vision robot1 - INFO - -4
-2025-01-10 21:06:03,506 - vision robot1 - INFO - -4
-2025-01-10 21:06:04,452 - vision robot1 - INFO - -3
-2025-01-10 21:06:04,907 - vision robot1 - INFO - -3
-2025-01-10 21:06:04,915 - vision robot1 - INFO - -3
-2025-01-10 21:06:04,915 - vision robot1 - INFO - -3
-2025-01-10 21:06:05,468 - vision robot1 - INFO - -3
-2025-01-10 21:06:05,733 - vision robot1 - INFO - -3
-2025-01-10 21:06:06,397 - vision robot1 - INFO - -3
-2025-01-10 21:06:06,398 - vision robot1 - INFO - -3
-2025-01-10 21:06:07,051 - vision robot1 - INFO - -4
-2025-01-10 21:06:07,052 - vision robot1 - INFO - -4
-2025-01-10 21:06:07,679 - vision robot1 - INFO - -3
-2025-01-10 21:06:08,131 - vision robot1 - INFO - -4
-2025-01-10 21:06:08,132 - vision robot1 - INFO - -4
-2025-01-10 21:06:08,930 - vision robot1 - INFO - -4
-2025-01-10 21:06:08,930 - vision robot1 - INFO - -4
-2025-01-10 21:06:09,396 - vision robot1 - INFO - -5
-2025-01-10 21:06:10,172 - vision robot1 - INFO - -5
-2025-01-10 21:06:10,172 - vision robot1 - INFO - -5
-2025-01-10 21:06:10,941 - vision robot1 - INFO - -6
-2025-01-10 21:06:10,942 - vision robot1 - INFO - -6
-2025-01-10 21:06:10,942 - vision robot1 - INFO - -6
-2025-01-10 21:06:10,942 - vision robot1 - INFO - -6
-2025-01-10 21:06:11,389 - vision robot1 - INFO - -5
-2025-01-10 21:06:11,979 - vision robot1 - INFO - -5
-2025-01-10 21:06:11,981 - vision robot1 - INFO - -5
-2025-01-10 21:06:13,877 - vision robot1 - INFO - -5
-2025-01-10 21:06:14,428 - vision robot1 - INFO - -5
-2025-01-10 21:06:15,094 - vision robot1 - INFO - -6
-2025-01-10 21:06:15,097 - vision robot1 - INFO - -6
-2025-01-10 21:06:15,668 - vision robot1 - INFO - -7
-2025-01-10 21:06:16,238 - vision robot1 - INFO - -6
-2025-01-10 21:06:16,240 - vision robot1 - INFO - -6
-2025-01-10 21:06:16,975 - vision robot1 - INFO - -6
-2025-01-10 21:06:16,975 - vision robot1 - INFO - -6
-2025-01-10 21:06:17,711 - vision robot1 - INFO - -6
-2025-01-10 21:06:18,319 - vision robot1 - INFO - diameter: 18
-2025-01-10 21:06:18,319 - vision robot1 - INFO - distance: 4.669999999999999
-2025-01-10 21:06:18,319 - vision robot1 - INFO - 1.1675581728499598
-2025-01-10 21:06:18,319 - vision robot1 - INFO - 1.8490009832431478
-2025-01-10 21:06:33,954 - vision robot1 - INFO - Feedback: Current position: (-3.056835574073311, 1.9735385324538564, 0.01)
-2025-01-10 21:06:50,687 - vision robot1 - INFO - Feedback: Current position: (-2.5729178913969437, 1.9617839828207626, 0.01)
-2025-01-10 21:07:06,067 - vision robot1 - INFO - Feedback: Current position: (-2.0816222439500827, 1.971062053542237, 0.009999999999999998)
-2025-01-10 21:07:21,831 - vision robot1 - INFO - Feedback: Current position: (-1.6125352493852751, 1.9748078581096158, 0.01)
-2025-01-10 21:07:38,362 - vision robot1 - INFO - Feedback: Current position: (-1.124521798596815, 1.9646470114514671, 0.01)
-2025-01-10 21:07:56,679 - vision robot1 - INFO - Feedback: Current position: (-0.6309655179292264, 1.9867628160655686, 0.010000000000000002)
-2025-01-10 21:08:14,428 - vision robot1 - INFO - Feedback: Current position: (-0.09502006577174615, 1.9634974358495483, 0.010000000000000002)
-2025-01-10 21:08:32,642 - vision robot1 - INFO - Feedback: Current position: (0.39189670595331716, 1.9516357696233084, 0.009999999999999998)
-2025-01-10 21:08:48,117 - vision robot1 - INFO - Feedback: Current position: (0.8261834590965744, 1.9148713688780805, 0.009999999999999998)
-2025-01-10 21:09:05,974 - vision robot1 - INFO - Feedback: Current position: (0.9532495608092213, 1.9212525576850288, 0.009999999999999998)
-2025-01-10 21:09:23,740 - vision robot1 - INFO - Feedback: Current position: (0.9697608697396807, 1.9227471089769104, 0.01)
-2025-01-10 21:09:41,266 - vision robot1 - INFO - Feedback: Current position: (1.0095548592532477, 1.9335097950796054, 0.01)
-2025-01-10 21:09:48,754 - vision robot1 - INFO - Result: Target Reached
-2025-01-10 21:10:09,430 - vision robot1 - INFO - Feedback: Current position: (1.4647883372860142, 2.0185263552448123, 0.01)
-2025-01-10 21:10:28,125 - vision robot1 - INFO - Feedback: Current position: (1.9183417158012293, 2.0421416690019196, 0.01)
-2025-01-10 21:10:43,914 - vision robot1 - INFO - Result: Target Reached
-2025-01-10 21:10:44,393 - vision robot1 - INFO - dropped off
-2025-01-10 21:11:03,807 - vision robot1 - INFO - Feedback: Current position: (2.2895500125370187, 2.1112286544745245, 0.009999999999999997)
-2025-01-10 21:11:23,738 - vision robot1 - INFO - Feedback: Current position: (2.2899417794895065, 2.111257858059757, 0.01)
-2025-01-10 21:11:43,370 - vision robot1 - INFO - Feedback: Current position: (2.2901772819007142, 2.1112754367085333, 0.009999999999999998)
-2025-01-10 21:12:00,521 - vision robot1 - INFO - Feedback: Current position: (2.2901771243807216, 2.1112754369479823, 0.009999999999999998)
-2025-01-10 21:12:18,339 - vision robot1 - INFO - Feedback: Current position: (2.2901778428271715, 2.1112754988308944, 0.009999999999999997)
-2025-01-10 21:12:36,655 - vision robot1 - INFO - Feedback: Current position: (2.2901805200373815, 2.111275592888698, 0.009999999999999997)
-2025-01-10 21:12:55,754 - vision robot1 - INFO - Feedback: Current position: (2.274804090370309, 2.046467971263437, 0.009999999999999998)
-2025-01-10 21:13:10,423 - vision robot1 - INFO - Feedback: Current position: (1.8687122846181028, 1.8687288290280384, 0.010000000000000002)
-2025-01-10 21:13:27,125 - vision robot1 - INFO - Feedback: Current position: (1.5464494647303861, 1.9371924264199167, 0.010000000000000002)
-2025-01-10 21:15:47,859 - vision robot1 - INFO - 0
-2025-01-10 21:20:13,530 - vision robot1 - INFO - 0
-2025-01-10 21:20:13,996 - vision robot1 - INFO - 0
-2025-01-10 21:20:13,996 - vision robot1 - INFO - 0
-2025-01-10 21:20:14,688 - vision robot1 - INFO - diameter: 18
-2025-01-10 21:20:14,688 - vision robot1 - INFO - distance: 4.669999999999999
-2025-01-10 21:20:14,688 - vision robot1 - INFO - 1.1694907952902467
-2025-01-10 21:20:14,688 - vision robot1 - INFO - 2.068961675586128
-2025-01-10 21:20:32,720 - vision robot1 - INFO - Feedback: Current position: (-3.0478577644218356, 2.0009699358257067, 0.010000000000000002)
-2025-01-10 21:20:53,640 - vision robot1 - INFO - Feedback: Current position: (-2.566868502863273, 1.9883873084592343, 0.009999999999999998)
-2025-01-10 21:21:09,185 - vision robot1 - INFO - Feedback: Current position: (-2.0693410651728286, 1.9896029110339617, 0.01)
-2025-01-10 21:21:25,681 - vision robot1 - INFO - Feedback: Current position: (-1.5707492977655264, 1.97214467706422, 0.01)
-2025-01-10 21:21:40,940 - vision robot1 - INFO - Feedback: Current position: (-1.108925276446271, 1.9918131037009017, 0.009999999999999998)
-2025-01-10 21:21:59,342 - vision robot1 - INFO - Feedback: Current position: (-0.6053075954440819, 1.967665453102112, 0.010000000000000002)
-2025-01-10 21:22:16,075 - vision robot1 - INFO - Feedback: Current position: (-0.1136870354756403, 1.9900264278913866, 0.01)
-2025-01-10 21:22:33,354 - vision robot1 - INFO - Feedback: Current position: (0.37658107934848273, 2.0189360545869484, 0.009999999999999998)
-2025-01-10 21:22:50,623 - vision robot1 - INFO - Feedback: Current position: (0.8610929522846922, 2.0560730678982724, 0.010000000000000002)
-2025-01-10 21:22:55,492 - vision robot1 - INFO - Result: Target Reached
-2025-01-10 21:23:14,575 - vision robot1 - INFO - Feedback: Current position: (1.3854105651425606, 2.0647372060052103, 0.010000000000000005)
+2025-01-12 21:01:52,166 - vision robot1 - INFO - waiting for rotate
+2025-01-12 21:01:53,199 - vision robot1 - INFO - waiting for rotate
+2025-01-12 21:01:54,233 - vision robot1 - INFO - waiting for rotate
+2025-01-12 21:01:55,289 - vision robot1 - INFO - waiting for rotate
+2025-01-12 21:01:56,309 - vision robot1 - INFO - waiting for rotate
+2025-01-12 21:01:57,352 - vision robot1 - INFO - waiting for rotate
+2025-01-12 21:01:58,364 - vision robot1 - INFO - waiting for rotate
+2025-01-12 21:01:59,401 - vision robot1 - INFO - waiting for rotate
+2025-01-12 21:02:00,446 - vision robot1 - INFO - waiting for rotate
+2025-01-12 21:02:01,476 - vision robot1 - INFO - waiting for rotate
+2025-01-12 21:02:02,494 - vision robot1 - INFO - waiting for rotate
+2025-01-12 21:02:03,536 - vision robot1 - INFO - waiting for rotate
+2025-01-12 21:02:04,655 - vision robot1 - INFO - waiting for rotate
+2025-01-12 21:02:05,680 - vision robot1 - INFO - waiting for rotate
+2025-01-12 21:02:06,697 - vision robot1 - INFO - waiting for rotate
+2025-01-12 21:02:07,728 - vision robot1 - INFO - waiting for rotate
+2025-01-12 21:02:08,747 - vision robot1 - INFO - waiting for rotate
+2025-01-12 21:02:09,011 - vision robot1 - INFO - Finding Target
+2025-01-12 21:02:09,161 - vision robot1 - INFO - Finding Target
+2025-01-12 21:02:09,483 - vision robot1 - INFO - Finding Target
+2025-01-12 21:02:09,814 - vision robot1 - INFO - Finding Target
+2025-01-12 21:02:10,000 - vision robot1 - INFO - Finding Target
+2025-01-12 21:02:10,209 - vision robot1 - INFO - Finding Target
+2025-01-12 21:02:10,433 - vision robot1 - INFO - Finding Target
+2025-01-12 21:02:10,629 - vision robot1 - INFO - Finding Target
+2025-01-12 21:02:10,747 - vision robot1 - INFO - Finding Target
+2025-01-12 21:02:11,056 - vision robot1 - INFO - Finding Target
+2025-01-12 21:02:11,367 - vision robot1 - INFO - Finding Target
+2025-01-12 21:02:11,723 - vision robot1 - INFO - Finding Target
+2025-01-12 21:02:11,966 - vision robot1 - INFO - Finding Target
+2025-01-12 21:02:12,289 - vision robot1 - INFO - Finding Target
+2025-01-12 21:02:12,497 - vision robot1 - INFO - Finding Target
+2025-01-12 21:02:12,710 - vision robot1 - INFO - Finding Target
+2025-01-12 21:02:12,959 - vision robot1 - INFO - Finding Target
+2025-01-12 21:02:13,108 - vision robot1 - INFO - Finding Target
+2025-01-12 21:02:13,207 - vision robot1 - INFO - Finding Target
+2025-01-12 21:02:13,414 - vision robot1 - INFO - Finding Target
+2025-01-12 21:02:13,623 - vision robot1 - INFO - Finding Target
+2025-01-12 21:02:13,721 - vision robot1 - INFO - Finding Target
+2025-01-12 21:02:13,946 - vision robot1 - INFO - Finding Target
+2025-01-12 21:02:14,295 - vision robot1 - INFO - Finding Target
+2025-01-12 21:02:14,488 - vision robot1 - INFO - Finding Target
+2025-01-12 21:02:14,691 - vision robot1 - INFO - Finding Target
+2025-01-12 21:02:14,796 - vision robot1 - INFO - Finding Target
+2025-01-12 21:02:15,022 - vision robot1 - INFO - Finding Target
+2025-01-12 21:02:15,344 - vision robot1 - INFO - Finding Target
+2025-01-12 21:02:15,544 - vision robot1 - INFO - Finding Target
+2025-01-12 21:02:15,775 - vision robot1 - INFO - Finding Target
+2025-01-12 21:02:16,086 - vision robot1 - INFO - Finding Target
+2025-01-12 21:02:16,289 - vision robot1 - INFO - Finding Target
+2025-01-12 21:02:16,602 - vision robot1 - INFO - Finding Target
+2025-01-12 21:02:16,705 - vision robot1 - INFO - Finding Target
+2025-01-12 21:02:16,803 - vision robot1 - INFO - Finding Target
+2025-01-12 21:02:17,026 - vision robot1 - INFO - Finding Target
+2025-01-12 21:02:17,251 - vision robot1 - INFO - Finding Target
+2025-01-12 21:02:17,529 - vision robot1 - INFO - Finding Target
+2025-01-12 21:02:17,629 - vision robot1 - INFO - Finding Target
+2025-01-12 21:02:17,842 - vision robot1 - INFO - Finding Target
+2025-01-12 21:02:17,970 - vision robot1 - INFO - Finding Target
+2025-01-12 21:02:18,039 - vision robot1 - INFO - Finding Target
+2025-01-12 21:02:18,255 - vision robot1 - INFO - Finding Target
+2025-01-12 21:02:18,339 - vision robot1 - INFO - Finding Target
+2025-01-12 21:02:18,650 - vision robot1 - INFO - Finding Target
+2025-01-12 21:02:18,881 - vision robot1 - INFO - Finding Target
+2025-01-12 21:02:19,081 - vision robot1 - INFO - Finding Target
+2025-01-12 21:02:19,300 - vision robot1 - INFO - Finding Target
+2025-01-12 21:02:19,500 - vision robot1 - INFO - Finding Target
+2025-01-12 21:02:19,610 - vision robot1 - INFO - Finding Target
+2025-01-12 21:02:19,824 - vision robot1 - INFO - Finding Target
+2025-01-12 21:02:19,924 - vision robot1 - INFO - Finding Target
+2025-01-12 21:02:20,136 - vision robot1 - INFO - Finding Target
+2025-01-12 21:02:20,414 - vision robot1 - INFO - Finding Target
+2025-01-12 21:02:20,719 - vision robot1 - INFO - Finding Target
+2025-01-12 21:02:20,961 - vision robot1 - INFO - Finding Target
+2025-01-12 21:02:21,013 - vision robot1 - INFO - Finding Target
+2025-01-12 21:02:21,146 - vision robot1 - INFO - Finding Target
+2025-01-12 21:02:21,225 - vision robot1 - INFO - Finding Target
+2025-01-12 21:02:21,417 - vision robot1 - INFO - Finding Target
+2025-01-12 21:02:21,656 - vision robot1 - INFO - Finding Target
+2025-01-12 21:02:21,744 - vision robot1 - INFO - Finding Target
+2025-01-12 21:02:21,848 - vision robot1 - INFO - Finding Target
+2025-01-12 21:02:21,959 - vision robot1 - INFO - Finding Target
+2025-01-12 21:02:21,970 - vision robot1 - INFO - Navigation started
+2025-01-12 21:03:40,243 - vision robot1 - INFO - Finding Target
+2025-01-12 21:03:40,364 - vision robot1 - INFO - No ball in sight
+2025-01-12 21:03:40,562 - vision robot1 - INFO - Finding Target
+2025-01-12 21:03:40,790 - vision robot1 - INFO - No ball in sight
+2025-01-12 21:03:41,002 - vision robot1 - INFO - Finding Target
+2025-01-12 21:03:41,227 - vision robot1 - INFO - No ball in sight
+2025-01-12 21:03:41,431 - vision robot1 - INFO - Finding Target
+2025-01-12 21:03:41,633 - vision robot1 - INFO - No ball in sight
+2025-01-12 21:03:41,834 - vision robot1 - INFO - Finding Target
+2025-01-12 21:03:42,041 - vision robot1 - INFO - No ball in sight
+2025-01-12 21:03:42,264 - vision robot1 - INFO - Finding Target
+2025-01-12 21:03:42,503 - vision robot1 - INFO - No ball in sight
+2025-01-12 21:03:42,678 - vision robot1 - INFO - Finding Target
+2025-01-12 21:03:42,900 - vision robot1 - INFO - No ball in sight
+2025-01-12 21:03:43,110 - vision robot1 - INFO - Finding Target
+2025-01-12 21:03:43,211 - vision robot1 - INFO - No ball in sight
+2025-01-12 21:03:43,338 - vision robot1 - INFO - Finding Target
+2025-01-12 21:03:43,538 - vision robot1 - INFO - No ball in sight
+2025-01-12 21:03:43,734 - vision robot1 - INFO - Finding Target
+2025-01-12 21:03:43,835 - vision robot1 - INFO - No ball in sight
+2025-01-12 21:03:44,052 - vision robot1 - INFO - Finding Target
+2025-01-12 21:03:44,276 - vision robot1 - INFO - No ball in sight
+2025-01-12 21:03:44,480 - vision robot1 - INFO - Finding Target
+2025-01-12 21:03:44,785 - vision robot1 - INFO - No ball in sight
+2025-01-12 21:03:44,884 - vision robot1 - INFO - Finding Target
+2025-01-12 21:03:45,094 - vision robot1 - INFO - No ball in sight
+2025-01-12 21:03:45,203 - vision robot1 - INFO - Finding Target
+2025-01-12 21:03:45,396 - vision robot1 - INFO - No ball in sight
+2025-01-12 21:03:45,743 - vision robot1 - INFO - Finding Target
+2025-01-12 21:03:45,936 - vision robot1 - INFO - No ball in sight
+2025-01-12 21:03:46,140 - vision robot1 - INFO - Finding Target
+2025-01-12 21:03:46,346 - vision robot1 - INFO - No ball in sight
+2025-01-12 21:03:46,553 - vision robot1 - INFO - Finding Target
+2025-01-12 21:03:46,670 - vision robot1 - INFO - No ball in sight
+2025-01-12 21:03:46,786 - vision robot1 - INFO - Finding Target
+2025-01-12 21:03:46,980 - vision robot1 - INFO - No ball in sight
+2025-01-12 21:03:47,180 - vision robot1 - INFO - Finding Target
+2025-01-12 21:03:47,283 - vision robot1 - INFO - No ball in sight
+2025-01-12 21:03:47,485 - vision robot1 - INFO - Finding Target
+2025-01-12 21:03:47,766 - vision robot1 - INFO - No ball in sight
+2025-01-12 21:03:47,898 - vision robot1 - INFO - Finding Target
+2025-01-12 21:03:48,097 - vision robot1 - INFO - No ball in sight
+2025-01-12 21:03:48,189 - vision robot1 - INFO - Finding Target
+2025-01-12 21:03:48,516 - vision robot1 - INFO - No ball in sight
+2025-01-12 21:03:48,641 - vision robot1 - INFO - Finding Target
+2025-01-12 21:03:48,737 - vision robot1 - INFO - No ball in sight
+2025-01-12 21:03:48,841 - vision robot1 - INFO - Finding Target
+2025-01-12 21:03:49,038 - vision robot1 - INFO - No ball in sight
+2025-01-12 21:03:49,142 - vision robot1 - INFO - Finding Target
+2025-01-12 21:03:49,355 - vision robot1 - INFO - No ball in sight
+2025-01-12 21:03:49,563 - vision robot1 - INFO - Finding Target
+2025-01-12 21:03:49,762 - vision robot1 - INFO - No ball in sight
+2025-01-12 21:03:49,968 - vision robot1 - INFO - Finding Target
+2025-01-12 21:03:50,069 - vision robot1 - INFO - No ball in sight
+2025-01-12 21:03:50,281 - vision robot1 - INFO - Finding Target
+2025-01-12 21:03:50,472 - vision robot1 - INFO - No ball in sight
+2025-01-12 21:03:50,574 - vision robot1 - INFO - Finding Target
+2025-01-12 21:03:50,881 - vision robot1 - INFO - No ball in sight
+2025-01-12 21:03:50,986 - vision robot1 - INFO - Finding Target
+2025-01-12 21:03:51,204 - vision robot1 - INFO - No ball in sight
+2025-01-12 21:03:51,311 - vision robot1 - INFO - Finding Target
+2025-01-12 21:03:51,510 - vision robot1 - INFO - No ball in sight
+2025-01-12 21:03:51,606 - vision robot1 - INFO - Finding Target
+2025-01-12 21:03:51,730 - vision robot1 - INFO - No ball in sight
+2025-01-12 21:03:51,929 - vision robot1 - INFO - Finding Target
+2025-01-12 21:03:52,250 - vision robot1 - INFO - No ball in sight
+2025-01-12 21:03:52,567 - vision robot1 - INFO - Finding Target
+2025-01-12 21:03:52,670 - vision robot1 - INFO - No ball in sight
+2025-01-12 21:03:52,990 - vision robot1 - INFO - Finding Target
+2025-01-12 21:03:53,201 - vision robot1 - INFO - No ball in sight
+2025-01-12 21:03:53,413 - vision robot1 - INFO - Finding Target
+2025-01-12 21:03:53,646 - vision robot1 - INFO - No ball in sight
+2025-01-12 21:03:53,888 - vision robot1 - INFO - Finding Target
+2025-01-12 21:03:53,964 - vision robot1 - INFO - No ball in sight
+2025-01-12 21:03:54,066 - vision robot1 - INFO - Finding Target
+2025-01-12 21:03:54,270 - vision robot1 - INFO - No ball in sight
+2025-01-12 21:03:54,488 - vision robot1 - INFO - Finding Target
+2025-01-12 21:03:54,725 - vision robot1 - INFO - No ball in sight
+2025-01-12 21:03:54,939 - vision robot1 - INFO - Finding Target
+2025-01-12 21:03:55,134 - vision robot1 - INFO - No ball in sight
+2025-01-12 21:03:55,332 - vision robot1 - INFO - Finding Target
+2025-01-12 21:03:55,543 - vision robot1 - INFO - No ball in sight
+2025-01-12 21:03:55,636 - vision robot1 - INFO - Finding Target
+2025-01-12 21:03:55,845 - vision robot1 - INFO - No ball in sight
+2025-01-12 21:03:56,151 - vision robot1 - INFO - Finding Target
+2025-01-12 21:03:56,258 - vision robot1 - INFO - Finding Target
+2025-01-12 21:03:56,358 - vision robot1 - INFO - Finding Target
+2025-01-12 21:03:56,475 - vision robot1 - INFO - Finding Target
+2025-01-12 21:03:56,575 - vision robot1 - INFO - Finding Target
+2025-01-12 21:03:56,672 - vision robot1 - INFO - Finding Target
+2025-01-12 21:03:56,874 - vision robot1 - INFO - Finding Target
+2025-01-12 21:03:57,119 - vision robot1 - INFO - Finding Target
+2025-01-12 21:03:57,366 - vision robot1 - INFO - Finding Target
+2025-01-12 21:03:57,480 - vision robot1 - INFO - Finding Target
+2025-01-12 21:03:57,684 - vision robot1 - INFO - Finding Target
+2025-01-12 21:03:57,799 - vision robot1 - INFO - Finding Target
+2025-01-12 21:03:57,913 - vision robot1 - INFO - Finding Target
+2025-01-12 21:03:58,228 - vision robot1 - INFO - Finding Target
+2025-01-12 21:03:58,325 - vision robot1 - INFO - Finding Target
+2025-01-12 21:03:58,444 - vision robot1 - INFO - Finding Target
+2025-01-12 21:03:58,688 - vision robot1 - INFO - Finding Target
+2025-01-12 21:03:58,886 - vision robot1 - INFO - Finding Target
+2025-01-12 21:03:58,983 - vision robot1 - INFO - Finding Target
+2025-01-12 21:03:59,092 - vision robot1 - INFO - Finding Target
+2025-01-12 21:03:59,208 - vision robot1 - INFO - Finding Target
+2025-01-12 21:03:59,407 - vision robot1 - INFO - Finding Target
+2025-01-12 21:03:59,520 - vision robot1 - INFO - Finding Target
+2025-01-12 21:03:59,722 - vision robot1 - INFO - Finding Target
+2025-01-12 21:03:59,840 - vision robot1 - INFO - Finding Target
+2025-01-12 21:04:00,041 - vision robot1 - INFO - Finding Target
+2025-01-12 21:04:00,255 - vision robot1 - INFO - Finding Target
+2025-01-12 21:04:00,461 - vision robot1 - INFO - Finding Target
+2025-01-12 21:04:00,653 - vision robot1 - INFO - Finding Target
+2025-01-12 21:04:00,752 - vision robot1 - INFO - Finding Target
+2025-01-12 21:04:00,962 - vision robot1 - INFO - Finding Target
+2025-01-12 21:04:01,096 - vision robot1 - INFO - Aligned with target
+2025-01-12 21:04:01,116 - vision robot1 - INFO - Navigation started

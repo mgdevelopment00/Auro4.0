@@ -1,1 +1,1 @@
-/home/auro/Auro/auro_interfaces/msg/Direction.msg
+/home/auro/Auro_Revised/auro_interfaces/msg/Direction.msg

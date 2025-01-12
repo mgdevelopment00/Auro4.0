@@ -6,7 +6,7 @@ import os
 import rclpy
 from rclpy.node import Node
 from rclpy.executors import ExternalShutdownException
-from auro_interfaces.srv import Sector, Collision, CheckGoal
+from auro_interfaces.srv import ZoneRequest, Collision, CheckGoal
 from auro_interfaces.action import Move
 from sensor_msgs.msg import LaserScan
 from rclpy.qos import QoSPresetProfiles

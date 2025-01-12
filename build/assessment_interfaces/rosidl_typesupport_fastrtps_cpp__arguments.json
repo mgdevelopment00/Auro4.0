@@ -1,17 +1,17 @@
 {
   "package_name": "assessment_interfaces",
-  "output_dir": "/home/auro/Auro/build/assessment_interfaces/rosidl_typesupport_fastrtps_cpp/assessment_interfaces",
+  "output_dir": "/home/auro/Auro_Revised/build/assessment_interfaces/rosidl_typesupport_fastrtps_cpp/assessment_interfaces",
   "template_dir": "/opt/ros/humble/share/rosidl_typesupport_fastrtps_cpp/resource",
   "idl_tuples": [
-    "/home/auro/Auro/build/assessment_interfaces/rosidl_adapter/assessment_interfaces:msg/ItemLog.idl",
-    "/home/auro/Auro/build/assessment_interfaces/rosidl_adapter/assessment_interfaces:msg/ItemHolder.idl",
-    "/home/auro/Auro/build/assessment_interfaces/rosidl_adapter/assessment_interfaces:msg/ItemHolders.idl",
-    "/home/auro/Auro/build/assessment_interfaces/rosidl_adapter/assessment_interfaces:msg/Item.idl",
-    "/home/auro/Auro/build/assessment_interfaces/rosidl_adapter/assessment_interfaces:msg/ItemList.idl",
-    "/home/auro/Auro/build/assessment_interfaces/rosidl_adapter/assessment_interfaces:msg/Zone.idl",
-    "/home/auro/Auro/build/assessment_interfaces/rosidl_adapter/assessment_interfaces:msg/ZoneList.idl",
-    "/home/auro/Auro/build/assessment_interfaces/rosidl_adapter/assessment_interfaces:msg/Robot.idl",
-    "/home/auro/Auro/build/assessment_interfaces/rosidl_adapter/assessment_interfaces:msg/RobotList.idl"
+    "/home/auro/Auro_Revised/build/assessment_interfaces/rosidl_adapter/assessment_interfaces:msg/ItemLog.idl",
+    "/home/auro/Auro_Revised/build/assessment_interfaces/rosidl_adapter/assessment_interfaces:msg/ItemHolder.idl",
+    "/home/auro/Auro_Revised/build/assessment_interfaces/rosidl_adapter/assessment_interfaces:msg/ItemHolders.idl",
+    "/home/auro/Auro_Revised/build/assessment_interfaces/rosidl_adapter/assessment_interfaces:msg/Item.idl",
+    "/home/auro/Auro_Revised/build/assessment_interfaces/rosidl_adapter/assessment_interfaces:msg/ItemList.idl",
+    "/home/auro/Auro_Revised/build/assessment_interfaces/rosidl_adapter/assessment_interfaces:msg/Zone.idl",
+    "/home/auro/Auro_Revised/build/assessment_interfaces/rosidl_adapter/assessment_interfaces:msg/ZoneList.idl",
+    "/home/auro/Auro_Revised/build/assessment_interfaces/rosidl_adapter/assessment_interfaces:msg/Robot.idl",
+    "/home/auro/Auro_Revised/build/assessment_interfaces/rosidl_adapter/assessment_interfaces:msg/RobotList.idl"
   ],
   "target_dependencies": [
     "/opt/ros/humble/lib/rosidl_typesupport_fastrtps_cpp/rosidl_typesupport_fastrtps_cpp",
@@ -22,14 +22,14 @@
     "/opt/ros/humble/share/rosidl_typesupport_fastrtps_cpp/resource/msg__type_support.cpp.em",
     "/opt/ros/humble/share/rosidl_typesupport_fastrtps_cpp/resource/srv__rosidl_typesupport_fastrtps_cpp.hpp.em",
     "/opt/ros/humble/share/rosidl_typesupport_fastrtps_cpp/resource/srv__type_support.cpp.em",
-    "/home/auro/Auro/build/assessment_interfaces/rosidl_adapter/assessment_interfaces/msg/ItemLog.idl",
-    "/home/auro/Auro/build/assessment_interfaces/rosidl_adapter/assessment_interfaces/msg/ItemHolder.idl",
-    "/home/auro/Auro/build/assessment_interfaces/rosidl_adapter/assessment_interfaces/msg/ItemHolders.idl",
-    "/home/auro/Auro/build/assessment_interfaces/rosidl_adapter/assessment_interfaces/msg/Item.idl",
-    "/home/auro/Auro/build/assessment_interfaces/rosidl_adapter/assessment_interfaces/msg/ItemList.idl",
-    "/home/auro/Auro/build/assessment_interfaces/rosidl_adapter/assessment_interfaces/msg/Zone.idl",
-    "/home/auro/Auro/build/assessment_interfaces/rosidl_adapter/assessment_interfaces/msg/ZoneList.idl",
-    "/home/auro/Auro/build/assessment_interfaces/rosidl_adapter/assessment_interfaces/msg/Robot.idl",
-    "/home/auro/Auro/build/assessment_interfaces/rosidl_adapter/assessment_interfaces/msg/RobotList.idl"
+    "/home/auro/Auro_Revised/build/assessment_interfaces/rosidl_adapter/assessment_interfaces/msg/ItemLog.idl",
+    "/home/auro/Auro_Revised/build/assessment_interfaces/rosidl_adapter/assessment_interfaces/msg/ItemHolder.idl",
+    "/home/auro/Auro_Revised/build/assessment_interfaces/rosidl_adapter/assessment_interfaces/msg/ItemHolders.idl",
+    "/home/auro/Auro_Revised/build/assessment_interfaces/rosidl_adapter/assessment_interfaces/msg/Item.idl",
+    "/home/auro/Auro_Revised/build/assessment_interfaces/rosidl_adapter/assessment_interfaces/msg/ItemList.idl",
+    "/home/auro/Auro_Revised/build/assessment_interfaces/rosidl_adapter/assessment_interfaces/msg/Zone.idl",
+    "/home/auro/Auro_Revised/build/assessment_interfaces/rosidl_adapter/assessment_interfaces/msg/ZoneList.idl",
+    "/home/auro/Auro_Revised/build/assessment_interfaces/rosidl_adapter/assessment_interfaces/msg/Robot.idl",
+    "/home/auro/Auro_Revised/build/assessment_interfaces/rosidl_adapter/assessment_interfaces/msg/RobotList.idl"
   ]
 }

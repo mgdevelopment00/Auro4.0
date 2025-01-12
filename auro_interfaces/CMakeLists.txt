@@ -20,10 +20,13 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/ItemList.msg"
   "msg/Direction.msg"
   "srv/ItemRequest.srv"
-  "srv/Sector.srv"
+  "srv/ZoneRequest.srv"
   "srv/Collision.srv"
   "action/Move.action"
   "srv/CheckGoal.srv"
+  "srv/Rotate.srv"
+  "srv/Task.srv"
+  "srv/FindTarget.srv"
   DEPENDENCIES geometry_msgs
 )
 

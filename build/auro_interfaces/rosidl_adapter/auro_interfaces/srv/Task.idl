@@ -1,0 +1,17 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from auro_interfaces/srv/Task.srv
+// generated code does not contain a copyright notice
+
+
+module auro_interfaces {
+  module srv {
+    struct Task_Request {
+      double diameter;
+
+      boolean move_to_target;
+    };
+    struct Task_Response {
+      boolean success;
+    };
+  };
+};

@@ -1,0 +1,21 @@
+2025-01-12 21:02:21,967 - navigation robot1 - INFO - Starting: REQUEST_RANDOM_WALK
+2025-01-12 21:03:02,918 - navigation robot1 - INFO - Feedback: Current position: (-3.0626726186551902, -2.0100774233723886, 0.01)
+2025-01-12 21:03:07,985 - navigation robot1 - INFO - Feedback: Current position: (-2.5791629511895753, -2.018273205846864, 0.01)
+2025-01-12 21:03:12,510 - navigation robot1 - INFO - Feedback: Current position: (-2.0789661866479006, -2.027377104474191, 0.010000000000000002)
+2025-01-12 21:03:17,082 - navigation robot1 - INFO - Feedback: Current position: (-1.59211490731561, -2.033934939854231, 0.01)
+2025-01-12 21:03:21,927 - navigation robot1 - INFO - Feedback: Current position: (-1.0841029333353922, -1.9974702290172435, 0.010000000000000002)
+2025-01-12 21:03:27,080 - navigation robot1 - INFO - Feedback: Current position: (-0.5919794806556311, -1.9979681788051817, 0.01)
+2025-01-12 21:03:30,948 - navigation robot1 - INFO - Feedback: Current position: (-0.10831956432076728, -2.0126724497961663, 0.01)
+2025-01-12 21:03:35,543 - navigation robot1 - INFO - Feedback: Current position: (0.3826729791877974, -1.9888966683252634, 0.01)
+2025-01-12 21:03:39,990 - navigation robot1 - INFO - Feedback: Current position: (0.6063172103155345, -1.9249170320139906, 0.009999999999999998)
+2025-01-12 21:03:40,158 - navigation robot1 - INFO - Result: Target Reached
+2025-01-12 21:03:40,170 - navigation robot1 - INFO - Started finding target
+2025-01-12 21:04:01,104 - navigation robot1 - INFO - Starting: GO_TO_TARGET
+2025-01-12 21:04:01,109 - navigation robot1 - INFO - 0.5187837837837838
+2025-01-12 21:04:05,094 - navigation robot1 - INFO - Feedback: Current position: (0.9033243771480124, -2.036695720178924, 0.010000000000000002)
+2025-01-12 21:04:06,478 - navigation robot1 - INFO - Result: Target Reached
+2025-01-12 21:04:11,952 - navigation robot1 - INFO - Feedback: Current position: (1.380139151872406, -2.0884563571507027, 0.009999999999999998)
+2025-01-12 21:04:16,610 - navigation robot1 - INFO - Feedback: Current position: (1.8682504309157761, -2.1180283854764568, 0.01)
+2025-01-12 21:04:21,035 - navigation robot1 - INFO - Feedback: Current position: (2.259097686936242, -2.1472620470299715, 0.01)
+2025-01-12 21:04:21,156 - navigation robot1 - INFO - Result: Target Reached
+2025-01-12 21:04:21,495 - navigation robot1 - INFO - dropped off

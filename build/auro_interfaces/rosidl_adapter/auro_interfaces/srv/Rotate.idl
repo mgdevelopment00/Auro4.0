@@ -1,0 +1,15 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from auro_interfaces/srv/Rotate.srv
+// generated code does not contain a copyright notice
+
+
+module auro_interfaces {
+  module srv {
+    struct Rotate_Request {
+      boolean direction;
+    };
+    struct Rotate_Response {
+      boolean success;
+    };
+  };
+};

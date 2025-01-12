@@ -56,6 +56,12 @@ def robot_controller_actions(context : LaunchContext):
                  executable='collision_avoidance',
                  output='screen',
                  parameters=[{"robot_name": robot_name}]),
+                 
+             Node(
+                 package='solution',
+                 executable='navigation',
+                 output='screen',
+                 parameters=[{"robot_name": robot_name}]),
         ])
 
         actions.append(group)

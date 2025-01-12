@@ -1,1 +1,0 @@
-/home/auro/Auro/build/auro_interfaces/rosidl_cmake/srv/Sector_Response.msg

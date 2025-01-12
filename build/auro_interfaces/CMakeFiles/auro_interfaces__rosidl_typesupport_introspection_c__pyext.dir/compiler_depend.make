@@ -263,15 +263,24 @@ CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl
   rosidl_generator_c/auro_interfaces/srv/detail/item_request__type_support.h \
   rosidl_generator_c/auro_interfaces/srv/detail/item_request__struct.h \
   rosidl_generator_c/auro_interfaces/srv/detail/item_request__functions.h \
-  rosidl_generator_c/auro_interfaces/srv/detail/sector__type_support.h \
-  rosidl_generator_c/auro_interfaces/srv/detail/sector__struct.h \
-  rosidl_generator_c/auro_interfaces/srv/detail/sector__functions.h \
+  rosidl_generator_c/auro_interfaces/srv/detail/zone_request__type_support.h \
+  rosidl_generator_c/auro_interfaces/srv/detail/zone_request__struct.h \
+  rosidl_generator_c/auro_interfaces/srv/detail/zone_request__functions.h \
   rosidl_generator_c/auro_interfaces/srv/detail/collision__type_support.h \
   rosidl_generator_c/auro_interfaces/srv/detail/collision__struct.h \
   rosidl_generator_c/auro_interfaces/srv/detail/collision__functions.h \
   rosidl_generator_c/auro_interfaces/srv/detail/check_goal__type_support.h \
   rosidl_generator_c/auro_interfaces/srv/detail/check_goal__struct.h \
   rosidl_generator_c/auro_interfaces/srv/detail/check_goal__functions.h \
+  rosidl_generator_c/auro_interfaces/srv/detail/rotate__type_support.h \
+  rosidl_generator_c/auro_interfaces/srv/detail/rotate__struct.h \
+  rosidl_generator_c/auro_interfaces/srv/detail/rotate__functions.h \
+  rosidl_generator_c/auro_interfaces/srv/detail/task__type_support.h \
+  rosidl_generator_c/auro_interfaces/srv/detail/task__struct.h \
+  rosidl_generator_c/auro_interfaces/srv/detail/task__functions.h \
+  rosidl_generator_c/auro_interfaces/srv/detail/find_target__type_support.h \
+  rosidl_generator_c/auro_interfaces/srv/detail/find_target__struct.h \
+  rosidl_generator_c/auro_interfaces/srv/detail/find_target__functions.h \
   rosidl_generator_c/auro_interfaces/action/detail/move__type_support.h \
   rosidl_generator_c/auro_interfaces/action/detail/move__struct.h \
   /opt/ros/humble/include/unique_identifier_msgs/unique_identifier_msgs/msg/detail/uuid__struct.h \
@@ -282,6 +291,12 @@ CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl
 /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.h:
 
 rosidl_generator_c/auro_interfaces/action/detail/move__struct.h:
+
+rosidl_generator_c/auro_interfaces/srv/detail/find_target__struct.h:
+
+rosidl_generator_c/auro_interfaces/srv/detail/rotate__struct.h:
+
+rosidl_generator_c/auro_interfaces/srv/detail/rotate__type_support.h:
 
 rosidl_generator_c/auro_interfaces/srv/detail/check_goal__functions.h:
 
@@ -297,9 +312,11 @@ rosidl_generator_c/auro_interfaces/srv/detail/collision__struct.h:
 
 rosidl_generator_c/auro_interfaces/srv/detail/collision__type_support.h:
 
-rosidl_generator_c/auro_interfaces/srv/detail/sector__struct.h:
+rosidl_generator_c/auro_interfaces/srv/detail/task__type_support.h:
 
-rosidl_generator_c/auro_interfaces/srv/detail/sector__type_support.h:
+rosidl_generator_c/auro_interfaces/srv/detail/zone_request__functions.h:
+
+rosidl_generator_c/auro_interfaces/srv/detail/zone_request__struct.h:
 
 rosidl_generator_c/auro_interfaces/srv/detail/item_request__functions.h:
 
@@ -351,6 +368,8 @@ rosidl_generator_c/auro_interfaces/msg/detail/direction__struct.h:
 
 /usr/include/python3.10/cpython/pyctype.h:
 
+rosidl_generator_c/auro_interfaces/srv/detail/find_target__functions.h:
+
 /usr/include/x86_64-linux-gnu/bits/statx.h:
 
 /usr/include/unistd.h:
@@ -358,6 +377,8 @@ rosidl_generator_c/auro_interfaces/msg/detail/direction__struct.h:
 /usr/include/x86_64-linux-gnu/sys/select.h:
 
 /usr/include/x86_64-linux-gnu/bits/wchar.h:
+
+rosidl_generator_c/auro_interfaces/srv/detail/rotate__functions.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h:
 
@@ -370,6 +391,8 @@ rosidl_generator_c/auro_interfaces/msg/detail/direction__struct.h:
 /usr/include/python3.10/structseq.h:
 
 /usr/include/linux/close_range.h:
+
+rosidl_generator_c/auro_interfaces/srv/detail/task__functions.h:
 
 /usr/include/x86_64-linux-gnu/bits/unistd_ext.h:
 
@@ -392,8 +415,6 @@ rosidl_generator_c/auro_interfaces/srv/detail/item_request__struct.h:
 /usr/include/python3.10/cpython/compile.h:
 
 /usr/include/x86_64-linux-gnu/bits/struct_mutex.h:
-
-rosidl_generator_c/auro_interfaces/srv/detail/sector__functions.h:
 
 /usr/include/x86_64-linux-gnu/bits/environments.h:
 
@@ -444,6 +465,8 @@ rosidl_generator_c/auro_interfaces/msg/detail/item_list__functions.h:
 /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h:
 
 /usr/include/x86_64-linux-gnu/bits/floatn.h:
+
+rosidl_generator_c/auro_interfaces/srv/detail/find_target__type_support.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h:
 
@@ -544,6 +567,8 @@ rosidl_generator_c/auro_interfaces/msg/detail/item_list__struct.h:
 /usr/include/x86_64-linux-gnu/sys/stat.h:
 
 /usr/include/python3.10/longintrepr.h:
+
+rosidl_generator_c/auro_interfaces/srv/detail/zone_request__type_support.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h:
 
@@ -654,6 +679,8 @@ rosidl_generator_c/auro_interfaces/msg/detail/item_list__type_support.h:
 /usr/include/x86_64-linux-gnu/sys/cdefs.h:
 
 /usr/include/python3.10/pyhash.h:
+
+rosidl_generator_c/auro_interfaces/srv/detail/task__struct.h:
 
 /usr/include/python3.10/object.h:
 

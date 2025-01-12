@@ -23,7 +23,7 @@ function(ament_cmake_symlink_install_directory cmake_current_source_dir)
 
   # make destination absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/home/auro/Auro/install/auro_interfaces/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/home/auro/Auro_Revised/install/auro_interfaces/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -123,7 +123,7 @@ function(ament_cmake_symlink_install_files cmake_current_source_dir)
 
   # make destination an absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/home/auro/Auro/install/auro_interfaces/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/home/auro/Auro_Revised/install/auro_interfaces/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -181,7 +181,7 @@ function(ament_cmake_symlink_install_programs cmake_current_source_dir)
 
   # make destination an absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/home/auro/Auro/install/auro_interfaces/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/home/auro/Auro_Revised/install/auro_interfaces/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -251,7 +251,7 @@ function(ament_cmake_symlink_install_targets)
 
     # make destination an absolute path and ensure that it exists
     if(NOT IS_ABSOLUTE "${destination}")
-      set(destination "/home/auro/Auro/install/auro_interfaces/${destination}")
+      set(destination "/home/auro/Auro_Revised/install/auro_interfaces/${destination}")
     endif()
     if(NOT EXISTS "${destination}")
       file(MAKE_DIRECTORY "${destination}")
@@ -310,191 +310,227 @@ message(STATUS "Execute custom install script")
 
 # begin of custom install code
 
-# install(FILES "/home/auro/Auro/build/auro_interfaces/ament_cmake_index/share/ament_index/resource_index/rosidl_interfaces/auro_interfaces" "DESTINATION" "share/ament_index/resource_index/rosidl_interfaces")
-ament_cmake_symlink_install_files("/home/auro/Auro/auro_interfaces" FILES "/home/auro/Auro/build/auro_interfaces/ament_cmake_index/share/ament_index/resource_index/rosidl_interfaces/auro_interfaces" "DESTINATION" "share/ament_index/resource_index/rosidl_interfaces")
+# install(FILES "/home/auro/Auro_Revised/build/auro_interfaces/ament_cmake_index/share/ament_index/resource_index/rosidl_interfaces/auro_interfaces" "DESTINATION" "share/ament_index/resource_index/rosidl_interfaces")
+ament_cmake_symlink_install_files("/home/auro/Auro_Revised/auro_interfaces" FILES "/home/auro/Auro_Revised/build/auro_interfaces/ament_cmake_index/share/ament_index/resource_index/rosidl_interfaces/auro_interfaces" "DESTINATION" "share/ament_index/resource_index/rosidl_interfaces")
 
-# install(DIRECTORY "/home/auro/Auro/build/auro_interfaces/rosidl_generator_c/auro_interfaces/" "DESTINATION" "include/auro_interfaces/auro_interfaces" "PATTERN" "*.h")
-ament_cmake_symlink_install_directory("/home/auro/Auro/auro_interfaces" DIRECTORY "/home/auro/Auro/build/auro_interfaces/rosidl_generator_c/auro_interfaces/" "DESTINATION" "include/auro_interfaces/auro_interfaces" "PATTERN" "*.h")
+# install(DIRECTORY "/home/auro/Auro_Revised/build/auro_interfaces/rosidl_generator_c/auro_interfaces/" "DESTINATION" "include/auro_interfaces/auro_interfaces" "PATTERN" "*.h")
+ament_cmake_symlink_install_directory("/home/auro/Auro_Revised/auro_interfaces" DIRECTORY "/home/auro/Auro_Revised/build/auro_interfaces/rosidl_generator_c/auro_interfaces/" "DESTINATION" "include/auro_interfaces/auro_interfaces" "PATTERN" "*.h")
 
 # install(FILES "/opt/ros/humble/lib/python3.10/site-packages/ament_package/template/environment_hook/library_path.sh" "DESTINATION" "share/auro_interfaces/environment")
-ament_cmake_symlink_install_files("/home/auro/Auro/auro_interfaces" FILES "/opt/ros/humble/lib/python3.10/site-packages/ament_package/template/environment_hook/library_path.sh" "DESTINATION" "share/auro_interfaces/environment")
+ament_cmake_symlink_install_files("/home/auro/Auro_Revised/auro_interfaces" FILES "/opt/ros/humble/lib/python3.10/site-packages/ament_package/template/environment_hook/library_path.sh" "DESTINATION" "share/auro_interfaces/environment")
 
-# install(FILES "/home/auro/Auro/build/auro_interfaces/ament_cmake_environment_hooks/library_path.dsv" "DESTINATION" "share/auro_interfaces/environment")
-ament_cmake_symlink_install_files("/home/auro/Auro/auro_interfaces" FILES "/home/auro/Auro/build/auro_interfaces/ament_cmake_environment_hooks/library_path.dsv" "DESTINATION" "share/auro_interfaces/environment")
+# install(FILES "/home/auro/Auro_Revised/build/auro_interfaces/ament_cmake_environment_hooks/library_path.dsv" "DESTINATION" "share/auro_interfaces/environment")
+ament_cmake_symlink_install_files("/home/auro/Auro_Revised/auro_interfaces" FILES "/home/auro/Auro_Revised/build/auro_interfaces/ament_cmake_environment_hooks/library_path.dsv" "DESTINATION" "share/auro_interfaces/environment")
 
-# install(DIRECTORY "/home/auro/Auro/build/auro_interfaces/rosidl_typesupport_fastrtps_c/auro_interfaces/" "DESTINATION" "include/auro_interfaces/auro_interfaces" "PATTERN_EXCLUDE" "*.cpp")
-ament_cmake_symlink_install_directory("/home/auro/Auro/auro_interfaces" DIRECTORY "/home/auro/Auro/build/auro_interfaces/rosidl_typesupport_fastrtps_c/auro_interfaces/" "DESTINATION" "include/auro_interfaces/auro_interfaces" "PATTERN_EXCLUDE" "*.cpp")
+# install(DIRECTORY "/home/auro/Auro_Revised/build/auro_interfaces/rosidl_typesupport_fastrtps_c/auro_interfaces/" "DESTINATION" "include/auro_interfaces/auro_interfaces" "PATTERN_EXCLUDE" "*.cpp")
+ament_cmake_symlink_install_directory("/home/auro/Auro_Revised/auro_interfaces" DIRECTORY "/home/auro/Auro_Revised/build/auro_interfaces/rosidl_typesupport_fastrtps_c/auro_interfaces/" "DESTINATION" "include/auro_interfaces/auro_interfaces" "PATTERN_EXCLUDE" "*.cpp")
 
-# install(DIRECTORY "/home/auro/Auro/build/auro_interfaces/rosidl_generator_cpp/auro_interfaces/" "DESTINATION" "include/auro_interfaces/auro_interfaces" "PATTERN" "*.hpp")
-ament_cmake_symlink_install_directory("/home/auro/Auro/auro_interfaces" DIRECTORY "/home/auro/Auro/build/auro_interfaces/rosidl_generator_cpp/auro_interfaces/" "DESTINATION" "include/auro_interfaces/auro_interfaces" "PATTERN" "*.hpp")
+# install(DIRECTORY "/home/auro/Auro_Revised/build/auro_interfaces/rosidl_generator_cpp/auro_interfaces/" "DESTINATION" "include/auro_interfaces/auro_interfaces" "PATTERN" "*.hpp")
+ament_cmake_symlink_install_directory("/home/auro/Auro_Revised/auro_interfaces" DIRECTORY "/home/auro/Auro_Revised/build/auro_interfaces/rosidl_generator_cpp/auro_interfaces/" "DESTINATION" "include/auro_interfaces/auro_interfaces" "PATTERN" "*.hpp")
 
-# install(DIRECTORY "/home/auro/Auro/build/auro_interfaces/rosidl_typesupport_fastrtps_cpp/auro_interfaces/" "DESTINATION" "include/auro_interfaces/auro_interfaces" "PATTERN_EXCLUDE" "*.cpp")
-ament_cmake_symlink_install_directory("/home/auro/Auro/auro_interfaces" DIRECTORY "/home/auro/Auro/build/auro_interfaces/rosidl_typesupport_fastrtps_cpp/auro_interfaces/" "DESTINATION" "include/auro_interfaces/auro_interfaces" "PATTERN_EXCLUDE" "*.cpp")
+# install(DIRECTORY "/home/auro/Auro_Revised/build/auro_interfaces/rosidl_typesupport_fastrtps_cpp/auro_interfaces/" "DESTINATION" "include/auro_interfaces/auro_interfaces" "PATTERN_EXCLUDE" "*.cpp")
+ament_cmake_symlink_install_directory("/home/auro/Auro_Revised/auro_interfaces" DIRECTORY "/home/auro/Auro_Revised/build/auro_interfaces/rosidl_typesupport_fastrtps_cpp/auro_interfaces/" "DESTINATION" "include/auro_interfaces/auro_interfaces" "PATTERN_EXCLUDE" "*.cpp")
 
-# install(DIRECTORY "/home/auro/Auro/build/auro_interfaces/rosidl_typesupport_introspection_c/auro_interfaces/" "DESTINATION" "include/auro_interfaces/auro_interfaces" "PATTERN" "*.h")
-ament_cmake_symlink_install_directory("/home/auro/Auro/auro_interfaces" DIRECTORY "/home/auro/Auro/build/auro_interfaces/rosidl_typesupport_introspection_c/auro_interfaces/" "DESTINATION" "include/auro_interfaces/auro_interfaces" "PATTERN" "*.h")
+# install(DIRECTORY "/home/auro/Auro_Revised/build/auro_interfaces/rosidl_typesupport_introspection_c/auro_interfaces/" "DESTINATION" "include/auro_interfaces/auro_interfaces" "PATTERN" "*.h")
+ament_cmake_symlink_install_directory("/home/auro/Auro_Revised/auro_interfaces" DIRECTORY "/home/auro/Auro_Revised/build/auro_interfaces/rosidl_typesupport_introspection_c/auro_interfaces/" "DESTINATION" "include/auro_interfaces/auro_interfaces" "PATTERN" "*.h")
 
-# install(DIRECTORY "/home/auro/Auro/build/auro_interfaces/rosidl_typesupport_introspection_cpp/auro_interfaces/" "DESTINATION" "include/auro_interfaces/auro_interfaces" "PATTERN" "*.hpp")
-ament_cmake_symlink_install_directory("/home/auro/Auro/auro_interfaces" DIRECTORY "/home/auro/Auro/build/auro_interfaces/rosidl_typesupport_introspection_cpp/auro_interfaces/" "DESTINATION" "include/auro_interfaces/auro_interfaces" "PATTERN" "*.hpp")
+# install(DIRECTORY "/home/auro/Auro_Revised/build/auro_interfaces/rosidl_typesupport_introspection_cpp/auro_interfaces/" "DESTINATION" "include/auro_interfaces/auro_interfaces" "PATTERN" "*.hpp")
+ament_cmake_symlink_install_directory("/home/auro/Auro_Revised/auro_interfaces" DIRECTORY "/home/auro/Auro_Revised/build/auro_interfaces/rosidl_typesupport_introspection_cpp/auro_interfaces/" "DESTINATION" "include/auro_interfaces/auro_interfaces" "PATTERN" "*.hpp")
 
-# install(FILES "/home/auro/Auro/build/auro_interfaces/ament_cmake_environment_hooks/pythonpath.sh" "DESTINATION" "share/auro_interfaces/environment")
-ament_cmake_symlink_install_files("/home/auro/Auro/auro_interfaces" FILES "/home/auro/Auro/build/auro_interfaces/ament_cmake_environment_hooks/pythonpath.sh" "DESTINATION" "share/auro_interfaces/environment")
+# install(FILES "/home/auro/Auro_Revised/build/auro_interfaces/ament_cmake_environment_hooks/pythonpath.sh" "DESTINATION" "share/auro_interfaces/environment")
+ament_cmake_symlink_install_files("/home/auro/Auro_Revised/auro_interfaces" FILES "/home/auro/Auro_Revised/build/auro_interfaces/ament_cmake_environment_hooks/pythonpath.sh" "DESTINATION" "share/auro_interfaces/environment")
 
-# install(FILES "/home/auro/Auro/build/auro_interfaces/ament_cmake_environment_hooks/pythonpath.dsv" "DESTINATION" "share/auro_interfaces/environment")
-ament_cmake_symlink_install_files("/home/auro/Auro/auro_interfaces" FILES "/home/auro/Auro/build/auro_interfaces/ament_cmake_environment_hooks/pythonpath.dsv" "DESTINATION" "share/auro_interfaces/environment")
+# install(FILES "/home/auro/Auro_Revised/build/auro_interfaces/ament_cmake_environment_hooks/pythonpath.dsv" "DESTINATION" "share/auro_interfaces/environment")
+ament_cmake_symlink_install_files("/home/auro/Auro_Revised/auro_interfaces" FILES "/home/auro/Auro_Revised/build/auro_interfaces/ament_cmake_environment_hooks/pythonpath.dsv" "DESTINATION" "share/auro_interfaces/environment")
 
-# install(DIRECTORY "/home/auro/Auro/build/auro_interfaces/ament_cmake_python/auro_interfaces/auro_interfaces.egg-info/" "DESTINATION" "local/lib/python3.10/dist-packages/auro_interfaces-0.0.0-py3.10.egg-info")
-ament_cmake_symlink_install_directory("/home/auro/Auro/auro_interfaces" DIRECTORY "/home/auro/Auro/build/auro_interfaces/ament_cmake_python/auro_interfaces/auro_interfaces.egg-info/" "DESTINATION" "local/lib/python3.10/dist-packages/auro_interfaces-0.0.0-py3.10.egg-info")
+# install(DIRECTORY "/home/auro/Auro_Revised/build/auro_interfaces/ament_cmake_python/auro_interfaces/auro_interfaces.egg-info/" "DESTINATION" "local/lib/python3.10/dist-packages/auro_interfaces-0.0.0-py3.10.egg-info")
+ament_cmake_symlink_install_directory("/home/auro/Auro_Revised/auro_interfaces" DIRECTORY "/home/auro/Auro_Revised/build/auro_interfaces/ament_cmake_python/auro_interfaces/auro_interfaces.egg-info/" "DESTINATION" "local/lib/python3.10/dist-packages/auro_interfaces-0.0.0-py3.10.egg-info")
 
-# install(DIRECTORY "/home/auro/Auro/build/auro_interfaces/rosidl_generator_py/auro_interfaces/" "DESTINATION" "local/lib/python3.10/dist-packages/auro_interfaces" "PATTERN_EXCLUDE" "*.pyc" "PATTERN_EXCLUDE" "__pycache__")
-ament_cmake_symlink_install_directory("/home/auro/Auro/auro_interfaces" DIRECTORY "/home/auro/Auro/build/auro_interfaces/rosidl_generator_py/auro_interfaces/" "DESTINATION" "local/lib/python3.10/dist-packages/auro_interfaces" "PATTERN_EXCLUDE" "*.pyc" "PATTERN_EXCLUDE" "__pycache__")
+# install(DIRECTORY "/home/auro/Auro_Revised/build/auro_interfaces/rosidl_generator_py/auro_interfaces/" "DESTINATION" "local/lib/python3.10/dist-packages/auro_interfaces" "PATTERN_EXCLUDE" "*.pyc" "PATTERN_EXCLUDE" "__pycache__")
+ament_cmake_symlink_install_directory("/home/auro/Auro_Revised/auro_interfaces" DIRECTORY "/home/auro/Auro_Revised/build/auro_interfaces/rosidl_generator_py/auro_interfaces/" "DESTINATION" "local/lib/python3.10/dist-packages/auro_interfaces" "PATTERN_EXCLUDE" "*.pyc" "PATTERN_EXCLUDE" "__pycache__")
 
 # install("TARGETS" "auro_interfaces__rosidl_typesupport_fastrtps_c__pyext" "DESTINATION" "local/lib/python3.10/dist-packages/auro_interfaces")
-include("/home/auro/Auro/build/auro_interfaces/ament_cmake_symlink_install_targets_0_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
+include("/home/auro/Auro_Revised/build/auro_interfaces/ament_cmake_symlink_install_targets_0_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
 # install("TARGETS" "auro_interfaces__rosidl_typesupport_introspection_c__pyext" "DESTINATION" "local/lib/python3.10/dist-packages/auro_interfaces")
-include("/home/auro/Auro/build/auro_interfaces/ament_cmake_symlink_install_targets_1_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
+include("/home/auro/Auro_Revised/build/auro_interfaces/ament_cmake_symlink_install_targets_1_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
 # install("TARGETS" "auro_interfaces__rosidl_typesupport_c__pyext" "DESTINATION" "local/lib/python3.10/dist-packages/auro_interfaces")
-include("/home/auro/Auro/build/auro_interfaces/ament_cmake_symlink_install_targets_2_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
+include("/home/auro/Auro_Revised/build/auro_interfaces/ament_cmake_symlink_install_targets_2_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
-# install(FILES "/home/auro/Auro/build/auro_interfaces/rosidl_adapter/auro_interfaces/msg/StringWithPose.idl" "DESTINATION" "share/auro_interfaces/msg")
-ament_cmake_symlink_install_files("/home/auro/Auro/auro_interfaces" FILES "/home/auro/Auro/build/auro_interfaces/rosidl_adapter/auro_interfaces/msg/StringWithPose.idl" "DESTINATION" "share/auro_interfaces/msg")
+# install(FILES "/home/auro/Auro_Revised/build/auro_interfaces/rosidl_adapter/auro_interfaces/msg/StringWithPose.idl" "DESTINATION" "share/auro_interfaces/msg")
+ament_cmake_symlink_install_files("/home/auro/Auro_Revised/auro_interfaces" FILES "/home/auro/Auro_Revised/build/auro_interfaces/rosidl_adapter/auro_interfaces/msg/StringWithPose.idl" "DESTINATION" "share/auro_interfaces/msg")
 
-# install(FILES "/home/auro/Auro/build/auro_interfaces/rosidl_adapter/auro_interfaces/msg/Item.idl" "DESTINATION" "share/auro_interfaces/msg")
-ament_cmake_symlink_install_files("/home/auro/Auro/auro_interfaces" FILES "/home/auro/Auro/build/auro_interfaces/rosidl_adapter/auro_interfaces/msg/Item.idl" "DESTINATION" "share/auro_interfaces/msg")
+# install(FILES "/home/auro/Auro_Revised/build/auro_interfaces/rosidl_adapter/auro_interfaces/msg/Item.idl" "DESTINATION" "share/auro_interfaces/msg")
+ament_cmake_symlink_install_files("/home/auro/Auro_Revised/auro_interfaces" FILES "/home/auro/Auro_Revised/build/auro_interfaces/rosidl_adapter/auro_interfaces/msg/Item.idl" "DESTINATION" "share/auro_interfaces/msg")
 
-# install(FILES "/home/auro/Auro/build/auro_interfaces/rosidl_adapter/auro_interfaces/msg/ItemList.idl" "DESTINATION" "share/auro_interfaces/msg")
-ament_cmake_symlink_install_files("/home/auro/Auro/auro_interfaces" FILES "/home/auro/Auro/build/auro_interfaces/rosidl_adapter/auro_interfaces/msg/ItemList.idl" "DESTINATION" "share/auro_interfaces/msg")
+# install(FILES "/home/auro/Auro_Revised/build/auro_interfaces/rosidl_adapter/auro_interfaces/msg/ItemList.idl" "DESTINATION" "share/auro_interfaces/msg")
+ament_cmake_symlink_install_files("/home/auro/Auro_Revised/auro_interfaces" FILES "/home/auro/Auro_Revised/build/auro_interfaces/rosidl_adapter/auro_interfaces/msg/ItemList.idl" "DESTINATION" "share/auro_interfaces/msg")
 
-# install(FILES "/home/auro/Auro/build/auro_interfaces/rosidl_adapter/auro_interfaces/msg/Direction.idl" "DESTINATION" "share/auro_interfaces/msg")
-ament_cmake_symlink_install_files("/home/auro/Auro/auro_interfaces" FILES "/home/auro/Auro/build/auro_interfaces/rosidl_adapter/auro_interfaces/msg/Direction.idl" "DESTINATION" "share/auro_interfaces/msg")
+# install(FILES "/home/auro/Auro_Revised/build/auro_interfaces/rosidl_adapter/auro_interfaces/msg/Direction.idl" "DESTINATION" "share/auro_interfaces/msg")
+ament_cmake_symlink_install_files("/home/auro/Auro_Revised/auro_interfaces" FILES "/home/auro/Auro_Revised/build/auro_interfaces/rosidl_adapter/auro_interfaces/msg/Direction.idl" "DESTINATION" "share/auro_interfaces/msg")
 
-# install(FILES "/home/auro/Auro/build/auro_interfaces/rosidl_adapter/auro_interfaces/srv/ItemRequest.idl" "DESTINATION" "share/auro_interfaces/srv")
-ament_cmake_symlink_install_files("/home/auro/Auro/auro_interfaces" FILES "/home/auro/Auro/build/auro_interfaces/rosidl_adapter/auro_interfaces/srv/ItemRequest.idl" "DESTINATION" "share/auro_interfaces/srv")
+# install(FILES "/home/auro/Auro_Revised/build/auro_interfaces/rosidl_adapter/auro_interfaces/srv/ItemRequest.idl" "DESTINATION" "share/auro_interfaces/srv")
+ament_cmake_symlink_install_files("/home/auro/Auro_Revised/auro_interfaces" FILES "/home/auro/Auro_Revised/build/auro_interfaces/rosidl_adapter/auro_interfaces/srv/ItemRequest.idl" "DESTINATION" "share/auro_interfaces/srv")
 
-# install(FILES "/home/auro/Auro/build/auro_interfaces/rosidl_adapter/auro_interfaces/srv/Sector.idl" "DESTINATION" "share/auro_interfaces/srv")
-ament_cmake_symlink_install_files("/home/auro/Auro/auro_interfaces" FILES "/home/auro/Auro/build/auro_interfaces/rosidl_adapter/auro_interfaces/srv/Sector.idl" "DESTINATION" "share/auro_interfaces/srv")
+# install(FILES "/home/auro/Auro_Revised/build/auro_interfaces/rosidl_adapter/auro_interfaces/srv/ZoneRequest.idl" "DESTINATION" "share/auro_interfaces/srv")
+ament_cmake_symlink_install_files("/home/auro/Auro_Revised/auro_interfaces" FILES "/home/auro/Auro_Revised/build/auro_interfaces/rosidl_adapter/auro_interfaces/srv/ZoneRequest.idl" "DESTINATION" "share/auro_interfaces/srv")
 
-# install(FILES "/home/auro/Auro/build/auro_interfaces/rosidl_adapter/auro_interfaces/srv/Collision.idl" "DESTINATION" "share/auro_interfaces/srv")
-ament_cmake_symlink_install_files("/home/auro/Auro/auro_interfaces" FILES "/home/auro/Auro/build/auro_interfaces/rosidl_adapter/auro_interfaces/srv/Collision.idl" "DESTINATION" "share/auro_interfaces/srv")
+# install(FILES "/home/auro/Auro_Revised/build/auro_interfaces/rosidl_adapter/auro_interfaces/srv/Collision.idl" "DESTINATION" "share/auro_interfaces/srv")
+ament_cmake_symlink_install_files("/home/auro/Auro_Revised/auro_interfaces" FILES "/home/auro/Auro_Revised/build/auro_interfaces/rosidl_adapter/auro_interfaces/srv/Collision.idl" "DESTINATION" "share/auro_interfaces/srv")
 
-# install(FILES "/home/auro/Auro/build/auro_interfaces/rosidl_adapter/auro_interfaces/action/Move.idl" "DESTINATION" "share/auro_interfaces/action")
-ament_cmake_symlink_install_files("/home/auro/Auro/auro_interfaces" FILES "/home/auro/Auro/build/auro_interfaces/rosidl_adapter/auro_interfaces/action/Move.idl" "DESTINATION" "share/auro_interfaces/action")
+# install(FILES "/home/auro/Auro_Revised/build/auro_interfaces/rosidl_adapter/auro_interfaces/action/Move.idl" "DESTINATION" "share/auro_interfaces/action")
+ament_cmake_symlink_install_files("/home/auro/Auro_Revised/auro_interfaces" FILES "/home/auro/Auro_Revised/build/auro_interfaces/rosidl_adapter/auro_interfaces/action/Move.idl" "DESTINATION" "share/auro_interfaces/action")
 
-# install(FILES "/home/auro/Auro/build/auro_interfaces/rosidl_adapter/auro_interfaces/srv/CheckGoal.idl" "DESTINATION" "share/auro_interfaces/srv")
-ament_cmake_symlink_install_files("/home/auro/Auro/auro_interfaces" FILES "/home/auro/Auro/build/auro_interfaces/rosidl_adapter/auro_interfaces/srv/CheckGoal.idl" "DESTINATION" "share/auro_interfaces/srv")
+# install(FILES "/home/auro/Auro_Revised/build/auro_interfaces/rosidl_adapter/auro_interfaces/srv/CheckGoal.idl" "DESTINATION" "share/auro_interfaces/srv")
+ament_cmake_symlink_install_files("/home/auro/Auro_Revised/auro_interfaces" FILES "/home/auro/Auro_Revised/build/auro_interfaces/rosidl_adapter/auro_interfaces/srv/CheckGoal.idl" "DESTINATION" "share/auro_interfaces/srv")
 
-# install(FILES "/home/auro/Auro/auro_interfaces/msg/StringWithPose.msg" "DESTINATION" "share/auro_interfaces/msg")
-ament_cmake_symlink_install_files("/home/auro/Auro/auro_interfaces" FILES "/home/auro/Auro/auro_interfaces/msg/StringWithPose.msg" "DESTINATION" "share/auro_interfaces/msg")
+# install(FILES "/home/auro/Auro_Revised/build/auro_interfaces/rosidl_adapter/auro_interfaces/srv/Rotate.idl" "DESTINATION" "share/auro_interfaces/srv")
+ament_cmake_symlink_install_files("/home/auro/Auro_Revised/auro_interfaces" FILES "/home/auro/Auro_Revised/build/auro_interfaces/rosidl_adapter/auro_interfaces/srv/Rotate.idl" "DESTINATION" "share/auro_interfaces/srv")
 
-# install(FILES "/home/auro/Auro/auro_interfaces/msg/Item.msg" "DESTINATION" "share/auro_interfaces/msg")
-ament_cmake_symlink_install_files("/home/auro/Auro/auro_interfaces" FILES "/home/auro/Auro/auro_interfaces/msg/Item.msg" "DESTINATION" "share/auro_interfaces/msg")
+# install(FILES "/home/auro/Auro_Revised/build/auro_interfaces/rosidl_adapter/auro_interfaces/srv/Task.idl" "DESTINATION" "share/auro_interfaces/srv")
+ament_cmake_symlink_install_files("/home/auro/Auro_Revised/auro_interfaces" FILES "/home/auro/Auro_Revised/build/auro_interfaces/rosidl_adapter/auro_interfaces/srv/Task.idl" "DESTINATION" "share/auro_interfaces/srv")
 
-# install(FILES "/home/auro/Auro/auro_interfaces/msg/ItemList.msg" "DESTINATION" "share/auro_interfaces/msg")
-ament_cmake_symlink_install_files("/home/auro/Auro/auro_interfaces" FILES "/home/auro/Auro/auro_interfaces/msg/ItemList.msg" "DESTINATION" "share/auro_interfaces/msg")
+# install(FILES "/home/auro/Auro_Revised/build/auro_interfaces/rosidl_adapter/auro_interfaces/srv/FindTarget.idl" "DESTINATION" "share/auro_interfaces/srv")
+ament_cmake_symlink_install_files("/home/auro/Auro_Revised/auro_interfaces" FILES "/home/auro/Auro_Revised/build/auro_interfaces/rosidl_adapter/auro_interfaces/srv/FindTarget.idl" "DESTINATION" "share/auro_interfaces/srv")
 
-# install(FILES "/home/auro/Auro/auro_interfaces/msg/Direction.msg" "DESTINATION" "share/auro_interfaces/msg")
-ament_cmake_symlink_install_files("/home/auro/Auro/auro_interfaces" FILES "/home/auro/Auro/auro_interfaces/msg/Direction.msg" "DESTINATION" "share/auro_interfaces/msg")
+# install(FILES "/home/auro/Auro_Revised/auro_interfaces/msg/StringWithPose.msg" "DESTINATION" "share/auro_interfaces/msg")
+ament_cmake_symlink_install_files("/home/auro/Auro_Revised/auro_interfaces" FILES "/home/auro/Auro_Revised/auro_interfaces/msg/StringWithPose.msg" "DESTINATION" "share/auro_interfaces/msg")
 
-# install(FILES "/home/auro/Auro/auro_interfaces/srv/ItemRequest.srv" "DESTINATION" "share/auro_interfaces/srv")
-ament_cmake_symlink_install_files("/home/auro/Auro/auro_interfaces" FILES "/home/auro/Auro/auro_interfaces/srv/ItemRequest.srv" "DESTINATION" "share/auro_interfaces/srv")
+# install(FILES "/home/auro/Auro_Revised/auro_interfaces/msg/Item.msg" "DESTINATION" "share/auro_interfaces/msg")
+ament_cmake_symlink_install_files("/home/auro/Auro_Revised/auro_interfaces" FILES "/home/auro/Auro_Revised/auro_interfaces/msg/Item.msg" "DESTINATION" "share/auro_interfaces/msg")
 
-# install(FILES "/home/auro/Auro/build/auro_interfaces/rosidl_cmake/srv/ItemRequest_Request.msg" "DESTINATION" "share/auro_interfaces/srv")
-ament_cmake_symlink_install_files("/home/auro/Auro/auro_interfaces" FILES "/home/auro/Auro/build/auro_interfaces/rosidl_cmake/srv/ItemRequest_Request.msg" "DESTINATION" "share/auro_interfaces/srv")
+# install(FILES "/home/auro/Auro_Revised/auro_interfaces/msg/ItemList.msg" "DESTINATION" "share/auro_interfaces/msg")
+ament_cmake_symlink_install_files("/home/auro/Auro_Revised/auro_interfaces" FILES "/home/auro/Auro_Revised/auro_interfaces/msg/ItemList.msg" "DESTINATION" "share/auro_interfaces/msg")
 
-# install(FILES "/home/auro/Auro/build/auro_interfaces/rosidl_cmake/srv/ItemRequest_Response.msg" "DESTINATION" "share/auro_interfaces/srv")
-ament_cmake_symlink_install_files("/home/auro/Auro/auro_interfaces" FILES "/home/auro/Auro/build/auro_interfaces/rosidl_cmake/srv/ItemRequest_Response.msg" "DESTINATION" "share/auro_interfaces/srv")
+# install(FILES "/home/auro/Auro_Revised/auro_interfaces/msg/Direction.msg" "DESTINATION" "share/auro_interfaces/msg")
+ament_cmake_symlink_install_files("/home/auro/Auro_Revised/auro_interfaces" FILES "/home/auro/Auro_Revised/auro_interfaces/msg/Direction.msg" "DESTINATION" "share/auro_interfaces/msg")
 
-# install(FILES "/home/auro/Auro/auro_interfaces/srv/Sector.srv" "DESTINATION" "share/auro_interfaces/srv")
-ament_cmake_symlink_install_files("/home/auro/Auro/auro_interfaces" FILES "/home/auro/Auro/auro_interfaces/srv/Sector.srv" "DESTINATION" "share/auro_interfaces/srv")
+# install(FILES "/home/auro/Auro_Revised/auro_interfaces/srv/ItemRequest.srv" "DESTINATION" "share/auro_interfaces/srv")
+ament_cmake_symlink_install_files("/home/auro/Auro_Revised/auro_interfaces" FILES "/home/auro/Auro_Revised/auro_interfaces/srv/ItemRequest.srv" "DESTINATION" "share/auro_interfaces/srv")
 
-# install(FILES "/home/auro/Auro/build/auro_interfaces/rosidl_cmake/srv/Sector_Request.msg" "DESTINATION" "share/auro_interfaces/srv")
-ament_cmake_symlink_install_files("/home/auro/Auro/auro_interfaces" FILES "/home/auro/Auro/build/auro_interfaces/rosidl_cmake/srv/Sector_Request.msg" "DESTINATION" "share/auro_interfaces/srv")
+# install(FILES "/home/auro/Auro_Revised/build/auro_interfaces/rosidl_cmake/srv/ItemRequest_Request.msg" "DESTINATION" "share/auro_interfaces/srv")
+ament_cmake_symlink_install_files("/home/auro/Auro_Revised/auro_interfaces" FILES "/home/auro/Auro_Revised/build/auro_interfaces/rosidl_cmake/srv/ItemRequest_Request.msg" "DESTINATION" "share/auro_interfaces/srv")
 
-# install(FILES "/home/auro/Auro/build/auro_interfaces/rosidl_cmake/srv/Sector_Response.msg" "DESTINATION" "share/auro_interfaces/srv")
-ament_cmake_symlink_install_files("/home/auro/Auro/auro_interfaces" FILES "/home/auro/Auro/build/auro_interfaces/rosidl_cmake/srv/Sector_Response.msg" "DESTINATION" "share/auro_interfaces/srv")
+# install(FILES "/home/auro/Auro_Revised/build/auro_interfaces/rosidl_cmake/srv/ItemRequest_Response.msg" "DESTINATION" "share/auro_interfaces/srv")
+ament_cmake_symlink_install_files("/home/auro/Auro_Revised/auro_interfaces" FILES "/home/auro/Auro_Revised/build/auro_interfaces/rosidl_cmake/srv/ItemRequest_Response.msg" "DESTINATION" "share/auro_interfaces/srv")
 
-# install(FILES "/home/auro/Auro/auro_interfaces/srv/Collision.srv" "DESTINATION" "share/auro_interfaces/srv")
-ament_cmake_symlink_install_files("/home/auro/Auro/auro_interfaces" FILES "/home/auro/Auro/auro_interfaces/srv/Collision.srv" "DESTINATION" "share/auro_interfaces/srv")
+# install(FILES "/home/auro/Auro_Revised/auro_interfaces/srv/ZoneRequest.srv" "DESTINATION" "share/auro_interfaces/srv")
+ament_cmake_symlink_install_files("/home/auro/Auro_Revised/auro_interfaces" FILES "/home/auro/Auro_Revised/auro_interfaces/srv/ZoneRequest.srv" "DESTINATION" "share/auro_interfaces/srv")
 
-# install(FILES "/home/auro/Auro/build/auro_interfaces/rosidl_cmake/srv/Collision_Request.msg" "DESTINATION" "share/auro_interfaces/srv")
-ament_cmake_symlink_install_files("/home/auro/Auro/auro_interfaces" FILES "/home/auro/Auro/build/auro_interfaces/rosidl_cmake/srv/Collision_Request.msg" "DESTINATION" "share/auro_interfaces/srv")
+# install(FILES "/home/auro/Auro_Revised/build/auro_interfaces/rosidl_cmake/srv/ZoneRequest_Request.msg" "DESTINATION" "share/auro_interfaces/srv")
+ament_cmake_symlink_install_files("/home/auro/Auro_Revised/auro_interfaces" FILES "/home/auro/Auro_Revised/build/auro_interfaces/rosidl_cmake/srv/ZoneRequest_Request.msg" "DESTINATION" "share/auro_interfaces/srv")
 
-# install(FILES "/home/auro/Auro/build/auro_interfaces/rosidl_cmake/srv/Collision_Response.msg" "DESTINATION" "share/auro_interfaces/srv")
-ament_cmake_symlink_install_files("/home/auro/Auro/auro_interfaces" FILES "/home/auro/Auro/build/auro_interfaces/rosidl_cmake/srv/Collision_Response.msg" "DESTINATION" "share/auro_interfaces/srv")
+# install(FILES "/home/auro/Auro_Revised/build/auro_interfaces/rosidl_cmake/srv/ZoneRequest_Response.msg" "DESTINATION" "share/auro_interfaces/srv")
+ament_cmake_symlink_install_files("/home/auro/Auro_Revised/auro_interfaces" FILES "/home/auro/Auro_Revised/build/auro_interfaces/rosidl_cmake/srv/ZoneRequest_Response.msg" "DESTINATION" "share/auro_interfaces/srv")
 
-# install(FILES "/home/auro/Auro/auro_interfaces/action/Move.action" "DESTINATION" "share/auro_interfaces/action")
-ament_cmake_symlink_install_files("/home/auro/Auro/auro_interfaces" FILES "/home/auro/Auro/auro_interfaces/action/Move.action" "DESTINATION" "share/auro_interfaces/action")
+# install(FILES "/home/auro/Auro_Revised/auro_interfaces/srv/Collision.srv" "DESTINATION" "share/auro_interfaces/srv")
+ament_cmake_symlink_install_files("/home/auro/Auro_Revised/auro_interfaces" FILES "/home/auro/Auro_Revised/auro_interfaces/srv/Collision.srv" "DESTINATION" "share/auro_interfaces/srv")
 
-# install(FILES "/home/auro/Auro/auro_interfaces/srv/CheckGoal.srv" "DESTINATION" "share/auro_interfaces/srv")
-ament_cmake_symlink_install_files("/home/auro/Auro/auro_interfaces" FILES "/home/auro/Auro/auro_interfaces/srv/CheckGoal.srv" "DESTINATION" "share/auro_interfaces/srv")
+# install(FILES "/home/auro/Auro_Revised/build/auro_interfaces/rosidl_cmake/srv/Collision_Request.msg" "DESTINATION" "share/auro_interfaces/srv")
+ament_cmake_symlink_install_files("/home/auro/Auro_Revised/auro_interfaces" FILES "/home/auro/Auro_Revised/build/auro_interfaces/rosidl_cmake/srv/Collision_Request.msg" "DESTINATION" "share/auro_interfaces/srv")
 
-# install(FILES "/home/auro/Auro/build/auro_interfaces/rosidl_cmake/srv/CheckGoal_Request.msg" "DESTINATION" "share/auro_interfaces/srv")
-ament_cmake_symlink_install_files("/home/auro/Auro/auro_interfaces" FILES "/home/auro/Auro/build/auro_interfaces/rosidl_cmake/srv/CheckGoal_Request.msg" "DESTINATION" "share/auro_interfaces/srv")
+# install(FILES "/home/auro/Auro_Revised/build/auro_interfaces/rosidl_cmake/srv/Collision_Response.msg" "DESTINATION" "share/auro_interfaces/srv")
+ament_cmake_symlink_install_files("/home/auro/Auro_Revised/auro_interfaces" FILES "/home/auro/Auro_Revised/build/auro_interfaces/rosidl_cmake/srv/Collision_Response.msg" "DESTINATION" "share/auro_interfaces/srv")
 
-# install(FILES "/home/auro/Auro/build/auro_interfaces/rosidl_cmake/srv/CheckGoal_Response.msg" "DESTINATION" "share/auro_interfaces/srv")
-ament_cmake_symlink_install_files("/home/auro/Auro/auro_interfaces" FILES "/home/auro/Auro/build/auro_interfaces/rosidl_cmake/srv/CheckGoal_Response.msg" "DESTINATION" "share/auro_interfaces/srv")
+# install(FILES "/home/auro/Auro_Revised/auro_interfaces/action/Move.action" "DESTINATION" "share/auro_interfaces/action")
+ament_cmake_symlink_install_files("/home/auro/Auro_Revised/auro_interfaces" FILES "/home/auro/Auro_Revised/auro_interfaces/action/Move.action" "DESTINATION" "share/auro_interfaces/action")
 
-# install(FILES "/home/auro/Auro/build/auro_interfaces/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/auro_interfaces" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
-ament_cmake_symlink_install_files("/home/auro/Auro/auro_interfaces" FILES "/home/auro/Auro/build/auro_interfaces/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/auro_interfaces" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
+# install(FILES "/home/auro/Auro_Revised/auro_interfaces/srv/CheckGoal.srv" "DESTINATION" "share/auro_interfaces/srv")
+ament_cmake_symlink_install_files("/home/auro/Auro_Revised/auro_interfaces" FILES "/home/auro/Auro_Revised/auro_interfaces/srv/CheckGoal.srv" "DESTINATION" "share/auro_interfaces/srv")
 
-# install(FILES "/home/auro/Auro/build/auro_interfaces/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/auro_interfaces" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
-ament_cmake_symlink_install_files("/home/auro/Auro/auro_interfaces" FILES "/home/auro/Auro/build/auro_interfaces/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/auro_interfaces" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
+# install(FILES "/home/auro/Auro_Revised/build/auro_interfaces/rosidl_cmake/srv/CheckGoal_Request.msg" "DESTINATION" "share/auro_interfaces/srv")
+ament_cmake_symlink_install_files("/home/auro/Auro_Revised/auro_interfaces" FILES "/home/auro/Auro_Revised/build/auro_interfaces/rosidl_cmake/srv/CheckGoal_Request.msg" "DESTINATION" "share/auro_interfaces/srv")
+
+# install(FILES "/home/auro/Auro_Revised/build/auro_interfaces/rosidl_cmake/srv/CheckGoal_Response.msg" "DESTINATION" "share/auro_interfaces/srv")
+ament_cmake_symlink_install_files("/home/auro/Auro_Revised/auro_interfaces" FILES "/home/auro/Auro_Revised/build/auro_interfaces/rosidl_cmake/srv/CheckGoal_Response.msg" "DESTINATION" "share/auro_interfaces/srv")
+
+# install(FILES "/home/auro/Auro_Revised/auro_interfaces/srv/Rotate.srv" "DESTINATION" "share/auro_interfaces/srv")
+ament_cmake_symlink_install_files("/home/auro/Auro_Revised/auro_interfaces" FILES "/home/auro/Auro_Revised/auro_interfaces/srv/Rotate.srv" "DESTINATION" "share/auro_interfaces/srv")
+
+# install(FILES "/home/auro/Auro_Revised/build/auro_interfaces/rosidl_cmake/srv/Rotate_Request.msg" "DESTINATION" "share/auro_interfaces/srv")
+ament_cmake_symlink_install_files("/home/auro/Auro_Revised/auro_interfaces" FILES "/home/auro/Auro_Revised/build/auro_interfaces/rosidl_cmake/srv/Rotate_Request.msg" "DESTINATION" "share/auro_interfaces/srv")
+
+# install(FILES "/home/auro/Auro_Revised/build/auro_interfaces/rosidl_cmake/srv/Rotate_Response.msg" "DESTINATION" "share/auro_interfaces/srv")
+ament_cmake_symlink_install_files("/home/auro/Auro_Revised/auro_interfaces" FILES "/home/auro/Auro_Revised/build/auro_interfaces/rosidl_cmake/srv/Rotate_Response.msg" "DESTINATION" "share/auro_interfaces/srv")
+
+# install(FILES "/home/auro/Auro_Revised/auro_interfaces/srv/Task.srv" "DESTINATION" "share/auro_interfaces/srv")
+ament_cmake_symlink_install_files("/home/auro/Auro_Revised/auro_interfaces" FILES "/home/auro/Auro_Revised/auro_interfaces/srv/Task.srv" "DESTINATION" "share/auro_interfaces/srv")
+
+# install(FILES "/home/auro/Auro_Revised/build/auro_interfaces/rosidl_cmake/srv/Task_Request.msg" "DESTINATION" "share/auro_interfaces/srv")
+ament_cmake_symlink_install_files("/home/auro/Auro_Revised/auro_interfaces" FILES "/home/auro/Auro_Revised/build/auro_interfaces/rosidl_cmake/srv/Task_Request.msg" "DESTINATION" "share/auro_interfaces/srv")
+
+# install(FILES "/home/auro/Auro_Revised/build/auro_interfaces/rosidl_cmake/srv/Task_Response.msg" "DESTINATION" "share/auro_interfaces/srv")
+ament_cmake_symlink_install_files("/home/auro/Auro_Revised/auro_interfaces" FILES "/home/auro/Auro_Revised/build/auro_interfaces/rosidl_cmake/srv/Task_Response.msg" "DESTINATION" "share/auro_interfaces/srv")
+
+# install(FILES "/home/auro/Auro_Revised/auro_interfaces/srv/FindTarget.srv" "DESTINATION" "share/auro_interfaces/srv")
+ament_cmake_symlink_install_files("/home/auro/Auro_Revised/auro_interfaces" FILES "/home/auro/Auro_Revised/auro_interfaces/srv/FindTarget.srv" "DESTINATION" "share/auro_interfaces/srv")
+
+# install(FILES "/home/auro/Auro_Revised/build/auro_interfaces/rosidl_cmake/srv/FindTarget_Request.msg" "DESTINATION" "share/auro_interfaces/srv")
+ament_cmake_symlink_install_files("/home/auro/Auro_Revised/auro_interfaces" FILES "/home/auro/Auro_Revised/build/auro_interfaces/rosidl_cmake/srv/FindTarget_Request.msg" "DESTINATION" "share/auro_interfaces/srv")
+
+# install(FILES "/home/auro/Auro_Revised/build/auro_interfaces/rosidl_cmake/srv/FindTarget_Response.msg" "DESTINATION" "share/auro_interfaces/srv")
+ament_cmake_symlink_install_files("/home/auro/Auro_Revised/auro_interfaces" FILES "/home/auro/Auro_Revised/build/auro_interfaces/rosidl_cmake/srv/FindTarget_Response.msg" "DESTINATION" "share/auro_interfaces/srv")
+
+# install(FILES "/home/auro/Auro_Revised/build/auro_interfaces/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/auro_interfaces" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
+ament_cmake_symlink_install_files("/home/auro/Auro_Revised/auro_interfaces" FILES "/home/auro/Auro_Revised/build/auro_interfaces/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/auro_interfaces" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
+
+# install(FILES "/home/auro/Auro_Revised/build/auro_interfaces/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/auro_interfaces" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
+ament_cmake_symlink_install_files("/home/auro/Auro_Revised/auro_interfaces" FILES "/home/auro/Auro_Revised/build/auro_interfaces/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/auro_interfaces" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
 
 # install(FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/auro_interfaces/environment")
-ament_cmake_symlink_install_files("/home/auro/Auro/auro_interfaces" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/auro_interfaces/environment")
+ament_cmake_symlink_install_files("/home/auro/Auro_Revised/auro_interfaces" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/auro_interfaces/environment")
 
-# install(FILES "/home/auro/Auro/build/auro_interfaces/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/auro_interfaces/environment")
-ament_cmake_symlink_install_files("/home/auro/Auro/auro_interfaces" FILES "/home/auro/Auro/build/auro_interfaces/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/auro_interfaces/environment")
+# install(FILES "/home/auro/Auro_Revised/build/auro_interfaces/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/auro_interfaces/environment")
+ament_cmake_symlink_install_files("/home/auro/Auro_Revised/auro_interfaces" FILES "/home/auro/Auro_Revised/build/auro_interfaces/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/auro_interfaces/environment")
 
 # install(FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/auro_interfaces/environment")
-ament_cmake_symlink_install_files("/home/auro/Auro/auro_interfaces" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/auro_interfaces/environment")
+ament_cmake_symlink_install_files("/home/auro/Auro_Revised/auro_interfaces" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/auro_interfaces/environment")
 
-# install(FILES "/home/auro/Auro/build/auro_interfaces/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/auro_interfaces/environment")
-ament_cmake_symlink_install_files("/home/auro/Auro/auro_interfaces" FILES "/home/auro/Auro/build/auro_interfaces/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/auro_interfaces/environment")
+# install(FILES "/home/auro/Auro_Revised/build/auro_interfaces/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/auro_interfaces/environment")
+ament_cmake_symlink_install_files("/home/auro/Auro_Revised/auro_interfaces" FILES "/home/auro/Auro_Revised/build/auro_interfaces/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/auro_interfaces/environment")
 
-# install(FILES "/home/auro/Auro/build/auro_interfaces/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/auro_interfaces")
-ament_cmake_symlink_install_files("/home/auro/Auro/auro_interfaces" FILES "/home/auro/Auro/build/auro_interfaces/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/auro_interfaces")
+# install(FILES "/home/auro/Auro_Revised/build/auro_interfaces/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/auro_interfaces")
+ament_cmake_symlink_install_files("/home/auro/Auro_Revised/auro_interfaces" FILES "/home/auro/Auro_Revised/build/auro_interfaces/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/auro_interfaces")
 
-# install(FILES "/home/auro/Auro/build/auro_interfaces/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/auro_interfaces")
-ament_cmake_symlink_install_files("/home/auro/Auro/auro_interfaces" FILES "/home/auro/Auro/build/auro_interfaces/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/auro_interfaces")
+# install(FILES "/home/auro/Auro_Revised/build/auro_interfaces/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/auro_interfaces")
+ament_cmake_symlink_install_files("/home/auro/Auro_Revised/auro_interfaces" FILES "/home/auro/Auro_Revised/build/auro_interfaces/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/auro_interfaces")
 
-# install(FILES "/home/auro/Auro/build/auro_interfaces/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/auro_interfaces")
-ament_cmake_symlink_install_files("/home/auro/Auro/auro_interfaces" FILES "/home/auro/Auro/build/auro_interfaces/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/auro_interfaces")
+# install(FILES "/home/auro/Auro_Revised/build/auro_interfaces/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/auro_interfaces")
+ament_cmake_symlink_install_files("/home/auro/Auro_Revised/auro_interfaces" FILES "/home/auro/Auro_Revised/build/auro_interfaces/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/auro_interfaces")
 
-# install(FILES "/home/auro/Auro/build/auro_interfaces/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/auro_interfaces")
-ament_cmake_symlink_install_files("/home/auro/Auro/auro_interfaces" FILES "/home/auro/Auro/build/auro_interfaces/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/auro_interfaces")
+# install(FILES "/home/auro/Auro_Revised/build/auro_interfaces/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/auro_interfaces")
+ament_cmake_symlink_install_files("/home/auro/Auro_Revised/auro_interfaces" FILES "/home/auro/Auro_Revised/build/auro_interfaces/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/auro_interfaces")
 
-# install(FILES "/home/auro/Auro/build/auro_interfaces/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/auro_interfaces")
-ament_cmake_symlink_install_files("/home/auro/Auro/auro_interfaces" FILES "/home/auro/Auro/build/auro_interfaces/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/auro_interfaces")
+# install(FILES "/home/auro/Auro_Revised/build/auro_interfaces/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/auro_interfaces")
+ament_cmake_symlink_install_files("/home/auro/Auro_Revised/auro_interfaces" FILES "/home/auro/Auro_Revised/build/auro_interfaces/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/auro_interfaces")
 
-# install(FILES "/home/auro/Auro/build/auro_interfaces/ament_cmake_index/share/ament_index/resource_index/packages/auro_interfaces" "DESTINATION" "share/ament_index/resource_index/packages")
-ament_cmake_symlink_install_files("/home/auro/Auro/auro_interfaces" FILES "/home/auro/Auro/build/auro_interfaces/ament_cmake_index/share/ament_index/resource_index/packages/auro_interfaces" "DESTINATION" "share/ament_index/resource_index/packages")
+# install(FILES "/home/auro/Auro_Revised/build/auro_interfaces/ament_cmake_index/share/ament_index/resource_index/packages/auro_interfaces" "DESTINATION" "share/ament_index/resource_index/packages")
+ament_cmake_symlink_install_files("/home/auro/Auro_Revised/auro_interfaces" FILES "/home/auro/Auro_Revised/build/auro_interfaces/ament_cmake_index/share/ament_index/resource_index/packages/auro_interfaces" "DESTINATION" "share/ament_index/resource_index/packages")
 
-# install(FILES "/home/auro/Auro/build/auro_interfaces/rosidl_cmake/rosidl_cmake-extras.cmake" "DESTINATION" "share/auro_interfaces/cmake")
-ament_cmake_symlink_install_files("/home/auro/Auro/auro_interfaces" FILES "/home/auro/Auro/build/auro_interfaces/rosidl_cmake/rosidl_cmake-extras.cmake" "DESTINATION" "share/auro_interfaces/cmake")
+# install(FILES "/home/auro/Auro_Revised/build/auro_interfaces/rosidl_cmake/rosidl_cmake-extras.cmake" "DESTINATION" "share/auro_interfaces/cmake")
+ament_cmake_symlink_install_files("/home/auro/Auro_Revised/auro_interfaces" FILES "/home/auro/Auro_Revised/build/auro_interfaces/rosidl_cmake/rosidl_cmake-extras.cmake" "DESTINATION" "share/auro_interfaces/cmake")
 
-# install(FILES "/home/auro/Auro/build/auro_interfaces/ament_cmake_export_dependencies/ament_cmake_export_dependencies-extras.cmake" "DESTINATION" "share/auro_interfaces/cmake")
-ament_cmake_symlink_install_files("/home/auro/Auro/auro_interfaces" FILES "/home/auro/Auro/build/auro_interfaces/ament_cmake_export_dependencies/ament_cmake_export_dependencies-extras.cmake" "DESTINATION" "share/auro_interfaces/cmake")
+# install(FILES "/home/auro/Auro_Revised/build/auro_interfaces/ament_cmake_export_dependencies/ament_cmake_export_dependencies-extras.cmake" "DESTINATION" "share/auro_interfaces/cmake")
+ament_cmake_symlink_install_files("/home/auro/Auro_Revised/auro_interfaces" FILES "/home/auro/Auro_Revised/build/auro_interfaces/ament_cmake_export_dependencies/ament_cmake_export_dependencies-extras.cmake" "DESTINATION" "share/auro_interfaces/cmake")
 
-# install(FILES "/home/auro/Auro/build/auro_interfaces/ament_cmake_export_include_directories/ament_cmake_export_include_directories-extras.cmake" "DESTINATION" "share/auro_interfaces/cmake")
-ament_cmake_symlink_install_files("/home/auro/Auro/auro_interfaces" FILES "/home/auro/Auro/build/auro_interfaces/ament_cmake_export_include_directories/ament_cmake_export_include_directories-extras.cmake" "DESTINATION" "share/auro_interfaces/cmake")
+# install(FILES "/home/auro/Auro_Revised/build/auro_interfaces/ament_cmake_export_include_directories/ament_cmake_export_include_directories-extras.cmake" "DESTINATION" "share/auro_interfaces/cmake")
+ament_cmake_symlink_install_files("/home/auro/Auro_Revised/auro_interfaces" FILES "/home/auro/Auro_Revised/build/auro_interfaces/ament_cmake_export_include_directories/ament_cmake_export_include_directories-extras.cmake" "DESTINATION" "share/auro_interfaces/cmake")
 
-# install(FILES "/home/auro/Auro/build/auro_interfaces/ament_cmake_export_libraries/ament_cmake_export_libraries-extras.cmake" "DESTINATION" "share/auro_interfaces/cmake")
-ament_cmake_symlink_install_files("/home/auro/Auro/auro_interfaces" FILES "/home/auro/Auro/build/auro_interfaces/ament_cmake_export_libraries/ament_cmake_export_libraries-extras.cmake" "DESTINATION" "share/auro_interfaces/cmake")
+# install(FILES "/home/auro/Auro_Revised/build/auro_interfaces/ament_cmake_export_libraries/ament_cmake_export_libraries-extras.cmake" "DESTINATION" "share/auro_interfaces/cmake")
+ament_cmake_symlink_install_files("/home/auro/Auro_Revised/auro_interfaces" FILES "/home/auro/Auro_Revised/build/auro_interfaces/ament_cmake_export_libraries/ament_cmake_export_libraries-extras.cmake" "DESTINATION" "share/auro_interfaces/cmake")
 
-# install(FILES "/home/auro/Auro/build/auro_interfaces/ament_cmake_export_targets/ament_cmake_export_targets-extras.cmake" "DESTINATION" "share/auro_interfaces/cmake")
-ament_cmake_symlink_install_files("/home/auro/Auro/auro_interfaces" FILES "/home/auro/Auro/build/auro_interfaces/ament_cmake_export_targets/ament_cmake_export_targets-extras.cmake" "DESTINATION" "share/auro_interfaces/cmake")
+# install(FILES "/home/auro/Auro_Revised/build/auro_interfaces/ament_cmake_export_targets/ament_cmake_export_targets-extras.cmake" "DESTINATION" "share/auro_interfaces/cmake")
+ament_cmake_symlink_install_files("/home/auro/Auro_Revised/auro_interfaces" FILES "/home/auro/Auro_Revised/build/auro_interfaces/ament_cmake_export_targets/ament_cmake_export_targets-extras.cmake" "DESTINATION" "share/auro_interfaces/cmake")
 
-# install(FILES "/home/auro/Auro/build/auro_interfaces/rosidl_cmake/rosidl_cmake_export_typesupport_targets-extras.cmake" "DESTINATION" "share/auro_interfaces/cmake")
-ament_cmake_symlink_install_files("/home/auro/Auro/auro_interfaces" FILES "/home/auro/Auro/build/auro_interfaces/rosidl_cmake/rosidl_cmake_export_typesupport_targets-extras.cmake" "DESTINATION" "share/auro_interfaces/cmake")
+# install(FILES "/home/auro/Auro_Revised/build/auro_interfaces/rosidl_cmake/rosidl_cmake_export_typesupport_targets-extras.cmake" "DESTINATION" "share/auro_interfaces/cmake")
+ament_cmake_symlink_install_files("/home/auro/Auro_Revised/auro_interfaces" FILES "/home/auro/Auro_Revised/build/auro_interfaces/rosidl_cmake/rosidl_cmake_export_typesupport_targets-extras.cmake" "DESTINATION" "share/auro_interfaces/cmake")
 
-# install(FILES "/home/auro/Auro/build/auro_interfaces/rosidl_cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake" "DESTINATION" "share/auro_interfaces/cmake")
-ament_cmake_symlink_install_files("/home/auro/Auro/auro_interfaces" FILES "/home/auro/Auro/build/auro_interfaces/rosidl_cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake" "DESTINATION" "share/auro_interfaces/cmake")
+# install(FILES "/home/auro/Auro_Revised/build/auro_interfaces/rosidl_cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake" "DESTINATION" "share/auro_interfaces/cmake")
+ament_cmake_symlink_install_files("/home/auro/Auro_Revised/auro_interfaces" FILES "/home/auro/Auro_Revised/build/auro_interfaces/rosidl_cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake" "DESTINATION" "share/auro_interfaces/cmake")
 
-# install(FILES "/home/auro/Auro/build/auro_interfaces/ament_cmake_core/auro_interfacesConfig.cmake" "/home/auro/Auro/build/auro_interfaces/ament_cmake_core/auro_interfacesConfig-version.cmake" "DESTINATION" "share/auro_interfaces/cmake")
-ament_cmake_symlink_install_files("/home/auro/Auro/auro_interfaces" FILES "/home/auro/Auro/build/auro_interfaces/ament_cmake_core/auro_interfacesConfig.cmake" "/home/auro/Auro/build/auro_interfaces/ament_cmake_core/auro_interfacesConfig-version.cmake" "DESTINATION" "share/auro_interfaces/cmake")
+# install(FILES "/home/auro/Auro_Revised/build/auro_interfaces/ament_cmake_core/auro_interfacesConfig.cmake" "/home/auro/Auro_Revised/build/auro_interfaces/ament_cmake_core/auro_interfacesConfig-version.cmake" "DESTINATION" "share/auro_interfaces/cmake")
+ament_cmake_symlink_install_files("/home/auro/Auro_Revised/auro_interfaces" FILES "/home/auro/Auro_Revised/build/auro_interfaces/ament_cmake_core/auro_interfacesConfig.cmake" "/home/auro/Auro_Revised/build/auro_interfaces/ament_cmake_core/auro_interfacesConfig-version.cmake" "DESTINATION" "share/auro_interfaces/cmake")
 
-# install(FILES "/home/auro/Auro/auro_interfaces/package.xml" "DESTINATION" "share/auro_interfaces")
-ament_cmake_symlink_install_files("/home/auro/Auro/auro_interfaces" FILES "/home/auro/Auro/auro_interfaces/package.xml" "DESTINATION" "share/auro_interfaces")
+# install(FILES "/home/auro/Auro_Revised/auro_interfaces/package.xml" "DESTINATION" "share/auro_interfaces")
+ament_cmake_symlink_install_files("/home/auro/Auro_Revised/auro_interfaces" FILES "/home/auro/Auro_Revised/auro_interfaces/package.xml" "DESTINATION" "share/auro_interfaces")

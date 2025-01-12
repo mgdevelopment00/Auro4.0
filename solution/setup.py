@@ -51,7 +51,8 @@ setup(
             'data_logger = solution.data_logger:main',
             'robot_vision = solution.robot_vision:main',
             'robot_manager = solution.robot_manager:main',
-            'collision_avoidance = solution.collision_avoidance:main'
+            'collision_avoidance = solution.collision_avoidance:main',
+            'navigation = solution.navigation:main'
         ],
     },
 )

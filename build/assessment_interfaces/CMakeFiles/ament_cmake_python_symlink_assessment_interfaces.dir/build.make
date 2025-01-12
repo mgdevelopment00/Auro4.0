@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/auro/Auro/assessment_interfaces
+CMAKE_SOURCE_DIR = /home/auro/Auro_Revised/assessment_interfaces
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/auro/Auro/build/assessment_interfaces
+CMAKE_BINARY_DIR = /home/auro/Auro_Revised/build/assessment_interfaces
 
 # Utility rule file for ament_cmake_python_symlink_assessment_interfaces.
 
@@ -67,7 +67,7 @@ include CMakeFiles/ament_cmake_python_symlink_assessment_interfaces.dir/compiler
 include CMakeFiles/ament_cmake_python_symlink_assessment_interfaces.dir/progress.make
 
 CMakeFiles/ament_cmake_python_symlink_assessment_interfaces:
-	/usr/bin/cmake -E create_symlink /home/auro/Auro/build/assessment_interfaces/rosidl_generator_py/assessment_interfaces /home/auro/Auro/build/assessment_interfaces/ament_cmake_python/assessment_interfaces/assessment_interfaces
+	/usr/bin/cmake -E create_symlink /home/auro/Auro_Revised/build/assessment_interfaces/rosidl_generator_py/assessment_interfaces /home/auro/Auro_Revised/build/assessment_interfaces/ament_cmake_python/assessment_interfaces/assessment_interfaces
 
 ament_cmake_python_symlink_assessment_interfaces: CMakeFiles/ament_cmake_python_symlink_assessment_interfaces
 ament_cmake_python_symlink_assessment_interfaces: CMakeFiles/ament_cmake_python_symlink_assessment_interfaces.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/ament_cmake_python_symlink_assessment_interfaces.dir/clean:
 .PHONY : CMakeFiles/ament_cmake_python_symlink_assessment_interfaces.dir/clean
 
 CMakeFiles/ament_cmake_python_symlink_assessment_interfaces.dir/depend:
-	cd /home/auro/Auro/build/assessment_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/auro/Auro/assessment_interfaces /home/auro/Auro/assessment_interfaces /home/auro/Auro/build/assessment_interfaces /home/auro/Auro/build/assessment_interfaces /home/auro/Auro/build/assessment_interfaces/CMakeFiles/ament_cmake_python_symlink_assessment_interfaces.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/auro/Auro_Revised/build/assessment_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/auro/Auro_Revised/assessment_interfaces /home/auro/Auro_Revised/assessment_interfaces /home/auro/Auro_Revised/build/assessment_interfaces /home/auro/Auro_Revised/build/assessment_interfaces /home/auro/Auro_Revised/build/assessment_interfaces/CMakeFiles/ament_cmake_python_symlink_assessment_interfaces.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/ament_cmake_python_symlink_assessment_interfaces.dir/depend
 

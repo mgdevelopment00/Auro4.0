@@ -19,10 +19,16 @@ file(REMOVE_RECURSE
   "../rosidl_generator_py/auro_interfaces/srv/_check_goal_s.c"
   "../rosidl_generator_py/auro_interfaces/srv/_collision.py"
   "../rosidl_generator_py/auro_interfaces/srv/_collision_s.c"
+  "../rosidl_generator_py/auro_interfaces/srv/_find_target.py"
+  "../rosidl_generator_py/auro_interfaces/srv/_find_target_s.c"
   "../rosidl_generator_py/auro_interfaces/srv/_item_request.py"
   "../rosidl_generator_py/auro_interfaces/srv/_item_request_s.c"
-  "../rosidl_generator_py/auro_interfaces/srv/_sector.py"
-  "../rosidl_generator_py/auro_interfaces/srv/_sector_s.c"
+  "../rosidl_generator_py/auro_interfaces/srv/_rotate.py"
+  "../rosidl_generator_py/auro_interfaces/srv/_rotate_s.c"
+  "../rosidl_generator_py/auro_interfaces/srv/_task.py"
+  "../rosidl_generator_py/auro_interfaces/srv/_task_s.c"
+  "../rosidl_generator_py/auro_interfaces/srv/_zone_request.py"
+  "../rosidl_generator_py/auro_interfaces/srv/_zone_request_s.c"
   "CMakeFiles/auro_interfaces__py"
 )
 

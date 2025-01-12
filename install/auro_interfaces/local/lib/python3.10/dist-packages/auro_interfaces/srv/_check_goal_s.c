@@ -1,1 +1,1 @@
-/home/auro/Auro/build/auro_interfaces/rosidl_generator_py/auro_interfaces/srv/_check_goal_s.c
+/home/auro/Auro_Revised/build/auro_interfaces/rosidl_generator_py/auro_interfaces/srv/_check_goal_s.c

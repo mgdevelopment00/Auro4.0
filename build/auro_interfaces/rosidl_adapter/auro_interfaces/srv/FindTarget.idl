@@ -1,0 +1,15 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from auro_interfaces/srv/FindTarget.srv
+// generated code does not contain a copyright notice
+
+
+module auro_interfaces {
+  module srv {
+    struct FindTarget_Request {
+      uint8 structure_needs_at_least_one_member;
+    };
+    struct FindTarget_Response {
+      boolean success;
+    };
+  };
+};

@@ -1,1 +1,1 @@
-/home/auro/Auro/build/auro_interfaces/rosidl_generator_c/auro_interfaces/msg/detail/item_list__functions.h
+/home/auro/Auro_Revised/build/auro_interfaces/rosidl_generator_c/auro_interfaces/msg/detail/item_list__functions.h

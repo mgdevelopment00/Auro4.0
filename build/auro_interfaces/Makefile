@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/auro/Auro/auro_interfaces
+CMAKE_SOURCE_DIR = /home/auro/Auro_Revised/auro_interfaces
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/auro/Auro/build/auro_interfaces
+CMAKE_BINARY_DIR = /home/auro/Auro_Revised/build/auro_interfaces
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,9 +142,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/auro/Auro/build/auro_interfaces/CMakeFiles /home/auro/Auro/build/auro_interfaces//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/auro/Auro_Revised/build/auro_interfaces/CMakeFiles /home/auro/Auro_Revised/build/auro_interfaces//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/auro/Auro/build/auro_interfaces/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/auro/Auro_Revised/build/auro_interfaces/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -573,6 +573,30 @@ rosidl_generator_c/auro_interfaces/srv/detail/collision__functions.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/auro_interfaces__rosidl_generator_c.dir/build.make CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/collision__functions.c.s
 .PHONY : rosidl_generator_c/auro_interfaces/srv/detail/collision__functions.c.s
 
+rosidl_generator_c/auro_interfaces/srv/detail/find_target__functions.o: rosidl_generator_c/auro_interfaces/srv/detail/find_target__functions.c.o
+.PHONY : rosidl_generator_c/auro_interfaces/srv/detail/find_target__functions.o
+
+# target to build an object file
+rosidl_generator_c/auro_interfaces/srv/detail/find_target__functions.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auro_interfaces__rosidl_generator_c.dir/build.make CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/find_target__functions.c.o
+.PHONY : rosidl_generator_c/auro_interfaces/srv/detail/find_target__functions.c.o
+
+rosidl_generator_c/auro_interfaces/srv/detail/find_target__functions.i: rosidl_generator_c/auro_interfaces/srv/detail/find_target__functions.c.i
+.PHONY : rosidl_generator_c/auro_interfaces/srv/detail/find_target__functions.i
+
+# target to preprocess a source file
+rosidl_generator_c/auro_interfaces/srv/detail/find_target__functions.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auro_interfaces__rosidl_generator_c.dir/build.make CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/find_target__functions.c.i
+.PHONY : rosidl_generator_c/auro_interfaces/srv/detail/find_target__functions.c.i
+
+rosidl_generator_c/auro_interfaces/srv/detail/find_target__functions.s: rosidl_generator_c/auro_interfaces/srv/detail/find_target__functions.c.s
+.PHONY : rosidl_generator_c/auro_interfaces/srv/detail/find_target__functions.s
+
+# target to generate assembly for a file
+rosidl_generator_c/auro_interfaces/srv/detail/find_target__functions.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auro_interfaces__rosidl_generator_c.dir/build.make CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/find_target__functions.c.s
+.PHONY : rosidl_generator_c/auro_interfaces/srv/detail/find_target__functions.c.s
+
 rosidl_generator_c/auro_interfaces/srv/detail/item_request__functions.o: rosidl_generator_c/auro_interfaces/srv/detail/item_request__functions.c.o
 .PHONY : rosidl_generator_c/auro_interfaces/srv/detail/item_request__functions.o
 
@@ -597,29 +621,77 @@ rosidl_generator_c/auro_interfaces/srv/detail/item_request__functions.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/auro_interfaces__rosidl_generator_c.dir/build.make CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/item_request__functions.c.s
 .PHONY : rosidl_generator_c/auro_interfaces/srv/detail/item_request__functions.c.s
 
-rosidl_generator_c/auro_interfaces/srv/detail/sector__functions.o: rosidl_generator_c/auro_interfaces/srv/detail/sector__functions.c.o
-.PHONY : rosidl_generator_c/auro_interfaces/srv/detail/sector__functions.o
+rosidl_generator_c/auro_interfaces/srv/detail/rotate__functions.o: rosidl_generator_c/auro_interfaces/srv/detail/rotate__functions.c.o
+.PHONY : rosidl_generator_c/auro_interfaces/srv/detail/rotate__functions.o
 
 # target to build an object file
-rosidl_generator_c/auro_interfaces/srv/detail/sector__functions.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/auro_interfaces__rosidl_generator_c.dir/build.make CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/sector__functions.c.o
-.PHONY : rosidl_generator_c/auro_interfaces/srv/detail/sector__functions.c.o
+rosidl_generator_c/auro_interfaces/srv/detail/rotate__functions.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auro_interfaces__rosidl_generator_c.dir/build.make CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/rotate__functions.c.o
+.PHONY : rosidl_generator_c/auro_interfaces/srv/detail/rotate__functions.c.o
 
-rosidl_generator_c/auro_interfaces/srv/detail/sector__functions.i: rosidl_generator_c/auro_interfaces/srv/detail/sector__functions.c.i
-.PHONY : rosidl_generator_c/auro_interfaces/srv/detail/sector__functions.i
+rosidl_generator_c/auro_interfaces/srv/detail/rotate__functions.i: rosidl_generator_c/auro_interfaces/srv/detail/rotate__functions.c.i
+.PHONY : rosidl_generator_c/auro_interfaces/srv/detail/rotate__functions.i
 
 # target to preprocess a source file
-rosidl_generator_c/auro_interfaces/srv/detail/sector__functions.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/auro_interfaces__rosidl_generator_c.dir/build.make CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/sector__functions.c.i
-.PHONY : rosidl_generator_c/auro_interfaces/srv/detail/sector__functions.c.i
+rosidl_generator_c/auro_interfaces/srv/detail/rotate__functions.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auro_interfaces__rosidl_generator_c.dir/build.make CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/rotate__functions.c.i
+.PHONY : rosidl_generator_c/auro_interfaces/srv/detail/rotate__functions.c.i
 
-rosidl_generator_c/auro_interfaces/srv/detail/sector__functions.s: rosidl_generator_c/auro_interfaces/srv/detail/sector__functions.c.s
-.PHONY : rosidl_generator_c/auro_interfaces/srv/detail/sector__functions.s
+rosidl_generator_c/auro_interfaces/srv/detail/rotate__functions.s: rosidl_generator_c/auro_interfaces/srv/detail/rotate__functions.c.s
+.PHONY : rosidl_generator_c/auro_interfaces/srv/detail/rotate__functions.s
 
 # target to generate assembly for a file
-rosidl_generator_c/auro_interfaces/srv/detail/sector__functions.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/auro_interfaces__rosidl_generator_c.dir/build.make CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/sector__functions.c.s
-.PHONY : rosidl_generator_c/auro_interfaces/srv/detail/sector__functions.c.s
+rosidl_generator_c/auro_interfaces/srv/detail/rotate__functions.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auro_interfaces__rosidl_generator_c.dir/build.make CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/rotate__functions.c.s
+.PHONY : rosidl_generator_c/auro_interfaces/srv/detail/rotate__functions.c.s
+
+rosidl_generator_c/auro_interfaces/srv/detail/task__functions.o: rosidl_generator_c/auro_interfaces/srv/detail/task__functions.c.o
+.PHONY : rosidl_generator_c/auro_interfaces/srv/detail/task__functions.o
+
+# target to build an object file
+rosidl_generator_c/auro_interfaces/srv/detail/task__functions.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auro_interfaces__rosidl_generator_c.dir/build.make CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/task__functions.c.o
+.PHONY : rosidl_generator_c/auro_interfaces/srv/detail/task__functions.c.o
+
+rosidl_generator_c/auro_interfaces/srv/detail/task__functions.i: rosidl_generator_c/auro_interfaces/srv/detail/task__functions.c.i
+.PHONY : rosidl_generator_c/auro_interfaces/srv/detail/task__functions.i
+
+# target to preprocess a source file
+rosidl_generator_c/auro_interfaces/srv/detail/task__functions.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auro_interfaces__rosidl_generator_c.dir/build.make CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/task__functions.c.i
+.PHONY : rosidl_generator_c/auro_interfaces/srv/detail/task__functions.c.i
+
+rosidl_generator_c/auro_interfaces/srv/detail/task__functions.s: rosidl_generator_c/auro_interfaces/srv/detail/task__functions.c.s
+.PHONY : rosidl_generator_c/auro_interfaces/srv/detail/task__functions.s
+
+# target to generate assembly for a file
+rosidl_generator_c/auro_interfaces/srv/detail/task__functions.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auro_interfaces__rosidl_generator_c.dir/build.make CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/task__functions.c.s
+.PHONY : rosidl_generator_c/auro_interfaces/srv/detail/task__functions.c.s
+
+rosidl_generator_c/auro_interfaces/srv/detail/zone_request__functions.o: rosidl_generator_c/auro_interfaces/srv/detail/zone_request__functions.c.o
+.PHONY : rosidl_generator_c/auro_interfaces/srv/detail/zone_request__functions.o
+
+# target to build an object file
+rosidl_generator_c/auro_interfaces/srv/detail/zone_request__functions.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auro_interfaces__rosidl_generator_c.dir/build.make CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/zone_request__functions.c.o
+.PHONY : rosidl_generator_c/auro_interfaces/srv/detail/zone_request__functions.c.o
+
+rosidl_generator_c/auro_interfaces/srv/detail/zone_request__functions.i: rosidl_generator_c/auro_interfaces/srv/detail/zone_request__functions.c.i
+.PHONY : rosidl_generator_c/auro_interfaces/srv/detail/zone_request__functions.i
+
+# target to preprocess a source file
+rosidl_generator_c/auro_interfaces/srv/detail/zone_request__functions.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auro_interfaces__rosidl_generator_c.dir/build.make CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/zone_request__functions.c.i
+.PHONY : rosidl_generator_c/auro_interfaces/srv/detail/zone_request__functions.c.i
+
+rosidl_generator_c/auro_interfaces/srv/detail/zone_request__functions.s: rosidl_generator_c/auro_interfaces/srv/detail/zone_request__functions.c.s
+.PHONY : rosidl_generator_c/auro_interfaces/srv/detail/zone_request__functions.s
+
+# target to generate assembly for a file
+rosidl_generator_c/auro_interfaces/srv/detail/zone_request__functions.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auro_interfaces__rosidl_generator_c.dir/build.make CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/zone_request__functions.c.s
+.PHONY : rosidl_generator_c/auro_interfaces/srv/detail/zone_request__functions.c.s
 
 rosidl_generator_py/auro_interfaces/_auro_interfaces_s.ep.rosidl_typesupport_c.o: rosidl_generator_py/auro_interfaces/_auro_interfaces_s.ep.rosidl_typesupport_c.c.o
 .PHONY : rosidl_generator_py/auro_interfaces/_auro_interfaces_s.ep.rosidl_typesupport_c.o
@@ -861,6 +933,30 @@ rosidl_generator_py/auro_interfaces/srv/_collision_s.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/auro_interfaces__rosidl_generator_py.dir/build.make CMakeFiles/auro_interfaces__rosidl_generator_py.dir/rosidl_generator_py/auro_interfaces/srv/_collision_s.c.s
 .PHONY : rosidl_generator_py/auro_interfaces/srv/_collision_s.c.s
 
+rosidl_generator_py/auro_interfaces/srv/_find_target_s.o: rosidl_generator_py/auro_interfaces/srv/_find_target_s.c.o
+.PHONY : rosidl_generator_py/auro_interfaces/srv/_find_target_s.o
+
+# target to build an object file
+rosidl_generator_py/auro_interfaces/srv/_find_target_s.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auro_interfaces__rosidl_generator_py.dir/build.make CMakeFiles/auro_interfaces__rosidl_generator_py.dir/rosidl_generator_py/auro_interfaces/srv/_find_target_s.c.o
+.PHONY : rosidl_generator_py/auro_interfaces/srv/_find_target_s.c.o
+
+rosidl_generator_py/auro_interfaces/srv/_find_target_s.i: rosidl_generator_py/auro_interfaces/srv/_find_target_s.c.i
+.PHONY : rosidl_generator_py/auro_interfaces/srv/_find_target_s.i
+
+# target to preprocess a source file
+rosidl_generator_py/auro_interfaces/srv/_find_target_s.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auro_interfaces__rosidl_generator_py.dir/build.make CMakeFiles/auro_interfaces__rosidl_generator_py.dir/rosidl_generator_py/auro_interfaces/srv/_find_target_s.c.i
+.PHONY : rosidl_generator_py/auro_interfaces/srv/_find_target_s.c.i
+
+rosidl_generator_py/auro_interfaces/srv/_find_target_s.s: rosidl_generator_py/auro_interfaces/srv/_find_target_s.c.s
+.PHONY : rosidl_generator_py/auro_interfaces/srv/_find_target_s.s
+
+# target to generate assembly for a file
+rosidl_generator_py/auro_interfaces/srv/_find_target_s.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auro_interfaces__rosidl_generator_py.dir/build.make CMakeFiles/auro_interfaces__rosidl_generator_py.dir/rosidl_generator_py/auro_interfaces/srv/_find_target_s.c.s
+.PHONY : rosidl_generator_py/auro_interfaces/srv/_find_target_s.c.s
+
 rosidl_generator_py/auro_interfaces/srv/_item_request_s.o: rosidl_generator_py/auro_interfaces/srv/_item_request_s.c.o
 .PHONY : rosidl_generator_py/auro_interfaces/srv/_item_request_s.o
 
@@ -885,29 +981,77 @@ rosidl_generator_py/auro_interfaces/srv/_item_request_s.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/auro_interfaces__rosidl_generator_py.dir/build.make CMakeFiles/auro_interfaces__rosidl_generator_py.dir/rosidl_generator_py/auro_interfaces/srv/_item_request_s.c.s
 .PHONY : rosidl_generator_py/auro_interfaces/srv/_item_request_s.c.s
 
-rosidl_generator_py/auro_interfaces/srv/_sector_s.o: rosidl_generator_py/auro_interfaces/srv/_sector_s.c.o
-.PHONY : rosidl_generator_py/auro_interfaces/srv/_sector_s.o
+rosidl_generator_py/auro_interfaces/srv/_rotate_s.o: rosidl_generator_py/auro_interfaces/srv/_rotate_s.c.o
+.PHONY : rosidl_generator_py/auro_interfaces/srv/_rotate_s.o
 
 # target to build an object file
-rosidl_generator_py/auro_interfaces/srv/_sector_s.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/auro_interfaces__rosidl_generator_py.dir/build.make CMakeFiles/auro_interfaces__rosidl_generator_py.dir/rosidl_generator_py/auro_interfaces/srv/_sector_s.c.o
-.PHONY : rosidl_generator_py/auro_interfaces/srv/_sector_s.c.o
+rosidl_generator_py/auro_interfaces/srv/_rotate_s.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auro_interfaces__rosidl_generator_py.dir/build.make CMakeFiles/auro_interfaces__rosidl_generator_py.dir/rosidl_generator_py/auro_interfaces/srv/_rotate_s.c.o
+.PHONY : rosidl_generator_py/auro_interfaces/srv/_rotate_s.c.o
 
-rosidl_generator_py/auro_interfaces/srv/_sector_s.i: rosidl_generator_py/auro_interfaces/srv/_sector_s.c.i
-.PHONY : rosidl_generator_py/auro_interfaces/srv/_sector_s.i
+rosidl_generator_py/auro_interfaces/srv/_rotate_s.i: rosidl_generator_py/auro_interfaces/srv/_rotate_s.c.i
+.PHONY : rosidl_generator_py/auro_interfaces/srv/_rotate_s.i
 
 # target to preprocess a source file
-rosidl_generator_py/auro_interfaces/srv/_sector_s.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/auro_interfaces__rosidl_generator_py.dir/build.make CMakeFiles/auro_interfaces__rosidl_generator_py.dir/rosidl_generator_py/auro_interfaces/srv/_sector_s.c.i
-.PHONY : rosidl_generator_py/auro_interfaces/srv/_sector_s.c.i
+rosidl_generator_py/auro_interfaces/srv/_rotate_s.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auro_interfaces__rosidl_generator_py.dir/build.make CMakeFiles/auro_interfaces__rosidl_generator_py.dir/rosidl_generator_py/auro_interfaces/srv/_rotate_s.c.i
+.PHONY : rosidl_generator_py/auro_interfaces/srv/_rotate_s.c.i
 
-rosidl_generator_py/auro_interfaces/srv/_sector_s.s: rosidl_generator_py/auro_interfaces/srv/_sector_s.c.s
-.PHONY : rosidl_generator_py/auro_interfaces/srv/_sector_s.s
+rosidl_generator_py/auro_interfaces/srv/_rotate_s.s: rosidl_generator_py/auro_interfaces/srv/_rotate_s.c.s
+.PHONY : rosidl_generator_py/auro_interfaces/srv/_rotate_s.s
 
 # target to generate assembly for a file
-rosidl_generator_py/auro_interfaces/srv/_sector_s.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/auro_interfaces__rosidl_generator_py.dir/build.make CMakeFiles/auro_interfaces__rosidl_generator_py.dir/rosidl_generator_py/auro_interfaces/srv/_sector_s.c.s
-.PHONY : rosidl_generator_py/auro_interfaces/srv/_sector_s.c.s
+rosidl_generator_py/auro_interfaces/srv/_rotate_s.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auro_interfaces__rosidl_generator_py.dir/build.make CMakeFiles/auro_interfaces__rosidl_generator_py.dir/rosidl_generator_py/auro_interfaces/srv/_rotate_s.c.s
+.PHONY : rosidl_generator_py/auro_interfaces/srv/_rotate_s.c.s
+
+rosidl_generator_py/auro_interfaces/srv/_task_s.o: rosidl_generator_py/auro_interfaces/srv/_task_s.c.o
+.PHONY : rosidl_generator_py/auro_interfaces/srv/_task_s.o
+
+# target to build an object file
+rosidl_generator_py/auro_interfaces/srv/_task_s.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auro_interfaces__rosidl_generator_py.dir/build.make CMakeFiles/auro_interfaces__rosidl_generator_py.dir/rosidl_generator_py/auro_interfaces/srv/_task_s.c.o
+.PHONY : rosidl_generator_py/auro_interfaces/srv/_task_s.c.o
+
+rosidl_generator_py/auro_interfaces/srv/_task_s.i: rosidl_generator_py/auro_interfaces/srv/_task_s.c.i
+.PHONY : rosidl_generator_py/auro_interfaces/srv/_task_s.i
+
+# target to preprocess a source file
+rosidl_generator_py/auro_interfaces/srv/_task_s.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auro_interfaces__rosidl_generator_py.dir/build.make CMakeFiles/auro_interfaces__rosidl_generator_py.dir/rosidl_generator_py/auro_interfaces/srv/_task_s.c.i
+.PHONY : rosidl_generator_py/auro_interfaces/srv/_task_s.c.i
+
+rosidl_generator_py/auro_interfaces/srv/_task_s.s: rosidl_generator_py/auro_interfaces/srv/_task_s.c.s
+.PHONY : rosidl_generator_py/auro_interfaces/srv/_task_s.s
+
+# target to generate assembly for a file
+rosidl_generator_py/auro_interfaces/srv/_task_s.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auro_interfaces__rosidl_generator_py.dir/build.make CMakeFiles/auro_interfaces__rosidl_generator_py.dir/rosidl_generator_py/auro_interfaces/srv/_task_s.c.s
+.PHONY : rosidl_generator_py/auro_interfaces/srv/_task_s.c.s
+
+rosidl_generator_py/auro_interfaces/srv/_zone_request_s.o: rosidl_generator_py/auro_interfaces/srv/_zone_request_s.c.o
+.PHONY : rosidl_generator_py/auro_interfaces/srv/_zone_request_s.o
+
+# target to build an object file
+rosidl_generator_py/auro_interfaces/srv/_zone_request_s.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auro_interfaces__rosidl_generator_py.dir/build.make CMakeFiles/auro_interfaces__rosidl_generator_py.dir/rosidl_generator_py/auro_interfaces/srv/_zone_request_s.c.o
+.PHONY : rosidl_generator_py/auro_interfaces/srv/_zone_request_s.c.o
+
+rosidl_generator_py/auro_interfaces/srv/_zone_request_s.i: rosidl_generator_py/auro_interfaces/srv/_zone_request_s.c.i
+.PHONY : rosidl_generator_py/auro_interfaces/srv/_zone_request_s.i
+
+# target to preprocess a source file
+rosidl_generator_py/auro_interfaces/srv/_zone_request_s.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auro_interfaces__rosidl_generator_py.dir/build.make CMakeFiles/auro_interfaces__rosidl_generator_py.dir/rosidl_generator_py/auro_interfaces/srv/_zone_request_s.c.i
+.PHONY : rosidl_generator_py/auro_interfaces/srv/_zone_request_s.c.i
+
+rosidl_generator_py/auro_interfaces/srv/_zone_request_s.s: rosidl_generator_py/auro_interfaces/srv/_zone_request_s.c.s
+.PHONY : rosidl_generator_py/auro_interfaces/srv/_zone_request_s.s
+
+# target to generate assembly for a file
+rosidl_generator_py/auro_interfaces/srv/_zone_request_s.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auro_interfaces__rosidl_generator_py.dir/build.make CMakeFiles/auro_interfaces__rosidl_generator_py.dir/rosidl_generator_py/auro_interfaces/srv/_zone_request_s.c.s
+.PHONY : rosidl_generator_py/auro_interfaces/srv/_zone_request_s.c.s
 
 rosidl_typesupport_c/auro_interfaces/action/move__type_support.o: rosidl_typesupport_c/auro_interfaces/action/move__type_support.cpp.o
 .PHONY : rosidl_typesupport_c/auro_interfaces/action/move__type_support.o
@@ -1077,6 +1221,30 @@ rosidl_typesupport_c/auro_interfaces/srv/collision__type_support.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/auro_interfaces__rosidl_typesupport_c.dir/build.make CMakeFiles/auro_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/auro_interfaces/srv/collision__type_support.cpp.s
 .PHONY : rosidl_typesupport_c/auro_interfaces/srv/collision__type_support.cpp.s
 
+rosidl_typesupport_c/auro_interfaces/srv/find_target__type_support.o: rosidl_typesupport_c/auro_interfaces/srv/find_target__type_support.cpp.o
+.PHONY : rosidl_typesupport_c/auro_interfaces/srv/find_target__type_support.o
+
+# target to build an object file
+rosidl_typesupport_c/auro_interfaces/srv/find_target__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auro_interfaces__rosidl_typesupport_c.dir/build.make CMakeFiles/auro_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/auro_interfaces/srv/find_target__type_support.cpp.o
+.PHONY : rosidl_typesupport_c/auro_interfaces/srv/find_target__type_support.cpp.o
+
+rosidl_typesupport_c/auro_interfaces/srv/find_target__type_support.i: rosidl_typesupport_c/auro_interfaces/srv/find_target__type_support.cpp.i
+.PHONY : rosidl_typesupport_c/auro_interfaces/srv/find_target__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_c/auro_interfaces/srv/find_target__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auro_interfaces__rosidl_typesupport_c.dir/build.make CMakeFiles/auro_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/auro_interfaces/srv/find_target__type_support.cpp.i
+.PHONY : rosidl_typesupport_c/auro_interfaces/srv/find_target__type_support.cpp.i
+
+rosidl_typesupport_c/auro_interfaces/srv/find_target__type_support.s: rosidl_typesupport_c/auro_interfaces/srv/find_target__type_support.cpp.s
+.PHONY : rosidl_typesupport_c/auro_interfaces/srv/find_target__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_c/auro_interfaces/srv/find_target__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auro_interfaces__rosidl_typesupport_c.dir/build.make CMakeFiles/auro_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/auro_interfaces/srv/find_target__type_support.cpp.s
+.PHONY : rosidl_typesupport_c/auro_interfaces/srv/find_target__type_support.cpp.s
+
 rosidl_typesupport_c/auro_interfaces/srv/item_request__type_support.o: rosidl_typesupport_c/auro_interfaces/srv/item_request__type_support.cpp.o
 .PHONY : rosidl_typesupport_c/auro_interfaces/srv/item_request__type_support.o
 
@@ -1101,29 +1269,77 @@ rosidl_typesupport_c/auro_interfaces/srv/item_request__type_support.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/auro_interfaces__rosidl_typesupport_c.dir/build.make CMakeFiles/auro_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/auro_interfaces/srv/item_request__type_support.cpp.s
 .PHONY : rosidl_typesupport_c/auro_interfaces/srv/item_request__type_support.cpp.s
 
-rosidl_typesupport_c/auro_interfaces/srv/sector__type_support.o: rosidl_typesupport_c/auro_interfaces/srv/sector__type_support.cpp.o
-.PHONY : rosidl_typesupport_c/auro_interfaces/srv/sector__type_support.o
+rosidl_typesupport_c/auro_interfaces/srv/rotate__type_support.o: rosidl_typesupport_c/auro_interfaces/srv/rotate__type_support.cpp.o
+.PHONY : rosidl_typesupport_c/auro_interfaces/srv/rotate__type_support.o
 
 # target to build an object file
-rosidl_typesupport_c/auro_interfaces/srv/sector__type_support.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/auro_interfaces__rosidl_typesupport_c.dir/build.make CMakeFiles/auro_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/auro_interfaces/srv/sector__type_support.cpp.o
-.PHONY : rosidl_typesupport_c/auro_interfaces/srv/sector__type_support.cpp.o
+rosidl_typesupport_c/auro_interfaces/srv/rotate__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auro_interfaces__rosidl_typesupport_c.dir/build.make CMakeFiles/auro_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/auro_interfaces/srv/rotate__type_support.cpp.o
+.PHONY : rosidl_typesupport_c/auro_interfaces/srv/rotate__type_support.cpp.o
 
-rosidl_typesupport_c/auro_interfaces/srv/sector__type_support.i: rosidl_typesupport_c/auro_interfaces/srv/sector__type_support.cpp.i
-.PHONY : rosidl_typesupport_c/auro_interfaces/srv/sector__type_support.i
+rosidl_typesupport_c/auro_interfaces/srv/rotate__type_support.i: rosidl_typesupport_c/auro_interfaces/srv/rotate__type_support.cpp.i
+.PHONY : rosidl_typesupport_c/auro_interfaces/srv/rotate__type_support.i
 
 # target to preprocess a source file
-rosidl_typesupport_c/auro_interfaces/srv/sector__type_support.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/auro_interfaces__rosidl_typesupport_c.dir/build.make CMakeFiles/auro_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/auro_interfaces/srv/sector__type_support.cpp.i
-.PHONY : rosidl_typesupport_c/auro_interfaces/srv/sector__type_support.cpp.i
+rosidl_typesupport_c/auro_interfaces/srv/rotate__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auro_interfaces__rosidl_typesupport_c.dir/build.make CMakeFiles/auro_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/auro_interfaces/srv/rotate__type_support.cpp.i
+.PHONY : rosidl_typesupport_c/auro_interfaces/srv/rotate__type_support.cpp.i
 
-rosidl_typesupport_c/auro_interfaces/srv/sector__type_support.s: rosidl_typesupport_c/auro_interfaces/srv/sector__type_support.cpp.s
-.PHONY : rosidl_typesupport_c/auro_interfaces/srv/sector__type_support.s
+rosidl_typesupport_c/auro_interfaces/srv/rotate__type_support.s: rosidl_typesupport_c/auro_interfaces/srv/rotate__type_support.cpp.s
+.PHONY : rosidl_typesupport_c/auro_interfaces/srv/rotate__type_support.s
 
 # target to generate assembly for a file
-rosidl_typesupport_c/auro_interfaces/srv/sector__type_support.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/auro_interfaces__rosidl_typesupport_c.dir/build.make CMakeFiles/auro_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/auro_interfaces/srv/sector__type_support.cpp.s
-.PHONY : rosidl_typesupport_c/auro_interfaces/srv/sector__type_support.cpp.s
+rosidl_typesupport_c/auro_interfaces/srv/rotate__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auro_interfaces__rosidl_typesupport_c.dir/build.make CMakeFiles/auro_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/auro_interfaces/srv/rotate__type_support.cpp.s
+.PHONY : rosidl_typesupport_c/auro_interfaces/srv/rotate__type_support.cpp.s
+
+rosidl_typesupport_c/auro_interfaces/srv/task__type_support.o: rosidl_typesupport_c/auro_interfaces/srv/task__type_support.cpp.o
+.PHONY : rosidl_typesupport_c/auro_interfaces/srv/task__type_support.o
+
+# target to build an object file
+rosidl_typesupport_c/auro_interfaces/srv/task__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auro_interfaces__rosidl_typesupport_c.dir/build.make CMakeFiles/auro_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/auro_interfaces/srv/task__type_support.cpp.o
+.PHONY : rosidl_typesupport_c/auro_interfaces/srv/task__type_support.cpp.o
+
+rosidl_typesupport_c/auro_interfaces/srv/task__type_support.i: rosidl_typesupport_c/auro_interfaces/srv/task__type_support.cpp.i
+.PHONY : rosidl_typesupport_c/auro_interfaces/srv/task__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_c/auro_interfaces/srv/task__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auro_interfaces__rosidl_typesupport_c.dir/build.make CMakeFiles/auro_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/auro_interfaces/srv/task__type_support.cpp.i
+.PHONY : rosidl_typesupport_c/auro_interfaces/srv/task__type_support.cpp.i
+
+rosidl_typesupport_c/auro_interfaces/srv/task__type_support.s: rosidl_typesupport_c/auro_interfaces/srv/task__type_support.cpp.s
+.PHONY : rosidl_typesupport_c/auro_interfaces/srv/task__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_c/auro_interfaces/srv/task__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auro_interfaces__rosidl_typesupport_c.dir/build.make CMakeFiles/auro_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/auro_interfaces/srv/task__type_support.cpp.s
+.PHONY : rosidl_typesupport_c/auro_interfaces/srv/task__type_support.cpp.s
+
+rosidl_typesupport_c/auro_interfaces/srv/zone_request__type_support.o: rosidl_typesupport_c/auro_interfaces/srv/zone_request__type_support.cpp.o
+.PHONY : rosidl_typesupport_c/auro_interfaces/srv/zone_request__type_support.o
+
+# target to build an object file
+rosidl_typesupport_c/auro_interfaces/srv/zone_request__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auro_interfaces__rosidl_typesupport_c.dir/build.make CMakeFiles/auro_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/auro_interfaces/srv/zone_request__type_support.cpp.o
+.PHONY : rosidl_typesupport_c/auro_interfaces/srv/zone_request__type_support.cpp.o
+
+rosidl_typesupport_c/auro_interfaces/srv/zone_request__type_support.i: rosidl_typesupport_c/auro_interfaces/srv/zone_request__type_support.cpp.i
+.PHONY : rosidl_typesupport_c/auro_interfaces/srv/zone_request__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_c/auro_interfaces/srv/zone_request__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auro_interfaces__rosidl_typesupport_c.dir/build.make CMakeFiles/auro_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/auro_interfaces/srv/zone_request__type_support.cpp.i
+.PHONY : rosidl_typesupport_c/auro_interfaces/srv/zone_request__type_support.cpp.i
+
+rosidl_typesupport_c/auro_interfaces/srv/zone_request__type_support.s: rosidl_typesupport_c/auro_interfaces/srv/zone_request__type_support.cpp.s
+.PHONY : rosidl_typesupport_c/auro_interfaces/srv/zone_request__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_c/auro_interfaces/srv/zone_request__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auro_interfaces__rosidl_typesupport_c.dir/build.make CMakeFiles/auro_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/auro_interfaces/srv/zone_request__type_support.cpp.s
+.PHONY : rosidl_typesupport_c/auro_interfaces/srv/zone_request__type_support.cpp.s
 
 rosidl_typesupport_cpp/auro_interfaces/action/move__type_support.o: rosidl_typesupport_cpp/auro_interfaces/action/move__type_support.cpp.o
 .PHONY : rosidl_typesupport_cpp/auro_interfaces/action/move__type_support.o
@@ -1293,6 +1509,30 @@ rosidl_typesupport_cpp/auro_interfaces/srv/collision__type_support.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/auro_interfaces__rosidl_typesupport_cpp.dir/build.make CMakeFiles/auro_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/auro_interfaces/srv/collision__type_support.cpp.s
 .PHONY : rosidl_typesupport_cpp/auro_interfaces/srv/collision__type_support.cpp.s
 
+rosidl_typesupport_cpp/auro_interfaces/srv/find_target__type_support.o: rosidl_typesupport_cpp/auro_interfaces/srv/find_target__type_support.cpp.o
+.PHONY : rosidl_typesupport_cpp/auro_interfaces/srv/find_target__type_support.o
+
+# target to build an object file
+rosidl_typesupport_cpp/auro_interfaces/srv/find_target__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auro_interfaces__rosidl_typesupport_cpp.dir/build.make CMakeFiles/auro_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/auro_interfaces/srv/find_target__type_support.cpp.o
+.PHONY : rosidl_typesupport_cpp/auro_interfaces/srv/find_target__type_support.cpp.o
+
+rosidl_typesupport_cpp/auro_interfaces/srv/find_target__type_support.i: rosidl_typesupport_cpp/auro_interfaces/srv/find_target__type_support.cpp.i
+.PHONY : rosidl_typesupport_cpp/auro_interfaces/srv/find_target__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_cpp/auro_interfaces/srv/find_target__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auro_interfaces__rosidl_typesupport_cpp.dir/build.make CMakeFiles/auro_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/auro_interfaces/srv/find_target__type_support.cpp.i
+.PHONY : rosidl_typesupport_cpp/auro_interfaces/srv/find_target__type_support.cpp.i
+
+rosidl_typesupport_cpp/auro_interfaces/srv/find_target__type_support.s: rosidl_typesupport_cpp/auro_interfaces/srv/find_target__type_support.cpp.s
+.PHONY : rosidl_typesupport_cpp/auro_interfaces/srv/find_target__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_cpp/auro_interfaces/srv/find_target__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auro_interfaces__rosidl_typesupport_cpp.dir/build.make CMakeFiles/auro_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/auro_interfaces/srv/find_target__type_support.cpp.s
+.PHONY : rosidl_typesupport_cpp/auro_interfaces/srv/find_target__type_support.cpp.s
+
 rosidl_typesupport_cpp/auro_interfaces/srv/item_request__type_support.o: rosidl_typesupport_cpp/auro_interfaces/srv/item_request__type_support.cpp.o
 .PHONY : rosidl_typesupport_cpp/auro_interfaces/srv/item_request__type_support.o
 
@@ -1317,29 +1557,77 @@ rosidl_typesupport_cpp/auro_interfaces/srv/item_request__type_support.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/auro_interfaces__rosidl_typesupport_cpp.dir/build.make CMakeFiles/auro_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/auro_interfaces/srv/item_request__type_support.cpp.s
 .PHONY : rosidl_typesupport_cpp/auro_interfaces/srv/item_request__type_support.cpp.s
 
-rosidl_typesupport_cpp/auro_interfaces/srv/sector__type_support.o: rosidl_typesupport_cpp/auro_interfaces/srv/sector__type_support.cpp.o
-.PHONY : rosidl_typesupport_cpp/auro_interfaces/srv/sector__type_support.o
+rosidl_typesupport_cpp/auro_interfaces/srv/rotate__type_support.o: rosidl_typesupport_cpp/auro_interfaces/srv/rotate__type_support.cpp.o
+.PHONY : rosidl_typesupport_cpp/auro_interfaces/srv/rotate__type_support.o
 
 # target to build an object file
-rosidl_typesupport_cpp/auro_interfaces/srv/sector__type_support.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/auro_interfaces__rosidl_typesupport_cpp.dir/build.make CMakeFiles/auro_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/auro_interfaces/srv/sector__type_support.cpp.o
-.PHONY : rosidl_typesupport_cpp/auro_interfaces/srv/sector__type_support.cpp.o
+rosidl_typesupport_cpp/auro_interfaces/srv/rotate__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auro_interfaces__rosidl_typesupport_cpp.dir/build.make CMakeFiles/auro_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/auro_interfaces/srv/rotate__type_support.cpp.o
+.PHONY : rosidl_typesupport_cpp/auro_interfaces/srv/rotate__type_support.cpp.o
 
-rosidl_typesupport_cpp/auro_interfaces/srv/sector__type_support.i: rosidl_typesupport_cpp/auro_interfaces/srv/sector__type_support.cpp.i
-.PHONY : rosidl_typesupport_cpp/auro_interfaces/srv/sector__type_support.i
+rosidl_typesupport_cpp/auro_interfaces/srv/rotate__type_support.i: rosidl_typesupport_cpp/auro_interfaces/srv/rotate__type_support.cpp.i
+.PHONY : rosidl_typesupport_cpp/auro_interfaces/srv/rotate__type_support.i
 
 # target to preprocess a source file
-rosidl_typesupport_cpp/auro_interfaces/srv/sector__type_support.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/auro_interfaces__rosidl_typesupport_cpp.dir/build.make CMakeFiles/auro_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/auro_interfaces/srv/sector__type_support.cpp.i
-.PHONY : rosidl_typesupport_cpp/auro_interfaces/srv/sector__type_support.cpp.i
+rosidl_typesupport_cpp/auro_interfaces/srv/rotate__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auro_interfaces__rosidl_typesupport_cpp.dir/build.make CMakeFiles/auro_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/auro_interfaces/srv/rotate__type_support.cpp.i
+.PHONY : rosidl_typesupport_cpp/auro_interfaces/srv/rotate__type_support.cpp.i
 
-rosidl_typesupport_cpp/auro_interfaces/srv/sector__type_support.s: rosidl_typesupport_cpp/auro_interfaces/srv/sector__type_support.cpp.s
-.PHONY : rosidl_typesupport_cpp/auro_interfaces/srv/sector__type_support.s
+rosidl_typesupport_cpp/auro_interfaces/srv/rotate__type_support.s: rosidl_typesupport_cpp/auro_interfaces/srv/rotate__type_support.cpp.s
+.PHONY : rosidl_typesupport_cpp/auro_interfaces/srv/rotate__type_support.s
 
 # target to generate assembly for a file
-rosidl_typesupport_cpp/auro_interfaces/srv/sector__type_support.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/auro_interfaces__rosidl_typesupport_cpp.dir/build.make CMakeFiles/auro_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/auro_interfaces/srv/sector__type_support.cpp.s
-.PHONY : rosidl_typesupport_cpp/auro_interfaces/srv/sector__type_support.cpp.s
+rosidl_typesupport_cpp/auro_interfaces/srv/rotate__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auro_interfaces__rosidl_typesupport_cpp.dir/build.make CMakeFiles/auro_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/auro_interfaces/srv/rotate__type_support.cpp.s
+.PHONY : rosidl_typesupport_cpp/auro_interfaces/srv/rotate__type_support.cpp.s
+
+rosidl_typesupport_cpp/auro_interfaces/srv/task__type_support.o: rosidl_typesupport_cpp/auro_interfaces/srv/task__type_support.cpp.o
+.PHONY : rosidl_typesupport_cpp/auro_interfaces/srv/task__type_support.o
+
+# target to build an object file
+rosidl_typesupport_cpp/auro_interfaces/srv/task__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auro_interfaces__rosidl_typesupport_cpp.dir/build.make CMakeFiles/auro_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/auro_interfaces/srv/task__type_support.cpp.o
+.PHONY : rosidl_typesupport_cpp/auro_interfaces/srv/task__type_support.cpp.o
+
+rosidl_typesupport_cpp/auro_interfaces/srv/task__type_support.i: rosidl_typesupport_cpp/auro_interfaces/srv/task__type_support.cpp.i
+.PHONY : rosidl_typesupport_cpp/auro_interfaces/srv/task__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_cpp/auro_interfaces/srv/task__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auro_interfaces__rosidl_typesupport_cpp.dir/build.make CMakeFiles/auro_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/auro_interfaces/srv/task__type_support.cpp.i
+.PHONY : rosidl_typesupport_cpp/auro_interfaces/srv/task__type_support.cpp.i
+
+rosidl_typesupport_cpp/auro_interfaces/srv/task__type_support.s: rosidl_typesupport_cpp/auro_interfaces/srv/task__type_support.cpp.s
+.PHONY : rosidl_typesupport_cpp/auro_interfaces/srv/task__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_cpp/auro_interfaces/srv/task__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auro_interfaces__rosidl_typesupport_cpp.dir/build.make CMakeFiles/auro_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/auro_interfaces/srv/task__type_support.cpp.s
+.PHONY : rosidl_typesupport_cpp/auro_interfaces/srv/task__type_support.cpp.s
+
+rosidl_typesupport_cpp/auro_interfaces/srv/zone_request__type_support.o: rosidl_typesupport_cpp/auro_interfaces/srv/zone_request__type_support.cpp.o
+.PHONY : rosidl_typesupport_cpp/auro_interfaces/srv/zone_request__type_support.o
+
+# target to build an object file
+rosidl_typesupport_cpp/auro_interfaces/srv/zone_request__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auro_interfaces__rosidl_typesupport_cpp.dir/build.make CMakeFiles/auro_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/auro_interfaces/srv/zone_request__type_support.cpp.o
+.PHONY : rosidl_typesupport_cpp/auro_interfaces/srv/zone_request__type_support.cpp.o
+
+rosidl_typesupport_cpp/auro_interfaces/srv/zone_request__type_support.i: rosidl_typesupport_cpp/auro_interfaces/srv/zone_request__type_support.cpp.i
+.PHONY : rosidl_typesupport_cpp/auro_interfaces/srv/zone_request__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_cpp/auro_interfaces/srv/zone_request__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auro_interfaces__rosidl_typesupport_cpp.dir/build.make CMakeFiles/auro_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/auro_interfaces/srv/zone_request__type_support.cpp.i
+.PHONY : rosidl_typesupport_cpp/auro_interfaces/srv/zone_request__type_support.cpp.i
+
+rosidl_typesupport_cpp/auro_interfaces/srv/zone_request__type_support.s: rosidl_typesupport_cpp/auro_interfaces/srv/zone_request__type_support.cpp.s
+.PHONY : rosidl_typesupport_cpp/auro_interfaces/srv/zone_request__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_cpp/auro_interfaces/srv/zone_request__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auro_interfaces__rosidl_typesupport_cpp.dir/build.make CMakeFiles/auro_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/auro_interfaces/srv/zone_request__type_support.cpp.s
+.PHONY : rosidl_typesupport_cpp/auro_interfaces/srv/zone_request__type_support.cpp.s
 
 rosidl_typesupport_fastrtps_c/auro_interfaces/action/detail/move__type_support_c.o: rosidl_typesupport_fastrtps_c/auro_interfaces/action/detail/move__type_support_c.cpp.o
 .PHONY : rosidl_typesupport_fastrtps_c/auro_interfaces/action/detail/move__type_support_c.o
@@ -1509,6 +1797,30 @@ rosidl_typesupport_fastrtps_c/auro_interfaces/srv/detail/collision__type_support
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/auro_interfaces__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/auro_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/auro_interfaces/srv/detail/collision__type_support_c.cpp.s
 .PHONY : rosidl_typesupport_fastrtps_c/auro_interfaces/srv/detail/collision__type_support_c.cpp.s
 
+rosidl_typesupport_fastrtps_c/auro_interfaces/srv/detail/find_target__type_support_c.o: rosidl_typesupport_fastrtps_c/auro_interfaces/srv/detail/find_target__type_support_c.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_c/auro_interfaces/srv/detail/find_target__type_support_c.o
+
+# target to build an object file
+rosidl_typesupport_fastrtps_c/auro_interfaces/srv/detail/find_target__type_support_c.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auro_interfaces__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/auro_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/auro_interfaces/srv/detail/find_target__type_support_c.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_c/auro_interfaces/srv/detail/find_target__type_support_c.cpp.o
+
+rosidl_typesupport_fastrtps_c/auro_interfaces/srv/detail/find_target__type_support_c.i: rosidl_typesupport_fastrtps_c/auro_interfaces/srv/detail/find_target__type_support_c.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_c/auro_interfaces/srv/detail/find_target__type_support_c.i
+
+# target to preprocess a source file
+rosidl_typesupport_fastrtps_c/auro_interfaces/srv/detail/find_target__type_support_c.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auro_interfaces__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/auro_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/auro_interfaces/srv/detail/find_target__type_support_c.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_c/auro_interfaces/srv/detail/find_target__type_support_c.cpp.i
+
+rosidl_typesupport_fastrtps_c/auro_interfaces/srv/detail/find_target__type_support_c.s: rosidl_typesupport_fastrtps_c/auro_interfaces/srv/detail/find_target__type_support_c.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_c/auro_interfaces/srv/detail/find_target__type_support_c.s
+
+# target to generate assembly for a file
+rosidl_typesupport_fastrtps_c/auro_interfaces/srv/detail/find_target__type_support_c.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auro_interfaces__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/auro_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/auro_interfaces/srv/detail/find_target__type_support_c.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_c/auro_interfaces/srv/detail/find_target__type_support_c.cpp.s
+
 rosidl_typesupport_fastrtps_c/auro_interfaces/srv/detail/item_request__type_support_c.o: rosidl_typesupport_fastrtps_c/auro_interfaces/srv/detail/item_request__type_support_c.cpp.o
 .PHONY : rosidl_typesupport_fastrtps_c/auro_interfaces/srv/detail/item_request__type_support_c.o
 
@@ -1533,29 +1845,77 @@ rosidl_typesupport_fastrtps_c/auro_interfaces/srv/detail/item_request__type_supp
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/auro_interfaces__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/auro_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/auro_interfaces/srv/detail/item_request__type_support_c.cpp.s
 .PHONY : rosidl_typesupport_fastrtps_c/auro_interfaces/srv/detail/item_request__type_support_c.cpp.s
 
-rosidl_typesupport_fastrtps_c/auro_interfaces/srv/detail/sector__type_support_c.o: rosidl_typesupport_fastrtps_c/auro_interfaces/srv/detail/sector__type_support_c.cpp.o
-.PHONY : rosidl_typesupport_fastrtps_c/auro_interfaces/srv/detail/sector__type_support_c.o
+rosidl_typesupport_fastrtps_c/auro_interfaces/srv/detail/rotate__type_support_c.o: rosidl_typesupport_fastrtps_c/auro_interfaces/srv/detail/rotate__type_support_c.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_c/auro_interfaces/srv/detail/rotate__type_support_c.o
 
 # target to build an object file
-rosidl_typesupport_fastrtps_c/auro_interfaces/srv/detail/sector__type_support_c.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/auro_interfaces__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/auro_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/auro_interfaces/srv/detail/sector__type_support_c.cpp.o
-.PHONY : rosidl_typesupport_fastrtps_c/auro_interfaces/srv/detail/sector__type_support_c.cpp.o
+rosidl_typesupport_fastrtps_c/auro_interfaces/srv/detail/rotate__type_support_c.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auro_interfaces__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/auro_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/auro_interfaces/srv/detail/rotate__type_support_c.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_c/auro_interfaces/srv/detail/rotate__type_support_c.cpp.o
 
-rosidl_typesupport_fastrtps_c/auro_interfaces/srv/detail/sector__type_support_c.i: rosidl_typesupport_fastrtps_c/auro_interfaces/srv/detail/sector__type_support_c.cpp.i
-.PHONY : rosidl_typesupport_fastrtps_c/auro_interfaces/srv/detail/sector__type_support_c.i
+rosidl_typesupport_fastrtps_c/auro_interfaces/srv/detail/rotate__type_support_c.i: rosidl_typesupport_fastrtps_c/auro_interfaces/srv/detail/rotate__type_support_c.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_c/auro_interfaces/srv/detail/rotate__type_support_c.i
 
 # target to preprocess a source file
-rosidl_typesupport_fastrtps_c/auro_interfaces/srv/detail/sector__type_support_c.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/auro_interfaces__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/auro_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/auro_interfaces/srv/detail/sector__type_support_c.cpp.i
-.PHONY : rosidl_typesupport_fastrtps_c/auro_interfaces/srv/detail/sector__type_support_c.cpp.i
+rosidl_typesupport_fastrtps_c/auro_interfaces/srv/detail/rotate__type_support_c.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auro_interfaces__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/auro_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/auro_interfaces/srv/detail/rotate__type_support_c.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_c/auro_interfaces/srv/detail/rotate__type_support_c.cpp.i
 
-rosidl_typesupport_fastrtps_c/auro_interfaces/srv/detail/sector__type_support_c.s: rosidl_typesupport_fastrtps_c/auro_interfaces/srv/detail/sector__type_support_c.cpp.s
-.PHONY : rosidl_typesupport_fastrtps_c/auro_interfaces/srv/detail/sector__type_support_c.s
+rosidl_typesupport_fastrtps_c/auro_interfaces/srv/detail/rotate__type_support_c.s: rosidl_typesupport_fastrtps_c/auro_interfaces/srv/detail/rotate__type_support_c.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_c/auro_interfaces/srv/detail/rotate__type_support_c.s
 
 # target to generate assembly for a file
-rosidl_typesupport_fastrtps_c/auro_interfaces/srv/detail/sector__type_support_c.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/auro_interfaces__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/auro_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/auro_interfaces/srv/detail/sector__type_support_c.cpp.s
-.PHONY : rosidl_typesupport_fastrtps_c/auro_interfaces/srv/detail/sector__type_support_c.cpp.s
+rosidl_typesupport_fastrtps_c/auro_interfaces/srv/detail/rotate__type_support_c.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auro_interfaces__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/auro_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/auro_interfaces/srv/detail/rotate__type_support_c.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_c/auro_interfaces/srv/detail/rotate__type_support_c.cpp.s
+
+rosidl_typesupport_fastrtps_c/auro_interfaces/srv/detail/task__type_support_c.o: rosidl_typesupport_fastrtps_c/auro_interfaces/srv/detail/task__type_support_c.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_c/auro_interfaces/srv/detail/task__type_support_c.o
+
+# target to build an object file
+rosidl_typesupport_fastrtps_c/auro_interfaces/srv/detail/task__type_support_c.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auro_interfaces__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/auro_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/auro_interfaces/srv/detail/task__type_support_c.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_c/auro_interfaces/srv/detail/task__type_support_c.cpp.o
+
+rosidl_typesupport_fastrtps_c/auro_interfaces/srv/detail/task__type_support_c.i: rosidl_typesupport_fastrtps_c/auro_interfaces/srv/detail/task__type_support_c.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_c/auro_interfaces/srv/detail/task__type_support_c.i
+
+# target to preprocess a source file
+rosidl_typesupport_fastrtps_c/auro_interfaces/srv/detail/task__type_support_c.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auro_interfaces__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/auro_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/auro_interfaces/srv/detail/task__type_support_c.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_c/auro_interfaces/srv/detail/task__type_support_c.cpp.i
+
+rosidl_typesupport_fastrtps_c/auro_interfaces/srv/detail/task__type_support_c.s: rosidl_typesupport_fastrtps_c/auro_interfaces/srv/detail/task__type_support_c.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_c/auro_interfaces/srv/detail/task__type_support_c.s
+
+# target to generate assembly for a file
+rosidl_typesupport_fastrtps_c/auro_interfaces/srv/detail/task__type_support_c.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auro_interfaces__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/auro_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/auro_interfaces/srv/detail/task__type_support_c.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_c/auro_interfaces/srv/detail/task__type_support_c.cpp.s
+
+rosidl_typesupport_fastrtps_c/auro_interfaces/srv/detail/zone_request__type_support_c.o: rosidl_typesupport_fastrtps_c/auro_interfaces/srv/detail/zone_request__type_support_c.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_c/auro_interfaces/srv/detail/zone_request__type_support_c.o
+
+# target to build an object file
+rosidl_typesupport_fastrtps_c/auro_interfaces/srv/detail/zone_request__type_support_c.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auro_interfaces__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/auro_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/auro_interfaces/srv/detail/zone_request__type_support_c.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_c/auro_interfaces/srv/detail/zone_request__type_support_c.cpp.o
+
+rosidl_typesupport_fastrtps_c/auro_interfaces/srv/detail/zone_request__type_support_c.i: rosidl_typesupport_fastrtps_c/auro_interfaces/srv/detail/zone_request__type_support_c.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_c/auro_interfaces/srv/detail/zone_request__type_support_c.i
+
+# target to preprocess a source file
+rosidl_typesupport_fastrtps_c/auro_interfaces/srv/detail/zone_request__type_support_c.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auro_interfaces__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/auro_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/auro_interfaces/srv/detail/zone_request__type_support_c.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_c/auro_interfaces/srv/detail/zone_request__type_support_c.cpp.i
+
+rosidl_typesupport_fastrtps_c/auro_interfaces/srv/detail/zone_request__type_support_c.s: rosidl_typesupport_fastrtps_c/auro_interfaces/srv/detail/zone_request__type_support_c.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_c/auro_interfaces/srv/detail/zone_request__type_support_c.s
+
+# target to generate assembly for a file
+rosidl_typesupport_fastrtps_c/auro_interfaces/srv/detail/zone_request__type_support_c.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auro_interfaces__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/auro_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/auro_interfaces/srv/detail/zone_request__type_support_c.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_c/auro_interfaces/srv/detail/zone_request__type_support_c.cpp.s
 
 rosidl_typesupport_fastrtps_cpp/auro_interfaces/action/detail/dds_fastrtps/move__type_support.o: rosidl_typesupport_fastrtps_cpp/auro_interfaces/action/detail/dds_fastrtps/move__type_support.cpp.o
 .PHONY : rosidl_typesupport_fastrtps_cpp/auro_interfaces/action/detail/dds_fastrtps/move__type_support.o
@@ -1725,6 +2085,30 @@ rosidl_typesupport_fastrtps_cpp/auro_interfaces/srv/detail/dds_fastrtps/collisio
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/auro_interfaces__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/auro_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/auro_interfaces/srv/detail/dds_fastrtps/collision__type_support.cpp.s
 .PHONY : rosidl_typesupport_fastrtps_cpp/auro_interfaces/srv/detail/dds_fastrtps/collision__type_support.cpp.s
 
+rosidl_typesupport_fastrtps_cpp/auro_interfaces/srv/detail/dds_fastrtps/find_target__type_support.o: rosidl_typesupport_fastrtps_cpp/auro_interfaces/srv/detail/dds_fastrtps/find_target__type_support.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_cpp/auro_interfaces/srv/detail/dds_fastrtps/find_target__type_support.o
+
+# target to build an object file
+rosidl_typesupport_fastrtps_cpp/auro_interfaces/srv/detail/dds_fastrtps/find_target__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auro_interfaces__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/auro_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/auro_interfaces/srv/detail/dds_fastrtps/find_target__type_support.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_cpp/auro_interfaces/srv/detail/dds_fastrtps/find_target__type_support.cpp.o
+
+rosidl_typesupport_fastrtps_cpp/auro_interfaces/srv/detail/dds_fastrtps/find_target__type_support.i: rosidl_typesupport_fastrtps_cpp/auro_interfaces/srv/detail/dds_fastrtps/find_target__type_support.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_cpp/auro_interfaces/srv/detail/dds_fastrtps/find_target__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_fastrtps_cpp/auro_interfaces/srv/detail/dds_fastrtps/find_target__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auro_interfaces__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/auro_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/auro_interfaces/srv/detail/dds_fastrtps/find_target__type_support.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_cpp/auro_interfaces/srv/detail/dds_fastrtps/find_target__type_support.cpp.i
+
+rosidl_typesupport_fastrtps_cpp/auro_interfaces/srv/detail/dds_fastrtps/find_target__type_support.s: rosidl_typesupport_fastrtps_cpp/auro_interfaces/srv/detail/dds_fastrtps/find_target__type_support.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_cpp/auro_interfaces/srv/detail/dds_fastrtps/find_target__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_fastrtps_cpp/auro_interfaces/srv/detail/dds_fastrtps/find_target__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auro_interfaces__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/auro_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/auro_interfaces/srv/detail/dds_fastrtps/find_target__type_support.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_cpp/auro_interfaces/srv/detail/dds_fastrtps/find_target__type_support.cpp.s
+
 rosidl_typesupport_fastrtps_cpp/auro_interfaces/srv/detail/dds_fastrtps/item_request__type_support.o: rosidl_typesupport_fastrtps_cpp/auro_interfaces/srv/detail/dds_fastrtps/item_request__type_support.cpp.o
 .PHONY : rosidl_typesupport_fastrtps_cpp/auro_interfaces/srv/detail/dds_fastrtps/item_request__type_support.o
 
@@ -1749,29 +2133,77 @@ rosidl_typesupport_fastrtps_cpp/auro_interfaces/srv/detail/dds_fastrtps/item_req
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/auro_interfaces__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/auro_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/auro_interfaces/srv/detail/dds_fastrtps/item_request__type_support.cpp.s
 .PHONY : rosidl_typesupport_fastrtps_cpp/auro_interfaces/srv/detail/dds_fastrtps/item_request__type_support.cpp.s
 
-rosidl_typesupport_fastrtps_cpp/auro_interfaces/srv/detail/dds_fastrtps/sector__type_support.o: rosidl_typesupport_fastrtps_cpp/auro_interfaces/srv/detail/dds_fastrtps/sector__type_support.cpp.o
-.PHONY : rosidl_typesupport_fastrtps_cpp/auro_interfaces/srv/detail/dds_fastrtps/sector__type_support.o
+rosidl_typesupport_fastrtps_cpp/auro_interfaces/srv/detail/dds_fastrtps/rotate__type_support.o: rosidl_typesupport_fastrtps_cpp/auro_interfaces/srv/detail/dds_fastrtps/rotate__type_support.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_cpp/auro_interfaces/srv/detail/dds_fastrtps/rotate__type_support.o
 
 # target to build an object file
-rosidl_typesupport_fastrtps_cpp/auro_interfaces/srv/detail/dds_fastrtps/sector__type_support.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/auro_interfaces__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/auro_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/auro_interfaces/srv/detail/dds_fastrtps/sector__type_support.cpp.o
-.PHONY : rosidl_typesupport_fastrtps_cpp/auro_interfaces/srv/detail/dds_fastrtps/sector__type_support.cpp.o
+rosidl_typesupport_fastrtps_cpp/auro_interfaces/srv/detail/dds_fastrtps/rotate__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auro_interfaces__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/auro_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/auro_interfaces/srv/detail/dds_fastrtps/rotate__type_support.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_cpp/auro_interfaces/srv/detail/dds_fastrtps/rotate__type_support.cpp.o
 
-rosidl_typesupport_fastrtps_cpp/auro_interfaces/srv/detail/dds_fastrtps/sector__type_support.i: rosidl_typesupport_fastrtps_cpp/auro_interfaces/srv/detail/dds_fastrtps/sector__type_support.cpp.i
-.PHONY : rosidl_typesupport_fastrtps_cpp/auro_interfaces/srv/detail/dds_fastrtps/sector__type_support.i
+rosidl_typesupport_fastrtps_cpp/auro_interfaces/srv/detail/dds_fastrtps/rotate__type_support.i: rosidl_typesupport_fastrtps_cpp/auro_interfaces/srv/detail/dds_fastrtps/rotate__type_support.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_cpp/auro_interfaces/srv/detail/dds_fastrtps/rotate__type_support.i
 
 # target to preprocess a source file
-rosidl_typesupport_fastrtps_cpp/auro_interfaces/srv/detail/dds_fastrtps/sector__type_support.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/auro_interfaces__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/auro_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/auro_interfaces/srv/detail/dds_fastrtps/sector__type_support.cpp.i
-.PHONY : rosidl_typesupport_fastrtps_cpp/auro_interfaces/srv/detail/dds_fastrtps/sector__type_support.cpp.i
+rosidl_typesupport_fastrtps_cpp/auro_interfaces/srv/detail/dds_fastrtps/rotate__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auro_interfaces__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/auro_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/auro_interfaces/srv/detail/dds_fastrtps/rotate__type_support.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_cpp/auro_interfaces/srv/detail/dds_fastrtps/rotate__type_support.cpp.i
 
-rosidl_typesupport_fastrtps_cpp/auro_interfaces/srv/detail/dds_fastrtps/sector__type_support.s: rosidl_typesupport_fastrtps_cpp/auro_interfaces/srv/detail/dds_fastrtps/sector__type_support.cpp.s
-.PHONY : rosidl_typesupport_fastrtps_cpp/auro_interfaces/srv/detail/dds_fastrtps/sector__type_support.s
+rosidl_typesupport_fastrtps_cpp/auro_interfaces/srv/detail/dds_fastrtps/rotate__type_support.s: rosidl_typesupport_fastrtps_cpp/auro_interfaces/srv/detail/dds_fastrtps/rotate__type_support.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_cpp/auro_interfaces/srv/detail/dds_fastrtps/rotate__type_support.s
 
 # target to generate assembly for a file
-rosidl_typesupport_fastrtps_cpp/auro_interfaces/srv/detail/dds_fastrtps/sector__type_support.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/auro_interfaces__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/auro_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/auro_interfaces/srv/detail/dds_fastrtps/sector__type_support.cpp.s
-.PHONY : rosidl_typesupport_fastrtps_cpp/auro_interfaces/srv/detail/dds_fastrtps/sector__type_support.cpp.s
+rosidl_typesupport_fastrtps_cpp/auro_interfaces/srv/detail/dds_fastrtps/rotate__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auro_interfaces__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/auro_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/auro_interfaces/srv/detail/dds_fastrtps/rotate__type_support.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_cpp/auro_interfaces/srv/detail/dds_fastrtps/rotate__type_support.cpp.s
+
+rosidl_typesupport_fastrtps_cpp/auro_interfaces/srv/detail/dds_fastrtps/task__type_support.o: rosidl_typesupport_fastrtps_cpp/auro_interfaces/srv/detail/dds_fastrtps/task__type_support.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_cpp/auro_interfaces/srv/detail/dds_fastrtps/task__type_support.o
+
+# target to build an object file
+rosidl_typesupport_fastrtps_cpp/auro_interfaces/srv/detail/dds_fastrtps/task__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auro_interfaces__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/auro_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/auro_interfaces/srv/detail/dds_fastrtps/task__type_support.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_cpp/auro_interfaces/srv/detail/dds_fastrtps/task__type_support.cpp.o
+
+rosidl_typesupport_fastrtps_cpp/auro_interfaces/srv/detail/dds_fastrtps/task__type_support.i: rosidl_typesupport_fastrtps_cpp/auro_interfaces/srv/detail/dds_fastrtps/task__type_support.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_cpp/auro_interfaces/srv/detail/dds_fastrtps/task__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_fastrtps_cpp/auro_interfaces/srv/detail/dds_fastrtps/task__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auro_interfaces__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/auro_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/auro_interfaces/srv/detail/dds_fastrtps/task__type_support.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_cpp/auro_interfaces/srv/detail/dds_fastrtps/task__type_support.cpp.i
+
+rosidl_typesupport_fastrtps_cpp/auro_interfaces/srv/detail/dds_fastrtps/task__type_support.s: rosidl_typesupport_fastrtps_cpp/auro_interfaces/srv/detail/dds_fastrtps/task__type_support.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_cpp/auro_interfaces/srv/detail/dds_fastrtps/task__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_fastrtps_cpp/auro_interfaces/srv/detail/dds_fastrtps/task__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auro_interfaces__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/auro_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/auro_interfaces/srv/detail/dds_fastrtps/task__type_support.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_cpp/auro_interfaces/srv/detail/dds_fastrtps/task__type_support.cpp.s
+
+rosidl_typesupport_fastrtps_cpp/auro_interfaces/srv/detail/dds_fastrtps/zone_request__type_support.o: rosidl_typesupport_fastrtps_cpp/auro_interfaces/srv/detail/dds_fastrtps/zone_request__type_support.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_cpp/auro_interfaces/srv/detail/dds_fastrtps/zone_request__type_support.o
+
+# target to build an object file
+rosidl_typesupport_fastrtps_cpp/auro_interfaces/srv/detail/dds_fastrtps/zone_request__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auro_interfaces__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/auro_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/auro_interfaces/srv/detail/dds_fastrtps/zone_request__type_support.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_cpp/auro_interfaces/srv/detail/dds_fastrtps/zone_request__type_support.cpp.o
+
+rosidl_typesupport_fastrtps_cpp/auro_interfaces/srv/detail/dds_fastrtps/zone_request__type_support.i: rosidl_typesupport_fastrtps_cpp/auro_interfaces/srv/detail/dds_fastrtps/zone_request__type_support.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_cpp/auro_interfaces/srv/detail/dds_fastrtps/zone_request__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_fastrtps_cpp/auro_interfaces/srv/detail/dds_fastrtps/zone_request__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auro_interfaces__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/auro_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/auro_interfaces/srv/detail/dds_fastrtps/zone_request__type_support.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_cpp/auro_interfaces/srv/detail/dds_fastrtps/zone_request__type_support.cpp.i
+
+rosidl_typesupport_fastrtps_cpp/auro_interfaces/srv/detail/dds_fastrtps/zone_request__type_support.s: rosidl_typesupport_fastrtps_cpp/auro_interfaces/srv/detail/dds_fastrtps/zone_request__type_support.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_cpp/auro_interfaces/srv/detail/dds_fastrtps/zone_request__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_fastrtps_cpp/auro_interfaces/srv/detail/dds_fastrtps/zone_request__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auro_interfaces__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/auro_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/auro_interfaces/srv/detail/dds_fastrtps/zone_request__type_support.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_cpp/auro_interfaces/srv/detail/dds_fastrtps/zone_request__type_support.cpp.s
 
 rosidl_typesupport_introspection_c/auro_interfaces/action/detail/move__type_support.o: rosidl_typesupport_introspection_c/auro_interfaces/action/detail/move__type_support.c.o
 .PHONY : rosidl_typesupport_introspection_c/auro_interfaces/action/detail/move__type_support.o
@@ -1941,6 +2373,30 @@ rosidl_typesupport_introspection_c/auro_interfaces/srv/detail/collision__type_su
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/auro_interfaces/srv/detail/collision__type_support.c.s
 .PHONY : rosidl_typesupport_introspection_c/auro_interfaces/srv/detail/collision__type_support.c.s
 
+rosidl_typesupport_introspection_c/auro_interfaces/srv/detail/find_target__type_support.o: rosidl_typesupport_introspection_c/auro_interfaces/srv/detail/find_target__type_support.c.o
+.PHONY : rosidl_typesupport_introspection_c/auro_interfaces/srv/detail/find_target__type_support.o
+
+# target to build an object file
+rosidl_typesupport_introspection_c/auro_interfaces/srv/detail/find_target__type_support.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/auro_interfaces/srv/detail/find_target__type_support.c.o
+.PHONY : rosidl_typesupport_introspection_c/auro_interfaces/srv/detail/find_target__type_support.c.o
+
+rosidl_typesupport_introspection_c/auro_interfaces/srv/detail/find_target__type_support.i: rosidl_typesupport_introspection_c/auro_interfaces/srv/detail/find_target__type_support.c.i
+.PHONY : rosidl_typesupport_introspection_c/auro_interfaces/srv/detail/find_target__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_introspection_c/auro_interfaces/srv/detail/find_target__type_support.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/auro_interfaces/srv/detail/find_target__type_support.c.i
+.PHONY : rosidl_typesupport_introspection_c/auro_interfaces/srv/detail/find_target__type_support.c.i
+
+rosidl_typesupport_introspection_c/auro_interfaces/srv/detail/find_target__type_support.s: rosidl_typesupport_introspection_c/auro_interfaces/srv/detail/find_target__type_support.c.s
+.PHONY : rosidl_typesupport_introspection_c/auro_interfaces/srv/detail/find_target__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_introspection_c/auro_interfaces/srv/detail/find_target__type_support.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/auro_interfaces/srv/detail/find_target__type_support.c.s
+.PHONY : rosidl_typesupport_introspection_c/auro_interfaces/srv/detail/find_target__type_support.c.s
+
 rosidl_typesupport_introspection_c/auro_interfaces/srv/detail/item_request__type_support.o: rosidl_typesupport_introspection_c/auro_interfaces/srv/detail/item_request__type_support.c.o
 .PHONY : rosidl_typesupport_introspection_c/auro_interfaces/srv/detail/item_request__type_support.o
 
@@ -1965,29 +2421,77 @@ rosidl_typesupport_introspection_c/auro_interfaces/srv/detail/item_request__type
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/auro_interfaces/srv/detail/item_request__type_support.c.s
 .PHONY : rosidl_typesupport_introspection_c/auro_interfaces/srv/detail/item_request__type_support.c.s
 
-rosidl_typesupport_introspection_c/auro_interfaces/srv/detail/sector__type_support.o: rosidl_typesupport_introspection_c/auro_interfaces/srv/detail/sector__type_support.c.o
-.PHONY : rosidl_typesupport_introspection_c/auro_interfaces/srv/detail/sector__type_support.o
+rosidl_typesupport_introspection_c/auro_interfaces/srv/detail/rotate__type_support.o: rosidl_typesupport_introspection_c/auro_interfaces/srv/detail/rotate__type_support.c.o
+.PHONY : rosidl_typesupport_introspection_c/auro_interfaces/srv/detail/rotate__type_support.o
 
 # target to build an object file
-rosidl_typesupport_introspection_c/auro_interfaces/srv/detail/sector__type_support.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/auro_interfaces/srv/detail/sector__type_support.c.o
-.PHONY : rosidl_typesupport_introspection_c/auro_interfaces/srv/detail/sector__type_support.c.o
+rosidl_typesupport_introspection_c/auro_interfaces/srv/detail/rotate__type_support.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/auro_interfaces/srv/detail/rotate__type_support.c.o
+.PHONY : rosidl_typesupport_introspection_c/auro_interfaces/srv/detail/rotate__type_support.c.o
 
-rosidl_typesupport_introspection_c/auro_interfaces/srv/detail/sector__type_support.i: rosidl_typesupport_introspection_c/auro_interfaces/srv/detail/sector__type_support.c.i
-.PHONY : rosidl_typesupport_introspection_c/auro_interfaces/srv/detail/sector__type_support.i
+rosidl_typesupport_introspection_c/auro_interfaces/srv/detail/rotate__type_support.i: rosidl_typesupport_introspection_c/auro_interfaces/srv/detail/rotate__type_support.c.i
+.PHONY : rosidl_typesupport_introspection_c/auro_interfaces/srv/detail/rotate__type_support.i
 
 # target to preprocess a source file
-rosidl_typesupport_introspection_c/auro_interfaces/srv/detail/sector__type_support.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/auro_interfaces/srv/detail/sector__type_support.c.i
-.PHONY : rosidl_typesupport_introspection_c/auro_interfaces/srv/detail/sector__type_support.c.i
+rosidl_typesupport_introspection_c/auro_interfaces/srv/detail/rotate__type_support.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/auro_interfaces/srv/detail/rotate__type_support.c.i
+.PHONY : rosidl_typesupport_introspection_c/auro_interfaces/srv/detail/rotate__type_support.c.i
 
-rosidl_typesupport_introspection_c/auro_interfaces/srv/detail/sector__type_support.s: rosidl_typesupport_introspection_c/auro_interfaces/srv/detail/sector__type_support.c.s
-.PHONY : rosidl_typesupport_introspection_c/auro_interfaces/srv/detail/sector__type_support.s
+rosidl_typesupport_introspection_c/auro_interfaces/srv/detail/rotate__type_support.s: rosidl_typesupport_introspection_c/auro_interfaces/srv/detail/rotate__type_support.c.s
+.PHONY : rosidl_typesupport_introspection_c/auro_interfaces/srv/detail/rotate__type_support.s
 
 # target to generate assembly for a file
-rosidl_typesupport_introspection_c/auro_interfaces/srv/detail/sector__type_support.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/auro_interfaces/srv/detail/sector__type_support.c.s
-.PHONY : rosidl_typesupport_introspection_c/auro_interfaces/srv/detail/sector__type_support.c.s
+rosidl_typesupport_introspection_c/auro_interfaces/srv/detail/rotate__type_support.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/auro_interfaces/srv/detail/rotate__type_support.c.s
+.PHONY : rosidl_typesupport_introspection_c/auro_interfaces/srv/detail/rotate__type_support.c.s
+
+rosidl_typesupport_introspection_c/auro_interfaces/srv/detail/task__type_support.o: rosidl_typesupport_introspection_c/auro_interfaces/srv/detail/task__type_support.c.o
+.PHONY : rosidl_typesupport_introspection_c/auro_interfaces/srv/detail/task__type_support.o
+
+# target to build an object file
+rosidl_typesupport_introspection_c/auro_interfaces/srv/detail/task__type_support.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/auro_interfaces/srv/detail/task__type_support.c.o
+.PHONY : rosidl_typesupport_introspection_c/auro_interfaces/srv/detail/task__type_support.c.o
+
+rosidl_typesupport_introspection_c/auro_interfaces/srv/detail/task__type_support.i: rosidl_typesupport_introspection_c/auro_interfaces/srv/detail/task__type_support.c.i
+.PHONY : rosidl_typesupport_introspection_c/auro_interfaces/srv/detail/task__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_introspection_c/auro_interfaces/srv/detail/task__type_support.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/auro_interfaces/srv/detail/task__type_support.c.i
+.PHONY : rosidl_typesupport_introspection_c/auro_interfaces/srv/detail/task__type_support.c.i
+
+rosidl_typesupport_introspection_c/auro_interfaces/srv/detail/task__type_support.s: rosidl_typesupport_introspection_c/auro_interfaces/srv/detail/task__type_support.c.s
+.PHONY : rosidl_typesupport_introspection_c/auro_interfaces/srv/detail/task__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_introspection_c/auro_interfaces/srv/detail/task__type_support.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/auro_interfaces/srv/detail/task__type_support.c.s
+.PHONY : rosidl_typesupport_introspection_c/auro_interfaces/srv/detail/task__type_support.c.s
+
+rosidl_typesupport_introspection_c/auro_interfaces/srv/detail/zone_request__type_support.o: rosidl_typesupport_introspection_c/auro_interfaces/srv/detail/zone_request__type_support.c.o
+.PHONY : rosidl_typesupport_introspection_c/auro_interfaces/srv/detail/zone_request__type_support.o
+
+# target to build an object file
+rosidl_typesupport_introspection_c/auro_interfaces/srv/detail/zone_request__type_support.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/auro_interfaces/srv/detail/zone_request__type_support.c.o
+.PHONY : rosidl_typesupport_introspection_c/auro_interfaces/srv/detail/zone_request__type_support.c.o
+
+rosidl_typesupport_introspection_c/auro_interfaces/srv/detail/zone_request__type_support.i: rosidl_typesupport_introspection_c/auro_interfaces/srv/detail/zone_request__type_support.c.i
+.PHONY : rosidl_typesupport_introspection_c/auro_interfaces/srv/detail/zone_request__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_introspection_c/auro_interfaces/srv/detail/zone_request__type_support.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/auro_interfaces/srv/detail/zone_request__type_support.c.i
+.PHONY : rosidl_typesupport_introspection_c/auro_interfaces/srv/detail/zone_request__type_support.c.i
+
+rosidl_typesupport_introspection_c/auro_interfaces/srv/detail/zone_request__type_support.s: rosidl_typesupport_introspection_c/auro_interfaces/srv/detail/zone_request__type_support.c.s
+.PHONY : rosidl_typesupport_introspection_c/auro_interfaces/srv/detail/zone_request__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_introspection_c/auro_interfaces/srv/detail/zone_request__type_support.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/auro_interfaces/srv/detail/zone_request__type_support.c.s
+.PHONY : rosidl_typesupport_introspection_c/auro_interfaces/srv/detail/zone_request__type_support.c.s
 
 rosidl_typesupport_introspection_cpp/auro_interfaces/action/detail/move__type_support.o: rosidl_typesupport_introspection_cpp/auro_interfaces/action/detail/move__type_support.cpp.o
 .PHONY : rosidl_typesupport_introspection_cpp/auro_interfaces/action/detail/move__type_support.o
@@ -2157,6 +2661,30 @@ rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/collision__type_
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/collision__type_support.cpp.s
 .PHONY : rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/collision__type_support.cpp.s
 
+rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/find_target__type_support.o: rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/find_target__type_support.cpp.o
+.PHONY : rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/find_target__type_support.o
+
+# target to build an object file
+rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/find_target__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/find_target__type_support.cpp.o
+.PHONY : rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/find_target__type_support.cpp.o
+
+rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/find_target__type_support.i: rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/find_target__type_support.cpp.i
+.PHONY : rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/find_target__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/find_target__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/find_target__type_support.cpp.i
+.PHONY : rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/find_target__type_support.cpp.i
+
+rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/find_target__type_support.s: rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/find_target__type_support.cpp.s
+.PHONY : rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/find_target__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/find_target__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/find_target__type_support.cpp.s
+.PHONY : rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/find_target__type_support.cpp.s
+
 rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/item_request__type_support.o: rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/item_request__type_support.cpp.o
 .PHONY : rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/item_request__type_support.o
 
@@ -2181,29 +2709,77 @@ rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/item_request__ty
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/item_request__type_support.cpp.s
 .PHONY : rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/item_request__type_support.cpp.s
 
-rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/sector__type_support.o: rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/sector__type_support.cpp.o
-.PHONY : rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/sector__type_support.o
+rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/rotate__type_support.o: rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/rotate__type_support.cpp.o
+.PHONY : rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/rotate__type_support.o
 
 # target to build an object file
-rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/sector__type_support.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/sector__type_support.cpp.o
-.PHONY : rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/sector__type_support.cpp.o
+rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/rotate__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/rotate__type_support.cpp.o
+.PHONY : rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/rotate__type_support.cpp.o
 
-rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/sector__type_support.i: rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/sector__type_support.cpp.i
-.PHONY : rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/sector__type_support.i
+rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/rotate__type_support.i: rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/rotate__type_support.cpp.i
+.PHONY : rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/rotate__type_support.i
 
 # target to preprocess a source file
-rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/sector__type_support.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/sector__type_support.cpp.i
-.PHONY : rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/sector__type_support.cpp.i
+rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/rotate__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/rotate__type_support.cpp.i
+.PHONY : rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/rotate__type_support.cpp.i
 
-rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/sector__type_support.s: rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/sector__type_support.cpp.s
-.PHONY : rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/sector__type_support.s
+rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/rotate__type_support.s: rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/rotate__type_support.cpp.s
+.PHONY : rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/rotate__type_support.s
 
 # target to generate assembly for a file
-rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/sector__type_support.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/sector__type_support.cpp.s
-.PHONY : rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/sector__type_support.cpp.s
+rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/rotate__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/rotate__type_support.cpp.s
+.PHONY : rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/rotate__type_support.cpp.s
+
+rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/task__type_support.o: rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/task__type_support.cpp.o
+.PHONY : rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/task__type_support.o
+
+# target to build an object file
+rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/task__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/task__type_support.cpp.o
+.PHONY : rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/task__type_support.cpp.o
+
+rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/task__type_support.i: rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/task__type_support.cpp.i
+.PHONY : rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/task__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/task__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/task__type_support.cpp.i
+.PHONY : rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/task__type_support.cpp.i
+
+rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/task__type_support.s: rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/task__type_support.cpp.s
+.PHONY : rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/task__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/task__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/task__type_support.cpp.s
+.PHONY : rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/task__type_support.cpp.s
+
+rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/zone_request__type_support.o: rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/zone_request__type_support.cpp.o
+.PHONY : rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/zone_request__type_support.o
+
+# target to build an object file
+rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/zone_request__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/zone_request__type_support.cpp.o
+.PHONY : rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/zone_request__type_support.cpp.o
+
+rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/zone_request__type_support.i: rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/zone_request__type_support.cpp.i
+.PHONY : rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/zone_request__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/zone_request__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/zone_request__type_support.cpp.i
+.PHONY : rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/zone_request__type_support.cpp.i
+
+rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/zone_request__type_support.s: rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/zone_request__type_support.cpp.s
+.PHONY : rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/zone_request__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/zone_request__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/zone_request__type_support.cpp.s
+.PHONY : rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/zone_request__type_support.cpp.s
 
 # Help Target
 help:
@@ -2257,12 +2833,21 @@ help:
 	@echo "... rosidl_generator_c/auro_interfaces/srv/detail/collision__functions.o"
 	@echo "... rosidl_generator_c/auro_interfaces/srv/detail/collision__functions.i"
 	@echo "... rosidl_generator_c/auro_interfaces/srv/detail/collision__functions.s"
+	@echo "... rosidl_generator_c/auro_interfaces/srv/detail/find_target__functions.o"
+	@echo "... rosidl_generator_c/auro_interfaces/srv/detail/find_target__functions.i"
+	@echo "... rosidl_generator_c/auro_interfaces/srv/detail/find_target__functions.s"
 	@echo "... rosidl_generator_c/auro_interfaces/srv/detail/item_request__functions.o"
 	@echo "... rosidl_generator_c/auro_interfaces/srv/detail/item_request__functions.i"
 	@echo "... rosidl_generator_c/auro_interfaces/srv/detail/item_request__functions.s"
-	@echo "... rosidl_generator_c/auro_interfaces/srv/detail/sector__functions.o"
-	@echo "... rosidl_generator_c/auro_interfaces/srv/detail/sector__functions.i"
-	@echo "... rosidl_generator_c/auro_interfaces/srv/detail/sector__functions.s"
+	@echo "... rosidl_generator_c/auro_interfaces/srv/detail/rotate__functions.o"
+	@echo "... rosidl_generator_c/auro_interfaces/srv/detail/rotate__functions.i"
+	@echo "... rosidl_generator_c/auro_interfaces/srv/detail/rotate__functions.s"
+	@echo "... rosidl_generator_c/auro_interfaces/srv/detail/task__functions.o"
+	@echo "... rosidl_generator_c/auro_interfaces/srv/detail/task__functions.i"
+	@echo "... rosidl_generator_c/auro_interfaces/srv/detail/task__functions.s"
+	@echo "... rosidl_generator_c/auro_interfaces/srv/detail/zone_request__functions.o"
+	@echo "... rosidl_generator_c/auro_interfaces/srv/detail/zone_request__functions.i"
+	@echo "... rosidl_generator_c/auro_interfaces/srv/detail/zone_request__functions.s"
 	@echo "... rosidl_generator_py/auro_interfaces/_auro_interfaces_s.ep.rosidl_typesupport_c.o"
 	@echo "... rosidl_generator_py/auro_interfaces/_auro_interfaces_s.ep.rosidl_typesupport_c.i"
 	@echo "... rosidl_generator_py/auro_interfaces/_auro_interfaces_s.ep.rosidl_typesupport_c.s"
@@ -2293,12 +2878,21 @@ help:
 	@echo "... rosidl_generator_py/auro_interfaces/srv/_collision_s.o"
 	@echo "... rosidl_generator_py/auro_interfaces/srv/_collision_s.i"
 	@echo "... rosidl_generator_py/auro_interfaces/srv/_collision_s.s"
+	@echo "... rosidl_generator_py/auro_interfaces/srv/_find_target_s.o"
+	@echo "... rosidl_generator_py/auro_interfaces/srv/_find_target_s.i"
+	@echo "... rosidl_generator_py/auro_interfaces/srv/_find_target_s.s"
 	@echo "... rosidl_generator_py/auro_interfaces/srv/_item_request_s.o"
 	@echo "... rosidl_generator_py/auro_interfaces/srv/_item_request_s.i"
 	@echo "... rosidl_generator_py/auro_interfaces/srv/_item_request_s.s"
-	@echo "... rosidl_generator_py/auro_interfaces/srv/_sector_s.o"
-	@echo "... rosidl_generator_py/auro_interfaces/srv/_sector_s.i"
-	@echo "... rosidl_generator_py/auro_interfaces/srv/_sector_s.s"
+	@echo "... rosidl_generator_py/auro_interfaces/srv/_rotate_s.o"
+	@echo "... rosidl_generator_py/auro_interfaces/srv/_rotate_s.i"
+	@echo "... rosidl_generator_py/auro_interfaces/srv/_rotate_s.s"
+	@echo "... rosidl_generator_py/auro_interfaces/srv/_task_s.o"
+	@echo "... rosidl_generator_py/auro_interfaces/srv/_task_s.i"
+	@echo "... rosidl_generator_py/auro_interfaces/srv/_task_s.s"
+	@echo "... rosidl_generator_py/auro_interfaces/srv/_zone_request_s.o"
+	@echo "... rosidl_generator_py/auro_interfaces/srv/_zone_request_s.i"
+	@echo "... rosidl_generator_py/auro_interfaces/srv/_zone_request_s.s"
 	@echo "... rosidl_typesupport_c/auro_interfaces/action/move__type_support.o"
 	@echo "... rosidl_typesupport_c/auro_interfaces/action/move__type_support.i"
 	@echo "... rosidl_typesupport_c/auro_interfaces/action/move__type_support.s"
@@ -2320,12 +2914,21 @@ help:
 	@echo "... rosidl_typesupport_c/auro_interfaces/srv/collision__type_support.o"
 	@echo "... rosidl_typesupport_c/auro_interfaces/srv/collision__type_support.i"
 	@echo "... rosidl_typesupport_c/auro_interfaces/srv/collision__type_support.s"
+	@echo "... rosidl_typesupport_c/auro_interfaces/srv/find_target__type_support.o"
+	@echo "... rosidl_typesupport_c/auro_interfaces/srv/find_target__type_support.i"
+	@echo "... rosidl_typesupport_c/auro_interfaces/srv/find_target__type_support.s"
 	@echo "... rosidl_typesupport_c/auro_interfaces/srv/item_request__type_support.o"
 	@echo "... rosidl_typesupport_c/auro_interfaces/srv/item_request__type_support.i"
 	@echo "... rosidl_typesupport_c/auro_interfaces/srv/item_request__type_support.s"
-	@echo "... rosidl_typesupport_c/auro_interfaces/srv/sector__type_support.o"
-	@echo "... rosidl_typesupport_c/auro_interfaces/srv/sector__type_support.i"
-	@echo "... rosidl_typesupport_c/auro_interfaces/srv/sector__type_support.s"
+	@echo "... rosidl_typesupport_c/auro_interfaces/srv/rotate__type_support.o"
+	@echo "... rosidl_typesupport_c/auro_interfaces/srv/rotate__type_support.i"
+	@echo "... rosidl_typesupport_c/auro_interfaces/srv/rotate__type_support.s"
+	@echo "... rosidl_typesupport_c/auro_interfaces/srv/task__type_support.o"
+	@echo "... rosidl_typesupport_c/auro_interfaces/srv/task__type_support.i"
+	@echo "... rosidl_typesupport_c/auro_interfaces/srv/task__type_support.s"
+	@echo "... rosidl_typesupport_c/auro_interfaces/srv/zone_request__type_support.o"
+	@echo "... rosidl_typesupport_c/auro_interfaces/srv/zone_request__type_support.i"
+	@echo "... rosidl_typesupport_c/auro_interfaces/srv/zone_request__type_support.s"
 	@echo "... rosidl_typesupport_cpp/auro_interfaces/action/move__type_support.o"
 	@echo "... rosidl_typesupport_cpp/auro_interfaces/action/move__type_support.i"
 	@echo "... rosidl_typesupport_cpp/auro_interfaces/action/move__type_support.s"
@@ -2347,12 +2950,21 @@ help:
 	@echo "... rosidl_typesupport_cpp/auro_interfaces/srv/collision__type_support.o"
 	@echo "... rosidl_typesupport_cpp/auro_interfaces/srv/collision__type_support.i"
 	@echo "... rosidl_typesupport_cpp/auro_interfaces/srv/collision__type_support.s"
+	@echo "... rosidl_typesupport_cpp/auro_interfaces/srv/find_target__type_support.o"
+	@echo "... rosidl_typesupport_cpp/auro_interfaces/srv/find_target__type_support.i"
+	@echo "... rosidl_typesupport_cpp/auro_interfaces/srv/find_target__type_support.s"
 	@echo "... rosidl_typesupport_cpp/auro_interfaces/srv/item_request__type_support.o"
 	@echo "... rosidl_typesupport_cpp/auro_interfaces/srv/item_request__type_support.i"
 	@echo "... rosidl_typesupport_cpp/auro_interfaces/srv/item_request__type_support.s"
-	@echo "... rosidl_typesupport_cpp/auro_interfaces/srv/sector__type_support.o"
-	@echo "... rosidl_typesupport_cpp/auro_interfaces/srv/sector__type_support.i"
-	@echo "... rosidl_typesupport_cpp/auro_interfaces/srv/sector__type_support.s"
+	@echo "... rosidl_typesupport_cpp/auro_interfaces/srv/rotate__type_support.o"
+	@echo "... rosidl_typesupport_cpp/auro_interfaces/srv/rotate__type_support.i"
+	@echo "... rosidl_typesupport_cpp/auro_interfaces/srv/rotate__type_support.s"
+	@echo "... rosidl_typesupport_cpp/auro_interfaces/srv/task__type_support.o"
+	@echo "... rosidl_typesupport_cpp/auro_interfaces/srv/task__type_support.i"
+	@echo "... rosidl_typesupport_cpp/auro_interfaces/srv/task__type_support.s"
+	@echo "... rosidl_typesupport_cpp/auro_interfaces/srv/zone_request__type_support.o"
+	@echo "... rosidl_typesupport_cpp/auro_interfaces/srv/zone_request__type_support.i"
+	@echo "... rosidl_typesupport_cpp/auro_interfaces/srv/zone_request__type_support.s"
 	@echo "... rosidl_typesupport_fastrtps_c/auro_interfaces/action/detail/move__type_support_c.o"
 	@echo "... rosidl_typesupport_fastrtps_c/auro_interfaces/action/detail/move__type_support_c.i"
 	@echo "... rosidl_typesupport_fastrtps_c/auro_interfaces/action/detail/move__type_support_c.s"
@@ -2374,12 +2986,21 @@ help:
 	@echo "... rosidl_typesupport_fastrtps_c/auro_interfaces/srv/detail/collision__type_support_c.o"
 	@echo "... rosidl_typesupport_fastrtps_c/auro_interfaces/srv/detail/collision__type_support_c.i"
 	@echo "... rosidl_typesupport_fastrtps_c/auro_interfaces/srv/detail/collision__type_support_c.s"
+	@echo "... rosidl_typesupport_fastrtps_c/auro_interfaces/srv/detail/find_target__type_support_c.o"
+	@echo "... rosidl_typesupport_fastrtps_c/auro_interfaces/srv/detail/find_target__type_support_c.i"
+	@echo "... rosidl_typesupport_fastrtps_c/auro_interfaces/srv/detail/find_target__type_support_c.s"
 	@echo "... rosidl_typesupport_fastrtps_c/auro_interfaces/srv/detail/item_request__type_support_c.o"
 	@echo "... rosidl_typesupport_fastrtps_c/auro_interfaces/srv/detail/item_request__type_support_c.i"
 	@echo "... rosidl_typesupport_fastrtps_c/auro_interfaces/srv/detail/item_request__type_support_c.s"
-	@echo "... rosidl_typesupport_fastrtps_c/auro_interfaces/srv/detail/sector__type_support_c.o"
-	@echo "... rosidl_typesupport_fastrtps_c/auro_interfaces/srv/detail/sector__type_support_c.i"
-	@echo "... rosidl_typesupport_fastrtps_c/auro_interfaces/srv/detail/sector__type_support_c.s"
+	@echo "... rosidl_typesupport_fastrtps_c/auro_interfaces/srv/detail/rotate__type_support_c.o"
+	@echo "... rosidl_typesupport_fastrtps_c/auro_interfaces/srv/detail/rotate__type_support_c.i"
+	@echo "... rosidl_typesupport_fastrtps_c/auro_interfaces/srv/detail/rotate__type_support_c.s"
+	@echo "... rosidl_typesupport_fastrtps_c/auro_interfaces/srv/detail/task__type_support_c.o"
+	@echo "... rosidl_typesupport_fastrtps_c/auro_interfaces/srv/detail/task__type_support_c.i"
+	@echo "... rosidl_typesupport_fastrtps_c/auro_interfaces/srv/detail/task__type_support_c.s"
+	@echo "... rosidl_typesupport_fastrtps_c/auro_interfaces/srv/detail/zone_request__type_support_c.o"
+	@echo "... rosidl_typesupport_fastrtps_c/auro_interfaces/srv/detail/zone_request__type_support_c.i"
+	@echo "... rosidl_typesupport_fastrtps_c/auro_interfaces/srv/detail/zone_request__type_support_c.s"
 	@echo "... rosidl_typesupport_fastrtps_cpp/auro_interfaces/action/detail/dds_fastrtps/move__type_support.o"
 	@echo "... rosidl_typesupport_fastrtps_cpp/auro_interfaces/action/detail/dds_fastrtps/move__type_support.i"
 	@echo "... rosidl_typesupport_fastrtps_cpp/auro_interfaces/action/detail/dds_fastrtps/move__type_support.s"
@@ -2401,12 +3022,21 @@ help:
 	@echo "... rosidl_typesupport_fastrtps_cpp/auro_interfaces/srv/detail/dds_fastrtps/collision__type_support.o"
 	@echo "... rosidl_typesupport_fastrtps_cpp/auro_interfaces/srv/detail/dds_fastrtps/collision__type_support.i"
 	@echo "... rosidl_typesupport_fastrtps_cpp/auro_interfaces/srv/detail/dds_fastrtps/collision__type_support.s"
+	@echo "... rosidl_typesupport_fastrtps_cpp/auro_interfaces/srv/detail/dds_fastrtps/find_target__type_support.o"
+	@echo "... rosidl_typesupport_fastrtps_cpp/auro_interfaces/srv/detail/dds_fastrtps/find_target__type_support.i"
+	@echo "... rosidl_typesupport_fastrtps_cpp/auro_interfaces/srv/detail/dds_fastrtps/find_target__type_support.s"
 	@echo "... rosidl_typesupport_fastrtps_cpp/auro_interfaces/srv/detail/dds_fastrtps/item_request__type_support.o"
 	@echo "... rosidl_typesupport_fastrtps_cpp/auro_interfaces/srv/detail/dds_fastrtps/item_request__type_support.i"
 	@echo "... rosidl_typesupport_fastrtps_cpp/auro_interfaces/srv/detail/dds_fastrtps/item_request__type_support.s"
-	@echo "... rosidl_typesupport_fastrtps_cpp/auro_interfaces/srv/detail/dds_fastrtps/sector__type_support.o"
-	@echo "... rosidl_typesupport_fastrtps_cpp/auro_interfaces/srv/detail/dds_fastrtps/sector__type_support.i"
-	@echo "... rosidl_typesupport_fastrtps_cpp/auro_interfaces/srv/detail/dds_fastrtps/sector__type_support.s"
+	@echo "... rosidl_typesupport_fastrtps_cpp/auro_interfaces/srv/detail/dds_fastrtps/rotate__type_support.o"
+	@echo "... rosidl_typesupport_fastrtps_cpp/auro_interfaces/srv/detail/dds_fastrtps/rotate__type_support.i"
+	@echo "... rosidl_typesupport_fastrtps_cpp/auro_interfaces/srv/detail/dds_fastrtps/rotate__type_support.s"
+	@echo "... rosidl_typesupport_fastrtps_cpp/auro_interfaces/srv/detail/dds_fastrtps/task__type_support.o"
+	@echo "... rosidl_typesupport_fastrtps_cpp/auro_interfaces/srv/detail/dds_fastrtps/task__type_support.i"
+	@echo "... rosidl_typesupport_fastrtps_cpp/auro_interfaces/srv/detail/dds_fastrtps/task__type_support.s"
+	@echo "... rosidl_typesupport_fastrtps_cpp/auro_interfaces/srv/detail/dds_fastrtps/zone_request__type_support.o"
+	@echo "... rosidl_typesupport_fastrtps_cpp/auro_interfaces/srv/detail/dds_fastrtps/zone_request__type_support.i"
+	@echo "... rosidl_typesupport_fastrtps_cpp/auro_interfaces/srv/detail/dds_fastrtps/zone_request__type_support.s"
 	@echo "... rosidl_typesupport_introspection_c/auro_interfaces/action/detail/move__type_support.o"
 	@echo "... rosidl_typesupport_introspection_c/auro_interfaces/action/detail/move__type_support.i"
 	@echo "... rosidl_typesupport_introspection_c/auro_interfaces/action/detail/move__type_support.s"
@@ -2428,12 +3058,21 @@ help:
 	@echo "... rosidl_typesupport_introspection_c/auro_interfaces/srv/detail/collision__type_support.o"
 	@echo "... rosidl_typesupport_introspection_c/auro_interfaces/srv/detail/collision__type_support.i"
 	@echo "... rosidl_typesupport_introspection_c/auro_interfaces/srv/detail/collision__type_support.s"
+	@echo "... rosidl_typesupport_introspection_c/auro_interfaces/srv/detail/find_target__type_support.o"
+	@echo "... rosidl_typesupport_introspection_c/auro_interfaces/srv/detail/find_target__type_support.i"
+	@echo "... rosidl_typesupport_introspection_c/auro_interfaces/srv/detail/find_target__type_support.s"
 	@echo "... rosidl_typesupport_introspection_c/auro_interfaces/srv/detail/item_request__type_support.o"
 	@echo "... rosidl_typesupport_introspection_c/auro_interfaces/srv/detail/item_request__type_support.i"
 	@echo "... rosidl_typesupport_introspection_c/auro_interfaces/srv/detail/item_request__type_support.s"
-	@echo "... rosidl_typesupport_introspection_c/auro_interfaces/srv/detail/sector__type_support.o"
-	@echo "... rosidl_typesupport_introspection_c/auro_interfaces/srv/detail/sector__type_support.i"
-	@echo "... rosidl_typesupport_introspection_c/auro_interfaces/srv/detail/sector__type_support.s"
+	@echo "... rosidl_typesupport_introspection_c/auro_interfaces/srv/detail/rotate__type_support.o"
+	@echo "... rosidl_typesupport_introspection_c/auro_interfaces/srv/detail/rotate__type_support.i"
+	@echo "... rosidl_typesupport_introspection_c/auro_interfaces/srv/detail/rotate__type_support.s"
+	@echo "... rosidl_typesupport_introspection_c/auro_interfaces/srv/detail/task__type_support.o"
+	@echo "... rosidl_typesupport_introspection_c/auro_interfaces/srv/detail/task__type_support.i"
+	@echo "... rosidl_typesupport_introspection_c/auro_interfaces/srv/detail/task__type_support.s"
+	@echo "... rosidl_typesupport_introspection_c/auro_interfaces/srv/detail/zone_request__type_support.o"
+	@echo "... rosidl_typesupport_introspection_c/auro_interfaces/srv/detail/zone_request__type_support.i"
+	@echo "... rosidl_typesupport_introspection_c/auro_interfaces/srv/detail/zone_request__type_support.s"
 	@echo "... rosidl_typesupport_introspection_cpp/auro_interfaces/action/detail/move__type_support.o"
 	@echo "... rosidl_typesupport_introspection_cpp/auro_interfaces/action/detail/move__type_support.i"
 	@echo "... rosidl_typesupport_introspection_cpp/auro_interfaces/action/detail/move__type_support.s"
@@ -2455,12 +3094,21 @@ help:
 	@echo "... rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/collision__type_support.o"
 	@echo "... rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/collision__type_support.i"
 	@echo "... rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/collision__type_support.s"
+	@echo "... rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/find_target__type_support.o"
+	@echo "... rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/find_target__type_support.i"
+	@echo "... rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/find_target__type_support.s"
 	@echo "... rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/item_request__type_support.o"
 	@echo "... rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/item_request__type_support.i"
 	@echo "... rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/item_request__type_support.s"
-	@echo "... rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/sector__type_support.o"
-	@echo "... rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/sector__type_support.i"
-	@echo "... rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/sector__type_support.s"
+	@echo "... rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/rotate__type_support.o"
+	@echo "... rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/rotate__type_support.i"
+	@echo "... rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/rotate__type_support.s"
+	@echo "... rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/task__type_support.o"
+	@echo "... rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/task__type_support.i"
+	@echo "... rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/task__type_support.s"
+	@echo "... rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/zone_request__type_support.o"
+	@echo "... rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/zone_request__type_support.i"
+	@echo "... rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/zone_request__type_support.s"
 .PHONY : help
 
 

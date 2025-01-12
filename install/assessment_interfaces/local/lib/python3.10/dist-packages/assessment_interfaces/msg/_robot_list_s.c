@@ -1,1 +1,1 @@
-/home/auro/Auro/build/assessment_interfaces/rosidl_generator_py/assessment_interfaces/msg/_robot_list_s.c
+/home/auro/Auro_Revised/build/assessment_interfaces/rosidl_generator_py/assessment_interfaces/msg/_robot_list_s.c

@@ -1,1 +1,1 @@
-/home/auro/Auro/build/auro_interfaces/rosidl_cmake/srv/CheckGoal_Response.msg
+/home/auro/Auro_Revised/build/auro_interfaces/rosidl_cmake/srv/CheckGoal_Response.msg

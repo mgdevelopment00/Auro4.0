@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/auro/Auro/auro_interfaces
+CMAKE_SOURCE_DIR = /home/auro/Auro_Revised/auro_interfaces
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/auro/Auro/build/auro_interfaces
+CMAKE_BINARY_DIR = /home/auro/Auro_Revised/build/auro_interfaces
 
 # Utility rule file for auro_interfaces.
 
@@ -66,23 +66,32 @@ include CMakeFiles/auro_interfaces.dir/compiler_depend.make
 # Include the progress variables for this target.
 include CMakeFiles/auro_interfaces.dir/progress.make
 
-CMakeFiles/auro_interfaces: /home/auro/Auro/auro_interfaces/msg/StringWithPose.msg
-CMakeFiles/auro_interfaces: /home/auro/Auro/auro_interfaces/msg/Item.msg
-CMakeFiles/auro_interfaces: /home/auro/Auro/auro_interfaces/msg/ItemList.msg
-CMakeFiles/auro_interfaces: /home/auro/Auro/auro_interfaces/msg/Direction.msg
-CMakeFiles/auro_interfaces: /home/auro/Auro/auro_interfaces/srv/ItemRequest.srv
+CMakeFiles/auro_interfaces: /home/auro/Auro_Revised/auro_interfaces/msg/StringWithPose.msg
+CMakeFiles/auro_interfaces: /home/auro/Auro_Revised/auro_interfaces/msg/Item.msg
+CMakeFiles/auro_interfaces: /home/auro/Auro_Revised/auro_interfaces/msg/ItemList.msg
+CMakeFiles/auro_interfaces: /home/auro/Auro_Revised/auro_interfaces/msg/Direction.msg
+CMakeFiles/auro_interfaces: /home/auro/Auro_Revised/auro_interfaces/srv/ItemRequest.srv
 CMakeFiles/auro_interfaces: rosidl_cmake/srv/ItemRequest_Request.msg
 CMakeFiles/auro_interfaces: rosidl_cmake/srv/ItemRequest_Response.msg
-CMakeFiles/auro_interfaces: /home/auro/Auro/auro_interfaces/srv/Sector.srv
-CMakeFiles/auro_interfaces: rosidl_cmake/srv/Sector_Request.msg
-CMakeFiles/auro_interfaces: rosidl_cmake/srv/Sector_Response.msg
-CMakeFiles/auro_interfaces: /home/auro/Auro/auro_interfaces/srv/Collision.srv
+CMakeFiles/auro_interfaces: /home/auro/Auro_Revised/auro_interfaces/srv/ZoneRequest.srv
+CMakeFiles/auro_interfaces: rosidl_cmake/srv/ZoneRequest_Request.msg
+CMakeFiles/auro_interfaces: rosidl_cmake/srv/ZoneRequest_Response.msg
+CMakeFiles/auro_interfaces: /home/auro/Auro_Revised/auro_interfaces/srv/Collision.srv
 CMakeFiles/auro_interfaces: rosidl_cmake/srv/Collision_Request.msg
 CMakeFiles/auro_interfaces: rosidl_cmake/srv/Collision_Response.msg
-CMakeFiles/auro_interfaces: /home/auro/Auro/auro_interfaces/action/Move.action
-CMakeFiles/auro_interfaces: /home/auro/Auro/auro_interfaces/srv/CheckGoal.srv
+CMakeFiles/auro_interfaces: /home/auro/Auro_Revised/auro_interfaces/action/Move.action
+CMakeFiles/auro_interfaces: /home/auro/Auro_Revised/auro_interfaces/srv/CheckGoal.srv
 CMakeFiles/auro_interfaces: rosidl_cmake/srv/CheckGoal_Request.msg
 CMakeFiles/auro_interfaces: rosidl_cmake/srv/CheckGoal_Response.msg
+CMakeFiles/auro_interfaces: /home/auro/Auro_Revised/auro_interfaces/srv/Rotate.srv
+CMakeFiles/auro_interfaces: rosidl_cmake/srv/Rotate_Request.msg
+CMakeFiles/auro_interfaces: rosidl_cmake/srv/Rotate_Response.msg
+CMakeFiles/auro_interfaces: /home/auro/Auro_Revised/auro_interfaces/srv/Task.srv
+CMakeFiles/auro_interfaces: rosidl_cmake/srv/Task_Request.msg
+CMakeFiles/auro_interfaces: rosidl_cmake/srv/Task_Response.msg
+CMakeFiles/auro_interfaces: /home/auro/Auro_Revised/auro_interfaces/srv/FindTarget.srv
+CMakeFiles/auro_interfaces: rosidl_cmake/srv/FindTarget_Request.msg
+CMakeFiles/auro_interfaces: rosidl_cmake/srv/FindTarget_Response.msg
 CMakeFiles/auro_interfaces: /opt/ros/humble/share/geometry_msgs/msg/Accel.idl
 CMakeFiles/auro_interfaces: /opt/ros/humble/share/geometry_msgs/msg/AccelStamped.idl
 CMakeFiles/auro_interfaces: /opt/ros/humble/share/geometry_msgs/msg/AccelWithCovariance.idl
@@ -131,6 +140,6 @@ CMakeFiles/auro_interfaces.dir/clean:
 .PHONY : CMakeFiles/auro_interfaces.dir/clean
 
 CMakeFiles/auro_interfaces.dir/depend:
-	cd /home/auro/Auro/build/auro_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/auro/Auro/auro_interfaces /home/auro/Auro/auro_interfaces /home/auro/Auro/build/auro_interfaces /home/auro/Auro/build/auro_interfaces /home/auro/Auro/build/auro_interfaces/CMakeFiles/auro_interfaces.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/auro/Auro_Revised/build/auro_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/auro/Auro_Revised/auro_interfaces /home/auro/Auro_Revised/auro_interfaces /home/auro/Auro_Revised/build/auro_interfaces /home/auro/Auro_Revised/build/auro_interfaces /home/auro/Auro_Revised/build/auro_interfaces/CMakeFiles/auro_interfaces.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/auro_interfaces.dir/depend
 

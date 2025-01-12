@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/auro/Auro/auro_interfaces
+CMAKE_SOURCE_DIR = /home/auro/Auro_Revised/auro_interfaces
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/auro/Auro/build/auro_interfaces
+CMAKE_BINARY_DIR = /home/auro/Auro_Revised/build/auro_interfaces
 
 # Include any dependencies generated for this target.
 include CMakeFiles/auro_interfaces__rosidl_generator_c.dir/depend.make
@@ -87,10 +87,13 @@ rosidl_generator_c/auro_interfaces/msg/string_with_pose.h: rosidl_adapter/auro_i
 rosidl_generator_c/auro_interfaces/msg/string_with_pose.h: rosidl_adapter/auro_interfaces/msg/ItemList.idl
 rosidl_generator_c/auro_interfaces/msg/string_with_pose.h: rosidl_adapter/auro_interfaces/msg/Direction.idl
 rosidl_generator_c/auro_interfaces/msg/string_with_pose.h: rosidl_adapter/auro_interfaces/srv/ItemRequest.idl
-rosidl_generator_c/auro_interfaces/msg/string_with_pose.h: rosidl_adapter/auro_interfaces/srv/Sector.idl
+rosidl_generator_c/auro_interfaces/msg/string_with_pose.h: rosidl_adapter/auro_interfaces/srv/ZoneRequest.idl
 rosidl_generator_c/auro_interfaces/msg/string_with_pose.h: rosidl_adapter/auro_interfaces/srv/Collision.idl
 rosidl_generator_c/auro_interfaces/msg/string_with_pose.h: rosidl_adapter/auro_interfaces/action/Move.idl
 rosidl_generator_c/auro_interfaces/msg/string_with_pose.h: rosidl_adapter/auro_interfaces/srv/CheckGoal.idl
+rosidl_generator_c/auro_interfaces/msg/string_with_pose.h: rosidl_adapter/auro_interfaces/srv/Rotate.idl
+rosidl_generator_c/auro_interfaces/msg/string_with_pose.h: rosidl_adapter/auro_interfaces/srv/Task.idl
+rosidl_generator_c/auro_interfaces/msg/string_with_pose.h: rosidl_adapter/auro_interfaces/srv/FindTarget.idl
 rosidl_generator_c/auro_interfaces/msg/string_with_pose.h: /opt/ros/humble/share/geometry_msgs/msg/Accel.idl
 rosidl_generator_c/auro_interfaces/msg/string_with_pose.h: /opt/ros/humble/share/geometry_msgs/msg/AccelStamped.idl
 rosidl_generator_c/auro_interfaces/msg/string_with_pose.h: /opt/ros/humble/share/geometry_msgs/msg/AccelWithCovariance.idl
@@ -158,8 +161,8 @@ rosidl_generator_c/auro_interfaces/msg/string_with_pose.h: /opt/ros/humble/share
 rosidl_generator_c/auro_interfaces/msg/string_with_pose.h: /opt/ros/humble/share/builtin_interfaces/msg/Duration.idl
 rosidl_generator_c/auro_interfaces/msg/string_with_pose.h: /opt/ros/humble/share/builtin_interfaces/msg/Time.idl
 rosidl_generator_c/auro_interfaces/msg/string_with_pose.h: /opt/ros/humble/share/unique_identifier_msgs/msg/UUID.idl
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/auro/Auro/build/auro_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C code for ROS interfaces"
-	/usr/bin/python3 /opt/ros/humble/share/rosidl_generator_c/cmake/../../../lib/rosidl_generator_c/rosidl_generator_c --generator-arguments-file /home/auro/Auro/build/auro_interfaces/rosidl_generator_c__arguments.json
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/auro/Auro_Revised/build/auro_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C code for ROS interfaces"
+	/usr/bin/python3 /opt/ros/humble/share/rosidl_generator_c/cmake/../../../lib/rosidl_generator_c/rosidl_generator_c --generator-arguments-file /home/auro/Auro_Revised/build/auro_interfaces/rosidl_generator_c__arguments.json
 
 rosidl_generator_c/auro_interfaces/msg/detail/string_with_pose__functions.h: rosidl_generator_c/auro_interfaces/msg/string_with_pose.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/auro_interfaces/msg/detail/string_with_pose__functions.h
@@ -218,17 +221,17 @@ rosidl_generator_c/auro_interfaces/srv/detail/item_request__struct.h: rosidl_gen
 rosidl_generator_c/auro_interfaces/srv/detail/item_request__type_support.h: rosidl_generator_c/auro_interfaces/msg/string_with_pose.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/auro_interfaces/srv/detail/item_request__type_support.h
 
-rosidl_generator_c/auro_interfaces/srv/sector.h: rosidl_generator_c/auro_interfaces/msg/string_with_pose.h
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/auro_interfaces/srv/sector.h
+rosidl_generator_c/auro_interfaces/srv/zone_request.h: rosidl_generator_c/auro_interfaces/msg/string_with_pose.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/auro_interfaces/srv/zone_request.h
 
-rosidl_generator_c/auro_interfaces/srv/detail/sector__functions.h: rosidl_generator_c/auro_interfaces/msg/string_with_pose.h
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/auro_interfaces/srv/detail/sector__functions.h
+rosidl_generator_c/auro_interfaces/srv/detail/zone_request__functions.h: rosidl_generator_c/auro_interfaces/msg/string_with_pose.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/auro_interfaces/srv/detail/zone_request__functions.h
 
-rosidl_generator_c/auro_interfaces/srv/detail/sector__struct.h: rosidl_generator_c/auro_interfaces/msg/string_with_pose.h
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/auro_interfaces/srv/detail/sector__struct.h
+rosidl_generator_c/auro_interfaces/srv/detail/zone_request__struct.h: rosidl_generator_c/auro_interfaces/msg/string_with_pose.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/auro_interfaces/srv/detail/zone_request__struct.h
 
-rosidl_generator_c/auro_interfaces/srv/detail/sector__type_support.h: rosidl_generator_c/auro_interfaces/msg/string_with_pose.h
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/auro_interfaces/srv/detail/sector__type_support.h
+rosidl_generator_c/auro_interfaces/srv/detail/zone_request__type_support.h: rosidl_generator_c/auro_interfaces/msg/string_with_pose.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/auro_interfaces/srv/detail/zone_request__type_support.h
 
 rosidl_generator_c/auro_interfaces/srv/collision.h: rosidl_generator_c/auro_interfaces/msg/string_with_pose.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/auro_interfaces/srv/collision.h
@@ -266,6 +269,42 @@ rosidl_generator_c/auro_interfaces/srv/detail/check_goal__struct.h: rosidl_gener
 rosidl_generator_c/auro_interfaces/srv/detail/check_goal__type_support.h: rosidl_generator_c/auro_interfaces/msg/string_with_pose.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/auro_interfaces/srv/detail/check_goal__type_support.h
 
+rosidl_generator_c/auro_interfaces/srv/rotate.h: rosidl_generator_c/auro_interfaces/msg/string_with_pose.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/auro_interfaces/srv/rotate.h
+
+rosidl_generator_c/auro_interfaces/srv/detail/rotate__functions.h: rosidl_generator_c/auro_interfaces/msg/string_with_pose.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/auro_interfaces/srv/detail/rotate__functions.h
+
+rosidl_generator_c/auro_interfaces/srv/detail/rotate__struct.h: rosidl_generator_c/auro_interfaces/msg/string_with_pose.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/auro_interfaces/srv/detail/rotate__struct.h
+
+rosidl_generator_c/auro_interfaces/srv/detail/rotate__type_support.h: rosidl_generator_c/auro_interfaces/msg/string_with_pose.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/auro_interfaces/srv/detail/rotate__type_support.h
+
+rosidl_generator_c/auro_interfaces/srv/task.h: rosidl_generator_c/auro_interfaces/msg/string_with_pose.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/auro_interfaces/srv/task.h
+
+rosidl_generator_c/auro_interfaces/srv/detail/task__functions.h: rosidl_generator_c/auro_interfaces/msg/string_with_pose.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/auro_interfaces/srv/detail/task__functions.h
+
+rosidl_generator_c/auro_interfaces/srv/detail/task__struct.h: rosidl_generator_c/auro_interfaces/msg/string_with_pose.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/auro_interfaces/srv/detail/task__struct.h
+
+rosidl_generator_c/auro_interfaces/srv/detail/task__type_support.h: rosidl_generator_c/auro_interfaces/msg/string_with_pose.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/auro_interfaces/srv/detail/task__type_support.h
+
+rosidl_generator_c/auro_interfaces/srv/find_target.h: rosidl_generator_c/auro_interfaces/msg/string_with_pose.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/auro_interfaces/srv/find_target.h
+
+rosidl_generator_c/auro_interfaces/srv/detail/find_target__functions.h: rosidl_generator_c/auro_interfaces/msg/string_with_pose.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/auro_interfaces/srv/detail/find_target__functions.h
+
+rosidl_generator_c/auro_interfaces/srv/detail/find_target__struct.h: rosidl_generator_c/auro_interfaces/msg/string_with_pose.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/auro_interfaces/srv/detail/find_target__struct.h
+
+rosidl_generator_c/auro_interfaces/srv/detail/find_target__type_support.h: rosidl_generator_c/auro_interfaces/msg/string_with_pose.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/auro_interfaces/srv/detail/find_target__type_support.h
+
 rosidl_generator_c/auro_interfaces/msg/detail/string_with_pose__functions.c: rosidl_generator_c/auro_interfaces/msg/string_with_pose.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/auro_interfaces/msg/detail/string_with_pose__functions.c
 
@@ -281,8 +320,8 @@ rosidl_generator_c/auro_interfaces/msg/detail/direction__functions.c: rosidl_gen
 rosidl_generator_c/auro_interfaces/srv/detail/item_request__functions.c: rosidl_generator_c/auro_interfaces/msg/string_with_pose.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/auro_interfaces/srv/detail/item_request__functions.c
 
-rosidl_generator_c/auro_interfaces/srv/detail/sector__functions.c: rosidl_generator_c/auro_interfaces/msg/string_with_pose.h
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/auro_interfaces/srv/detail/sector__functions.c
+rosidl_generator_c/auro_interfaces/srv/detail/zone_request__functions.c: rosidl_generator_c/auro_interfaces/msg/string_with_pose.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/auro_interfaces/srv/detail/zone_request__functions.c
 
 rosidl_generator_c/auro_interfaces/srv/detail/collision__functions.c: rosidl_generator_c/auro_interfaces/msg/string_with_pose.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/auro_interfaces/srv/detail/collision__functions.c
@@ -293,131 +332,182 @@ rosidl_generator_c/auro_interfaces/action/detail/move__functions.c: rosidl_gener
 rosidl_generator_c/auro_interfaces/srv/detail/check_goal__functions.c: rosidl_generator_c/auro_interfaces/msg/string_with_pose.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/auro_interfaces/srv/detail/check_goal__functions.c
 
+rosidl_generator_c/auro_interfaces/srv/detail/rotate__functions.c: rosidl_generator_c/auro_interfaces/msg/string_with_pose.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/auro_interfaces/srv/detail/rotate__functions.c
+
+rosidl_generator_c/auro_interfaces/srv/detail/task__functions.c: rosidl_generator_c/auro_interfaces/msg/string_with_pose.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/auro_interfaces/srv/detail/task__functions.c
+
+rosidl_generator_c/auro_interfaces/srv/detail/find_target__functions.c: rosidl_generator_c/auro_interfaces/msg/string_with_pose.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/auro_interfaces/srv/detail/find_target__functions.c
+
 CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/msg/detail/string_with_pose__functions.c.o: CMakeFiles/auro_interfaces__rosidl_generator_c.dir/flags.make
 CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/msg/detail/string_with_pose__functions.c.o: rosidl_generator_c/auro_interfaces/msg/detail/string_with_pose__functions.c
 CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/msg/detail/string_with_pose__functions.c.o: CMakeFiles/auro_interfaces__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/auro/Auro/build/auro_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/msg/detail/string_with_pose__functions.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/msg/detail/string_with_pose__functions.c.o -MF CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/msg/detail/string_with_pose__functions.c.o.d -o CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/msg/detail/string_with_pose__functions.c.o -c /home/auro/Auro/build/auro_interfaces/rosidl_generator_c/auro_interfaces/msg/detail/string_with_pose__functions.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/auro/Auro_Revised/build/auro_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/msg/detail/string_with_pose__functions.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/msg/detail/string_with_pose__functions.c.o -MF CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/msg/detail/string_with_pose__functions.c.o.d -o CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/msg/detail/string_with_pose__functions.c.o -c /home/auro/Auro_Revised/build/auro_interfaces/rosidl_generator_c/auro_interfaces/msg/detail/string_with_pose__functions.c
 
 CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/msg/detail/string_with_pose__functions.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/msg/detail/string_with_pose__functions.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/auro/Auro/build/auro_interfaces/rosidl_generator_c/auro_interfaces/msg/detail/string_with_pose__functions.c > CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/msg/detail/string_with_pose__functions.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/auro/Auro_Revised/build/auro_interfaces/rosidl_generator_c/auro_interfaces/msg/detail/string_with_pose__functions.c > CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/msg/detail/string_with_pose__functions.c.i
 
 CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/msg/detail/string_with_pose__functions.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/msg/detail/string_with_pose__functions.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/auro/Auro/build/auro_interfaces/rosidl_generator_c/auro_interfaces/msg/detail/string_with_pose__functions.c -o CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/msg/detail/string_with_pose__functions.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/auro/Auro_Revised/build/auro_interfaces/rosidl_generator_c/auro_interfaces/msg/detail/string_with_pose__functions.c -o CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/msg/detail/string_with_pose__functions.c.s
 
 CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/msg/detail/item__functions.c.o: CMakeFiles/auro_interfaces__rosidl_generator_c.dir/flags.make
 CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/msg/detail/item__functions.c.o: rosidl_generator_c/auro_interfaces/msg/detail/item__functions.c
 CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/msg/detail/item__functions.c.o: CMakeFiles/auro_interfaces__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/auro/Auro/build/auro_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/msg/detail/item__functions.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/msg/detail/item__functions.c.o -MF CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/msg/detail/item__functions.c.o.d -o CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/msg/detail/item__functions.c.o -c /home/auro/Auro/build/auro_interfaces/rosidl_generator_c/auro_interfaces/msg/detail/item__functions.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/auro/Auro_Revised/build/auro_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/msg/detail/item__functions.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/msg/detail/item__functions.c.o -MF CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/msg/detail/item__functions.c.o.d -o CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/msg/detail/item__functions.c.o -c /home/auro/Auro_Revised/build/auro_interfaces/rosidl_generator_c/auro_interfaces/msg/detail/item__functions.c
 
 CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/msg/detail/item__functions.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/msg/detail/item__functions.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/auro/Auro/build/auro_interfaces/rosidl_generator_c/auro_interfaces/msg/detail/item__functions.c > CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/msg/detail/item__functions.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/auro/Auro_Revised/build/auro_interfaces/rosidl_generator_c/auro_interfaces/msg/detail/item__functions.c > CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/msg/detail/item__functions.c.i
 
 CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/msg/detail/item__functions.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/msg/detail/item__functions.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/auro/Auro/build/auro_interfaces/rosidl_generator_c/auro_interfaces/msg/detail/item__functions.c -o CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/msg/detail/item__functions.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/auro/Auro_Revised/build/auro_interfaces/rosidl_generator_c/auro_interfaces/msg/detail/item__functions.c -o CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/msg/detail/item__functions.c.s
 
 CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/msg/detail/item_list__functions.c.o: CMakeFiles/auro_interfaces__rosidl_generator_c.dir/flags.make
 CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/msg/detail/item_list__functions.c.o: rosidl_generator_c/auro_interfaces/msg/detail/item_list__functions.c
 CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/msg/detail/item_list__functions.c.o: CMakeFiles/auro_interfaces__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/auro/Auro/build/auro_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/msg/detail/item_list__functions.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/msg/detail/item_list__functions.c.o -MF CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/msg/detail/item_list__functions.c.o.d -o CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/msg/detail/item_list__functions.c.o -c /home/auro/Auro/build/auro_interfaces/rosidl_generator_c/auro_interfaces/msg/detail/item_list__functions.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/auro/Auro_Revised/build/auro_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/msg/detail/item_list__functions.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/msg/detail/item_list__functions.c.o -MF CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/msg/detail/item_list__functions.c.o.d -o CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/msg/detail/item_list__functions.c.o -c /home/auro/Auro_Revised/build/auro_interfaces/rosidl_generator_c/auro_interfaces/msg/detail/item_list__functions.c
 
 CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/msg/detail/item_list__functions.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/msg/detail/item_list__functions.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/auro/Auro/build/auro_interfaces/rosidl_generator_c/auro_interfaces/msg/detail/item_list__functions.c > CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/msg/detail/item_list__functions.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/auro/Auro_Revised/build/auro_interfaces/rosidl_generator_c/auro_interfaces/msg/detail/item_list__functions.c > CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/msg/detail/item_list__functions.c.i
 
 CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/msg/detail/item_list__functions.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/msg/detail/item_list__functions.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/auro/Auro/build/auro_interfaces/rosidl_generator_c/auro_interfaces/msg/detail/item_list__functions.c -o CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/msg/detail/item_list__functions.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/auro/Auro_Revised/build/auro_interfaces/rosidl_generator_c/auro_interfaces/msg/detail/item_list__functions.c -o CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/msg/detail/item_list__functions.c.s
 
 CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/msg/detail/direction__functions.c.o: CMakeFiles/auro_interfaces__rosidl_generator_c.dir/flags.make
 CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/msg/detail/direction__functions.c.o: rosidl_generator_c/auro_interfaces/msg/detail/direction__functions.c
 CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/msg/detail/direction__functions.c.o: CMakeFiles/auro_interfaces__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/auro/Auro/build/auro_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/msg/detail/direction__functions.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/msg/detail/direction__functions.c.o -MF CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/msg/detail/direction__functions.c.o.d -o CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/msg/detail/direction__functions.c.o -c /home/auro/Auro/build/auro_interfaces/rosidl_generator_c/auro_interfaces/msg/detail/direction__functions.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/auro/Auro_Revised/build/auro_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/msg/detail/direction__functions.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/msg/detail/direction__functions.c.o -MF CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/msg/detail/direction__functions.c.o.d -o CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/msg/detail/direction__functions.c.o -c /home/auro/Auro_Revised/build/auro_interfaces/rosidl_generator_c/auro_interfaces/msg/detail/direction__functions.c
 
 CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/msg/detail/direction__functions.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/msg/detail/direction__functions.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/auro/Auro/build/auro_interfaces/rosidl_generator_c/auro_interfaces/msg/detail/direction__functions.c > CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/msg/detail/direction__functions.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/auro/Auro_Revised/build/auro_interfaces/rosidl_generator_c/auro_interfaces/msg/detail/direction__functions.c > CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/msg/detail/direction__functions.c.i
 
 CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/msg/detail/direction__functions.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/msg/detail/direction__functions.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/auro/Auro/build/auro_interfaces/rosidl_generator_c/auro_interfaces/msg/detail/direction__functions.c -o CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/msg/detail/direction__functions.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/auro/Auro_Revised/build/auro_interfaces/rosidl_generator_c/auro_interfaces/msg/detail/direction__functions.c -o CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/msg/detail/direction__functions.c.s
 
 CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/item_request__functions.c.o: CMakeFiles/auro_interfaces__rosidl_generator_c.dir/flags.make
 CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/item_request__functions.c.o: rosidl_generator_c/auro_interfaces/srv/detail/item_request__functions.c
 CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/item_request__functions.c.o: CMakeFiles/auro_interfaces__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/auro/Auro/build/auro_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/item_request__functions.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/item_request__functions.c.o -MF CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/item_request__functions.c.o.d -o CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/item_request__functions.c.o -c /home/auro/Auro/build/auro_interfaces/rosidl_generator_c/auro_interfaces/srv/detail/item_request__functions.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/auro/Auro_Revised/build/auro_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/item_request__functions.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/item_request__functions.c.o -MF CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/item_request__functions.c.o.d -o CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/item_request__functions.c.o -c /home/auro/Auro_Revised/build/auro_interfaces/rosidl_generator_c/auro_interfaces/srv/detail/item_request__functions.c
 
 CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/item_request__functions.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/item_request__functions.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/auro/Auro/build/auro_interfaces/rosidl_generator_c/auro_interfaces/srv/detail/item_request__functions.c > CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/item_request__functions.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/auro/Auro_Revised/build/auro_interfaces/rosidl_generator_c/auro_interfaces/srv/detail/item_request__functions.c > CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/item_request__functions.c.i
 
 CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/item_request__functions.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/item_request__functions.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/auro/Auro/build/auro_interfaces/rosidl_generator_c/auro_interfaces/srv/detail/item_request__functions.c -o CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/item_request__functions.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/auro/Auro_Revised/build/auro_interfaces/rosidl_generator_c/auro_interfaces/srv/detail/item_request__functions.c -o CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/item_request__functions.c.s
 
-CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/sector__functions.c.o: CMakeFiles/auro_interfaces__rosidl_generator_c.dir/flags.make
-CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/sector__functions.c.o: rosidl_generator_c/auro_interfaces/srv/detail/sector__functions.c
-CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/sector__functions.c.o: CMakeFiles/auro_interfaces__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/auro/Auro/build/auro_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/sector__functions.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/sector__functions.c.o -MF CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/sector__functions.c.o.d -o CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/sector__functions.c.o -c /home/auro/Auro/build/auro_interfaces/rosidl_generator_c/auro_interfaces/srv/detail/sector__functions.c
+CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/zone_request__functions.c.o: CMakeFiles/auro_interfaces__rosidl_generator_c.dir/flags.make
+CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/zone_request__functions.c.o: rosidl_generator_c/auro_interfaces/srv/detail/zone_request__functions.c
+CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/zone_request__functions.c.o: CMakeFiles/auro_interfaces__rosidl_generator_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/auro/Auro_Revised/build/auro_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/zone_request__functions.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/zone_request__functions.c.o -MF CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/zone_request__functions.c.o.d -o CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/zone_request__functions.c.o -c /home/auro/Auro_Revised/build/auro_interfaces/rosidl_generator_c/auro_interfaces/srv/detail/zone_request__functions.c
 
-CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/sector__functions.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/sector__functions.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/auro/Auro/build/auro_interfaces/rosidl_generator_c/auro_interfaces/srv/detail/sector__functions.c > CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/sector__functions.c.i
+CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/zone_request__functions.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/zone_request__functions.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/auro/Auro_Revised/build/auro_interfaces/rosidl_generator_c/auro_interfaces/srv/detail/zone_request__functions.c > CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/zone_request__functions.c.i
 
-CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/sector__functions.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/sector__functions.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/auro/Auro/build/auro_interfaces/rosidl_generator_c/auro_interfaces/srv/detail/sector__functions.c -o CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/sector__functions.c.s
+CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/zone_request__functions.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/zone_request__functions.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/auro/Auro_Revised/build/auro_interfaces/rosidl_generator_c/auro_interfaces/srv/detail/zone_request__functions.c -o CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/zone_request__functions.c.s
 
 CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/collision__functions.c.o: CMakeFiles/auro_interfaces__rosidl_generator_c.dir/flags.make
 CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/collision__functions.c.o: rosidl_generator_c/auro_interfaces/srv/detail/collision__functions.c
 CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/collision__functions.c.o: CMakeFiles/auro_interfaces__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/auro/Auro/build/auro_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/collision__functions.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/collision__functions.c.o -MF CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/collision__functions.c.o.d -o CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/collision__functions.c.o -c /home/auro/Auro/build/auro_interfaces/rosidl_generator_c/auro_interfaces/srv/detail/collision__functions.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/auro/Auro_Revised/build/auro_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/collision__functions.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/collision__functions.c.o -MF CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/collision__functions.c.o.d -o CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/collision__functions.c.o -c /home/auro/Auro_Revised/build/auro_interfaces/rosidl_generator_c/auro_interfaces/srv/detail/collision__functions.c
 
 CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/collision__functions.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/collision__functions.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/auro/Auro/build/auro_interfaces/rosidl_generator_c/auro_interfaces/srv/detail/collision__functions.c > CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/collision__functions.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/auro/Auro_Revised/build/auro_interfaces/rosidl_generator_c/auro_interfaces/srv/detail/collision__functions.c > CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/collision__functions.c.i
 
 CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/collision__functions.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/collision__functions.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/auro/Auro/build/auro_interfaces/rosidl_generator_c/auro_interfaces/srv/detail/collision__functions.c -o CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/collision__functions.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/auro/Auro_Revised/build/auro_interfaces/rosidl_generator_c/auro_interfaces/srv/detail/collision__functions.c -o CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/collision__functions.c.s
 
 CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/action/detail/move__functions.c.o: CMakeFiles/auro_interfaces__rosidl_generator_c.dir/flags.make
 CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/action/detail/move__functions.c.o: rosidl_generator_c/auro_interfaces/action/detail/move__functions.c
 CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/action/detail/move__functions.c.o: CMakeFiles/auro_interfaces__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/auro/Auro/build/auro_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/action/detail/move__functions.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/action/detail/move__functions.c.o -MF CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/action/detail/move__functions.c.o.d -o CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/action/detail/move__functions.c.o -c /home/auro/Auro/build/auro_interfaces/rosidl_generator_c/auro_interfaces/action/detail/move__functions.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/auro/Auro_Revised/build/auro_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/action/detail/move__functions.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/action/detail/move__functions.c.o -MF CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/action/detail/move__functions.c.o.d -o CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/action/detail/move__functions.c.o -c /home/auro/Auro_Revised/build/auro_interfaces/rosidl_generator_c/auro_interfaces/action/detail/move__functions.c
 
 CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/action/detail/move__functions.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/action/detail/move__functions.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/auro/Auro/build/auro_interfaces/rosidl_generator_c/auro_interfaces/action/detail/move__functions.c > CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/action/detail/move__functions.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/auro/Auro_Revised/build/auro_interfaces/rosidl_generator_c/auro_interfaces/action/detail/move__functions.c > CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/action/detail/move__functions.c.i
 
 CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/action/detail/move__functions.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/action/detail/move__functions.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/auro/Auro/build/auro_interfaces/rosidl_generator_c/auro_interfaces/action/detail/move__functions.c -o CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/action/detail/move__functions.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/auro/Auro_Revised/build/auro_interfaces/rosidl_generator_c/auro_interfaces/action/detail/move__functions.c -o CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/action/detail/move__functions.c.s
 
 CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/check_goal__functions.c.o: CMakeFiles/auro_interfaces__rosidl_generator_c.dir/flags.make
 CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/check_goal__functions.c.o: rosidl_generator_c/auro_interfaces/srv/detail/check_goal__functions.c
 CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/check_goal__functions.c.o: CMakeFiles/auro_interfaces__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/auro/Auro/build/auro_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/check_goal__functions.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/check_goal__functions.c.o -MF CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/check_goal__functions.c.o.d -o CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/check_goal__functions.c.o -c /home/auro/Auro/build/auro_interfaces/rosidl_generator_c/auro_interfaces/srv/detail/check_goal__functions.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/auro/Auro_Revised/build/auro_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/check_goal__functions.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/check_goal__functions.c.o -MF CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/check_goal__functions.c.o.d -o CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/check_goal__functions.c.o -c /home/auro/Auro_Revised/build/auro_interfaces/rosidl_generator_c/auro_interfaces/srv/detail/check_goal__functions.c
 
 CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/check_goal__functions.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/check_goal__functions.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/auro/Auro/build/auro_interfaces/rosidl_generator_c/auro_interfaces/srv/detail/check_goal__functions.c > CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/check_goal__functions.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/auro/Auro_Revised/build/auro_interfaces/rosidl_generator_c/auro_interfaces/srv/detail/check_goal__functions.c > CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/check_goal__functions.c.i
 
 CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/check_goal__functions.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/check_goal__functions.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/auro/Auro/build/auro_interfaces/rosidl_generator_c/auro_interfaces/srv/detail/check_goal__functions.c -o CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/check_goal__functions.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/auro/Auro_Revised/build/auro_interfaces/rosidl_generator_c/auro_interfaces/srv/detail/check_goal__functions.c -o CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/check_goal__functions.c.s
+
+CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/rotate__functions.c.o: CMakeFiles/auro_interfaces__rosidl_generator_c.dir/flags.make
+CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/rotate__functions.c.o: rosidl_generator_c/auro_interfaces/srv/detail/rotate__functions.c
+CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/rotate__functions.c.o: CMakeFiles/auro_interfaces__rosidl_generator_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/auro/Auro_Revised/build/auro_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/rotate__functions.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/rotate__functions.c.o -MF CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/rotate__functions.c.o.d -o CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/rotate__functions.c.o -c /home/auro/Auro_Revised/build/auro_interfaces/rosidl_generator_c/auro_interfaces/srv/detail/rotate__functions.c
+
+CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/rotate__functions.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/rotate__functions.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/auro/Auro_Revised/build/auro_interfaces/rosidl_generator_c/auro_interfaces/srv/detail/rotate__functions.c > CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/rotate__functions.c.i
+
+CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/rotate__functions.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/rotate__functions.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/auro/Auro_Revised/build/auro_interfaces/rosidl_generator_c/auro_interfaces/srv/detail/rotate__functions.c -o CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/rotate__functions.c.s
+
+CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/task__functions.c.o: CMakeFiles/auro_interfaces__rosidl_generator_c.dir/flags.make
+CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/task__functions.c.o: rosidl_generator_c/auro_interfaces/srv/detail/task__functions.c
+CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/task__functions.c.o: CMakeFiles/auro_interfaces__rosidl_generator_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/auro/Auro_Revised/build/auro_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/task__functions.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/task__functions.c.o -MF CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/task__functions.c.o.d -o CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/task__functions.c.o -c /home/auro/Auro_Revised/build/auro_interfaces/rosidl_generator_c/auro_interfaces/srv/detail/task__functions.c
+
+CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/task__functions.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/task__functions.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/auro/Auro_Revised/build/auro_interfaces/rosidl_generator_c/auro_interfaces/srv/detail/task__functions.c > CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/task__functions.c.i
+
+CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/task__functions.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/task__functions.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/auro/Auro_Revised/build/auro_interfaces/rosidl_generator_c/auro_interfaces/srv/detail/task__functions.c -o CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/task__functions.c.s
+
+CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/find_target__functions.c.o: CMakeFiles/auro_interfaces__rosidl_generator_c.dir/flags.make
+CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/find_target__functions.c.o: rosidl_generator_c/auro_interfaces/srv/detail/find_target__functions.c
+CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/find_target__functions.c.o: CMakeFiles/auro_interfaces__rosidl_generator_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/auro/Auro_Revised/build/auro_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/find_target__functions.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/find_target__functions.c.o -MF CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/find_target__functions.c.o.d -o CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/find_target__functions.c.o -c /home/auro/Auro_Revised/build/auro_interfaces/rosidl_generator_c/auro_interfaces/srv/detail/find_target__functions.c
+
+CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/find_target__functions.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/find_target__functions.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/auro/Auro_Revised/build/auro_interfaces/rosidl_generator_c/auro_interfaces/srv/detail/find_target__functions.c > CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/find_target__functions.c.i
+
+CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/find_target__functions.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/find_target__functions.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/auro/Auro_Revised/build/auro_interfaces/rosidl_generator_c/auro_interfaces/srv/detail/find_target__functions.c -o CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/find_target__functions.c.s
 
 # Object files for target auro_interfaces__rosidl_generator_c
 auro_interfaces__rosidl_generator_c_OBJECTS = \
@@ -426,10 +516,13 @@ auro_interfaces__rosidl_generator_c_OBJECTS = \
 "CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/msg/detail/item_list__functions.c.o" \
 "CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/msg/detail/direction__functions.c.o" \
 "CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/item_request__functions.c.o" \
-"CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/sector__functions.c.o" \
+"CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/zone_request__functions.c.o" \
 "CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/collision__functions.c.o" \
 "CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/action/detail/move__functions.c.o" \
-"CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/check_goal__functions.c.o"
+"CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/check_goal__functions.c.o" \
+"CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/rotate__functions.c.o" \
+"CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/task__functions.c.o" \
+"CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/find_target__functions.c.o"
 
 # External object files for target auro_interfaces__rosidl_generator_c
 auro_interfaces__rosidl_generator_c_EXTERNAL_OBJECTS =
@@ -439,10 +532,13 @@ libauro_interfaces__rosidl_generator_c.so: CMakeFiles/auro_interfaces__rosidl_ge
 libauro_interfaces__rosidl_generator_c.so: CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/msg/detail/item_list__functions.c.o
 libauro_interfaces__rosidl_generator_c.so: CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/msg/detail/direction__functions.c.o
 libauro_interfaces__rosidl_generator_c.so: CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/item_request__functions.c.o
-libauro_interfaces__rosidl_generator_c.so: CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/sector__functions.c.o
+libauro_interfaces__rosidl_generator_c.so: CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/zone_request__functions.c.o
 libauro_interfaces__rosidl_generator_c.so: CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/collision__functions.c.o
 libauro_interfaces__rosidl_generator_c.so: CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/action/detail/move__functions.c.o
 libauro_interfaces__rosidl_generator_c.so: CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/check_goal__functions.c.o
+libauro_interfaces__rosidl_generator_c.so: CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/rotate__functions.c.o
+libauro_interfaces__rosidl_generator_c.so: CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/task__functions.c.o
+libauro_interfaces__rosidl_generator_c.so: CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/find_target__functions.c.o
 libauro_interfaces__rosidl_generator_c.so: CMakeFiles/auro_interfaces__rosidl_generator_c.dir/build.make
 libauro_interfaces__rosidl_generator_c.so: /opt/ros/humble/lib/libgeometry_msgs__rosidl_generator_c.so
 libauro_interfaces__rosidl_generator_c.so: /opt/ros/humble/lib/libstd_msgs__rosidl_generator_c.so
@@ -452,7 +548,7 @@ libauro_interfaces__rosidl_generator_c.so: /opt/ros/humble/lib/libunique_identif
 libauro_interfaces__rosidl_generator_c.so: /opt/ros/humble/lib/librosidl_runtime_c.so
 libauro_interfaces__rosidl_generator_c.so: /opt/ros/humble/lib/librcutils.so
 libauro_interfaces__rosidl_generator_c.so: CMakeFiles/auro_interfaces__rosidl_generator_c.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/auro/Auro/build/auro_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking C shared library libauro_interfaces__rosidl_generator_c.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/auro/Auro_Revised/build/auro_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Linking C shared library libauro_interfaces__rosidl_generator_c.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/auro_interfaces__rosidl_generator_c.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -498,16 +594,31 @@ CMakeFiles/auro_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/au
 CMakeFiles/auro_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/auro_interfaces/srv/detail/collision__functions.h
 CMakeFiles/auro_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/auro_interfaces/srv/detail/collision__struct.h
 CMakeFiles/auro_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/auro_interfaces/srv/detail/collision__type_support.h
+CMakeFiles/auro_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/auro_interfaces/srv/detail/find_target__functions.c
+CMakeFiles/auro_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/auro_interfaces/srv/detail/find_target__functions.h
+CMakeFiles/auro_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/auro_interfaces/srv/detail/find_target__struct.h
+CMakeFiles/auro_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/auro_interfaces/srv/detail/find_target__type_support.h
 CMakeFiles/auro_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/auro_interfaces/srv/detail/item_request__functions.c
 CMakeFiles/auro_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/auro_interfaces/srv/detail/item_request__functions.h
 CMakeFiles/auro_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/auro_interfaces/srv/detail/item_request__struct.h
 CMakeFiles/auro_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/auro_interfaces/srv/detail/item_request__type_support.h
-CMakeFiles/auro_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/auro_interfaces/srv/detail/sector__functions.c
-CMakeFiles/auro_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/auro_interfaces/srv/detail/sector__functions.h
-CMakeFiles/auro_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/auro_interfaces/srv/detail/sector__struct.h
-CMakeFiles/auro_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/auro_interfaces/srv/detail/sector__type_support.h
+CMakeFiles/auro_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/auro_interfaces/srv/detail/rotate__functions.c
+CMakeFiles/auro_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/auro_interfaces/srv/detail/rotate__functions.h
+CMakeFiles/auro_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/auro_interfaces/srv/detail/rotate__struct.h
+CMakeFiles/auro_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/auro_interfaces/srv/detail/rotate__type_support.h
+CMakeFiles/auro_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/auro_interfaces/srv/detail/task__functions.c
+CMakeFiles/auro_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/auro_interfaces/srv/detail/task__functions.h
+CMakeFiles/auro_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/auro_interfaces/srv/detail/task__struct.h
+CMakeFiles/auro_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/auro_interfaces/srv/detail/task__type_support.h
+CMakeFiles/auro_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/auro_interfaces/srv/detail/zone_request__functions.c
+CMakeFiles/auro_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/auro_interfaces/srv/detail/zone_request__functions.h
+CMakeFiles/auro_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/auro_interfaces/srv/detail/zone_request__struct.h
+CMakeFiles/auro_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/auro_interfaces/srv/detail/zone_request__type_support.h
+CMakeFiles/auro_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/auro_interfaces/srv/find_target.h
 CMakeFiles/auro_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/auro_interfaces/srv/item_request.h
-CMakeFiles/auro_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/auro_interfaces/srv/sector.h
-	cd /home/auro/Auro/build/auro_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/auro/Auro/auro_interfaces /home/auro/Auro/auro_interfaces /home/auro/Auro/build/auro_interfaces /home/auro/Auro/build/auro_interfaces /home/auro/Auro/build/auro_interfaces/CMakeFiles/auro_interfaces__rosidl_generator_c.dir/DependInfo.cmake --color=$(COLOR)
+CMakeFiles/auro_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/auro_interfaces/srv/rotate.h
+CMakeFiles/auro_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/auro_interfaces/srv/task.h
+CMakeFiles/auro_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/auro_interfaces/srv/zone_request.h
+	cd /home/auro/Auro_Revised/build/auro_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/auro/Auro_Revised/auro_interfaces /home/auro/Auro_Revised/auro_interfaces /home/auro/Auro_Revised/build/auro_interfaces /home/auro/Auro_Revised/build/auro_interfaces /home/auro/Auro_Revised/build/auro_interfaces/CMakeFiles/auro_interfaces__rosidl_generator_c.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/auro_interfaces__rosidl_generator_c.dir/depend
 

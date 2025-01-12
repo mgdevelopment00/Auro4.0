@@ -9,6 +9,7 @@ from nav2_simple_commander.robot_navigator import BasicNavigator, TaskResult
 from example_interfaces.srv import SetBool
 from rclpy.action import ActionServer, GoalResponse
 from auro_interfaces.action import Move
+from auro_interfaces.srv import Rotate
 from enum import Enum
 import logging
 import os
@@ -68,7 +69,7 @@ class RobotController(Node):
         self.goal_reached = False
 
         self.twist_publisher = self.create_publisher(Twist, 'cmd_vel', 1)
-        self.rotate_service = self.create_service(SetBool, '/rotate_robot', self.service_rotate)
+        self.rotate_service = self.create_service(Rotate, '/rotate_robot', self.service_rotate)
         self.move_action_server = ActionServer(self, Move,  self.robot_name + '/move_robot', self.move_callback)
     
     
@@ -83,7 +84,10 @@ class RobotController(Node):
          result_msg = Move.Result()
          result_msg.status = "Executing"
          
+         self.logger.info("Move Callback")
+         
          if not self.state == State.BUSY:
+            self.logger.info("Running now")
             self.state = State.BUSY
             target_x = goal_handle.request.x
             target_y = goal_handle.request.y
@@ -163,8 +167,9 @@ class RobotController(Node):
     def service_rotate(self, request, response):
     
         if not self.rotating:
+            self.logger.info("Rotating")
             self.rotating = True
-            direction = request.data
+            direction = request.direction
             
             if direction == True:
                self.start_rotation_right()

@@ -1,0 +1,2 @@
+float64 diameter
+bool move_to_target

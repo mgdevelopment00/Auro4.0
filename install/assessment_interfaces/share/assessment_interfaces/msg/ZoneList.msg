@@ -1,1 +1,1 @@
-/home/auro/Auro/assessment_interfaces/msg/ZoneList.msg
+/home/auro/Auro_Revised/assessment_interfaces/msg/ZoneList.msg
