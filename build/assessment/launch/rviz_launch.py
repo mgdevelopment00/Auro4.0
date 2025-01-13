@@ -1,1 +1,1 @@
-/home/auro/Auro_Revised/assessment/launch/rviz_launch.py
+/home/auro/AURO-Revised/assessment/launch/rviz_launch.py

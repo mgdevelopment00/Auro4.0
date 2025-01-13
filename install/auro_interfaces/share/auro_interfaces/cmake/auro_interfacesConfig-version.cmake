@@ -1,1 +1,1 @@
-/home/auro/Auro_Revised/build/auro_interfaces/ament_cmake_core/auro_interfacesConfig-version.cmake
+/home/auro/AURO-Revised/build/auro_interfaces/ament_cmake_core/auro_interfacesConfig-version.cmake

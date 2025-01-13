@@ -1,1 +1,1 @@
-/home/auro/Auro_Revised/build/auro_interfaces/rosidl_generator_py/auro_interfaces/action/_move_s.c
+/home/auro/AURO-Revised/build/auro_interfaces/rosidl_generator_py/auro_interfaces/action/_move_s.c

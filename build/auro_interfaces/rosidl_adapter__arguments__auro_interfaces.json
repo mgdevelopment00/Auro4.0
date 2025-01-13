@@ -1,17 +1,17 @@
 {
   "package_name": "auro_interfaces",
   "non_idl_tuples": [
-    "/home/auro/Auro_Revised/auro_interfaces:msg/StringWithPose.msg",
-    "/home/auro/Auro_Revised/auro_interfaces:msg/Item.msg",
-    "/home/auro/Auro_Revised/auro_interfaces:msg/ItemList.msg",
-    "/home/auro/Auro_Revised/auro_interfaces:msg/Direction.msg",
-    "/home/auro/Auro_Revised/auro_interfaces:srv/ItemRequest.srv",
-    "/home/auro/Auro_Revised/auro_interfaces:srv/ZoneRequest.srv",
-    "/home/auro/Auro_Revised/auro_interfaces:srv/Collision.srv",
-    "/home/auro/Auro_Revised/auro_interfaces:action/Move.action",
-    "/home/auro/Auro_Revised/auro_interfaces:srv/CheckGoal.srv",
-    "/home/auro/Auro_Revised/auro_interfaces:srv/Rotate.srv",
-    "/home/auro/Auro_Revised/auro_interfaces:srv/Task.srv",
-    "/home/auro/Auro_Revised/auro_interfaces:srv/FindTarget.srv"
+    "/home/auro/AURO-Revised/auro_interfaces:msg/StringWithPose.msg",
+    "/home/auro/AURO-Revised/auro_interfaces:msg/Item.msg",
+    "/home/auro/AURO-Revised/auro_interfaces:msg/ItemList.msg",
+    "/home/auro/AURO-Revised/auro_interfaces:msg/Direction.msg",
+    "/home/auro/AURO-Revised/auro_interfaces:srv/ItemRequest.srv",
+    "/home/auro/AURO-Revised/auro_interfaces:srv/ZoneRequest.srv",
+    "/home/auro/AURO-Revised/auro_interfaces:srv/Collision.srv",
+    "/home/auro/AURO-Revised/auro_interfaces:action/Move.action",
+    "/home/auro/AURO-Revised/auro_interfaces:srv/CheckGoal.srv",
+    "/home/auro/AURO-Revised/auro_interfaces:srv/Rotate.srv",
+    "/home/auro/AURO-Revised/auro_interfaces:srv/Task.srv",
+    "/home/auro/AURO-Revised/auro_interfaces:srv/FindTarget.srv"
   ]
 }

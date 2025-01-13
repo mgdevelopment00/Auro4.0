@@ -1,1 +1,1 @@
-/home/auro/Auro_Revised/solution/setup.py
+/home/auro/AURO-Revised/solution/setup.py

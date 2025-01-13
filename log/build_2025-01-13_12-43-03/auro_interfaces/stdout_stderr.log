@@ -1,0 +1,491 @@
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found geometry_msgs: 4.2.4 (/opt/ros/humble/share/geometry_msgs/cmake)
+-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+-- Found PythonExtra: .so  
+-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/auro/AURO-Revised/build/auro_interfaces
+[  1%] [34m[1mGenerating C code for ROS interfaces[0m
+[  1%] Built target ament_cmake_python_symlink_auro_interfaces
+[  1%] [34m[1mGenerating C++ code for ROS interfaces[0m
+running egg_info
+creating auro_interfaces.egg-info
+writing auro_interfaces.egg-info/PKG-INFO
+writing dependency_links to auro_interfaces.egg-info/dependency_links.txt
+writing top-level names to auro_interfaces.egg-info/top_level.txt
+writing manifest file 'auro_interfaces.egg-info/SOURCES.txt'
+reading manifest file 'auro_interfaces.egg-info/SOURCES.txt'
+writing manifest file 'auro_interfaces.egg-info/SOURCES.txt'
+[  1%] Built target ament_cmake_python_build_auro_interfaces_egg
+[  2%] [32mBuilding C object CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/msg/detail/string_with_pose__functions.c.o[0m
+[  3%] [32mBuilding C object CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/msg/detail/item__functions.c.o[0m
+[  4%] [32mBuilding C object CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/msg/detail/item_list__functions.c.o[0m
+[  4%] [32mBuilding C object CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/msg/detail/direction__functions.c.o[0m
+[  5%] [32mBuilding C object CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/item_request__functions.c.o[0m
+[  6%] [32mBuilding C object CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/zone_request__functions.c.o[0m
+[  7%] [32mBuilding C object CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/collision__functions.c.o[0m
+[  7%] Built target auro_interfaces__cpp
+[  8%] [32mBuilding C object CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/action/detail/move__functions.c.o[0m
+[  9%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[  9%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[ 10%] [32mBuilding C object CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/check_goal__functions.c.o[0m
+[ 11%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[ 11%] [32mBuilding C object CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/rotate__functions.c.o[0m
+[ 12%] [32mBuilding C object CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/task__functions.c.o[0m
+[ 13%] [32mBuilding C object CMakeFiles/auro_interfaces__rosidl_generator_c.dir/rosidl_generator_c/auro_interfaces/srv/detail/find_target__functions.c.o[0m
+[ 14%] [32m[1mLinking C shared library libauro_interfaces__rosidl_generator_c.so[0m
+[ 14%] Built target auro_interfaces__rosidl_generator_c
+[ 15%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[ 16%] [32mBuilding CXX object CMakeFiles/auro_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/auro_interfaces/msg/string_with_pose__type_support.cpp.o[0m
+[ 17%] [32mBuilding CXX object CMakeFiles/auro_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/auro_interfaces/msg/item__type_support.cpp.o[0m
+[ 17%] [32mBuilding CXX object CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/auro_interfaces/msg/detail/string_with_pose__type_support.cpp.o[0m
+[ 18%] [32mBuilding CXX object CMakeFiles/auro_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/auro_interfaces/msg/detail/dds_fastrtps/string_with_pose__type_support.cpp.o[0m
+[ 19%] [32mBuilding CXX object CMakeFiles/auro_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/auro_interfaces/msg/item_list__type_support.cpp.o[0m
+[ 20%] [32mBuilding CXX object CMakeFiles/auro_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/auro_interfaces/msg/direction__type_support.cpp.o[0m
+[ 21%] [32mBuilding CXX object CMakeFiles/auro_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/auro_interfaces/msg/detail/string_with_pose__type_support_c.cpp.o[0m
+[ 22%] [32mBuilding CXX object CMakeFiles/auro_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/auro_interfaces/msg/detail/dds_fastrtps/item__type_support.cpp.o[0m
+[ 23%] [32mBuilding CXX object CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/auro_interfaces/msg/detail/item__type_support.cpp.o[0m
+[ 23%] [32mBuilding CXX object CMakeFiles/auro_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/auro_interfaces/srv/item_request__type_support.cpp.o[0m
+[ 24%] [32mBuilding CXX object CMakeFiles/auro_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/auro_interfaces/msg/detail/dds_fastrtps/item_list__type_support.cpp.o[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/auro_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/auro_interfaces/msg/detail/item__type_support_c.cpp.o[0m
+[ 26%] [32mBuilding CXX object CMakeFiles/auro_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/auro_interfaces/srv/zone_request__type_support.cpp.o[0m
+[ 27%] [32mBuilding CXX object CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/auro_interfaces/msg/detail/item_list__type_support.cpp.o[0m
+[ 28%] [32mBuilding CXX object CMakeFiles/auro_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/auro_interfaces/srv/collision__type_support.cpp.o[0m
+[ 29%] [32mBuilding CXX object CMakeFiles/auro_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/auro_interfaces/msg/detail/dds_fastrtps/direction__type_support.cpp.o[0m
+[ 29%] [32mBuilding CXX object CMakeFiles/auro_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/auro_interfaces/msg/detail/item_list__type_support_c.cpp.o[0m
+[ 30%] [32mBuilding CXX object CMakeFiles/auro_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/auro_interfaces/action/move__type_support.cpp.o[0m
+[ 31%] [32mBuilding CXX object CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/auro_interfaces/msg/detail/direction__type_support.cpp.o[0m
+[ 32%] [32mBuilding CXX object CMakeFiles/auro_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/auro_interfaces/srv/detail/dds_fastrtps/item_request__type_support.cpp.o[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/auro_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/auro_interfaces/msg/detail/direction__type_support_c.cpp.o[0m
+[ 34%] [32mBuilding CXX object CMakeFiles/auro_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/auro_interfaces/srv/check_goal__type_support.cpp.o[0m
+[ 35%] [32mBuilding CXX object CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/item_request__type_support.cpp.o[0m
+[ 36%] [32mBuilding CXX object CMakeFiles/auro_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/auro_interfaces/srv/rotate__type_support.cpp.o[0m
+[ 37%] [32mBuilding CXX object CMakeFiles/auro_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/auro_interfaces/srv/detail/item_request__type_support_c.cpp.o[0m
+[ 37%] [32mBuilding CXX object CMakeFiles/auro_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/auro_interfaces/srv/detail/dds_fastrtps/zone_request__type_support.cpp.o[0m
+[ 38%] [32mBuilding CXX object CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/zone_request__type_support.cpp.o[0m
+[ 38%] [32mBuilding CXX object CMakeFiles/auro_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/auro_interfaces/srv/task__type_support.cpp.o[0m
+[ 39%] [32mBuilding CXX object CMakeFiles/auro_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/auro_interfaces/srv/detail/zone_request__type_support_c.cpp.o[0m
+[ 40%] [32mBuilding CXX object CMakeFiles/auro_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/auro_interfaces/srv/detail/dds_fastrtps/collision__type_support.cpp.o[0m
+[ 41%] [32mBuilding CXX object CMakeFiles/auro_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/auro_interfaces/srv/find_target__type_support.cpp.o[0m
+[ 41%] [32mBuilding CXX object CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/collision__type_support.cpp.o[0m
+[ 42%] [32mBuilding CXX object CMakeFiles/auro_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/auro_interfaces/srv/detail/collision__type_support_c.cpp.o[0m
+[ 43%] [32m[1mLinking CXX shared library libauro_interfaces__rosidl_typesupport_cpp.so[0m
+[ 44%] [32mBuilding CXX object CMakeFiles/auro_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/auro_interfaces/action/detail/dds_fastrtps/move__type_support.cpp.o[0m
+[ 44%] Built target auro_interfaces__rosidl_typesupport_cpp
+[ 45%] [32mBuilding CXX object CMakeFiles/auro_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/auro_interfaces/srv/detail/dds_fastrtps/check_goal__type_support.cpp.o[0m
+[ 46%] [32mBuilding CXX object CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/auro_interfaces/action/detail/move__type_support.cpp.o[0m
+[ 47%] [32mBuilding CXX object CMakeFiles/auro_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/auro_interfaces/action/detail/move__type_support_c.cpp.o[0m
+[ 48%] [32mBuilding CXX object CMakeFiles/auro_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/auro_interfaces/srv/detail/dds_fastrtps/rotate__type_support.cpp.o[0m
+[ 49%] [32mBuilding CXX object CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/check_goal__type_support.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/rotate__type_support.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/auro_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/auro_interfaces/srv/detail/check_goal__type_support_c.cpp.o[0m
+[ 51%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[ 52%] [32mBuilding CXX object CMakeFiles/auro_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/auro_interfaces/srv/detail/dds_fastrtps/task__type_support.cpp.o[0m
+[ 53%] [32mBuilding CXX object CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/task__type_support.cpp.o[0m
+[ 54%] [32mBuilding CXX object CMakeFiles/auro_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/auro_interfaces/srv/detail/rotate__type_support_c.cpp.o[0m
+[ 54%] [32mBuilding CXX object CMakeFiles/auro_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/auro_interfaces/srv/detail/dds_fastrtps/find_target__type_support.cpp.o[0m
+[ 55%] [32mBuilding CXX object CMakeFiles/auro_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/auro_interfaces/srv/detail/task__type_support_c.cpp.o[0m
+[ 56%] [32mBuilding CXX object CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/auro_interfaces/srv/detail/find_target__type_support.cpp.o[0m
+[ 57%] [32m[1mLinking CXX shared library libauro_interfaces__rosidl_typesupport_fastrtps_cpp.so[0m
+[ 58%] [32mBuilding CXX object CMakeFiles/auro_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/auro_interfaces/srv/detail/find_target__type_support_c.cpp.o[0m
+[ 58%] Built target auro_interfaces__rosidl_typesupport_fastrtps_cpp
+[ 59%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[ 60%] [32m[1mLinking CXX shared library libauro_interfaces__rosidl_typesupport_introspection_cpp.so[0m
+[ 60%] Built target auro_interfaces__rosidl_typesupport_introspection_cpp
+[ 61%] [32m[1mLinking CXX shared library libauro_interfaces__rosidl_typesupport_fastrtps_c.so[0m
+[ 62%] [32mBuilding C object CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/auro_interfaces/msg/detail/string_with_pose__type_support.c.o[0m
+[ 63%] [32mBuilding C object CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/auro_interfaces/msg/detail/item__type_support.c.o[0m
+[ 63%] Built target auro_interfaces__rosidl_typesupport_fastrtps_c
+[ 64%] [32mBuilding C object CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/auro_interfaces/msg/detail/item_list__type_support.c.o[0m
+[ 65%] [32mBuilding C object CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/auro_interfaces/srv/detail/item_request__type_support.c.o[0m
+[ 65%] [32mBuilding C object CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/auro_interfaces/msg/detail/direction__type_support.c.o[0m
+[ 66%] [32mBuilding C object CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/auro_interfaces/srv/detail/zone_request__type_support.c.o[0m
+[ 67%] [32mBuilding C object CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/auro_interfaces/srv/detail/collision__type_support.c.o[0m
+[ 68%] [32mBuilding C object CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/auro_interfaces/action/detail/move__type_support.c.o[0m
+[ 69%] [32mBuilding C object CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/auro_interfaces/srv/detail/check_goal__type_support.c.o[0m
+[ 70%] [32mBuilding C object CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/auro_interfaces/srv/detail/rotate__type_support.c.o[0m
+[ 71%] [32mBuilding C object CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/auro_interfaces/srv/detail/find_target__type_support.c.o[0m
+[ 71%] [32mBuilding C object CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/auro_interfaces/srv/detail/task__type_support.c.o[0m
+[ 72%] [32m[1mLinking C shared library libauro_interfaces__rosidl_typesupport_introspection_c.so[0m
+[ 72%] Built target auro_interfaces__rosidl_typesupport_introspection_c
+[ 73%] [32mBuilding CXX object CMakeFiles/auro_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/auro_interfaces/msg/string_with_pose__type_support.cpp.o[0m
+[ 73%] [32mBuilding CXX object CMakeFiles/auro_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/auro_interfaces/msg/item__type_support.cpp.o[0m
+[ 74%] [32mBuilding CXX object CMakeFiles/auro_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/auro_interfaces/msg/item_list__type_support.cpp.o[0m
+[ 75%] [32mBuilding CXX object CMakeFiles/auro_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/auro_interfaces/msg/direction__type_support.cpp.o[0m
+[ 76%] [32mBuilding CXX object CMakeFiles/auro_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/auro_interfaces/srv/item_request__type_support.cpp.o[0m
+[ 77%] [32mBuilding CXX object CMakeFiles/auro_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/auro_interfaces/srv/zone_request__type_support.cpp.o[0m
+[ 78%] [32mBuilding CXX object CMakeFiles/auro_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/auro_interfaces/srv/collision__type_support.cpp.o[0m
+[ 78%] [32mBuilding CXX object CMakeFiles/auro_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/auro_interfaces/action/move__type_support.cpp.o[0m
+[ 79%] [32mBuilding CXX object CMakeFiles/auro_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/auro_interfaces/srv/check_goal__type_support.cpp.o[0m
+[ 80%] [32mBuilding CXX object CMakeFiles/auro_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/auro_interfaces/srv/rotate__type_support.cpp.o[0m
+[ 81%] [32mBuilding CXX object CMakeFiles/auro_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/auro_interfaces/srv/task__type_support.cpp.o[0m
+[ 82%] [32mBuilding CXX object CMakeFiles/auro_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/auro_interfaces/srv/find_target__type_support.cpp.o[0m
+[ 83%] [32m[1mLinking CXX shared library libauro_interfaces__rosidl_typesupport_c.so[0m
+[ 83%] Built target auro_interfaces__rosidl_typesupport_c
+[ 83%] Built target auro_interfaces
+[ 84%] [34m[1mGenerating Python code for ROS interfaces[0m
+[ 84%] Built target auro_interfaces__py
+[ 85%] [32mBuilding C object CMakeFiles/auro_interfaces__rosidl_generator_py.dir/rosidl_generator_py/auro_interfaces/msg/_string_with_pose_s.c.o[0m
+[ 85%] [32mBuilding C object CMakeFiles/auro_interfaces__rosidl_generator_py.dir/rosidl_generator_py/auro_interfaces/msg/_item_list_s.c.o[0m
+[ 86%] [32mBuilding C object CMakeFiles/auro_interfaces__rosidl_generator_py.dir/rosidl_generator_py/auro_interfaces/msg/_item_s.c.o[0m
+[ 87%] [32mBuilding C object CMakeFiles/auro_interfaces__rosidl_generator_py.dir/rosidl_generator_py/auro_interfaces/msg/_direction_s.c.o[0m
+[ 88%] [32mBuilding C object CMakeFiles/auro_interfaces__rosidl_generator_py.dir/rosidl_generator_py/auro_interfaces/srv/_item_request_s.c.o[0m
+[ 89%] [32mBuilding C object CMakeFiles/auro_interfaces__rosidl_generator_py.dir/rosidl_generator_py/auro_interfaces/srv/_collision_s.c.o[0m
+[ 90%] [32mBuilding C object CMakeFiles/auro_interfaces__rosidl_generator_py.dir/rosidl_generator_py/auro_interfaces/srv/_zone_request_s.c.o[0m
+[ 91%] [32mBuilding C object CMakeFiles/auro_interfaces__rosidl_generator_py.dir/rosidl_generator_py/auro_interfaces/action/_move_s.c.o[0m
+[ 92%] [32mBuilding C object CMakeFiles/auro_interfaces__rosidl_generator_py.dir/rosidl_generator_py/auro_interfaces/srv/_check_goal_s.c.o[0m
+[ 92%] [32mBuilding C object CMakeFiles/auro_interfaces__rosidl_generator_py.dir/rosidl_generator_py/auro_interfaces/srv/_rotate_s.c.o[0m
+[ 93%] [32mBuilding C object CMakeFiles/auro_interfaces__rosidl_generator_py.dir/rosidl_generator_py/auro_interfaces/srv/_task_s.c.o[0m
+[ 94%] [32mBuilding C object CMakeFiles/auro_interfaces__rosidl_generator_py.dir/rosidl_generator_py/auro_interfaces/srv/_find_target_s.c.o[0m
+[ 95%] [32m[1mLinking C shared library rosidl_generator_py/auro_interfaces/libauro_interfaces__rosidl_generator_py.so[0m
+[ 95%] Built target auro_interfaces__rosidl_generator_py
+[ 95%] [32mBuilding C object CMakeFiles/auro_interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/auro_interfaces/_auro_interfaces_s.ep.rosidl_typesupport_c.c.o[0m
+[ 96%] [32mBuilding C object CMakeFiles/auro_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/auro_interfaces/_auro_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[ 97%] [32mBuilding C object CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/auro_interfaces/_auro_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[ 98%] [32m[1mLinking C shared library rosidl_generator_py/auro_interfaces/auro_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[100%] [32m[1mLinking C shared library rosidl_generator_py/auro_interfaces/auro_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[100%] [32m[1mLinking C shared library rosidl_generator_py/auro_interfaces/auro_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[100%] Built target auro_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[100%] Built target auro_interfaces__rosidl_typesupport_c__pyext
+[100%] Built target auro_interfaces__rosidl_typesupport_introspection_c__pyext
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/share/ament_index/resource_index/rosidl_interfaces/auro_interfaces
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/include/auro_interfaces/auro_interfaces/action/detail/move__functions.h
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/include/auro_interfaces/auro_interfaces/action/detail/move__struct.h
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/include/auro_interfaces/auro_interfaces/action/detail/move__type_support.h
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/include/auro_interfaces/auro_interfaces/action/move.h
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/include/auro_interfaces/auro_interfaces/msg/detail/direction__functions.h
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/include/auro_interfaces/auro_interfaces/msg/detail/direction__struct.h
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/include/auro_interfaces/auro_interfaces/msg/detail/direction__type_support.h
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/include/auro_interfaces/auro_interfaces/msg/detail/item__functions.h
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/include/auro_interfaces/auro_interfaces/msg/detail/item__struct.h
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/include/auro_interfaces/auro_interfaces/msg/detail/item__type_support.h
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/include/auro_interfaces/auro_interfaces/msg/detail/item_list__functions.h
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/include/auro_interfaces/auro_interfaces/msg/detail/item_list__struct.h
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/include/auro_interfaces/auro_interfaces/msg/detail/item_list__type_support.h
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/include/auro_interfaces/auro_interfaces/msg/detail/string_with_pose__functions.h
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/include/auro_interfaces/auro_interfaces/msg/detail/string_with_pose__struct.h
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/include/auro_interfaces/auro_interfaces/msg/detail/string_with_pose__type_support.h
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/include/auro_interfaces/auro_interfaces/msg/direction.h
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/include/auro_interfaces/auro_interfaces/msg/item.h
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/include/auro_interfaces/auro_interfaces/msg/item_list.h
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/include/auro_interfaces/auro_interfaces/msg/rosidl_generator_c__visibility_control.h
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/include/auro_interfaces/auro_interfaces/msg/string_with_pose.h
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/include/auro_interfaces/auro_interfaces/srv/check_goal.h
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/include/auro_interfaces/auro_interfaces/srv/collision.h
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/include/auro_interfaces/auro_interfaces/srv/detail/check_goal__functions.h
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/include/auro_interfaces/auro_interfaces/srv/detail/check_goal__struct.h
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/include/auro_interfaces/auro_interfaces/srv/detail/check_goal__type_support.h
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/include/auro_interfaces/auro_interfaces/srv/detail/collision__functions.h
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/include/auro_interfaces/auro_interfaces/srv/detail/collision__struct.h
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/include/auro_interfaces/auro_interfaces/srv/detail/collision__type_support.h
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/include/auro_interfaces/auro_interfaces/srv/detail/find_target__functions.h
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/include/auro_interfaces/auro_interfaces/srv/detail/find_target__struct.h
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/include/auro_interfaces/auro_interfaces/srv/detail/find_target__type_support.h
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/include/auro_interfaces/auro_interfaces/srv/detail/item_request__functions.h
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/include/auro_interfaces/auro_interfaces/srv/detail/item_request__struct.h
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/include/auro_interfaces/auro_interfaces/srv/detail/item_request__type_support.h
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/include/auro_interfaces/auro_interfaces/srv/detail/rotate__functions.h
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/include/auro_interfaces/auro_interfaces/srv/detail/rotate__struct.h
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/include/auro_interfaces/auro_interfaces/srv/detail/rotate__type_support.h
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/include/auro_interfaces/auro_interfaces/srv/detail/task__functions.h
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/include/auro_interfaces/auro_interfaces/srv/detail/task__struct.h
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/include/auro_interfaces/auro_interfaces/srv/detail/task__type_support.h
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/include/auro_interfaces/auro_interfaces/srv/detail/zone_request__functions.h
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/include/auro_interfaces/auro_interfaces/srv/detail/zone_request__struct.h
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/include/auro_interfaces/auro_interfaces/srv/detail/zone_request__type_support.h
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/include/auro_interfaces/auro_interfaces/srv/find_target.h
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/include/auro_interfaces/auro_interfaces/srv/item_request.h
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/include/auro_interfaces/auro_interfaces/srv/rotate.h
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/include/auro_interfaces/auro_interfaces/srv/task.h
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/include/auro_interfaces/auro_interfaces/srv/zone_request.h
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/share/auro_interfaces/environment/library_path.sh
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/share/auro_interfaces/environment/library_path.dsv
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/include/auro_interfaces/auro_interfaces/action/detail/move__rosidl_typesupport_fastrtps_c.h
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/include/auro_interfaces/auro_interfaces/msg/detail/direction__rosidl_typesupport_fastrtps_c.h
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/include/auro_interfaces/auro_interfaces/msg/detail/item__rosidl_typesupport_fastrtps_c.h
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/include/auro_interfaces/auro_interfaces/msg/detail/item_list__rosidl_typesupport_fastrtps_c.h
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/include/auro_interfaces/auro_interfaces/msg/detail/string_with_pose__rosidl_typesupport_fastrtps_c.h
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/include/auro_interfaces/auro_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/include/auro_interfaces/auro_interfaces/srv/detail/check_goal__rosidl_typesupport_fastrtps_c.h
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/include/auro_interfaces/auro_interfaces/srv/detail/collision__rosidl_typesupport_fastrtps_c.h
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/include/auro_interfaces/auro_interfaces/srv/detail/find_target__rosidl_typesupport_fastrtps_c.h
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/include/auro_interfaces/auro_interfaces/srv/detail/item_request__rosidl_typesupport_fastrtps_c.h
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/include/auro_interfaces/auro_interfaces/srv/detail/rotate__rosidl_typesupport_fastrtps_c.h
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/include/auro_interfaces/auro_interfaces/srv/detail/task__rosidl_typesupport_fastrtps_c.h
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/include/auro_interfaces/auro_interfaces/srv/detail/zone_request__rosidl_typesupport_fastrtps_c.h
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/include/auro_interfaces/auro_interfaces/action/detail/move__builder.hpp
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/include/auro_interfaces/auro_interfaces/action/detail/move__struct.hpp
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/include/auro_interfaces/auro_interfaces/action/detail/move__traits.hpp
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/include/auro_interfaces/auro_interfaces/action/move.hpp
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/include/auro_interfaces/auro_interfaces/msg/detail/direction__builder.hpp
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/include/auro_interfaces/auro_interfaces/msg/detail/direction__struct.hpp
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/include/auro_interfaces/auro_interfaces/msg/detail/direction__traits.hpp
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/include/auro_interfaces/auro_interfaces/msg/detail/item__builder.hpp
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/include/auro_interfaces/auro_interfaces/msg/detail/item__struct.hpp
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/include/auro_interfaces/auro_interfaces/msg/detail/item__traits.hpp
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/include/auro_interfaces/auro_interfaces/msg/detail/item_list__builder.hpp
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/include/auro_interfaces/auro_interfaces/msg/detail/item_list__struct.hpp
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/include/auro_interfaces/auro_interfaces/msg/detail/item_list__traits.hpp
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/include/auro_interfaces/auro_interfaces/msg/detail/string_with_pose__builder.hpp
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/include/auro_interfaces/auro_interfaces/msg/detail/string_with_pose__struct.hpp
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/include/auro_interfaces/auro_interfaces/msg/detail/string_with_pose__traits.hpp
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/include/auro_interfaces/auro_interfaces/msg/direction.hpp
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/include/auro_interfaces/auro_interfaces/msg/item.hpp
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/include/auro_interfaces/auro_interfaces/msg/item_list.hpp
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/include/auro_interfaces/auro_interfaces/msg/string_with_pose.hpp
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/include/auro_interfaces/auro_interfaces/srv/check_goal.hpp
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/include/auro_interfaces/auro_interfaces/srv/collision.hpp
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/include/auro_interfaces/auro_interfaces/srv/detail/check_goal__builder.hpp
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/include/auro_interfaces/auro_interfaces/srv/detail/check_goal__struct.hpp
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/include/auro_interfaces/auro_interfaces/srv/detail/check_goal__traits.hpp
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/include/auro_interfaces/auro_interfaces/srv/detail/collision__builder.hpp
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/include/auro_interfaces/auro_interfaces/srv/detail/collision__struct.hpp
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/include/auro_interfaces/auro_interfaces/srv/detail/collision__traits.hpp
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/include/auro_interfaces/auro_interfaces/srv/detail/find_target__builder.hpp
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/include/auro_interfaces/auro_interfaces/srv/detail/find_target__struct.hpp
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/include/auro_interfaces/auro_interfaces/srv/detail/find_target__traits.hpp
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/include/auro_interfaces/auro_interfaces/srv/detail/item_request__builder.hpp
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/include/auro_interfaces/auro_interfaces/srv/detail/item_request__struct.hpp
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/include/auro_interfaces/auro_interfaces/srv/detail/item_request__traits.hpp
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/include/auro_interfaces/auro_interfaces/srv/detail/rotate__builder.hpp
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/include/auro_interfaces/auro_interfaces/srv/detail/rotate__struct.hpp
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/include/auro_interfaces/auro_interfaces/srv/detail/rotate__traits.hpp
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/include/auro_interfaces/auro_interfaces/srv/detail/task__builder.hpp
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/include/auro_interfaces/auro_interfaces/srv/detail/task__struct.hpp
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/include/auro_interfaces/auro_interfaces/srv/detail/task__traits.hpp
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/include/auro_interfaces/auro_interfaces/srv/detail/zone_request__builder.hpp
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/include/auro_interfaces/auro_interfaces/srv/detail/zone_request__struct.hpp
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/include/auro_interfaces/auro_interfaces/srv/detail/zone_request__traits.hpp
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/include/auro_interfaces/auro_interfaces/srv/find_target.hpp
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/include/auro_interfaces/auro_interfaces/srv/item_request.hpp
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/include/auro_interfaces/auro_interfaces/srv/rotate.hpp
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/include/auro_interfaces/auro_interfaces/srv/task.hpp
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/include/auro_interfaces/auro_interfaces/srv/zone_request.hpp
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/include/auro_interfaces/auro_interfaces/action/detail/move__rosidl_typesupport_fastrtps_cpp.hpp
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/include/auro_interfaces/auro_interfaces/msg/detail/direction__rosidl_typesupport_fastrtps_cpp.hpp
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/include/auro_interfaces/auro_interfaces/msg/detail/item__rosidl_typesupport_fastrtps_cpp.hpp
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/include/auro_interfaces/auro_interfaces/msg/detail/item_list__rosidl_typesupport_fastrtps_cpp.hpp
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/include/auro_interfaces/auro_interfaces/msg/detail/string_with_pose__rosidl_typesupport_fastrtps_cpp.hpp
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/include/auro_interfaces/auro_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/include/auro_interfaces/auro_interfaces/srv/detail/check_goal__rosidl_typesupport_fastrtps_cpp.hpp
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/include/auro_interfaces/auro_interfaces/srv/detail/collision__rosidl_typesupport_fastrtps_cpp.hpp
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/include/auro_interfaces/auro_interfaces/srv/detail/find_target__rosidl_typesupport_fastrtps_cpp.hpp
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/include/auro_interfaces/auro_interfaces/srv/detail/item_request__rosidl_typesupport_fastrtps_cpp.hpp
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/include/auro_interfaces/auro_interfaces/srv/detail/rotate__rosidl_typesupport_fastrtps_cpp.hpp
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/include/auro_interfaces/auro_interfaces/srv/detail/task__rosidl_typesupport_fastrtps_cpp.hpp
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/include/auro_interfaces/auro_interfaces/srv/detail/zone_request__rosidl_typesupport_fastrtps_cpp.hpp
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/include/auro_interfaces/auro_interfaces/action/detail/move__rosidl_typesupport_introspection_c.h
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/include/auro_interfaces/auro_interfaces/msg/detail/direction__rosidl_typesupport_introspection_c.h
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/include/auro_interfaces/auro_interfaces/msg/detail/item__rosidl_typesupport_introspection_c.h
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/include/auro_interfaces/auro_interfaces/msg/detail/item_list__rosidl_typesupport_introspection_c.h
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/include/auro_interfaces/auro_interfaces/msg/detail/string_with_pose__rosidl_typesupport_introspection_c.h
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/include/auro_interfaces/auro_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/include/auro_interfaces/auro_interfaces/srv/detail/check_goal__rosidl_typesupport_introspection_c.h
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/include/auro_interfaces/auro_interfaces/srv/detail/collision__rosidl_typesupport_introspection_c.h
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/include/auro_interfaces/auro_interfaces/srv/detail/find_target__rosidl_typesupport_introspection_c.h
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/include/auro_interfaces/auro_interfaces/srv/detail/item_request__rosidl_typesupport_introspection_c.h
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/include/auro_interfaces/auro_interfaces/srv/detail/rotate__rosidl_typesupport_introspection_c.h
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/include/auro_interfaces/auro_interfaces/srv/detail/task__rosidl_typesupport_introspection_c.h
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/include/auro_interfaces/auro_interfaces/srv/detail/zone_request__rosidl_typesupport_introspection_c.h
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/include/auro_interfaces/auro_interfaces/action/detail/move__rosidl_typesupport_introspection_cpp.hpp
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/include/auro_interfaces/auro_interfaces/msg/detail/direction__rosidl_typesupport_introspection_cpp.hpp
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/include/auro_interfaces/auro_interfaces/msg/detail/item__rosidl_typesupport_introspection_cpp.hpp
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/include/auro_interfaces/auro_interfaces/msg/detail/item_list__rosidl_typesupport_introspection_cpp.hpp
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/include/auro_interfaces/auro_interfaces/msg/detail/string_with_pose__rosidl_typesupport_introspection_cpp.hpp
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/include/auro_interfaces/auro_interfaces/srv/detail/check_goal__rosidl_typesupport_introspection_cpp.hpp
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/include/auro_interfaces/auro_interfaces/srv/detail/collision__rosidl_typesupport_introspection_cpp.hpp
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/include/auro_interfaces/auro_interfaces/srv/detail/find_target__rosidl_typesupport_introspection_cpp.hpp
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/include/auro_interfaces/auro_interfaces/srv/detail/item_request__rosidl_typesupport_introspection_cpp.hpp
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/include/auro_interfaces/auro_interfaces/srv/detail/rotate__rosidl_typesupport_introspection_cpp.hpp
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/include/auro_interfaces/auro_interfaces/srv/detail/task__rosidl_typesupport_introspection_cpp.hpp
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/include/auro_interfaces/auro_interfaces/srv/detail/zone_request__rosidl_typesupport_introspection_cpp.hpp
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/share/auro_interfaces/environment/pythonpath.sh
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/share/auro_interfaces/environment/pythonpath.dsv
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/local/lib/python3.10/dist-packages/auro_interfaces-0.0.0-py3.10.egg-info/PKG-INFO
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/local/lib/python3.10/dist-packages/auro_interfaces-0.0.0-py3.10.egg-info/SOURCES.txt
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/local/lib/python3.10/dist-packages/auro_interfaces-0.0.0-py3.10.egg-info/dependency_links.txt
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/local/lib/python3.10/dist-packages/auro_interfaces-0.0.0-py3.10.egg-info/top_level.txt
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/local/lib/python3.10/dist-packages/auro_interfaces/__init__.py
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/local/lib/python3.10/dist-packages/auro_interfaces/_auro_interfaces_s.ep.rosidl_typesupport_c.c
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/local/lib/python3.10/dist-packages/auro_interfaces/_auro_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/local/lib/python3.10/dist-packages/auro_interfaces/_auro_interfaces_s.ep.rosidl_typesupport_introspection_c.c
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/local/lib/python3.10/dist-packages/auro_interfaces/action/__init__.py
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/local/lib/python3.10/dist-packages/auro_interfaces/action/_move.py
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/local/lib/python3.10/dist-packages/auro_interfaces/action/_move_s.c
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/local/lib/python3.10/dist-packages/auro_interfaces/auro_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/local/lib/python3.10/dist-packages/auro_interfaces/auro_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/local/lib/python3.10/dist-packages/auro_interfaces/auro_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/local/lib/python3.10/dist-packages/auro_interfaces/libauro_interfaces__rosidl_generator_py.so
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/local/lib/python3.10/dist-packages/auro_interfaces/msg/__init__.py
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/local/lib/python3.10/dist-packages/auro_interfaces/msg/_direction.py
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/local/lib/python3.10/dist-packages/auro_interfaces/msg/_direction_s.c
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/local/lib/python3.10/dist-packages/auro_interfaces/msg/_item.py
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/local/lib/python3.10/dist-packages/auro_interfaces/msg/_item_list.py
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/local/lib/python3.10/dist-packages/auro_interfaces/msg/_item_list_s.c
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/local/lib/python3.10/dist-packages/auro_interfaces/msg/_item_s.c
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/local/lib/python3.10/dist-packages/auro_interfaces/msg/_string_with_pose.py
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/local/lib/python3.10/dist-packages/auro_interfaces/msg/_string_with_pose_s.c
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/local/lib/python3.10/dist-packages/auro_interfaces/srv/__init__.py
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/local/lib/python3.10/dist-packages/auro_interfaces/srv/_check_goal.py
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/local/lib/python3.10/dist-packages/auro_interfaces/srv/_check_goal_s.c
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/local/lib/python3.10/dist-packages/auro_interfaces/srv/_collision.py
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/local/lib/python3.10/dist-packages/auro_interfaces/srv/_collision_s.c
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/local/lib/python3.10/dist-packages/auro_interfaces/srv/_find_target.py
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/local/lib/python3.10/dist-packages/auro_interfaces/srv/_find_target_s.c
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/local/lib/python3.10/dist-packages/auro_interfaces/srv/_item_request.py
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/local/lib/python3.10/dist-packages/auro_interfaces/srv/_item_request_s.c
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/local/lib/python3.10/dist-packages/auro_interfaces/srv/_rotate.py
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/local/lib/python3.10/dist-packages/auro_interfaces/srv/_rotate_s.c
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/local/lib/python3.10/dist-packages/auro_interfaces/srv/_task.py
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/local/lib/python3.10/dist-packages/auro_interfaces/srv/_task_s.c
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/local/lib/python3.10/dist-packages/auro_interfaces/srv/_zone_request.py
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/local/lib/python3.10/dist-packages/auro_interfaces/srv/_zone_request_s.c
+-- Up-to-date symlink: /home/auro/AURO-Revised/install/auro_interfaces/local/lib/python3.10/dist-packages/auro_interfaces/auro_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+-- Up-to-date symlink: /home/auro/AURO-Revised/install/auro_interfaces/local/lib/python3.10/dist-packages/auro_interfaces/auro_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+-- Up-to-date symlink: /home/auro/AURO-Revised/install/auro_interfaces/local/lib/python3.10/dist-packages/auro_interfaces/auro_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/share/auro_interfaces/msg/StringWithPose.idl
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/share/auro_interfaces/msg/Item.idl
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/share/auro_interfaces/msg/ItemList.idl
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/share/auro_interfaces/msg/Direction.idl
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/share/auro_interfaces/srv/ItemRequest.idl
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/share/auro_interfaces/srv/ZoneRequest.idl
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/share/auro_interfaces/srv/Collision.idl
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/share/auro_interfaces/action/Move.idl
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/share/auro_interfaces/srv/CheckGoal.idl
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/share/auro_interfaces/srv/Rotate.idl
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/share/auro_interfaces/srv/Task.idl
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/share/auro_interfaces/srv/FindTarget.idl
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/share/auro_interfaces/msg/StringWithPose.msg
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/share/auro_interfaces/msg/Item.msg
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/share/auro_interfaces/msg/ItemList.msg
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/share/auro_interfaces/msg/Direction.msg
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/share/auro_interfaces/srv/ItemRequest.srv
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/share/auro_interfaces/srv/ItemRequest_Request.msg
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/share/auro_interfaces/srv/ItemRequest_Response.msg
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/share/auro_interfaces/srv/ZoneRequest.srv
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/share/auro_interfaces/srv/ZoneRequest_Request.msg
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/share/auro_interfaces/srv/ZoneRequest_Response.msg
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/share/auro_interfaces/srv/Collision.srv
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/share/auro_interfaces/srv/Collision_Request.msg
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/share/auro_interfaces/srv/Collision_Response.msg
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/share/auro_interfaces/action/Move.action
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/share/auro_interfaces/srv/CheckGoal.srv
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/share/auro_interfaces/srv/CheckGoal_Request.msg
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/share/auro_interfaces/srv/CheckGoal_Response.msg
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/share/auro_interfaces/srv/Rotate.srv
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/share/auro_interfaces/srv/Rotate_Request.msg
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/share/auro_interfaces/srv/Rotate_Response.msg
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/share/auro_interfaces/srv/Task.srv
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/share/auro_interfaces/srv/Task_Request.msg
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/share/auro_interfaces/srv/Task_Response.msg
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/share/auro_interfaces/srv/FindTarget.srv
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/share/auro_interfaces/srv/FindTarget_Request.msg
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/share/auro_interfaces/srv/FindTarget_Response.msg
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/share/ament_index/resource_index/package_run_dependencies/auro_interfaces
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/share/ament_index/resource_index/parent_prefix_path/auro_interfaces
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/share/auro_interfaces/environment/ament_prefix_path.sh
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/share/auro_interfaces/environment/ament_prefix_path.dsv
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/share/auro_interfaces/environment/path.sh
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/share/auro_interfaces/environment/path.dsv
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/share/auro_interfaces/local_setup.bash
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/share/auro_interfaces/local_setup.sh
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/share/auro_interfaces/local_setup.zsh
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/share/auro_interfaces/local_setup.dsv
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/share/auro_interfaces/package.dsv
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/share/ament_index/resource_index/packages/auro_interfaces
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/share/auro_interfaces/cmake/rosidl_cmake-extras.cmake
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/share/auro_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/share/auro_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/share/auro_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/share/auro_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/share/auro_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/share/auro_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/share/auro_interfaces/cmake/auro_interfacesConfig.cmake
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/share/auro_interfaces/cmake/auro_interfacesConfig-version.cmake
+-- Symlinking: /home/auro/AURO-Revised/install/auro_interfaces/share/auro_interfaces/package.xml
+-- Installing: /home/auro/AURO-Revised/install/auro_interfaces/lib/libauro_interfaces__rosidl_generator_c.so
+-- Set runtime path of "/home/auro/AURO-Revised/install/auro_interfaces/lib/libauro_interfaces__rosidl_generator_c.so" to ""
+-- Installing: /home/auro/AURO-Revised/install/auro_interfaces/lib/libauro_interfaces__rosidl_typesupport_fastrtps_c.so
+-- Set runtime path of "/home/auro/AURO-Revised/install/auro_interfaces/lib/libauro_interfaces__rosidl_typesupport_fastrtps_c.so" to ""
+-- Installing: /home/auro/AURO-Revised/install/auro_interfaces/lib/libauro_interfaces__rosidl_typesupport_fastrtps_cpp.so
+-- Set runtime path of "/home/auro/AURO-Revised/install/auro_interfaces/lib/libauro_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""
+-- Installing: /home/auro/AURO-Revised/install/auro_interfaces/lib/libauro_interfaces__rosidl_typesupport_introspection_c.so
+-- Set runtime path of "/home/auro/AURO-Revised/install/auro_interfaces/lib/libauro_interfaces__rosidl_typesupport_introspection_c.so" to ""
+-- Installing: /home/auro/AURO-Revised/install/auro_interfaces/lib/libauro_interfaces__rosidl_typesupport_c.so
+-- Set runtime path of "/home/auro/AURO-Revised/install/auro_interfaces/lib/libauro_interfaces__rosidl_typesupport_c.so" to ""
+-- Installing: /home/auro/AURO-Revised/install/auro_interfaces/lib/libauro_interfaces__rosidl_typesupport_introspection_cpp.so
+-- Set runtime path of "/home/auro/AURO-Revised/install/auro_interfaces/lib/libauro_interfaces__rosidl_typesupport_introspection_cpp.so" to ""
+-- Installing: /home/auro/AURO-Revised/install/auro_interfaces/lib/libauro_interfaces__rosidl_typesupport_cpp.so
+-- Set runtime path of "/home/auro/AURO-Revised/install/auro_interfaces/lib/libauro_interfaces__rosidl_typesupport_cpp.so" to ""
+Listing '/home/auro/AURO-Revised/install/auro_interfaces/local/lib/python3.10/dist-packages/auro_interfaces'...
+Compiling '/home/auro/AURO-Revised/install/auro_interfaces/local/lib/python3.10/dist-packages/auro_interfaces/__init__.py'...
+Listing '/home/auro/AURO-Revised/install/auro_interfaces/local/lib/python3.10/dist-packages/auro_interfaces/action'...
+Compiling '/home/auro/AURO-Revised/install/auro_interfaces/local/lib/python3.10/dist-packages/auro_interfaces/action/__init__.py'...
+Compiling '/home/auro/AURO-Revised/install/auro_interfaces/local/lib/python3.10/dist-packages/auro_interfaces/action/_move.py'...
+Listing '/home/auro/AURO-Revised/install/auro_interfaces/local/lib/python3.10/dist-packages/auro_interfaces/msg'...
+Compiling '/home/auro/AURO-Revised/install/auro_interfaces/local/lib/python3.10/dist-packages/auro_interfaces/msg/__init__.py'...
+Compiling '/home/auro/AURO-Revised/install/auro_interfaces/local/lib/python3.10/dist-packages/auro_interfaces/msg/_direction.py'...
+Compiling '/home/auro/AURO-Revised/install/auro_interfaces/local/lib/python3.10/dist-packages/auro_interfaces/msg/_item.py'...
+Compiling '/home/auro/AURO-Revised/install/auro_interfaces/local/lib/python3.10/dist-packages/auro_interfaces/msg/_item_list.py'...
+Compiling '/home/auro/AURO-Revised/install/auro_interfaces/local/lib/python3.10/dist-packages/auro_interfaces/msg/_string_with_pose.py'...
+Listing '/home/auro/AURO-Revised/install/auro_interfaces/local/lib/python3.10/dist-packages/auro_interfaces/srv'...
+Compiling '/home/auro/AURO-Revised/install/auro_interfaces/local/lib/python3.10/dist-packages/auro_interfaces/srv/__init__.py'...
+Compiling '/home/auro/AURO-Revised/install/auro_interfaces/local/lib/python3.10/dist-packages/auro_interfaces/srv/_check_goal.py'...
+Compiling '/home/auro/AURO-Revised/install/auro_interfaces/local/lib/python3.10/dist-packages/auro_interfaces/srv/_collision.py'...
+Compiling '/home/auro/AURO-Revised/install/auro_interfaces/local/lib/python3.10/dist-packages/auro_interfaces/srv/_find_target.py'...
+Compiling '/home/auro/AURO-Revised/install/auro_interfaces/local/lib/python3.10/dist-packages/auro_interfaces/srv/_item_request.py'...
+Compiling '/home/auro/AURO-Revised/install/auro_interfaces/local/lib/python3.10/dist-packages/auro_interfaces/srv/_rotate.py'...
+Compiling '/home/auro/AURO-Revised/install/auro_interfaces/local/lib/python3.10/dist-packages/auro_interfaces/srv/_task.py'...
+Compiling '/home/auro/AURO-Revised/install/auro_interfaces/local/lib/python3.10/dist-packages/auro_interfaces/srv/_zone_request.py'...
+-- Installing: /home/auro/AURO-Revised/install/auro_interfaces/lib/libauro_interfaces__rosidl_generator_py.so
+-- Set runtime path of "/home/auro/AURO-Revised/install/auro_interfaces/lib/libauro_interfaces__rosidl_generator_py.so" to ""
+-- Installing: /home/auro/AURO-Revised/install/auro_interfaces/share/auro_interfaces/cmake/export_auro_interfaces__rosidl_generator_cExport.cmake
+-- Installing: /home/auro/AURO-Revised/install/auro_interfaces/share/auro_interfaces/cmake/export_auro_interfaces__rosidl_generator_cExport-noconfig.cmake
+-- Installing: /home/auro/AURO-Revised/install/auro_interfaces/share/auro_interfaces/cmake/export_auro_interfaces__rosidl_typesupport_fastrtps_cExport.cmake
+-- Installing: /home/auro/AURO-Revised/install/auro_interfaces/share/auro_interfaces/cmake/export_auro_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+-- Installing: /home/auro/AURO-Revised/install/auro_interfaces/share/auro_interfaces/cmake/export_auro_interfaces__rosidl_generator_cppExport.cmake
+-- Installing: /home/auro/AURO-Revised/install/auro_interfaces/share/auro_interfaces/cmake/export_auro_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake
+-- Installing: /home/auro/AURO-Revised/install/auro_interfaces/share/auro_interfaces/cmake/export_auro_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+-- Installing: /home/auro/AURO-Revised/install/auro_interfaces/share/auro_interfaces/cmake/auro_interfaces__rosidl_typesupport_introspection_cExport.cmake
+-- Installing: /home/auro/AURO-Revised/install/auro_interfaces/share/auro_interfaces/cmake/auro_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+-- Installing: /home/auro/AURO-Revised/install/auro_interfaces/share/auro_interfaces/cmake/auro_interfaces__rosidl_typesupport_cExport.cmake
+-- Installing: /home/auro/AURO-Revised/install/auro_interfaces/share/auro_interfaces/cmake/auro_interfaces__rosidl_typesupport_cExport-noconfig.cmake
+-- Installing: /home/auro/AURO-Revised/install/auro_interfaces/share/auro_interfaces/cmake/auro_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+-- Installing: /home/auro/AURO-Revised/install/auro_interfaces/share/auro_interfaces/cmake/auro_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+-- Installing: /home/auro/AURO-Revised/install/auro_interfaces/share/auro_interfaces/cmake/auro_interfaces__rosidl_typesupport_cppExport.cmake
+-- Installing: /home/auro/AURO-Revised/install/auro_interfaces/share/auro_interfaces/cmake/auro_interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+-- Installing: /home/auro/AURO-Revised/install/auro_interfaces/share/auro_interfaces/cmake/export_auro_interfaces__rosidl_generator_pyExport.cmake
+-- Installing: /home/auro/AURO-Revised/install/auro_interfaces/share/auro_interfaces/cmake/export_auro_interfaces__rosidl_generator_pyExport-noconfig.cmake

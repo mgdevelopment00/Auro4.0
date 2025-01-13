@@ -1,1 +1,1 @@
-/home/auro/Auro_Revised/assessment/setup.py
+/home/auro/AURO-Revised/assessment/setup.py

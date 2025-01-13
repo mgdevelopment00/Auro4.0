@@ -1,5 +1,5 @@
 CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/auro_interfaces/_auro_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o: \
- /home/auro/Auro_Revised/build/auro_interfaces/rosidl_generator_py/auro_interfaces/_auro_interfaces_s.ep.rosidl_typesupport_introspection_c.c \
+ /home/auro/AURO-Revised/build/auro_interfaces/rosidl_generator_py/auro_interfaces/_auro_interfaces_s.ep.rosidl_typesupport_introspection_c.c \
  /usr/include/stdc-predef.h /usr/include/python3.10/Python.h \
  /usr/include/python3.10/patchlevel.h /usr/include/python3.10/pyconfig.h \
  /usr/include/x86_64-linux-gnu/python3.10/pyconfig.h \
@@ -201,47 +201,47 @@ CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl
  /opt/ros/humble/include/rosidl_typesupport_interface/rosidl_typesupport_interface/macros.h \
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/service_type_support_struct.h \
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/action_type_support_struct.h \
- /home/auro/Auro_Revised/build/auro_interfaces/rosidl_generator_c/auro_interfaces/msg/detail/string_with_pose__type_support.h \
- /home/auro/Auro_Revised/build/auro_interfaces/rosidl_generator_c/auro_interfaces/msg/rosidl_generator_c__visibility_control.h \
- /home/auro/Auro_Revised/build/auro_interfaces/rosidl_generator_c/auro_interfaces/msg/detail/string_with_pose__struct.h \
+ /home/auro/AURO-Revised/build/auro_interfaces/rosidl_generator_c/auro_interfaces/msg/detail/string_with_pose__type_support.h \
+ /home/auro/AURO-Revised/build/auro_interfaces/rosidl_generator_c/auro_interfaces/msg/rosidl_generator_c__visibility_control.h \
+ /home/auro/AURO-Revised/build/auro_interfaces/rosidl_generator_c/auro_interfaces/msg/detail/string_with_pose__struct.h \
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/string.h \
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose__struct.h \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__struct.h \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__struct.h \
- /home/auro/Auro_Revised/build/auro_interfaces/rosidl_generator_c/auro_interfaces/msg/detail/string_with_pose__functions.h \
- /home/auro/Auro_Revised/build/auro_interfaces/rosidl_generator_c/auro_interfaces/msg/detail/item__type_support.h \
- /home/auro/Auro_Revised/build/auro_interfaces/rosidl_generator_c/auro_interfaces/msg/detail/item__struct.h \
- /home/auro/Auro_Revised/build/auro_interfaces/rosidl_generator_c/auro_interfaces/msg/detail/item__functions.h \
- /home/auro/Auro_Revised/build/auro_interfaces/rosidl_generator_c/auro_interfaces/msg/detail/item_list__type_support.h \
- /home/auro/Auro_Revised/build/auro_interfaces/rosidl_generator_c/auro_interfaces/msg/detail/item_list__struct.h \
- /home/auro/Auro_Revised/build/auro_interfaces/rosidl_generator_c/auro_interfaces/msg/detail/item_list__functions.h \
- /home/auro/Auro_Revised/build/auro_interfaces/rosidl_generator_c/auro_interfaces/msg/detail/direction__type_support.h \
- /home/auro/Auro_Revised/build/auro_interfaces/rosidl_generator_c/auro_interfaces/msg/detail/direction__struct.h \
- /home/auro/Auro_Revised/build/auro_interfaces/rosidl_generator_c/auro_interfaces/msg/detail/direction__functions.h \
- /home/auro/Auro_Revised/build/auro_interfaces/rosidl_generator_c/auro_interfaces/srv/detail/item_request__type_support.h \
- /home/auro/Auro_Revised/build/auro_interfaces/rosidl_generator_c/auro_interfaces/srv/detail/item_request__struct.h \
- /home/auro/Auro_Revised/build/auro_interfaces/rosidl_generator_c/auro_interfaces/srv/detail/item_request__functions.h \
- /home/auro/Auro_Revised/build/auro_interfaces/rosidl_generator_c/auro_interfaces/srv/detail/zone_request__type_support.h \
- /home/auro/Auro_Revised/build/auro_interfaces/rosidl_generator_c/auro_interfaces/srv/detail/zone_request__struct.h \
- /home/auro/Auro_Revised/build/auro_interfaces/rosidl_generator_c/auro_interfaces/srv/detail/zone_request__functions.h \
- /home/auro/Auro_Revised/build/auro_interfaces/rosidl_generator_c/auro_interfaces/srv/detail/collision__type_support.h \
- /home/auro/Auro_Revised/build/auro_interfaces/rosidl_generator_c/auro_interfaces/srv/detail/collision__struct.h \
- /home/auro/Auro_Revised/build/auro_interfaces/rosidl_generator_c/auro_interfaces/srv/detail/collision__functions.h \
- /home/auro/Auro_Revised/build/auro_interfaces/rosidl_generator_c/auro_interfaces/srv/detail/check_goal__type_support.h \
- /home/auro/Auro_Revised/build/auro_interfaces/rosidl_generator_c/auro_interfaces/srv/detail/check_goal__struct.h \
- /home/auro/Auro_Revised/build/auro_interfaces/rosidl_generator_c/auro_interfaces/srv/detail/check_goal__functions.h \
- /home/auro/Auro_Revised/build/auro_interfaces/rosidl_generator_c/auro_interfaces/srv/detail/rotate__type_support.h \
- /home/auro/Auro_Revised/build/auro_interfaces/rosidl_generator_c/auro_interfaces/srv/detail/rotate__struct.h \
- /home/auro/Auro_Revised/build/auro_interfaces/rosidl_generator_c/auro_interfaces/srv/detail/rotate__functions.h \
- /home/auro/Auro_Revised/build/auro_interfaces/rosidl_generator_c/auro_interfaces/srv/detail/task__type_support.h \
- /home/auro/Auro_Revised/build/auro_interfaces/rosidl_generator_c/auro_interfaces/srv/detail/task__struct.h \
- /home/auro/Auro_Revised/build/auro_interfaces/rosidl_generator_c/auro_interfaces/srv/detail/task__functions.h \
- /home/auro/Auro_Revised/build/auro_interfaces/rosidl_generator_c/auro_interfaces/srv/detail/find_target__type_support.h \
- /home/auro/Auro_Revised/build/auro_interfaces/rosidl_generator_c/auro_interfaces/srv/detail/find_target__struct.h \
- /home/auro/Auro_Revised/build/auro_interfaces/rosidl_generator_c/auro_interfaces/srv/detail/find_target__functions.h \
- /home/auro/Auro_Revised/build/auro_interfaces/rosidl_generator_c/auro_interfaces/action/detail/move__type_support.h \
- /home/auro/Auro_Revised/build/auro_interfaces/rosidl_generator_c/auro_interfaces/action/detail/move__struct.h \
+ /home/auro/AURO-Revised/build/auro_interfaces/rosidl_generator_c/auro_interfaces/msg/detail/string_with_pose__functions.h \
+ /home/auro/AURO-Revised/build/auro_interfaces/rosidl_generator_c/auro_interfaces/msg/detail/item__type_support.h \
+ /home/auro/AURO-Revised/build/auro_interfaces/rosidl_generator_c/auro_interfaces/msg/detail/item__struct.h \
+ /home/auro/AURO-Revised/build/auro_interfaces/rosidl_generator_c/auro_interfaces/msg/detail/item__functions.h \
+ /home/auro/AURO-Revised/build/auro_interfaces/rosidl_generator_c/auro_interfaces/msg/detail/item_list__type_support.h \
+ /home/auro/AURO-Revised/build/auro_interfaces/rosidl_generator_c/auro_interfaces/msg/detail/item_list__struct.h \
+ /home/auro/AURO-Revised/build/auro_interfaces/rosidl_generator_c/auro_interfaces/msg/detail/item_list__functions.h \
+ /home/auro/AURO-Revised/build/auro_interfaces/rosidl_generator_c/auro_interfaces/msg/detail/direction__type_support.h \
+ /home/auro/AURO-Revised/build/auro_interfaces/rosidl_generator_c/auro_interfaces/msg/detail/direction__struct.h \
+ /home/auro/AURO-Revised/build/auro_interfaces/rosidl_generator_c/auro_interfaces/msg/detail/direction__functions.h \
+ /home/auro/AURO-Revised/build/auro_interfaces/rosidl_generator_c/auro_interfaces/srv/detail/item_request__type_support.h \
+ /home/auro/AURO-Revised/build/auro_interfaces/rosidl_generator_c/auro_interfaces/srv/detail/item_request__struct.h \
+ /home/auro/AURO-Revised/build/auro_interfaces/rosidl_generator_c/auro_interfaces/srv/detail/item_request__functions.h \
+ /home/auro/AURO-Revised/build/auro_interfaces/rosidl_generator_c/auro_interfaces/srv/detail/zone_request__type_support.h \
+ /home/auro/AURO-Revised/build/auro_interfaces/rosidl_generator_c/auro_interfaces/srv/detail/zone_request__struct.h \
+ /home/auro/AURO-Revised/build/auro_interfaces/rosidl_generator_c/auro_interfaces/srv/detail/zone_request__functions.h \
+ /home/auro/AURO-Revised/build/auro_interfaces/rosidl_generator_c/auro_interfaces/srv/detail/collision__type_support.h \
+ /home/auro/AURO-Revised/build/auro_interfaces/rosidl_generator_c/auro_interfaces/srv/detail/collision__struct.h \
+ /home/auro/AURO-Revised/build/auro_interfaces/rosidl_generator_c/auro_interfaces/srv/detail/collision__functions.h \
+ /home/auro/AURO-Revised/build/auro_interfaces/rosidl_generator_c/auro_interfaces/srv/detail/check_goal__type_support.h \
+ /home/auro/AURO-Revised/build/auro_interfaces/rosidl_generator_c/auro_interfaces/srv/detail/check_goal__struct.h \
+ /home/auro/AURO-Revised/build/auro_interfaces/rosidl_generator_c/auro_interfaces/srv/detail/check_goal__functions.h \
+ /home/auro/AURO-Revised/build/auro_interfaces/rosidl_generator_c/auro_interfaces/srv/detail/rotate__type_support.h \
+ /home/auro/AURO-Revised/build/auro_interfaces/rosidl_generator_c/auro_interfaces/srv/detail/rotate__struct.h \
+ /home/auro/AURO-Revised/build/auro_interfaces/rosidl_generator_c/auro_interfaces/srv/detail/rotate__functions.h \
+ /home/auro/AURO-Revised/build/auro_interfaces/rosidl_generator_c/auro_interfaces/srv/detail/task__type_support.h \
+ /home/auro/AURO-Revised/build/auro_interfaces/rosidl_generator_c/auro_interfaces/srv/detail/task__struct.h \
+ /home/auro/AURO-Revised/build/auro_interfaces/rosidl_generator_c/auro_interfaces/srv/detail/task__functions.h \
+ /home/auro/AURO-Revised/build/auro_interfaces/rosidl_generator_c/auro_interfaces/srv/detail/find_target__type_support.h \
+ /home/auro/AURO-Revised/build/auro_interfaces/rosidl_generator_c/auro_interfaces/srv/detail/find_target__struct.h \
+ /home/auro/AURO-Revised/build/auro_interfaces/rosidl_generator_c/auro_interfaces/srv/detail/find_target__functions.h \
+ /home/auro/AURO-Revised/build/auro_interfaces/rosidl_generator_c/auro_interfaces/action/detail/move__type_support.h \
+ /home/auro/AURO-Revised/build/auro_interfaces/rosidl_generator_c/auro_interfaces/action/detail/move__struct.h \
  /opt/ros/humble/include/unique_identifier_msgs/unique_identifier_msgs/msg/detail/uuid__struct.h \
  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.h \
- /home/auro/Auro_Revised/build/auro_interfaces/rosidl_generator_c/auro_interfaces/action/detail/move__functions.h
+ /home/auro/AURO-Revised/build/auro_interfaces/rosidl_generator_c/auro_interfaces/action/detail/move__functions.h

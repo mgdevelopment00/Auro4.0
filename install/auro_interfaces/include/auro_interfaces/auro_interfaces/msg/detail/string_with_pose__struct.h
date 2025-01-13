@@ -1,1 +1,1 @@
-/home/auro/Auro_Revised/build/auro_interfaces/rosidl_generator_c/auro_interfaces/msg/detail/string_with_pose__struct.h
+/home/auro/AURO-Revised/build/auro_interfaces/rosidl_generator_c/auro_interfaces/msg/detail/string_with_pose__struct.h

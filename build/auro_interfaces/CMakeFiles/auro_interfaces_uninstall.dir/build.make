@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/auro/Auro_Revised/auro_interfaces
+CMAKE_SOURCE_DIR = /home/auro/AURO-Revised/auro_interfaces
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/auro/Auro_Revised/build/auro_interfaces
+CMAKE_BINARY_DIR = /home/auro/AURO-Revised/build/auro_interfaces
 
 # Utility rule file for auro_interfaces_uninstall.
 
@@ -67,7 +67,7 @@ include CMakeFiles/auro_interfaces_uninstall.dir/compiler_depend.make
 include CMakeFiles/auro_interfaces_uninstall.dir/progress.make
 
 CMakeFiles/auro_interfaces_uninstall:
-	/usr/bin/cmake -P /home/auro/Auro_Revised/build/auro_interfaces/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
+	/usr/bin/cmake -P /home/auro/AURO-Revised/build/auro_interfaces/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
 
 auro_interfaces_uninstall: CMakeFiles/auro_interfaces_uninstall
 auro_interfaces_uninstall: CMakeFiles/auro_interfaces_uninstall.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/auro_interfaces_uninstall.dir/clean:
 .PHONY : CMakeFiles/auro_interfaces_uninstall.dir/clean
 
 CMakeFiles/auro_interfaces_uninstall.dir/depend:
-	cd /home/auro/Auro_Revised/build/auro_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/auro/Auro_Revised/auro_interfaces /home/auro/Auro_Revised/auro_interfaces /home/auro/Auro_Revised/build/auro_interfaces /home/auro/Auro_Revised/build/auro_interfaces /home/auro/Auro_Revised/build/auro_interfaces/CMakeFiles/auro_interfaces_uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/auro/AURO-Revised/build/auro_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/auro/AURO-Revised/auro_interfaces /home/auro/AURO-Revised/auro_interfaces /home/auro/AURO-Revised/build/auro_interfaces /home/auro/AURO-Revised/build/auro_interfaces /home/auro/AURO-Revised/build/auro_interfaces/CMakeFiles/auro_interfaces_uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/auro_interfaces_uninstall.dir/depend
 

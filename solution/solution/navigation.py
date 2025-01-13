@@ -50,7 +50,7 @@ class Navigation(Node):
         self.tf_listener = TransformListener(self.tf_buffer, self)
         
         if self.robot_name == "robot1":
-           self.colour = "GREEN"
+           self.colour = "BLUE"
         elif self.robot_name == "robot2":
            self.colour = "RED"
         elif self.robot_name == "robot3":
@@ -181,7 +181,7 @@ class Navigation(Node):
                self.send_find_target_request()
                self.state = State.IDLE
            elif self.previous_state == State.AVOID_COLLISION:
-               self.state = State.GOING_TO_ZONE
+               self.state = State.GO_TO_ZONE
            elif self.previous_state == State.ON_RANDOM_WALK:
                self.send_find_target_request()
                self.state = State.IDLE
@@ -192,15 +192,15 @@ class Navigation(Node):
     def collision_callback(self, future):
        result = future.result()
        if self.previous_ball[0] == None:
-           self.previous_ball[0] = self.x + 0.2
-           self.previous_ball[1] = self.y + 0.2
+           self.previous_ball[0] = self.x
+           self.previous_ball[1] = self.y
 
        if result.success:
            self.collision_direction = result.direction
            self.state = State.AVOID_COLLISION
        else:
-           self.previous_ball[0] = self.x + 0.2
-           self.previous_ball[1] = self.y + 0.2
+           self.previous_ball[0] = self.x
+           self.previous_ball[1] = self.y
            self.state = State.GO_TO_ZONE
            
            
@@ -229,7 +229,7 @@ class Navigation(Node):
          
     def calculate_distance(self, perceived_diameter):
         self.logger.info((self.ball_diameter * 530.4)/perceived_diameter + 0.25)
-        return (self.ball_diameter * 530.4)/perceived_diameter + 0.25
+        return (self.ball_diameter * 530.4)/perceived_diameter + 0.35
         
         
     def pick_up_callback(self, future):

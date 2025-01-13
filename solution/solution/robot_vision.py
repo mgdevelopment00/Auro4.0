@@ -45,7 +45,7 @@ class RobotVision(Node):
         self.colour = None
         
         if self.robot_name == "robot1":
-           self.colour = "GREEN"
+           self.colour = "BLUE"
         elif self.robot_name == "robot2":
            self.colour = "RED"
         elif self.robot_name == "robot3":
@@ -152,7 +152,7 @@ class RobotVision(Node):
         
     
     def calculate_distance(self, perceived_diameter):
-        return (self.ball_diameter * 530.4)/perceived_diameter + 0.25
+        return (self.ball_diameter * 530.4)/perceived_diameter
         
     def is_ball_collected(self, x, y):
         for item in self.collected_balls:
@@ -191,10 +191,10 @@ class RobotVision(Node):
     
     def control_loop(self):
         data = self.items
-        
-        
+        self.logger.info(data)
+         
         match self.state:
-        
+            
             case State.FIND_TARGET:
                 
                 self.logger.info("Finding Target")
@@ -220,10 +220,12 @@ class RobotVision(Node):
                        if self.time_difference(self.get_clock().now(), self.last_moved) > 20:
                            self.send_navigation_task("random_walk", -1.0)
                            return
-                    elif not self.found_first_ball and self.time_difference(self.get_clock().now(), self.start_time) > 10:
+                    
+                    if not self.found_first_ball and self.rotate_count == 77:
                        self.send_navigation_task("random_walk", -1.0)
                        return
-                    elif colour != self.colour or self.is_ball_collected(calculated_x, calculated_y):
+                    
+                    if colour != self.colour or self.is_ball_collected(calculated_x, calculated_y):
                         continue
                     
                         

@@ -1,4 +1,4 @@
 import sys
 if sys.prefix == '/usr':
     sys.real_prefix = sys.prefix
-    sys.prefix = sys.exec_prefix = '/home/auro/Auro_Revised/install/tf_relay'
+    sys.prefix = sys.exec_prefix = '/home/auro/AURO-Revised/install/tf_relay'

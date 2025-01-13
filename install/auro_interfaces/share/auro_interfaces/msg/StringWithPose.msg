@@ -1,1 +1,1 @@
-/home/auro/Auro_Revised/auro_interfaces/msg/StringWithPose.msg
+/home/auro/AURO-Revised/auro_interfaces/msg/StringWithPose.msg

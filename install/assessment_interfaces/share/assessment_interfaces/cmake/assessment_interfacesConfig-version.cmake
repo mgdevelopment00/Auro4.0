@@ -1,1 +1,1 @@
-/home/auro/Auro_Revised/build/assessment_interfaces/ament_cmake_core/assessment_interfacesConfig-version.cmake
+/home/auro/AURO-Revised/build/assessment_interfaces/ament_cmake_core/assessment_interfacesConfig-version.cmake

@@ -1,1 +1,1 @@
-/home/auro/Auro_Revised/build/assessment_interfaces/rosidl_generator_cpp/assessment_interfaces/msg/detail/robot_list__traits.hpp
+/home/auro/AURO-Revised/build/assessment_interfaces/rosidl_generator_cpp/assessment_interfaces/msg/detail/robot_list__traits.hpp
