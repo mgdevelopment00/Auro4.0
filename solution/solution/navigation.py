@@ -50,7 +50,7 @@ class Navigation(Node):
         self.tf_listener = TransformListener(self.tf_buffer, self)
         
         if self.robot_name == "robot1":
-           self.colour = "BLUE"
+           self.colour = "GREEN"
         elif self.robot_name == "robot2":
            self.colour = "RED"
         elif self.robot_name == "robot3":

@@ -45,7 +45,7 @@ class RobotVision(Node):
         self.colour = None
         
         if self.robot_name == "robot1":
-           self.colour = "BLUE"
+           self.colour = "GREEN"
         elif self.robot_name == "robot2":
            self.colour = "RED"
         elif self.robot_name == "robot3":
@@ -191,13 +191,12 @@ class RobotVision(Node):
     
     def control_loop(self):
         data = self.items
-        self.logger.info(data)
          
         match self.state:
             
             case State.FIND_TARGET:
                 
-                self.logger.info("Finding Target")
+                self.logger.info("rotate count: " + str(self.rotate_count))
                 
                 if self.time_difference(self.get_clock().now(), self.start_time) < self.load_up_time:
                      return
@@ -221,7 +220,7 @@ class RobotVision(Node):
                            self.send_navigation_task("random_walk", -1.0)
                            return
                     
-                    if not self.found_first_ball and self.rotate_count == 77:
+                    if not self.found_first_ball and abs(self.rotate_count) == 600:
                        self.send_navigation_task("random_walk", -1.0)
                        return
                     
@@ -259,6 +258,7 @@ class RobotVision(Node):
     
             case State.ALIGNED_WITH_TARGET:
                 self.logger.info("Aligned with target")
+                self.found_first_ball = True
                 self.set_to_busy(State.ALIGNED_WITH_TARGET)
                 self.send_navigation_task("move_to_target", self.target_diameter)
 
