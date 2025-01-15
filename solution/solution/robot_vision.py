@@ -32,18 +32,6 @@ class RobotVision(Node):
         self.declare_parameter("robot_name", "default")
         self.robot_name = self.get_parameter("robot_name").get_parameter_value().string_value
 
-        self.logger = logging.getLogger('vision ' + self.robot_name)
-        self.logger.setLevel(logging.DEBUG)
-        current_directory = os.getcwd()
-        log_file_path = os.path.join(current_directory, 'robot_vision' + self.robot_name + '.log')
-        handler = logging.FileHandler(log_file_path)
-        handler.setLevel(logging.DEBUG)
-        formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
-        handler.setFormatter(formatter)
-        self.logger.addHandler(handler)
-        
-        
-        
         self.declare_parameter('x', 0.0)
         self.declare_parameter('y', 0.0)
         self.declare_parameter('yaw', 0.0)
@@ -95,7 +83,8 @@ class RobotVision(Node):
         self.current_ball_colour = None
 
         while not self.rotate_client.wait_for_service(timeout_sec=1.0):
-            self.logger.info("waiting for rotate")
+            #self.logger.info("waiting for rotate")
+            pass
         
         self.create_timer(0.1, self.control_loop)
             
@@ -124,7 +113,7 @@ class RobotVision(Node):
                 self.rotation_direction = None
                 
         except Exception as e:
-            self.logger.info(e)
+            #self.logger.info(e)
             pass
         finally:
 
@@ -138,9 +127,10 @@ class RobotVision(Node):
         
         if result:
            self.last_moved = self.get_clock().now()
-           self.logger.info("Navigation started")
+           #self.logger.info("Navigation started")
         else:
-           self.logger.info("Navigation failed to start")
+           #self.logger.info("Navigation failed to start")
+           pass
         
     
     def item_callback(self, msg):
@@ -200,7 +190,7 @@ class RobotVision(Node):
             
             case State.FIND_TARGET:
                 
-                self.logger.info("rotate count: " + str(self.rotate_count))
+                #self.logger.info("rotate count: " + str(self.rotate_count))
                 
                 #if self.time_difference(self.get_clock().now(), self.start_time) < self.load_up_time:
                      #return
@@ -275,14 +265,14 @@ class RobotVision(Node):
                     
     
             case State.ALIGNED_WITH_TARGET:
-                self.logger.info("Aligned with target")
+                #self.logger.info("Aligned with target")
                 self.found_first_ball = True
                 self.set_to_busy(State.ALIGNED_WITH_TARGET)
                 self.send_navigation_task("move_to_target", self.target_diameter, self.current_ball_colour)
 
             # Runs when the robot cannot see a ball
             case State.NO_BALL_IN_SIGHT:
-                self.logger.info("No ball in sight")
+                #self.logger.info("No ball in sight")
                 self.set_to_busy(State.NO_BALL_IN_SIGHT)
                 request = Rotate.Request()
                 self.rotation_direction = "left"

@@ -1,255 +1,59 @@
-2025-01-15 22:12:47,470 - vision robot3 - INFO - waiting for rotate
-2025-01-15 22:12:48,483 - vision robot3 - INFO - waiting for rotate
-2025-01-15 22:12:49,546 - vision robot3 - INFO - waiting for rotate
-2025-01-15 22:12:50,594 - vision robot3 - INFO - waiting for rotate
-2025-01-15 22:12:51,609 - vision robot3 - INFO - waiting for rotate
-2025-01-15 22:12:52,639 - vision robot3 - INFO - waiting for rotate
-2025-01-15 22:12:53,665 - vision robot3 - INFO - waiting for rotate
-2025-01-15 22:12:54,685 - vision robot3 - INFO - waiting for rotate
-2025-01-15 22:12:55,723 - vision robot3 - INFO - waiting for rotate
-2025-01-15 22:12:56,751 - vision robot3 - INFO - waiting for rotate
-2025-01-15 22:12:57,787 - vision robot3 - INFO - waiting for rotate
-2025-01-15 22:12:58,837 - vision robot3 - INFO - waiting for rotate
-2025-01-15 22:12:59,890 - vision robot3 - INFO - waiting for rotate
-2025-01-15 22:13:00,972 - vision robot3 - INFO - waiting for rotate
-2025-01-15 22:13:02,015 - vision robot3 - INFO - waiting for rotate
-2025-01-15 22:13:03,030 - vision robot3 - INFO - waiting for rotate
-2025-01-15 22:13:04,040 - vision robot3 - INFO - waiting for rotate
-2025-01-15 22:13:05,069 - vision robot3 - INFO - waiting for rotate
-2025-01-15 22:13:06,206 - vision robot3 - INFO - waiting for rotate
-2025-01-15 22:13:07,229 - vision robot3 - INFO - waiting for rotate
-2025-01-15 22:13:08,262 - vision robot3 - INFO - waiting for rotate
-2025-01-15 22:13:09,308 - vision robot3 - INFO - waiting for rotate
-2025-01-15 22:13:10,337 - vision robot3 - INFO - waiting for rotate
-2025-01-15 22:13:11,377 - vision robot3 - INFO - waiting for rotate
-2025-01-15 22:13:12,415 - vision robot3 - INFO - waiting for rotate
-2025-01-15 22:13:13,454 - vision robot3 - INFO - waiting for rotate
-2025-01-15 22:13:14,505 - vision robot3 - INFO - waiting for rotate
-2025-01-15 22:13:15,558 - vision robot3 - INFO - waiting for rotate
-2025-01-15 22:13:16,598 - vision robot3 - INFO - waiting for rotate
-2025-01-15 22:13:16,852 - vision robot3 - INFO - rotate count: 0
-2025-01-15 22:13:17,354 - vision robot3 - INFO - No ball in sight
-2025-01-15 22:13:18,412 - vision robot3 - INFO - rotate count: -1
-2025-01-15 22:13:20,222 - vision robot3 - INFO - No ball in sight
-2025-01-15 22:13:20,553 - vision robot3 - INFO - rotate count: -2
-2025-01-15 22:13:21,121 - vision robot3 - INFO - No ball in sight
-2025-01-15 22:13:21,672 - vision robot3 - INFO - rotate count: -3
-2025-01-15 22:13:22,458 - vision robot3 - INFO - No ball in sight
-2025-01-15 22:13:23,554 - vision robot3 - INFO - rotate count: -4
-2025-01-15 22:13:24,230 - vision robot3 - INFO - No ball in sight
-2025-01-15 22:13:25,365 - vision robot3 - INFO - rotate count: -5
-2025-01-15 22:13:26,717 - vision robot3 - INFO - No ball in sight
-2025-01-15 22:13:28,024 - vision robot3 - INFO - rotate count: -6
-2025-01-15 22:13:29,404 - vision robot3 - INFO - No ball in sight
-2025-01-15 22:13:30,539 - vision robot3 - INFO - rotate count: -7
-2025-01-15 22:13:32,241 - vision robot3 - INFO - No ball in sight
-2025-01-15 22:13:32,788 - vision robot3 - INFO - rotate count: -8
-2025-01-15 22:13:33,702 - vision robot3 - INFO - No ball in sight
-2025-01-15 22:13:35,953 - vision robot3 - INFO - rotate count: -9
-2025-01-15 22:13:36,793 - vision robot3 - INFO - No ball in sight
-2025-01-15 22:13:38,136 - vision robot3 - INFO - rotate count: -10
-2025-01-15 22:13:39,156 - vision robot3 - INFO - No ball in sight
-2025-01-15 22:13:39,594 - vision robot3 - INFO - rotate count: -11
-2025-01-15 22:13:40,175 - vision robot3 - INFO - No ball in sight
-2025-01-15 22:13:42,700 - vision robot3 - INFO - rotate count: -12
-2025-01-15 22:13:43,499 - vision robot3 - INFO - No ball in sight
-2025-01-15 22:13:45,044 - vision robot3 - INFO - rotate count: -13
-2025-01-15 22:13:45,442 - vision robot3 - INFO - No ball in sight
-2025-01-15 22:13:46,448 - vision robot3 - INFO - rotate count: -14
-2025-01-15 22:13:48,518 - vision robot3 - INFO - No ball in sight
-2025-01-15 22:13:49,513 - vision robot3 - INFO - rotate count: -15
-2025-01-15 22:13:50,783 - vision robot3 - INFO - No ball in sight
-2025-01-15 22:13:53,101 - vision robot3 - INFO - rotate count: -16
-2025-01-15 22:13:54,362 - vision robot3 - INFO - No ball in sight
-2025-01-15 22:13:55,303 - vision robot3 - INFO - rotate count: -17
-2025-01-15 22:13:56,563 - vision robot3 - INFO - No ball in sight
-2025-01-15 22:13:58,044 - vision robot3 - INFO - rotate count: -18
-2025-01-15 22:13:59,707 - vision robot3 - INFO - No ball in sight
-2025-01-15 22:14:01,345 - vision robot3 - INFO - rotate count: -19
-2025-01-15 22:14:02,287 - vision robot3 - INFO - No ball in sight
-2025-01-15 22:14:04,505 - vision robot3 - INFO - rotate count: -20
-2025-01-15 22:14:05,551 - vision robot3 - INFO - No ball in sight
-2025-01-15 22:14:06,993 - vision robot3 - INFO - rotate count: -21
-2025-01-15 22:14:07,974 - vision robot3 - INFO - No ball in sight
-2025-01-15 22:14:09,454 - vision robot3 - INFO - rotate count: -22
-2025-01-15 22:14:10,813 - vision robot3 - INFO - No ball in sight
-2025-01-15 22:14:12,033 - vision robot3 - INFO - rotate count: -23
-2025-01-15 22:14:12,329 - vision robot3 - INFO - No ball in sight
-2025-01-15 22:14:13,299 - vision robot3 - INFO - rotate count: -24
-2025-01-15 22:14:14,058 - vision robot3 - INFO - No ball in sight
-2025-01-15 22:14:15,633 - vision robot3 - INFO - rotate count: -25
-2025-01-15 22:14:17,900 - vision robot3 - INFO - No ball in sight
-2025-01-15 22:14:19,336 - vision robot3 - INFO - rotate count: -26
-2025-01-15 22:14:20,815 - vision robot3 - INFO - No ball in sight
-2025-01-15 22:14:21,612 - vision robot3 - INFO - rotate count: -27
-2025-01-15 22:14:22,273 - vision robot3 - INFO - No ball in sight
-2025-01-15 22:14:23,403 - vision robot3 - INFO - rotate count: -28
-2025-01-15 22:14:24,354 - vision robot3 - INFO - No ball in sight
-2025-01-15 22:14:25,574 - vision robot3 - INFO - rotate count: -29
-2025-01-15 22:14:26,172 - vision robot3 - INFO - No ball in sight
-2025-01-15 22:14:26,620 - vision robot3 - INFO - rotate count: -30
-2025-01-15 22:14:27,456 - vision robot3 - INFO - No ball in sight
-2025-01-15 22:14:28,036 - vision robot3 - INFO - rotate count: -31
-2025-01-15 22:14:28,679 - vision robot3 - INFO - No ball in sight
-2025-01-15 22:14:29,289 - vision robot3 - INFO - rotate count: -32
-2025-01-15 22:14:30,437 - vision robot3 - INFO - No ball in sight
-2025-01-15 22:14:31,212 - vision robot3 - INFO - rotate count: -33
-2025-01-15 22:14:31,553 - vision robot3 - INFO - No ball in sight
-2025-01-15 22:14:32,594 - vision robot3 - INFO - rotate count: -34
-2025-01-15 22:14:33,332 - vision robot3 - INFO - No ball in sight
-2025-01-15 22:14:34,359 - vision robot3 - INFO - rotate count: -35
-2025-01-15 22:14:35,191 - vision robot3 - INFO - No ball in sight
-2025-01-15 22:14:36,002 - vision robot3 - INFO - rotate count: -36
-2025-01-15 22:14:36,517 - vision robot3 - INFO - No ball in sight
-2025-01-15 22:14:37,319 - vision robot3 - INFO - rotate count: -37
-2025-01-15 22:14:38,368 - vision robot3 - INFO - No ball in sight
-2025-01-15 22:14:39,342 - vision robot3 - INFO - rotate count: -38
-2025-01-15 22:14:40,309 - vision robot3 - INFO - No ball in sight
-2025-01-15 22:14:41,077 - vision robot3 - INFO - rotate count: -39
-2025-01-15 22:14:41,890 - vision robot3 - INFO - No ball in sight
-2025-01-15 22:14:42,692 - vision robot3 - INFO - rotate count: -40
-2025-01-15 22:14:43,906 - vision robot3 - INFO - No ball in sight
-2025-01-15 22:14:45,040 - vision robot3 - INFO - rotate count: -41
-2025-01-15 22:14:46,008 - vision robot3 - INFO - No ball in sight
-2025-01-15 22:14:47,840 - vision robot3 - INFO - rotate count: -42
-2025-01-15 22:14:48,571 - vision robot3 - INFO - No ball in sight
-2025-01-15 22:14:49,760 - vision robot3 - INFO - rotate count: -43
-2025-01-15 22:14:50,392 - vision robot3 - INFO - No ball in sight
-2025-01-15 22:14:51,096 - vision robot3 - INFO - rotate count: -44
-2025-01-15 22:14:52,004 - vision robot3 - INFO - No ball in sight
-2025-01-15 22:14:52,823 - vision robot3 - INFO - rotate count: -45
-2025-01-15 22:14:53,333 - vision robot3 - INFO - No ball in sight
-2025-01-15 22:14:54,063 - vision robot3 - INFO - rotate count: -46
-2025-01-15 22:14:55,364 - vision robot3 - INFO - No ball in sight
-2025-01-15 22:14:56,707 - vision robot3 - INFO - rotate count: -47
-2025-01-15 22:14:57,145 - vision robot3 - INFO - No ball in sight
-2025-01-15 22:14:57,984 - vision robot3 - INFO - rotate count: -48
-2025-01-15 22:14:58,548 - vision robot3 - INFO - No ball in sight
-2025-01-15 22:14:59,700 - vision robot3 - INFO - rotate count: -49
-2025-01-15 22:15:00,450 - vision robot3 - INFO - No ball in sight
-2025-01-15 22:15:01,006 - vision robot3 - INFO - rotate count: -50
-2025-01-15 22:15:01,901 - vision robot3 - INFO - No ball in sight
-2025-01-15 22:15:02,598 - vision robot3 - INFO - rotate count: -51
-2025-01-15 22:15:03,886 - vision robot3 - INFO - No ball in sight
-2025-01-15 22:15:04,553 - vision robot3 - INFO - rotate count: -52
-2025-01-15 22:15:05,817 - vision robot3 - INFO - No ball in sight
-2025-01-15 22:15:06,672 - vision robot3 - INFO - rotate count: -53
-2025-01-15 22:15:07,533 - vision robot3 - INFO - No ball in sight
-2025-01-15 22:15:08,134 - vision robot3 - INFO - rotate count: -54
-2025-01-15 22:15:08,853 - vision robot3 - INFO - No ball in sight
-2025-01-15 22:15:09,367 - vision robot3 - INFO - rotate count: -55
-2025-01-15 22:15:10,144 - vision robot3 - INFO - No ball in sight
-2025-01-15 22:15:11,383 - vision robot3 - INFO - rotate count: -56
-2025-01-15 22:21:25,015 - vision robot3 - INFO - waiting for rotate
-2025-01-15 22:21:26,018 - vision robot3 - INFO - waiting for rotate
-2025-01-15 22:21:27,041 - vision robot3 - INFO - waiting for rotate
-2025-01-15 22:21:28,067 - vision robot3 - INFO - waiting for rotate
-2025-01-15 22:21:29,108 - vision robot3 - INFO - waiting for rotate
-2025-01-15 22:21:30,135 - vision robot3 - INFO - waiting for rotate
-2025-01-15 22:21:31,162 - vision robot3 - INFO - waiting for rotate
-2025-01-15 22:21:32,214 - vision robot3 - INFO - waiting for rotate
-2025-01-15 22:21:33,227 - vision robot3 - INFO - waiting for rotate
-2025-01-15 22:21:34,318 - vision robot3 - INFO - waiting for rotate
-2025-01-15 22:21:35,343 - vision robot3 - INFO - waiting for rotate
-2025-01-15 22:21:36,385 - vision robot3 - INFO - waiting for rotate
-2025-01-15 22:21:37,409 - vision robot3 - INFO - waiting for rotate
-2025-01-15 22:21:38,445 - vision robot3 - INFO - waiting for rotate
-2025-01-15 22:21:39,478 - vision robot3 - INFO - waiting for rotate
-2025-01-15 22:21:40,510 - vision robot3 - INFO - waiting for rotate
-2025-01-15 22:21:41,523 - vision robot3 - INFO - waiting for rotate
-2025-01-15 22:21:42,556 - vision robot3 - INFO - waiting for rotate
-2025-01-15 22:21:43,587 - vision robot3 - INFO - waiting for rotate
-2025-01-15 22:21:44,613 - vision robot3 - INFO - waiting for rotate
-2025-01-15 22:21:45,661 - vision robot3 - INFO - waiting for rotate
-2025-01-15 22:21:46,678 - vision robot3 - INFO - waiting for rotate
-2025-01-15 22:21:47,728 - vision robot3 - INFO - waiting for rotate
-2025-01-15 22:21:48,748 - vision robot3 - INFO - waiting for rotate
-2025-01-15 22:21:49,810 - vision robot3 - INFO - waiting for rotate
-2025-01-15 22:21:50,851 - vision robot3 - INFO - waiting for rotate
-2025-01-15 22:21:51,904 - vision robot3 - INFO - waiting for rotate
-2025-01-15 22:21:52,998 - vision robot3 - INFO - waiting for rotate
-2025-01-15 22:21:54,029 - vision robot3 - INFO - waiting for rotate
-2025-01-15 22:21:55,044 - vision robot3 - INFO - waiting for rotate
-2025-01-15 22:21:56,085 - vision robot3 - INFO - waiting for rotate
-2025-01-15 22:21:57,118 - vision robot3 - INFO - waiting for rotate
-2025-01-15 22:21:58,174 - vision robot3 - INFO - waiting for rotate
-2025-01-15 22:21:59,288 - vision robot3 - INFO - waiting for rotate
-2025-01-15 22:22:00,322 - vision robot3 - INFO - waiting for rotate
-2025-01-15 22:22:01,347 - vision robot3 - INFO - waiting for rotate
-2025-01-15 22:22:02,402 - vision robot3 - INFO - waiting for rotate
-2025-01-15 22:22:03,500 - vision robot3 - INFO - waiting for rotate
-2025-01-15 22:22:04,549 - vision robot3 - INFO - waiting for rotate
-2025-01-15 22:22:05,618 - vision robot3 - INFO - waiting for rotate
-2025-01-15 22:22:06,682 - vision robot3 - INFO - waiting for rotate
-2025-01-15 22:22:07,775 - vision robot3 - INFO - rotate count: 0
-2025-01-15 22:22:43,246 - vision robot3 - INFO - waiting for rotate
-2025-01-15 22:22:44,293 - vision robot3 - INFO - waiting for rotate
-2025-01-15 22:22:45,348 - vision robot3 - INFO - waiting for rotate
-2025-01-15 22:22:46,406 - vision robot3 - INFO - waiting for rotate
-2025-01-15 22:22:47,493 - vision robot3 - INFO - waiting for rotate
-2025-01-15 22:22:48,552 - vision robot3 - INFO - waiting for rotate
-2025-01-15 22:22:49,595 - vision robot3 - INFO - waiting for rotate
-2025-01-15 22:22:50,662 - vision robot3 - INFO - waiting for rotate
-2025-01-15 22:22:51,690 - vision robot3 - INFO - waiting for rotate
-2025-01-15 22:22:52,736 - vision robot3 - INFO - waiting for rotate
-2025-01-15 22:22:53,754 - vision robot3 - INFO - waiting for rotate
-2025-01-15 22:22:54,822 - vision robot3 - INFO - waiting for rotate
-2025-01-15 22:22:55,840 - vision robot3 - INFO - waiting for rotate
-2025-01-15 22:22:56,885 - vision robot3 - INFO - waiting for rotate
-2025-01-15 22:22:57,901 - vision robot3 - INFO - waiting for rotate
-2025-01-15 22:22:58,941 - vision robot3 - INFO - waiting for rotate
-2025-01-15 22:22:59,954 - vision robot3 - INFO - waiting for rotate
-2025-01-15 22:23:01,001 - vision robot3 - INFO - waiting for rotate
-2025-01-15 22:23:02,082 - vision robot3 - INFO - waiting for rotate
-2025-01-15 22:23:03,098 - vision robot3 - INFO - waiting for rotate
-2025-01-15 22:23:04,135 - vision robot3 - INFO - waiting for rotate
-2025-01-15 22:23:05,216 - vision robot3 - INFO - waiting for rotate
-2025-01-15 22:23:06,263 - vision robot3 - INFO - waiting for rotate
-2025-01-15 22:23:07,288 - vision robot3 - INFO - waiting for rotate
-2025-01-15 22:23:08,316 - vision robot3 - INFO - waiting for rotate
-2025-01-15 22:23:09,366 - vision robot3 - INFO - waiting for rotate
-2025-01-15 22:23:10,411 - vision robot3 - INFO - waiting for rotate
-2025-01-15 22:23:11,433 - vision robot3 - INFO - waiting for rotate
-2025-01-15 22:23:12,500 - vision robot3 - INFO - waiting for rotate
-2025-01-15 22:23:13,516 - vision robot3 - INFO - waiting for rotate
-2025-01-15 22:23:14,542 - vision robot3 - INFO - waiting for rotate
-2025-01-15 22:23:15,574 - vision robot3 - INFO - waiting for rotate
-2025-01-15 22:23:16,599 - vision robot3 - INFO - waiting for rotate
-2025-01-15 22:23:17,649 - vision robot3 - INFO - waiting for rotate
-2025-01-15 22:23:18,699 - vision robot3 - INFO - waiting for rotate
-2025-01-15 22:23:19,766 - vision robot3 - INFO - waiting for rotate
-2025-01-15 22:23:20,803 - vision robot3 - INFO - waiting for rotate
-2025-01-15 22:23:21,843 - vision robot3 - INFO - waiting for rotate
-2025-01-15 22:23:22,109 - vision robot3 - INFO - rotate count: 0
-2025-01-15 22:23:22,278 - vision robot3 - INFO - No ball in sight
-2025-01-15 22:23:23,183 - vision robot3 - INFO - rotate count: -1
-2025-01-15 22:23:24,057 - vision robot3 - INFO - No ball in sight
-2025-01-15 22:23:24,673 - vision robot3 - INFO - rotate count: -2
-2025-01-15 22:23:25,147 - vision robot3 - INFO - No ball in sight
-2025-01-15 22:23:25,989 - vision robot3 - INFO - rotate count: -3
-2025-01-15 22:23:26,774 - vision robot3 - INFO - No ball in sight
-2025-01-15 22:23:27,485 - vision robot3 - INFO - rotate count: -4
-2025-01-15 22:23:28,476 - vision robot3 - INFO - No ball in sight
-2025-01-15 22:23:29,355 - vision robot3 - INFO - rotate count: -5
-2025-01-15 22:23:30,202 - vision robot3 - INFO - No ball in sight
-2025-01-15 22:23:31,236 - vision robot3 - INFO - rotate count: -6
-2025-01-15 22:23:31,888 - vision robot3 - INFO - No ball in sight
-2025-01-15 22:23:33,158 - vision robot3 - INFO - rotate count: -7
-2025-01-15 22:23:34,456 - vision robot3 - INFO - No ball in sight
-2025-01-15 22:23:36,013 - vision robot3 - INFO - rotate count: -8
-2025-01-15 22:23:36,591 - vision robot3 - INFO - No ball in sight
-2025-01-15 22:23:38,074 - vision robot3 - INFO - rotate count: -9
-2025-01-15 22:23:39,396 - vision robot3 - INFO - No ball in sight
-2025-01-15 22:23:40,562 - vision robot3 - INFO - rotate count: -10
-2025-01-15 22:23:41,835 - vision robot3 - INFO - No ball in sight
-2025-01-15 22:23:42,364 - vision robot3 - INFO - rotate count: -11
-2025-01-15 22:23:43,486 - vision robot3 - INFO - No ball in sight
-2025-01-15 22:23:44,326 - vision robot3 - INFO - rotate count: -12
-2025-01-15 22:23:45,225 - vision robot3 - INFO - No ball in sight
-2025-01-15 22:23:46,675 - vision robot3 - INFO - rotate count: -13
-2025-01-15 22:23:47,595 - vision robot3 - INFO - No ball in sight
-2025-01-15 22:23:48,876 - vision robot3 - INFO - rotate count: -14
-2025-01-15 22:23:49,646 - vision robot3 - INFO - No ball in sight
-2025-01-15 22:23:50,311 - vision robot3 - INFO - rotate count: -15
-2025-01-15 22:23:51,565 - vision robot3 - INFO - No ball in sight
-2025-01-15 22:23:52,134 - vision robot3 - INFO - rotate count: -16
+2025-01-15 22:29:02,451 - vision robot3 - INFO - waiting for rotate
+2025-01-15 22:29:03,488 - vision robot3 - INFO - waiting for rotate
+2025-01-15 22:29:04,503 - vision robot3 - INFO - waiting for rotate
+2025-01-15 22:29:05,541 - vision robot3 - INFO - waiting for rotate
+2025-01-15 22:29:06,605 - vision robot3 - INFO - waiting for rotate
+2025-01-15 22:29:07,646 - vision robot3 - INFO - waiting for rotate
+2025-01-15 22:29:08,674 - vision robot3 - INFO - waiting for rotate
+2025-01-15 22:29:09,705 - vision robot3 - INFO - waiting for rotate
+2025-01-15 22:29:10,748 - vision robot3 - INFO - waiting for rotate
+2025-01-15 22:29:11,773 - vision robot3 - INFO - waiting for rotate
+2025-01-15 22:29:12,805 - vision robot3 - INFO - waiting for rotate
+2025-01-15 22:29:13,861 - vision robot3 - INFO - waiting for rotate
+2025-01-15 22:29:14,909 - vision robot3 - INFO - waiting for rotate
+2025-01-15 22:29:15,960 - vision robot3 - INFO - waiting for rotate
+2025-01-15 22:29:17,005 - vision robot3 - INFO - waiting for rotate
+2025-01-15 22:29:18,089 - vision robot3 - INFO - waiting for rotate
+2025-01-15 22:29:19,130 - vision robot3 - INFO - waiting for rotate
+2025-01-15 22:29:20,162 - vision robot3 - INFO - waiting for rotate
+2025-01-15 22:29:21,194 - vision robot3 - INFO - waiting for rotate
+2025-01-15 22:29:22,214 - vision robot3 - INFO - waiting for rotate
+2025-01-15 22:29:23,282 - vision robot3 - INFO - waiting for rotate
+2025-01-15 22:29:24,306 - vision robot3 - INFO - waiting for rotate
+2025-01-15 22:29:25,376 - vision robot3 - INFO - waiting for rotate
+2025-01-15 22:29:26,435 - vision robot3 - INFO - waiting for rotate
+2025-01-15 22:29:27,475 - vision robot3 - INFO - waiting for rotate
+2025-01-15 22:29:28,531 - vision robot3 - INFO - waiting for rotate
+2025-01-15 22:29:29,599 - vision robot3 - INFO - waiting for rotate
+2025-01-15 22:29:30,624 - vision robot3 - INFO - waiting for rotate
+2025-01-15 22:29:31,675 - vision robot3 - INFO - waiting for rotate
+2025-01-15 22:29:32,736 - vision robot3 - INFO - waiting for rotate
+2025-01-15 22:29:33,790 - vision robot3 - INFO - waiting for rotate
+2025-01-15 22:29:34,852 - vision robot3 - INFO - waiting for rotate
+2025-01-15 22:29:35,948 - vision robot3 - INFO - waiting for rotate
+2025-01-15 22:29:37,011 - vision robot3 - INFO - waiting for rotate
+2025-01-15 22:29:38,051 - vision robot3 - INFO - waiting for rotate
+2025-01-15 22:29:39,070 - vision robot3 - INFO - waiting for rotate
+2025-01-15 22:29:40,094 - vision robot3 - INFO - rotate count: 0
+2025-01-15 22:29:40,845 - vision robot3 - INFO - No ball in sight
+2025-01-15 22:29:41,493 - vision robot3 - INFO - rotate count: -1
+2025-01-15 22:29:42,446 - vision robot3 - INFO - No ball in sight
+2025-01-15 22:29:42,972 - vision robot3 - INFO - rotate count: -2
+2025-01-15 22:29:43,638 - vision robot3 - INFO - No ball in sight
+2025-01-15 22:29:44,541 - vision robot3 - INFO - rotate count: -3
+2025-01-15 22:29:45,259 - vision robot3 - INFO - No ball in sight
+2025-01-15 22:29:45,911 - vision robot3 - INFO - rotate count: -4
+2025-01-15 22:29:46,714 - vision robot3 - INFO - No ball in sight
+2025-01-15 22:29:47,972 - vision robot3 - INFO - rotate count: -5
+2025-01-15 22:29:49,245 - vision robot3 - INFO - No ball in sight
+2025-01-15 22:29:50,232 - vision robot3 - INFO - rotate count: -6
+2025-01-15 22:29:51,341 - vision robot3 - INFO - No ball in sight
+2025-01-15 22:29:52,147 - vision robot3 - INFO - rotate count: -7
+2025-01-15 22:29:54,112 - vision robot3 - INFO - No ball in sight
+2025-01-15 22:29:55,769 - vision robot3 - INFO - rotate count: -8
+2025-01-15 22:29:56,986 - vision robot3 - INFO - No ball in sight
+2025-01-15 22:29:57,956 - vision robot3 - INFO - rotate count: -9
+2025-01-15 22:29:58,739 - vision robot3 - INFO - No ball in sight
+2025-01-15 22:29:59,709 - vision robot3 - INFO - rotate count: -10
+2025-01-15 22:30:00,231 - vision robot3 - INFO - No ball in sight
+2025-01-15 22:30:01,127 - vision robot3 - INFO - rotate count: -11

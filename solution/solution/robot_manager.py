@@ -49,7 +49,9 @@ class RobotManager(Node):
         
            for zone in self.available_zones:
               zone_cords = self.zones.get(zone, -1)
-              distance = math.sqrt((zone_cords[0]-current_x)**2 + (zone_cords[1]-current_y)**2)
+              d1 = (zone_cords[0]-current_x)**2
+              d2 = (zone_cords[1]-current_y)**2
+              distance = math.sqrt(d1 + d2)
            
               if distance < lowest_distance:
                  lowest_distance = distance
