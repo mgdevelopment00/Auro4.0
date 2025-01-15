@@ -70,23 +70,28 @@ class RobotVision(Node):
         self.navigation_client = self.create_client(Task, '/'+ self.robot_name + '/navigate')
         self.vision_service = self.create_service(FindTarget, '/'+ self.robot_name + '/find_target', self.service_vision)
         
-        
-        # Deal with this
+        # Time that robot last moved
         self.last_moved = None
         self.found_first_ball = False
         self.start_time = self.get_clock().now()
-        self.sector = None
+        # Location of previous ball
         self.previous_ball = [None, None]
+        # Number of times that robot has rotated
         self.rotate_count = 0
+        # Diameter of ball that the robot has locked onto
         self.target_diameter = -1
         self.previous_state = None
         self.collected_balls = []
         self.balls_collected = 0
+        # Direction that the robot has rotated in
         self.rotation_direction = None
         self.load_up_time = 10
         self.state = State.FIND_TARGET
+        # Diameter of ball
         self.ball_diameter = 0.075 * 2
+        # Items that the robot can see
         self.items = None
+        # Colour of ball that the robot is locked onto
         self.current_ball_colour = None
 
         while not self.rotate_client.wait_for_service(timeout_sec=1.0):
@@ -95,7 +100,7 @@ class RobotVision(Node):
         self.create_timer(0.1, self.control_loop)
             
     
-    
+    # Service a request from robot vision to find next target
     def service_vision(self, request, response):
         if self.state == State.IDLE:
            self.state = State.FIND_TARGET
@@ -146,7 +151,7 @@ class RobotVision(Node):
        self.previous_state = state
        self.state = State.BUSY
     
-            
+    # Check if a ball that the robot can see has been collected before        
     def is_ball_collected(self, x, y):
         for item in self.collected_balls:
             collected_x = item[0]
@@ -159,27 +164,18 @@ class RobotVision(Node):
     
     def calculate_distance(self, perceived_diameter):
         return (self.ball_diameter * 530.4)/perceived_diameter
-        
-    def is_ball_collected(self, x, y):
-        for item in self.collected_balls:
-           collected_x = item[0]
-           collected_y = item[1]
-            
-           if abs(collected_x - x)  <= 0.25 and abs(collected_y - y) <= 0.25:
-                return True
-           return False
-
-        
+   
     def time_difference(self, t_a, t_b):
         return (t_a - t_b).nanoseconds / 10e9
     
-    
+    # Calculate position of ball from our rotation and predicted distance to ball
     def calculate_position(self, distance, angle):
          new_x = self.x + distance * math.cos(angle)
          new_y = self.y + distance * math.sin(angle)
          return new_x, new_y
         
-    
+    # Send navigation task to navigation node. Random walk and move to target are 
+    # wrapped up into one request to simplify things
     def send_navigation_task(self, task, diameter, colour):
         request = Task.Request()
        
@@ -211,7 +207,7 @@ class RobotVision(Node):
                 
                 self.set_to_busy(State.FIND_TARGET)
                 data = self.items
-                closest_x = math.inf
+                target_x = math.inf
                 
                 for i in range(len(data)):
                     colour = data[i].colour
@@ -222,16 +218,19 @@ class RobotVision(Node):
                     distance = self.calculate_distance(diameter)
                     calculated_x, calculated_y = self.calculate_position(distance, self.yaw)
                     
-                    
+
                     if self.last_moved:
+                       # If robot hasn't moved in 20 seconds send on random walk
                        if self.time_difference(self.get_clock().now(), self.last_moved) > 20:
                            self.send_navigation_task("random_walk", -1.0, "nil")
                            return
                     
+                    # If a robot has rotated 600 times we go on a random walk
                     if not self.found_first_ball and abs(self.rotate_count) == 600:
                        self.send_navigation_task("random_walk", -1.0, "nil")
                        return
-                       
+                    
+                    # Skip if not correct colour ball
                     if self.colour != "any" and colour != self.colour:
                        continue
                     
@@ -239,24 +238,28 @@ class RobotVision(Node):
                     if self.is_ball_collected(calculated_x, calculated_y):
                         continue
                     
-                        
-                    if abs(x) < abs(closest_x):
+                    # Check to see if the ball we are looking at is closer to the
+                    # center of the camera than current ball we have picked to lock on to    
+                    if abs(x) < abs(target_x):
                         self.target_diameter = diameter
                         chosen_diameter = diameter
-                        closest_x = x
+                        target_x = x
                         self.current_ball_colour = colour
                 
-                if closest_x == math.inf:
+                # Implies that no suitable balls in vision
+                if target_x == math.inf:
                     self.state = State.NO_BALL_IN_SIGHT
                     return
 
-                if closest_x:
-                    if abs(closest_x) >= 12:
+                if target_x:
+                   
+                   # Ball is outside threshold to be aligned with robot
+                    if abs(target_x) >= 12:
                         
                         # Right is true, left is false
                         request = Rotate.Request()
                         
-                        if closest_x < 0:
+                        if target_x < 0:
                            self.rotation_direction = "left"
                            request.direction = False
                         else:
@@ -266,6 +269,8 @@ class RobotVision(Node):
                         future = self.rotate_client.call_async(request)
                         future.add_done_callback(self.rotate_callback)
                     else:
+                        # Ball is within 12 pixel threshold of center of camera meaning we
+                        # can move to it
                         self.state = State.ALIGNED_WITH_TARGET
                     
     
@@ -275,7 +280,7 @@ class RobotVision(Node):
                 self.set_to_busy(State.ALIGNED_WITH_TARGET)
                 self.send_navigation_task("move_to_target", self.target_diameter, self.current_ball_colour)
 
- 
+            # Runs when the robot cannot see a ball
             case State.NO_BALL_IN_SIGHT:
                 self.logger.info("No ball in sight")
                 self.set_to_busy(State.NO_BALL_IN_SIGHT)

@@ -14,13 +14,17 @@ from enum import Enum
 import logging
 import os
 import time
-from builtin_interfaces.msg import Time
 
 class State(Enum):
     SET_GOAL = 0
     NAVIGATING = 1
     AT_TARGET = 2
     BUSY = 3
+    
+"""
+The RobotController provides an interface to the hardware of
+the robot and also nav2. It deals with rotating and moving the robot.
+"""
 
 class RobotController(Node):
 
@@ -29,26 +33,13 @@ class RobotController(Node):
         
         self.declare_parameter("robot_name", "default")
         self.robot_name = self.get_parameter("robot_name").get_parameter_value().string_value
-        
         self.state = State.SET_GOAL
         self.navigator = BasicNavigator()
         self.declare_parameter('x', 0.0)
         self.declare_parameter('y', 0.0)
         self.declare_parameter('yaw', 0.0)
-        
-        
-        
-        self.logger = logging.getLogger('controller ' + self.robot_name) 
-        self.logger.setLevel(logging.DEBUG)  
-        current_directory = os.getcwd()
-        log_file_path = os.path.join(current_directory, 'robot_controller' + self.robot_name + '.log') 
-        handler = logging.FileHandler(log_file_path) 
-        handler.setLevel(logging.DEBUG) 
-        formatter = logging.Formatter('') 
-        handler.setFormatter(formatter)
-        self.logger.addHandler(handler)
        
-
+        # Initial position of robot to pass to nav2. this will not be needed after its been passed to nav2
         self.x = self.get_parameter('x').get_parameter_value().double_value
         self.y = self.get_parameter('y').get_parameter_value().double_value
         self.yaw = self.get_parameter('yaw').get_parameter_value().double_value
@@ -60,17 +51,19 @@ class RobotController(Node):
         initial_pose.header.stamp = self.get_clock().now().to_msg()
         initial_pose.pose.position.x = self.x
         initial_pose.pose.position.y = self.y
-        initial_pose.pose.orientation = self.calculate_quaternion(self.yaw)
+        initial_pose.pose.orientation = self.generate_quaternion(self.yaw)
 
         self.navigator.setInitialPose(initial_pose)
         self.navigator.waitUntilNav2Active()
         self.rotation_time = 0.1  # Time to rotate (in seconds)
         self.angular_speed = 0.174/2 # Angular speed for rotation
         self.goal_reached = False
-
+        
+        
+        # Servics and topic publisher
         self.twist_publisher = self.create_publisher(Twist, 'cmd_vel', 1)
         self.rotate_service = self.create_service(Rotate, '/'+ self.robot_name + '/rotate_robot', self.service_rotate)
-        self.move_action_server = ActionServer(self, Move,  self.robot_name + '/move_robot', self.move_callback)
+        self.move_action_server = ActionServer(self, Move,  self.robot_name + '/move_robot', self.service_move)
     
     
     def goal_callback(self, goal_request):
@@ -79,15 +72,15 @@ class RobotController(Node):
          else:
             return GoalResponse.REJECT
     
-    
-    def move_callback(self, goal_handle):
+    # Services move request on action server when navigation node calls it
+    def service_move(self, goal_handle):
          result_msg = Move.Result()
          result_msg.status = "Executing"
          
-         self.logger.info("Move Callback")
+         #self.logger.info("Move Callback")
          
          if not self.state == State.BUSY:
-            self.logger.info("Running now")
+            #self.logger.info("Running now")
             self.state = State.BUSY
             target_x = goal_handle.request.x
             target_y = goal_handle.request.y
@@ -98,10 +91,12 @@ class RobotController(Node):
             goal_pose.header.stamp = self.get_clock().now().to_msg()
             goal_pose.pose.position.x = target_x
             goal_pose.pose.position.y = target_y
-            goal_pose.pose.orientation = self.calculate_quaternion(0.0)
+            goal_pose.pose.orientation = self.generate_quaternion(0.0)
             
-            self.logger.info("target x: " + str(target_x))
-            self.logger.info("target y: " + str(target_y))
+            
+            
+            #self.logger.info("target x: " + str(target_x))
+            #self.logger.info("target y: " + str(target_y))
 
             self.navigator.goToPose(goal_pose)
             self.state = State.NAVIGATING
@@ -109,7 +104,7 @@ class RobotController(Node):
          
             goal_reached = False
          
-            self.move_timer = self.create_timer(2, self.get_updates)
+            self.move_timer = self.create_timer(2, self.get_move_updates)
          
             while not self.navigator.isTaskComplete():
                 pass
@@ -132,15 +127,15 @@ class RobotController(Node):
          
          return result_msg
          
-
-    def get_updates(self):
+    # Tracks position of robot to notify navigation node
+    def get_move_updates(self):
          feedback = self.navigator.getFeedback()
          feedback_msg = Move.Feedback()
          if feedback:
              current_position = feedback.current_pose.pose.position
-             feedback_msg.progress = f'Current position: ({current_position.x}, {current_position.y}, {current_position.z})'
+             feedback_msg.progress = 'Current position: (' + str(current_position.x) + ', ' + str(current_position.y) + ', ' + str(current_position.z)
              self.goal_handle.publish_feedback(feedback_msg)
-             self.logger.info(f'Feedback: {feedback_msg.progress}')
+             #self.logger.info('Feedback: ' + feedback_msg.progress)
                
             
     def start_rotation_right(self):
@@ -167,7 +162,7 @@ class RobotController(Node):
     def service_rotate(self, request, response):
     
         if not self.rotating:
-            self.logger.info("Rotating")
+            #self.logger.info("Rotating")
             self.rotating = True
             direction = request.direction
             
@@ -183,16 +178,16 @@ class RobotController(Node):
         else:
             response.success = False
         return response
-
-    def calculate_quaternion(self, angle_degrees):
-        angle_radians = math.radians(angle_degrees)
-        quaternion = Quaternion()
-        quaternion.w = math.cos(angle_radians / 2)
-        quaternion.x = 0.0
-        quaternion.y = 0.0
-        quaternion.z = math.sin(angle_radians / 2)
-        return quaternion
-
+    
+    # Create quaternion to set robots orientation from yaw
+    def generate_quaternion(self, angle):
+        angle = math.radians(angle)
+        q = Quaternion()
+        q.x = q.y = 0.0
+        q.w, q.z = math.cos(angle/2), math.sin(angle/2)
+        return q
+    
+    
     def destroy_node(self):
         self.get_logger().info(f"Shutting down")
         self.navigator.lifecycleShutdown()

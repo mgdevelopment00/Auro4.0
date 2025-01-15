@@ -1,20 +1,10 @@
-2025-01-15 19:30:22,546 - collision_avoidance robot2 - INFO - False
-2025-01-15 19:30:22,546 - collision_avoidance robot2 - INFO - False
-2025-01-15 19:30:22,546 - collision_avoidance robot2 - INFO - False
-2025-01-15 19:30:22,547 - collision_avoidance robot2 - INFO - False
-2025-01-15 19:32:38,406 - collision_avoidance robot2 - INFO - False
-2025-01-15 19:32:38,409 - collision_avoidance robot2 - INFO - False
-2025-01-15 19:32:38,410 - collision_avoidance robot2 - INFO - False
-2025-01-15 19:32:38,410 - collision_avoidance robot2 - INFO - False
-2025-01-15 19:33:42,394 - collision_avoidance robot2 - INFO - False
-2025-01-15 19:33:42,396 - collision_avoidance robot2 - INFO - False
-2025-01-15 19:33:42,397 - collision_avoidance robot2 - INFO - False
-2025-01-15 19:33:42,398 - collision_avoidance robot2 - INFO - False
-2025-01-15 19:36:32,634 - collision_avoidance robot2 - INFO - False
-2025-01-15 19:36:32,634 - collision_avoidance robot2 - INFO - False
-2025-01-15 19:36:32,634 - collision_avoidance robot2 - INFO - False
-2025-01-15 19:36:32,634 - collision_avoidance robot2 - INFO - False
-2025-01-15 19:38:41,668 - collision_avoidance robot2 - INFO - False
-2025-01-15 19:38:41,668 - collision_avoidance robot2 - INFO - False
-2025-01-15 19:38:41,668 - collision_avoidance robot2 - INFO - False
-2025-01-15 19:38:41,668 - collision_avoidance robot2 - INFO - False
+2025-01-15 21:30:39,557 - collision_avoidance robot2 - INFO - Waiting for server
+2025-01-15 21:49:34,220 - collision_avoidance robot2 - INFO - False
+2025-01-15 21:49:34,225 - collision_avoidance robot2 - INFO - False
+2025-01-15 21:49:34,225 - collision_avoidance robot2 - INFO - False
+2025-01-15 21:49:34,225 - collision_avoidance robot2 - INFO - False
+2025-01-15 21:53:24,179 - collision_avoidance robot2 - INFO - False
+2025-01-15 21:53:24,193 - collision_avoidance robot2 - INFO - False
+2025-01-15 21:53:24,193 - collision_avoidance robot2 - INFO - False
+2025-01-15 21:53:24,194 - collision_avoidance robot2 - INFO - False
+2025-01-15 21:56:14,463 - collision_avoidance robot2 - INFO - Waiting for server

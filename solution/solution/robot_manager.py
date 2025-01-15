@@ -37,8 +37,10 @@ class RobotManager(Node):
     def service_request(self, request, response):
     
         colour = request.colour
-    
+        
+        # for solutions with 2,3 robots
         if self.num_robots != 1:
+           # Find closest free zone 
            robot_id = request.robot_id
            current_x = request.x
            current_y = request.y
@@ -58,6 +60,7 @@ class RobotManager(Node):
            response.x = chosen_zone[0]
            response.y = chosen_zone[1]
         else:
+           #1 robot response
            zone_cords = self.single_colour_zones.get(colour)
            response.x = zone_cords[0]
            response.y = zone_cords[1]

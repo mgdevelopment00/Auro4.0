@@ -1,63 +1,51 @@
-2025-01-15 19:29:21,919 - navigation robot2 - INFO - Starting: GO_TO_TARGET
-2025-01-15 19:29:22,197 - navigation robot2 - INFO - 2.9019999999999997
-2025-01-15 19:29:33,956 - navigation robot2 - INFO - Feedback: Current position: (-3.0514525457534685, -1.1480855001309418, 0.009999999999999998)
-2025-01-15 19:29:43,428 - navigation robot2 - INFO - Feedback: Current position: (-2.596812130304452, -1.340579916790178, 0.01)
-2025-01-15 19:29:54,780 - navigation robot2 - INFO - Feedback: Current position: (-2.1319501599956143, -1.5299989527572178, 0.009999999999999992)
-2025-01-15 19:30:04,607 - navigation robot2 - INFO - Feedback: Current position: (-1.6495977996171918, -1.7339128890614106, 0.01)
-2025-01-15 19:30:14,127 - navigation robot2 - INFO - Feedback: Current position: (-1.1773685288082594, -1.8750141197647907, 0.009999999999999998)
-2025-01-15 19:30:21,891 - navigation robot2 - INFO - Result: Target Reached
-2025-01-15 19:30:21,893 - navigation robot2 - INFO - Movement call back
-2025-01-15 19:30:21,893 - navigation robot2 - INFO - State.GO_TO_TARGET
-2025-01-15 19:30:23,063 - navigation robot2 - INFO - going to zone
-2025-01-15 19:30:23,074 - navigation robot2 - INFO - goal
-2025-01-15 19:30:23,457 - navigation robot2 - INFO - going to zone
-2025-01-15 19:30:34,744 - navigation robot2 - INFO - Feedback: Current position: (-0.8319175979600706, -1.953118257110724, 0.010000000000000004)
-2025-01-15 19:30:46,149 - navigation robot2 - INFO - Feedback: Current position: (-1.1998668178392138, -2.198902637721608, 0.010000000000000004)
-2025-01-15 19:30:55,286 - navigation robot2 - INFO - Feedback: Current position: (-1.676852281195843, -2.2335694573626643, 0.010000000000000002)
-2025-01-15 19:31:05,666 - navigation robot2 - INFO - Feedback: Current position: (-2.1419811930603796, -2.2263055947064565, 0.009999999999999997)
-2025-01-15 19:31:15,917 - navigation robot2 - INFO - Feedback: Current position: (-2.606998131174321, -2.2056413842859186, 0.01)
-2025-01-15 19:31:24,752 - navigation robot2 - INFO - Feedback: Current position: (-3.0975791277002207, -2.188884649416922, 0.010000000000000002)
-2025-01-15 19:31:33,155 - navigation robot2 - INFO - Feedback: Current position: (-3.288343181254685, -2.1639512177722695, 0.010000000000000002)
-2025-01-15 19:31:43,573 - navigation robot2 - INFO - Feedback: Current position: (-3.313387366106097, -2.158789930950345, 0.010000000000000004)
-2025-01-15 19:31:52,003 - navigation robot2 - INFO - Feedback: Current position: (-3.335666661241749, -2.151378887527302, 0.010000000000000002)
-2025-01-15 19:32:01,056 - navigation robot2 - INFO - Feedback: Current position: (-3.3376043243858113, -2.1442434438486426, 0.009999999999999998)
-2025-01-15 19:32:13,985 - navigation robot2 - INFO - Feedback: Current position: (-3.3553574520029437, -2.147513901642311, 0.009999999999999995)
-2025-01-15 19:32:19,491 - navigation robot2 - INFO - Result: Target Reached
-2025-01-15 19:32:19,491 - navigation robot2 - INFO - Movement call back
-2025-01-15 19:32:19,491 - navigation robot2 - INFO - State.GO_TO_ZONE
-2025-01-15 19:32:19,492 - navigation robot2 - INFO - Here
-2025-01-15 19:32:20,135 - navigation robot2 - INFO - dropped off
-2025-01-15 19:32:32,041 - navigation robot2 - INFO - Feedback: Current position: (-2.917641750887835, -2.0707317200356092, 0.009999999999999998)
-2025-01-15 19:32:41,935 - navigation robot2 - INFO - Feedback: Current position: (-2.402600472331116, -2.0639431386460356, 0.010000000000000002)
-2025-01-15 19:32:52,902 - navigation robot2 - INFO - Feedback: Current position: (-1.9035317683993789, -2.054673127019994, 0.010000000000000002)
-2025-01-15 19:33:04,560 - navigation robot2 - INFO - Feedback: Current position: (-1.413580540535206, -2.0480989114295873, 0.009999999999999998)
-2025-01-15 19:33:14,430 - navigation robot2 - INFO - Result: Target Reached
-2025-01-15 19:33:14,430 - navigation robot2 - INFO - Movement call back
-2025-01-15 19:33:14,430 - navigation robot2 - INFO - State.HEAD_TO_PREVIOUS_BALL
-2025-01-15 19:33:14,439 - navigation robot2 - INFO - Started finding target
-2025-01-15 19:33:32,253 - navigation robot2 - INFO - Starting: GO_TO_TARGET
-2025-01-15 19:33:32,263 - navigation robot2 - INFO - 0.45936842105263154
-2025-01-15 19:33:41,640 - navigation robot2 - INFO - Result: Target Reached
-2025-01-15 19:33:41,649 - navigation robot2 - INFO - Movement call back
-2025-01-15 19:33:41,653 - navigation robot2 - INFO - State.GO_TO_TARGET
-2025-01-15 19:33:42,960 - navigation robot2 - INFO - going to zone
-2025-01-15 19:33:42,983 - navigation robot2 - INFO - goal
-2025-01-15 19:33:43,429 - navigation robot2 - INFO - going to zone
-2025-01-15 19:35:03,780 - navigation robot2 - INFO - Starting: GO_TO_TARGET
-2025-01-15 19:35:03,781 - navigation robot2 - INFO - 2.239
-2025-01-15 19:35:22,820 - navigation robot2 - INFO - Feedback: Current position: (-3.0417541936158092, -0.0016436342108753358, 0.01)
-2025-01-15 19:35:38,439 - navigation robot2 - INFO - Feedback: Current position: (-2.5661304613934552, -0.012444330843792512, 0.010000000000000002)
-2025-01-15 19:36:00,344 - navigation robot2 - INFO - Feedback: Current position: (-2.05697485016592, -0.01478060394773199, 0.010000000000000002)
-2025-01-15 19:36:22,135 - navigation robot2 - INFO - Feedback: Current position: (-1.5547767918930249, -0.002695746564147422, 0.01)
-2025-01-15 19:36:31,087 - navigation robot2 - INFO - Result: Target Reached
-2025-01-15 19:36:31,088 - navigation robot2 - INFO - Movement call back
-2025-01-15 19:36:31,088 - navigation robot2 - INFO - State.GO_TO_TARGET
-2025-01-15 19:36:33,389 - navigation robot2 - INFO - going to zone
-2025-01-15 19:36:33,402 - navigation robot2 - INFO - goal
-2025-01-15 19:36:34,128 - navigation robot2 - INFO - going to zone
-2025-01-15 19:36:53,488 - navigation robot2 - INFO - Feedback: Current position: (-1.3797619165702657, 0.2641221854000188, 0.010000000000000009)
-2025-01-15 19:37:14,450 - navigation robot2 - INFO - Feedback: Current position: (-1.7813863577353803, 0.572506500892415, 0.010000000000000002)
-2025-01-15 19:37:35,388 - navigation robot2 - INFO - Feedback: Current position: (-2.1737941727060317, 0.8839240045414043, 0.010000000000000002)
-2025-01-15 19:37:58,497 - navigation robot2 - INFO - Feedback: Current position: (-2.521749712552904, 1.2507821075842376, 0.010000000000000002)
-2025-01-15 19:38:22,316 - navigation robot2 - INFO - Feedback: Current position: (-2.8828391453778464, 1.632225104747058, 0.01)
-2025-01-15 19:38:44,940 - navigation robot2 - INFO - Feedback: Current position: (-3.2505406965524952, 1.9739815882850698, 0.01)
+2025-01-15 21:32:37,194 - navigation robot2 - INFO - Starting: GO_TO_TARGET
+2025-01-15 21:32:37,355 - navigation robot2 - INFO - 2.9019999999999997
+2025-01-15 21:47:55,380 - navigation robot2 - INFO - Starting: GO_TO_TARGET
+2025-01-15 21:47:56,065 - navigation robot2 - INFO - 2.7362499999999996
+2025-01-15 21:48:17,963 - navigation robot2 - INFO - Feedback: Current position: (-3.0656870329298873, -1.1470923666167663, 0.010000000000000002
+2025-01-15 21:48:33,564 - navigation robot2 - INFO - Feedback: Current position: (-2.6081849314804213, -1.3357556653372187, 0.009999999999999998
+2025-01-15 21:48:49,946 - navigation robot2 - INFO - Feedback: Current position: (-2.1361852742574126, -1.5330890578933403, 0.010000000000000002
+2025-01-15 21:49:07,302 - navigation robot2 - INFO - Feedback: Current position: (-1.661861136896586, -1.7231460784308437, 0.010000000000000002
+2025-01-15 21:49:25,568 - navigation robot2 - INFO - Feedback: Current position: (-1.1699785773829392, -1.860364195663155, 0.010000000000000002
+2025-01-15 21:49:33,101 - navigation robot2 - INFO - Result: Target Reached
+2025-01-15 21:49:33,102 - navigation robot2 - INFO - Movement call back
+2025-01-15 21:49:33,102 - navigation robot2 - INFO - State.GO_TO_TARGET
+2025-01-15 21:49:34,831 - navigation robot2 - INFO - going to zone
+2025-01-15 21:49:34,916 - navigation robot2 - INFO - goal
+2025-01-15 21:49:35,600 - navigation robot2 - INFO - going to zone
+2025-01-15 21:49:54,561 - navigation robot2 - INFO - Feedback: Current position: (-0.9738460704941474, -1.9721465529812745, 0.010000000000000004
+2025-01-15 21:50:14,916 - navigation robot2 - INFO - Feedback: Current position: (-1.3721368087278143, -2.2276371227755565, 0.010000000000000004
+2025-01-15 21:50:30,594 - navigation robot2 - INFO - Feedback: Current position: (-1.8880569850264222, -2.274786187214004, 0.01
+2025-01-15 21:50:44,194 - navigation robot2 - INFO - Feedback: Current position: (-2.3550818842699948, -2.285278926073665, 0.01
+2025-01-15 21:50:58,222 - navigation robot2 - INFO - Feedback: Current position: (-2.856224439265279, -2.2445310401367773, 0.01
+2025-01-15 21:51:14,423 - navigation robot2 - INFO - Feedback: Current position: (-3.1996950721470556, -2.2219201819830827, 0.010000000000000002
+2025-01-15 21:51:27,888 - navigation robot2 - INFO - Feedback: Current position: (-3.300848588351145, -2.1981480495935655, 0.009999999999999998
+2025-01-15 21:51:42,094 - navigation robot2 - INFO - Feedback: Current position: (-3.347480882184356, -2.1920843203289992, 0.01
+2025-01-15 21:51:49,297 - navigation robot2 - INFO - Result: Target Reached
+2025-01-15 21:51:49,297 - navigation robot2 - INFO - Movement call back
+2025-01-15 21:51:49,297 - navigation robot2 - INFO - State.GO_TO_ZONE
+2025-01-15 21:51:49,297 - navigation robot2 - INFO - Here
+2025-01-15 21:51:49,686 - navigation robot2 - INFO - dropped off
+2025-01-15 21:52:02,594 - navigation robot2 - INFO - Feedback: Current position: (-2.9168237430816077, -2.129336154596751, 0.01
+2025-01-15 21:52:15,721 - navigation robot2 - INFO - Feedback: Current position: (-2.43518053971897, -2.115075976090988, 0.009999999999999998
+2025-01-15 21:52:29,060 - navigation robot2 - INFO - Feedback: Current position: (-1.9881594376106964, -2.080664784014238, 0.01
+2025-01-15 21:52:41,200 - navigation robot2 - INFO - Feedback: Current position: (-1.5193252418530476, -2.037104038980104, 0.010000000000000002
+2025-01-15 21:52:53,995 - navigation robot2 - INFO - Feedback: Current position: (-1.234317971988229, -1.9287343610143197, 0.01
+2025-01-15 21:53:08,637 - navigation robot2 - INFO - Feedback: Current position: (-1.2344331105675184, -1.9264555418250766, 0.009999999999999998
+2025-01-15 21:53:22,715 - navigation robot2 - INFO - Feedback: Current position: (-1.2344331851812331, -1.9264555601220559, 0.01
+2025-01-15 21:53:36,634 - navigation robot2 - INFO - Result: Target Reached
+2025-01-15 21:53:36,650 - navigation robot2 - INFO - Movement call back
+2025-01-15 21:53:36,653 - navigation robot2 - INFO - State.HEAD_TO_PREVIOUS_BALL
+2025-01-15 21:53:36,675 - navigation robot2 - INFO - Started finding target
+2025-01-15 21:58:10,857 - navigation robot2 - INFO - Starting: GO_TO_TARGET
+2025-01-15 21:58:11,620 - navigation robot2 - INFO - 2.7362499999999996
+2025-01-15 22:13:23,601 - navigation robot2 - INFO - Starting: GO_TO_TARGET
+2025-01-15 22:13:23,603 - navigation robot2 - INFO - 2.239
+2025-01-15 22:13:46,663 - navigation robot2 - INFO - Feedback: Current position: (-3.0494253348620877, -9.19115506046593e-05, 0.01
+2025-01-15 22:14:13,472 - navigation robot2 - INFO - Feedback: Current position: (-2.57929503581752, -0.005374955216938836, 0.01
+2025-01-15 22:14:32,741 - navigation robot2 - INFO - Feedback: Current position: (-2.079749295628544, -0.019989381250921732, 0.01
+2025-01-15 22:14:51,208 - navigation robot2 - INFO - Feedback: Current position: (-1.579943193787356, -0.014991474674755225, 0.010000000000000002
+2025-01-15 22:15:00,798 - navigation robot2 - INFO - Result:  Target Reached
+2025-01-15 22:15:02,578 - navigation robot2 - INFO - going to zone
+2025-01-15 22:15:02,666 - navigation robot2 - INFO - goal
+2025-01-15 22:15:03,884 - navigation robot2 - INFO - going to zone

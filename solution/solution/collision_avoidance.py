@@ -33,6 +33,7 @@ class CollisionAvoidance(Node):
     def __init__(self):
         super().__init__('collision_avoidance')
         
+        # Get scan data
         self.scan_subscriber = self.create_subscription(
             LaserScan,
             '/robot1/scan',
@@ -46,48 +47,38 @@ class CollisionAvoidance(Node):
         self.costmap = None
         self.costmap_information = None
         
-        self.logger = logging.getLogger('collision_avoidance ' + self.robot_name)
-        self.logger.setLevel(logging.DEBUG)
-        current_directory = os.getcwd()
-        log_file_path = os.path.join(current_directory, 'collision_avoidance'  + self.robot_name + '.log')
-        handler = logging.FileHandler(log_file_path)
-        handler.setLevel(logging.DEBUG)
-        formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
-        handler.setFormatter(formatter)
-        self.logger.addHandler(handler)
-        
-
         self.avoidance_server = self.create_service(Collision, '/collision_avoidance', self.service_collision)
         self.check_costmap_service = self.create_service(CheckGoal, '/check_goal', self.service_check_goal) # come back
         self.costmap_client = self.create_client(GetCostmap, '/' + self.robot_name + '/global_costmap/get_costmap')
         
         while not self.costmap_client.wait_for_service(timeout_sec=1.0):
-            self.logger.info("Waiting for server")
+            pass
         
         self.create_timer(30.0, self.get_costmap)
             
     
     def service_check_goal(self, request, response):
-       self.logger.info(self.costmap)
        if self.costmap == None:
           response.obstacle = True
           return response
-    
+       
+       # x and y points of the 
        x = request.x
        y = request.y
        info = self.costmap_information
+       # index of point we are looking for in costmap
        point = int((y-info.origin.position.y)/info.resolution) * info.size_x + int((x-info.origin.position.x)/info.resolution)
        cost = self.costmap.data[point]
         
        #Not in obstacle
        if cost <= 110:
           response.obstacle = False
-       else:
+       else: 
           response.obstacle = True
         
        return response
             
-            
+    # store cost map
     def get_costmap(self):
         request = GetCostmap.Request()
         future = self.costmap_client.call_async(request)
@@ -100,10 +91,11 @@ class CollisionAvoidance(Node):
            self.costmap = result.map
            self.costmap_information = result.map.metadata
         else:
-           self.logger.info("Error retrieving map")
+           #self.logger.info("Error retrieving map")
+           pass
      
         
-        
+    # Check to see if any of the directions is too close to an obstacle
     def scan_callback(self, msg):
         front_ranges = msg.ranges[331:359] + msg.ranges[0:30]
         left_ranges  = msg.ranges[31:90]
@@ -116,13 +108,10 @@ class CollisionAvoidance(Node):
         self.scan_triggered[SCAN_RIGHT] = min(right_ranges) < SCAN_THRESHOLD
         
 
-    
+    # Return the direction that robot is too close to obstacle
     def service_collision(self, request, response):
         response.success = False
         response.direction = ""
-        
-        for item in self.scan_triggered:
-           self.logger.info(item)
         
         if self.scan_triggered[SCAN_FRONT]:
            response.success = True 

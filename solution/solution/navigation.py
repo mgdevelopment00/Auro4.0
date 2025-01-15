@@ -51,6 +51,7 @@ class Navigation(Node):
         self.tf_buffer = Buffer()
         self.tf_listener = TransformListener(self.tf_buffer, self)
         
+        # Setting colours that robots are meant to collect
         if self.num_robots == 1:
            self.colour = "any"
         else:
@@ -63,11 +64,15 @@ class Navigation(Node):
         
         
         self.control_loop_rate = 1/10
+        # Assigned zone that robot is to drop ball in
         self.zone = None
         self.previous_state = None
         self.state = State.IDLE
+        # X component of point that robot will move to in random walk
         self.random_walk_x = None
+        # Y component of random walk
         self.random_walk_y = None
+        # Diameter of ball that 
         self.diameter = None
         self.ball_diameter = 0.075*2
         self.collected_balls = []
@@ -75,26 +80,22 @@ class Navigation(Node):
         self.previous_ball = [None, None]
         self.current_ball_colour = None
 
-        self.logger = logging.getLogger('navigation ' + self.robot_name)
-        self.logger.setLevel(logging.DEBUG)
-        current_directory = os.getcwd()
-        log_file_path = os.path.join(current_directory, 'navigation' + self.robot_name + '.log')
-        handler = logging.FileHandler(log_file_path)
-        handler.setLevel(logging.DEBUG)
-        formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
-        handler.setFormatter(formatter)
-        self.logger.addHandler(handler)
-
+        # Client to access robot controller
         self.move_client = ActionClient(self, Move, self.robot_name + '/move_robot')
         self.odom_subscriber = self.create_subscription(Odometry, '/' + self.robot_name + '/odom', self.odom_callback, 10)
+        # Service to check costmap in 
         self.check_costmap_client = self.create_client(CheckGoal, '/check_goal')
+        # Service to access navigation
         self.task_service = self.create_service(Task, '/request_service', self.service_task)
-        self.manager_client = self.create_client(ZoneRequest, '/zone_service')
         self.pick_up_client = self.create_client(ItemRequest, '/pick_up_item')
         self.drop_off_client = self.create_client(ItemRequest, '/offload_item')
+        # Service to access robot_vision
         self.navigation_service = self.create_service(Task, '/'+ self.robot_name + '/navigate', self.service_task)
+        # Client to access robot_vision
         self.vision_client = self.create_client(FindTarget, '/'+ self.robot_name +'/find_target')
+        # Client to check for collision
         self.collision_client = self.create_client(Collision, '/collision_avoidance')
+        # Request zone to drop off ball
         self.zone_client = self.create_client(ZoneRequest, '/zone_service')
         
         
@@ -105,7 +106,7 @@ class Navigation(Node):
        self.state = State.BUSY
        self.previous_state = state
     
-    
+    # Kick navigation into motion from robot_vision request
     def service_task(self, request, response):
         move_to_target = request.move_to_target
         diameter = request.diameter
@@ -122,7 +123,7 @@ class Navigation(Node):
         else:
            response.success = False
         
-        self.logger.info("Starting: " + self.state.name)
+        #self.logger.info("Starting: " + self.state.name)
         return response
          
            
@@ -140,7 +141,7 @@ class Navigation(Node):
         result = future.result()
         goal = [result.x, result.y]
         self.zone = goal
-        self.logger.info("goal")
+        #self.logger.info("goal")
         self.state = State.GO_TO_ZONE   
         
     
@@ -158,7 +159,7 @@ class Navigation(Node):
         goal_handle = future.result() 
         
         if not goal_handle.accepted: 
-           self.logger.info('Goal rejected') 
+           #self.logger.info('Goal rejected') 
            return 
             
         self.get_logger().info('Goal accepted') 
@@ -169,23 +170,23 @@ class Navigation(Node):
         result = future.result()
         
         if result.success:
-           self.logger.info("Started finding target")
+           #self.logger.info("Started finding target")
+           pass
         else:
-           self.logger.info("There was an error finding target")
+           #self.logger.info("There was an error finding target")
+           pass
         
        
-       
+    # Callback from movement request
     def move_result_callback(self, future):
        result = future.result().result
-       self.logger.info(f'Result: {result.status}')
-       self.logger.info("Movement call back")
-       self.logger.info(self.previous_state)
+       #self.logger.info('Result:  ' + result.status)
     
        if result.status == "Target Reached":
            if self.previous_state == State.GO_TO_TARGET:
                self.state = State.PICK_UP_BALL
            elif self.previous_state == State.GO_TO_ZONE:
-               self.logger.info("Here")
+               #self.logger.info("Here")
                self.state = State.DROP_OFF_BALL
            elif self.previous_state == State.DROP_OFF_BALL:
                self.state = State.HEAD_TO_PREVIOUS_BALL
@@ -200,14 +201,16 @@ class Navigation(Node):
        elif result.status == "Target Aborted":
            self.state = State.COLLISION_AVOIDANCE
            
-      
+    
     def collision_callback(self, future):
        result = future.result()
        if self.previous_ball[0] == None:
            self.previous_ball[0] = self.x
            self.previous_ball[1] = self.y
-
+       
+       # check for collision
        if result.success:
+           # avoid collision
            self.collision_direction = result.direction
            self.state = State.AVOID_COLLISION
        else:
@@ -217,7 +220,8 @@ class Navigation(Node):
            
            
     def move_feedback_callback(self, feedback_msg): 
-           self.logger.info(f'Feedback: {feedback_msg.feedback.progress}')
+           #self.logger.info('Feedback: ' + feedback_msg.feedback.progress)
+           pass
            
            
     def send_movement_goal(self, x, y):
@@ -227,7 +231,8 @@ class Navigation(Node):
          msg.angle = 0.0
          self._send_goal_future = self.move_client.send_goal_async(msg, feedback_callback=self.move_feedback_callback)
          self._send_goal_future.add_done_callback(self.move_response_callback)
-         
+    
+    # Send request to robot_vision
     def send_find_target_request(self):
         request = FindTarget.Request()
         future = self.vision_client.call_async(request)
@@ -240,7 +245,7 @@ class Navigation(Node):
          return new_x, new_y
          
     def calculate_distance(self, perceived_diameter):
-        self.logger.info((self.ball_diameter * 530.4)/perceived_diameter + 0.25)
+        #self.logger.info((self.ball_diameter * 530.4)/perceived_diameter + 0.25)
         return (self.ball_diameter * 530.4)/perceived_diameter + 0.35
         
         
@@ -257,7 +262,8 @@ class Navigation(Node):
                self.state = State.IDLE
                
         except Exception as e:
-            self.logger.info(e)
+            #self.logger.info(e)
+            pass
     
     
     def drop_off_callback(self, future):
@@ -265,18 +271,21 @@ class Navigation(Node):
             response = future.result()
             
             if response.success:
-               self.logger.info("dropped off")
+               #self.logger.info("dropped off")
+               pass
             else:
-               self.logger.info("Didn't drop off")
+               #self.logger.info("Didn't drop off")
+               pass
         except Exception as e:
-            self.logger.info(e)
+            #self.logger.info(e)
+            pass
         finally:
             self.state = State.HEAD_TO_PREVIOUS_BALL
             
 
     def control_loop(self):
     
-        try:
+        try: # Updating x, y position
             t = self.tf_buffer.lookup_transform(
                 'map',
                 'base_footprint',
@@ -296,7 +305,7 @@ class Navigation(Node):
                 self.send_movement_goal(new_x, new_y)
            
            case State.GO_TO_ZONE:
-                self.logger.info("going to zone")
+                #self.logger.info("going to zone")
                 self.set_to_busy(State.GO_TO_ZONE)
                 if self.zone == None:
                    request = ZoneRequest.Request()
@@ -322,6 +331,8 @@ class Navigation(Node):
                 future = self.collision_client.call_async(request)
                 future.add_done_callback(self.collision_callback)
            
+           # Detects where robot is closest to obstacle and 
+           # moves in opposite direction
            case State.AVOID_COLLISION:
                 self.set_to_busy(State.AVOID_COLLISION)
                 angle = None
@@ -339,7 +350,7 @@ class Navigation(Node):
                 self.collision_direction = None
                 self.send_movement_goal(new_x, new_y)
                 
-                
+           # Move to random point which is not an obstacle in the cost map 
            case State.REQUEST_RANDOM_WALK:
                 self.set_to_busy(State.REQUEST_RANDOM_WALK)
                 
