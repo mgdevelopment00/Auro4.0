@@ -59,16 +59,19 @@ class Task_Request(metaclass=Metaclass_Task_Request):
     __slots__ = [
         '_diameter',
         '_move_to_target',
+        '_colour',
     ]
 
     _fields_and_field_types = {
         'diameter': 'double',
         'move_to_target': 'boolean',
+        'colour': 'string',
     }
 
     SLOT_TYPES = (
         rosidl_parser.definition.BasicType('double'),  # noqa: E501
         rosidl_parser.definition.BasicType('boolean'),  # noqa: E501
+        rosidl_parser.definition.UnboundedString(),  # noqa: E501
     )
 
     def __init__(self, **kwargs):
@@ -77,6 +80,7 @@ class Task_Request(metaclass=Metaclass_Task_Request):
             ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
         self.diameter = kwargs.get('diameter', float())
         self.move_to_target = kwargs.get('move_to_target', bool())
+        self.colour = kwargs.get('colour', str())
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -110,6 +114,8 @@ class Task_Request(metaclass=Metaclass_Task_Request):
         if self.diameter != other.diameter:
             return False
         if self.move_to_target != other.move_to_target:
+            return False
+        if self.colour != other.colour:
             return False
         return True
 
@@ -145,6 +151,19 @@ class Task_Request(metaclass=Metaclass_Task_Request):
                 isinstance(value, bool), \
                 "The 'move_to_target' field must be of type 'bool'"
         self._move_to_target = value
+
+    @builtins.property
+    def colour(self):
+        """Message field 'colour'."""
+        return self._colour
+
+    @colour.setter
+    def colour(self, value):
+        if __debug__:
+            assert \
+                isinstance(value, str), \
+                "The 'colour' field must be of type 'str'"
+        self._colour = value
 
 
 # Import statements for member types

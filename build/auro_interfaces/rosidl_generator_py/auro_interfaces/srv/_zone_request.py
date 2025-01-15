@@ -60,18 +60,21 @@ class ZoneRequest_Request(metaclass=Metaclass_ZoneRequest_Request):
         '_robot_id',
         '_x',
         '_y',
+        '_colour',
     ]
 
     _fields_and_field_types = {
         'robot_id': 'string',
         'x': 'double',
         'y': 'double',
+        'colour': 'string',
     }
 
     SLOT_TYPES = (
         rosidl_parser.definition.UnboundedString(),  # noqa: E501
         rosidl_parser.definition.BasicType('double'),  # noqa: E501
         rosidl_parser.definition.BasicType('double'),  # noqa: E501
+        rosidl_parser.definition.UnboundedString(),  # noqa: E501
     )
 
     def __init__(self, **kwargs):
@@ -81,6 +84,7 @@ class ZoneRequest_Request(metaclass=Metaclass_ZoneRequest_Request):
         self.robot_id = kwargs.get('robot_id', str())
         self.x = kwargs.get('x', float())
         self.y = kwargs.get('y', float())
+        self.colour = kwargs.get('colour', str())
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -116,6 +120,8 @@ class ZoneRequest_Request(metaclass=Metaclass_ZoneRequest_Request):
         if self.x != other.x:
             return False
         if self.y != other.y:
+            return False
+        if self.colour != other.colour:
             return False
         return True
 
@@ -166,6 +172,19 @@ class ZoneRequest_Request(metaclass=Metaclass_ZoneRequest_Request):
             assert not (value < -1.7976931348623157e+308 or value > 1.7976931348623157e+308) or math.isinf(value), \
                 "The 'y' field must be a double in [-1.7976931348623157e+308, 1.7976931348623157e+308]"
         self._y = value
+
+    @builtins.property
+    def colour(self):
+        """Message field 'colour'."""
+        return self._colour
+
+    @colour.setter
+    def colour(self, value):
+        if __debug__:
+            assert \
+                isinstance(value, str), \
+                "The 'colour' field must be of type 'str'"
+        self._colour = value
 
 
 # Import statements for member types

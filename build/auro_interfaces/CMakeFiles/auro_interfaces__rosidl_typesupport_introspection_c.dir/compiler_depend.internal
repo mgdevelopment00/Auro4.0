@@ -776,6 +776,9 @@ CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesu
  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h
  /home/auro/AURO-Revised/build/auro_interfaces/rosidl_generator_c/auro_interfaces/msg/rosidl_generator_c__visibility_control.h
  /home/auro/AURO-Revised/build/auro_interfaces/rosidl_generator_c/auro_interfaces/srv/detail/task__struct.h
+ /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/string.h
+ /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h
+ /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/string_functions.h
  /opt/ros/humble/include/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c/service_introspection.h
 
 CMakeFiles/auro_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/auro_interfaces/srv/detail/zone_request__type_support.c.o

@@ -40,17 +40,19 @@ struct Task_Request_
     {
       this->diameter = 0.0;
       this->move_to_target = false;
+      this->colour = "";
     }
   }
 
   explicit Task_Request_(const ContainerAllocator & _alloc, rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
+  : colour(_alloc)
   {
-    (void)_alloc;
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
       this->diameter = 0.0;
       this->move_to_target = false;
+      this->colour = "";
     }
   }
 
@@ -61,6 +63,9 @@ struct Task_Request_
   using _move_to_target_type =
     bool;
   _move_to_target_type move_to_target;
+  using _colour_type =
+    std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>>;
+  _colour_type colour;
 
   // setters for named parameter idiom
   Type & set__diameter(
@@ -73,6 +78,12 @@ struct Task_Request_
     const bool & _arg)
   {
     this->move_to_target = _arg;
+    return *this;
+  }
+  Type & set__colour(
+    const std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>> & _arg)
+  {
+    this->colour = _arg;
     return *this;
   }
 
@@ -122,6 +133,9 @@ struct Task_Request_
       return false;
     }
     if (this->move_to_target != other.move_to_target) {
+      return false;
+    }
+    if (this->colour != other.colour) {
       return false;
     }
     return true;

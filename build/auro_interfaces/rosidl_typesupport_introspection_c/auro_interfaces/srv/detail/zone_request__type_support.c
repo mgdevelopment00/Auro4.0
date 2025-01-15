@@ -14,6 +14,7 @@
 
 // Include directives for member types
 // Member `robot_id`
+// Member `colour`
 #include "rosidl_runtime_c/string_functions.h"
 
 #ifdef __cplusplus
@@ -35,7 +36,7 @@ void auro_interfaces__srv__ZoneRequest_Request__rosidl_typesupport_introspection
   auro_interfaces__srv__ZoneRequest_Request__fini(message_memory);
 }
 
-static rosidl_typesupport_introspection_c__MessageMember auro_interfaces__srv__ZoneRequest_Request__rosidl_typesupport_introspection_c__ZoneRequest_Request_message_member_array[3] = {
+static rosidl_typesupport_introspection_c__MessageMember auro_interfaces__srv__ZoneRequest_Request__rosidl_typesupport_introspection_c__ZoneRequest_Request_message_member_array[4] = {
   {
     "robot_id",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_STRING,  // type
@@ -86,13 +87,30 @@ static rosidl_typesupport_introspection_c__MessageMember auro_interfaces__srv__Z
     NULL,  // fetch(index, &value) function pointer
     NULL,  // assign(index, value) function pointer
     NULL  // resize(index) function pointer
+  },
+  {
+    "colour",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_STRING,  // type
+    0,  // upper bound of string
+    NULL,  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(auro_interfaces__srv__ZoneRequest_Request, colour),  // bytes offset in struct
+    NULL,  // default value
+    NULL,  // size() function pointer
+    NULL,  // get_const(index) function pointer
+    NULL,  // get(index) function pointer
+    NULL,  // fetch(index, &value) function pointer
+    NULL,  // assign(index, value) function pointer
+    NULL  // resize(index) function pointer
   }
 };
 
 static const rosidl_typesupport_introspection_c__MessageMembers auro_interfaces__srv__ZoneRequest_Request__rosidl_typesupport_introspection_c__ZoneRequest_Request_message_members = {
   "auro_interfaces__srv",  // message namespace
   "ZoneRequest_Request",  // message name
-  3,  // number of fields
+  4,  // number of fields
   sizeof(auro_interfaces__srv__ZoneRequest_Request),
   auro_interfaces__srv__ZoneRequest_Request__rosidl_typesupport_introspection_c__ZoneRequest_Request_message_member_array,  // message members
   auro_interfaces__srv__ZoneRequest_Request__rosidl_typesupport_introspection_c__ZoneRequest_Request_init_function,  // function to initialize message memory (memory has to be allocated)

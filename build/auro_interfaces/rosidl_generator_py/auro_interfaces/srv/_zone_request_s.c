@@ -86,6 +86,21 @@ bool auro_interfaces__srv__zone_request__request__convert_from_py(PyObject * _py
     ros_message->y = PyFloat_AS_DOUBLE(field);
     Py_DECREF(field);
   }
+  {  // colour
+    PyObject * field = PyObject_GetAttrString(_pymsg, "colour");
+    if (!field) {
+      return false;
+    }
+    assert(PyUnicode_Check(field));
+    PyObject * encoded_field = PyUnicode_AsUTF8String(field);
+    if (!encoded_field) {
+      Py_DECREF(field);
+      return false;
+    }
+    rosidl_runtime_c__String__assign(&ros_message->colour, PyBytes_AS_STRING(encoded_field));
+    Py_DECREF(encoded_field);
+    Py_DECREF(field);
+  }
 
   return true;
 }
@@ -141,6 +156,23 @@ PyObject * auro_interfaces__srv__zone_request__request__convert_to_py(void * raw
     field = PyFloat_FromDouble(ros_message->y);
     {
       int rc = PyObject_SetAttrString(_pymessage, "y", field);
+      Py_DECREF(field);
+      if (rc) {
+        return NULL;
+      }
+    }
+  }
+  {  // colour
+    PyObject * field = NULL;
+    field = PyUnicode_DecodeUTF8(
+      ros_message->colour.data,
+      strlen(ros_message->colour.data),
+      "replace");
+    if (!field) {
+      return NULL;
+    }
+    {
+      int rc = PyObject_SetAttrString(_pymessage, "colour", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;

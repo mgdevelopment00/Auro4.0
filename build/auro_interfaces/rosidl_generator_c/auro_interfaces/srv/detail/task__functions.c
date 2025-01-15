@@ -10,6 +10,10 @@
 
 #include "rcutils/allocator.h"
 
+// Include directives for member types
+// Member `colour`
+#include "rosidl_runtime_c/string_functions.h"
+
 bool
 auro_interfaces__srv__Task_Request__init(auro_interfaces__srv__Task_Request * msg)
 {
@@ -18,6 +22,11 @@ auro_interfaces__srv__Task_Request__init(auro_interfaces__srv__Task_Request * ms
   }
   // diameter
   // move_to_target
+  // colour
+  if (!rosidl_runtime_c__String__init(&msg->colour)) {
+    auro_interfaces__srv__Task_Request__fini(msg);
+    return false;
+  }
   return true;
 }
 
@@ -29,6 +38,8 @@ auro_interfaces__srv__Task_Request__fini(auro_interfaces__srv__Task_Request * ms
   }
   // diameter
   // move_to_target
+  // colour
+  rosidl_runtime_c__String__fini(&msg->colour);
 }
 
 bool
@@ -43,6 +54,12 @@ auro_interfaces__srv__Task_Request__are_equal(const auro_interfaces__srv__Task_R
   }
   // move_to_target
   if (lhs->move_to_target != rhs->move_to_target) {
+    return false;
+  }
+  // colour
+  if (!rosidl_runtime_c__String__are_equal(
+      &(lhs->colour), &(rhs->colour)))
+  {
     return false;
   }
   return true;
@@ -60,6 +77,12 @@ auro_interfaces__srv__Task_Request__copy(
   output->diameter = input->diameter;
   // move_to_target
   output->move_to_target = input->move_to_target;
+  // colour
+  if (!rosidl_runtime_c__String__copy(
+      &(input->colour), &(output->colour)))
+  {
+    return false;
+  }
   return true;
 }
 

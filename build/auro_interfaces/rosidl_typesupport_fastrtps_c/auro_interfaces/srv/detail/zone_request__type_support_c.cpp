@@ -34,8 +34,8 @@ extern "C"
 {
 #endif
 
-#include "rosidl_runtime_c/string.h"  // robot_id
-#include "rosidl_runtime_c/string_functions.h"  // robot_id
+#include "rosidl_runtime_c/string.h"  // colour, robot_id
+#include "rosidl_runtime_c/string_functions.h"  // colour, robot_id
 
 // forward declare type support functions
 
@@ -73,6 +73,20 @@ static bool _ZoneRequest_Request__cdr_serialize(
   // Field name: y
   {
     cdr << ros_message->y;
+  }
+
+  // Field name: colour
+  {
+    const rosidl_runtime_c__String * str = &ros_message->colour;
+    if (str->capacity == 0 || str->capacity <= str->size) {
+      fprintf(stderr, "string capacity not greater than size\n");
+      return false;
+    }
+    if (str->data[str->size] != '\0') {
+      fprintf(stderr, "string not null-terminated\n");
+      return false;
+    }
+    cdr << str->data;
   }
 
   return true;
@@ -113,6 +127,22 @@ static bool _ZoneRequest_Request__cdr_deserialize(
     cdr >> ros_message->y;
   }
 
+  // Field name: colour
+  {
+    std::string tmp;
+    cdr >> tmp;
+    if (!ros_message->colour.data) {
+      rosidl_runtime_c__String__init(&ros_message->colour);
+    }
+    bool succeeded = rosidl_runtime_c__String__assign(
+      &ros_message->colour,
+      tmp.c_str());
+    if (!succeeded) {
+      fprintf(stderr, "failed to assign string into field 'colour'\n");
+      return false;
+    }
+  }
+
   return true;
 }  // NOLINT(readability/fn_size)
 
@@ -146,6 +176,10 @@ size_t get_serialized_size_auro_interfaces__srv__ZoneRequest_Request(
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
+  // field.name colour
+  current_alignment += padding +
+    eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
+    (ros_message->colour.size + 1);
 
   return current_alignment - initial_alignment;
 }
@@ -203,6 +237,18 @@ size_t max_serialized_size_auro_interfaces__srv__ZoneRequest_Request(
     current_alignment += array_size * sizeof(uint64_t) +
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
   }
+  // member: colour
+  {
+    size_t array_size = 1;
+
+    full_bounded = false;
+    is_plain = false;
+    for (size_t index = 0; index < array_size; ++index) {
+      current_alignment += padding +
+        eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
+        1;
+    }
+  }
 
   size_t ret_val = current_alignment - initial_alignment;
   if (is_plain) {
@@ -212,7 +258,7 @@ size_t max_serialized_size_auro_interfaces__srv__ZoneRequest_Request(
     using DataType = auro_interfaces__srv__ZoneRequest_Request;
     is_plain =
       (
-      offsetof(DataType, y) +
+      offsetof(DataType, colour) +
       last_member_size
       ) == ret_val;
   }

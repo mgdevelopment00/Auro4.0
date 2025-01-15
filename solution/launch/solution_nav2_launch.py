@@ -43,13 +43,13 @@ def robot_controller_actions(context : LaunchContext):
                 # prefix=['wt.exe --window 0 new-tab wsl.exe -e bash -ic'], # Opens in new tab
                 # prefix=['wt.exe wsl.exe -e bash -ic'], # Opens in new window
                 output='screen',
-                parameters=[initial_poses[robot_name], {"robot_name": robot_name}]),
+                parameters=[initial_poses[robot_name], {"robot_name": robot_name, "num_robots": num_robots}]),
                  
              Node(
                  package='solution',
                  executable='robot_vision',
                  output='screen',
-                 parameters=[initial_poses[robot_name], {"robot_name": robot_name}]),
+                 parameters=[initial_poses[robot_name], {"robot_name": robot_name, "num_robots": num_robots}]),
              
              Node(
                  package='solution',
@@ -153,7 +153,7 @@ def generate_launch_description():
         package='solution',
         executable='robot_manager',
         output='screen',
-        arguments=[])
+        arguments=["--num_robots",num_robots])
 
     timeout_cmd = RosTimer(                                         
             period = experiment_duration,

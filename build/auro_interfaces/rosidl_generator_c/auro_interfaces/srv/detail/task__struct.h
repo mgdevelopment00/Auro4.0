@@ -17,11 +17,16 @@ extern "C"
 
 // Constants defined in the message
 
+// Include directives for member types
+// Member 'colour'
+#include "rosidl_runtime_c/string.h"
+
 /// Struct defined in srv/Task in the package auro_interfaces.
 typedef struct auro_interfaces__srv__Task_Request
 {
   double diameter;
   bool move_to_target;
+  rosidl_runtime_c__String colour;
 } auro_interfaces__srv__Task_Request;
 
 // Struct for a sequence of auro_interfaces__srv__Task_Request.

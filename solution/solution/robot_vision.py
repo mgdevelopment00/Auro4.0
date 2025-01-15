@@ -42,23 +42,28 @@ class RobotVision(Node):
         handler.setFormatter(formatter)
         self.logger.addHandler(handler)
         
-        self.colour = None
         
-        if self.robot_name == "robot1":
-           self.colour = "GREEN"
-        elif self.robot_name == "robot2":
-           self.colour = "RED"
-        elif self.robot_name == "robot3":
-           self.colour = "GREEN"
         
         self.declare_parameter('x', 0.0)
         self.declare_parameter('y', 0.0)
         self.declare_parameter('yaw', 0.0)
+        self.declare_parameter("num_robots", 1)
         self.x = self.get_parameter('x').get_parameter_value().double_value
         self.y = self.get_parameter('y').get_parameter_value().double_value
         self.yaw = self.get_parameter('yaw').get_parameter_value().double_value
+        self.num_robots = self.get_parameter("num_robots").get_parameter_value().integer_value
         
+        self.colour = None
         
+        if self.num_robots == 1:
+           self.colour = "any"
+        else:
+           if self.robot_name == "robot1":
+               self.colour = "BLUE"
+           elif self.robot_name == "robot2":
+               self.colour = "RED"
+           elif self.robot_name == "robot3":
+               self.colour = "GREEN"
         
         self.item_subscription = self.create_subscription(ItemList, 'items', self.item_callback, 1)
         self.rotate_client = self.create_client(Rotate, '/rotate_robot')
@@ -82,6 +87,7 @@ class RobotVision(Node):
         self.state = State.FIND_TARGET
         self.ball_diameter = 0.075 * 2
         self.items = None
+        self.current_ball_colour = None
 
         while not self.rotate_client.wait_for_service(timeout_sec=1.0):
             self.logger.info("waiting for rotate")
@@ -174,15 +180,17 @@ class RobotVision(Node):
          return new_x, new_y
         
     
-    def send_navigation_task(self, task, diameter):
+    def send_navigation_task(self, task, diameter, colour):
         request = Task.Request()
        
         if task == "move_to_target":
            request.move_to_target = True
            request.diameter = float(diameter)
+           request.colour = colour
         elif task == "random_walk":
            request.move_to_target = False
            request.diameter = -1.0
+           request.colour = "nil"
         
         self.state = State.IDLE
         future = self.navigation_client.call_async(request)
@@ -217,14 +225,18 @@ class RobotVision(Node):
                     
                     if self.last_moved:
                        if self.time_difference(self.get_clock().now(), self.last_moved) > 20:
-                           self.send_navigation_task("random_walk", -1.0)
+                           self.send_navigation_task("random_walk", -1.0, "nil")
                            return
                     
                     if not self.found_first_ball and abs(self.rotate_count) == 600:
-                       self.send_navigation_task("random_walk", -1.0)
+                       self.send_navigation_task("random_walk", -1.0, "nil")
                        return
+                       
+                    if self.colour != "any" and colour != self.colour:
+                       continue
                     
-                    if colour != self.colour or self.is_ball_collected(calculated_x, calculated_y):
+                    
+                    if self.is_ball_collected(calculated_x, calculated_y):
                         continue
                     
                         
@@ -232,6 +244,7 @@ class RobotVision(Node):
                         self.target_diameter = diameter
                         chosen_diameter = diameter
                         closest_x = x
+                        self.current_ball_colour = colour
                 
                 if closest_x == math.inf:
                     self.state = State.NO_BALL_IN_SIGHT
@@ -260,7 +273,7 @@ class RobotVision(Node):
                 self.logger.info("Aligned with target")
                 self.found_first_ball = True
                 self.set_to_busy(State.ALIGNED_WITH_TARGET)
-                self.send_navigation_task("move_to_target", self.target_diameter)
+                self.send_navigation_task("move_to_target", self.target_diameter, self.current_ball_colour)
 
  
             case State.NO_BALL_IN_SIGHT:

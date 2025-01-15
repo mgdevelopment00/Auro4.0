@@ -19,6 +19,7 @@ extern "C"
 
 // Include directives for member types
 // Member 'robot_id'
+// Member 'colour'
 #include "rosidl_runtime_c/string.h"
 
 /// Struct defined in srv/ZoneRequest in the package auro_interfaces.
@@ -27,6 +28,7 @@ typedef struct auro_interfaces__srv__ZoneRequest_Request
   rosidl_runtime_c__String robot_id;
   double x;
   double y;
+  rosidl_runtime_c__String colour;
 } auro_interfaces__srv__ZoneRequest_Request;
 
 // Struct for a sequence of auro_interfaces__srv__ZoneRequest_Request.

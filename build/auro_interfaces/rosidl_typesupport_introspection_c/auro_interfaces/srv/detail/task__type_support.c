@@ -12,6 +12,10 @@
 #include "auro_interfaces/srv/detail/task__struct.h"
 
 
+// Include directives for member types
+// Member `colour`
+#include "rosidl_runtime_c/string_functions.h"
+
 #ifdef __cplusplus
 extern "C"
 {
@@ -31,7 +35,7 @@ void auro_interfaces__srv__Task_Request__rosidl_typesupport_introspection_c__Tas
   auro_interfaces__srv__Task_Request__fini(message_memory);
 }
 
-static rosidl_typesupport_introspection_c__MessageMember auro_interfaces__srv__Task_Request__rosidl_typesupport_introspection_c__Task_Request_message_member_array[2] = {
+static rosidl_typesupport_introspection_c__MessageMember auro_interfaces__srv__Task_Request__rosidl_typesupport_introspection_c__Task_Request_message_member_array[3] = {
   {
     "diameter",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_DOUBLE,  // type
@@ -65,13 +69,30 @@ static rosidl_typesupport_introspection_c__MessageMember auro_interfaces__srv__T
     NULL,  // fetch(index, &value) function pointer
     NULL,  // assign(index, value) function pointer
     NULL  // resize(index) function pointer
+  },
+  {
+    "colour",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_STRING,  // type
+    0,  // upper bound of string
+    NULL,  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(auro_interfaces__srv__Task_Request, colour),  // bytes offset in struct
+    NULL,  // default value
+    NULL,  // size() function pointer
+    NULL,  // get_const(index) function pointer
+    NULL,  // get(index) function pointer
+    NULL,  // fetch(index, &value) function pointer
+    NULL,  // assign(index, value) function pointer
+    NULL  // resize(index) function pointer
   }
 };
 
 static const rosidl_typesupport_introspection_c__MessageMembers auro_interfaces__srv__Task_Request__rosidl_typesupport_introspection_c__Task_Request_message_members = {
   "auro_interfaces__srv",  // message namespace
   "Task_Request",  // message name
-  2,  // number of fields
+  3,  // number of fields
   sizeof(auro_interfaces__srv__Task_Request),
   auro_interfaces__srv__Task_Request__rosidl_typesupport_introspection_c__Task_Request_message_member_array,  // message members
   auro_interfaces__srv__Task_Request__rosidl_typesupport_introspection_c__Task_Request_init_function,  // function to initialize message memory (memory has to be allocated)

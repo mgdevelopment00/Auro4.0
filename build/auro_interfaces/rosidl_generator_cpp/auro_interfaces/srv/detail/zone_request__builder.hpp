@@ -21,16 +21,32 @@ namespace srv
 namespace builder
 {
 
+class Init_ZoneRequest_Request_colour
+{
+public:
+  explicit Init_ZoneRequest_Request_colour(::auro_interfaces::srv::ZoneRequest_Request & msg)
+  : msg_(msg)
+  {}
+  ::auro_interfaces::srv::ZoneRequest_Request colour(::auro_interfaces::srv::ZoneRequest_Request::_colour_type arg)
+  {
+    msg_.colour = std::move(arg);
+    return std::move(msg_);
+  }
+
+private:
+  ::auro_interfaces::srv::ZoneRequest_Request msg_;
+};
+
 class Init_ZoneRequest_Request_y
 {
 public:
   explicit Init_ZoneRequest_Request_y(::auro_interfaces::srv::ZoneRequest_Request & msg)
   : msg_(msg)
   {}
-  ::auro_interfaces::srv::ZoneRequest_Request y(::auro_interfaces::srv::ZoneRequest_Request::_y_type arg)
+  Init_ZoneRequest_Request_colour y(::auro_interfaces::srv::ZoneRequest_Request::_y_type arg)
   {
     msg_.y = std::move(arg);
-    return std::move(msg_);
+    return Init_ZoneRequest_Request_colour(msg_);
   }
 
 private:

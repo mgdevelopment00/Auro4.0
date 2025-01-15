@@ -9,6 +9,8 @@ module auro_interfaces {
       double diameter;
 
       boolean move_to_target;
+
+      string colour;
     };
     struct Task_Response {
       boolean success;

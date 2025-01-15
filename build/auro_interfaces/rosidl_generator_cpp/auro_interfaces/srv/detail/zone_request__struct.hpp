@@ -41,11 +41,13 @@ struct ZoneRequest_Request_
       this->robot_id = "";
       this->x = 0.0;
       this->y = 0.0;
+      this->colour = "";
     }
   }
 
   explicit ZoneRequest_Request_(const ContainerAllocator & _alloc, rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
-  : robot_id(_alloc)
+  : robot_id(_alloc),
+    colour(_alloc)
   {
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
@@ -53,6 +55,7 @@ struct ZoneRequest_Request_
       this->robot_id = "";
       this->x = 0.0;
       this->y = 0.0;
+      this->colour = "";
     }
   }
 
@@ -66,6 +69,9 @@ struct ZoneRequest_Request_
   using _y_type =
     double;
   _y_type y;
+  using _colour_type =
+    std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>>;
+  _colour_type colour;
 
   // setters for named parameter idiom
   Type & set__robot_id(
@@ -84,6 +90,12 @@ struct ZoneRequest_Request_
     const double & _arg)
   {
     this->y = _arg;
+    return *this;
+  }
+  Type & set__colour(
+    const std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>> & _arg)
+  {
+    this->colour = _arg;
     return *this;
   }
 
@@ -136,6 +148,9 @@ struct ZoneRequest_Request_
       return false;
     }
     if (this->y != other.y) {
+      return false;
+    }
+    if (this->colour != other.colour) {
       return false;
     }
     return true;

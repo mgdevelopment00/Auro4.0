@@ -37,7 +37,7 @@ void Task_Request_fini_function(void * message_memory)
   typed_message->~Task_Request();
 }
 
-static const ::rosidl_typesupport_introspection_cpp::MessageMember Task_Request_message_member_array[2] = {
+static const ::rosidl_typesupport_introspection_cpp::MessageMember Task_Request_message_member_array[3] = {
   {
     "diameter",  // name
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_DOUBLE,  // type
@@ -71,13 +71,30 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember Task_Request_
     nullptr,  // fetch(index, &value) function pointer
     nullptr,  // assign(index, value) function pointer
     nullptr  // resize(index) function pointer
+  },
+  {
+    "colour",  // name
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_STRING,  // type
+    0,  // upper bound of string
+    nullptr,  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(auro_interfaces::srv::Task_Request, colour),  // bytes offset in struct
+    nullptr,  // default value
+    nullptr,  // size() function pointer
+    nullptr,  // get_const(index) function pointer
+    nullptr,  // get(index) function pointer
+    nullptr,  // fetch(index, &value) function pointer
+    nullptr,  // assign(index, value) function pointer
+    nullptr  // resize(index) function pointer
   }
 };
 
 static const ::rosidl_typesupport_introspection_cpp::MessageMembers Task_Request_message_members = {
   "auro_interfaces::srv",  // message namespace
   "Task_Request",  // message name
-  2,  // number of fields
+  3,  // number of fields
   sizeof(auro_interfaces::srv::Task_Request),
   Task_Request_message_member_array,  // message members
   Task_Request_init_function,  // function to initialize message memory (memory has to be allocated)

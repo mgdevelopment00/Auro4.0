@@ -36,6 +36,13 @@ inline void to_flow_style_yaml(
   {
     out << "move_to_target: ";
     rosidl_generator_traits::value_to_yaml(msg.move_to_target, out);
+    out << ", ";
+  }
+
+  // member: colour
+  {
+    out << "colour: ";
+    rosidl_generator_traits::value_to_yaml(msg.colour, out);
   }
   out << "}";
 }  // NOLINT(readability/fn_size)
@@ -61,6 +68,16 @@ inline void to_block_style_yaml(
     }
     out << "move_to_target: ";
     rosidl_generator_traits::value_to_yaml(msg.move_to_target, out);
+    out << "\n";
+  }
+
+  // member: colour
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    out << "colour: ";
+    rosidl_generator_traits::value_to_yaml(msg.colour, out);
     out << "\n";
   }
 }  // NOLINT(readability/fn_size)
@@ -111,11 +128,11 @@ inline const char * name<auro_interfaces::srv::Task_Request>()
 
 template<>
 struct has_fixed_size<auro_interfaces::srv::Task_Request>
-  : std::integral_constant<bool, true> {};
+  : std::integral_constant<bool, false> {};
 
 template<>
 struct has_bounded_size<auro_interfaces::srv::Task_Request>
-  : std::integral_constant<bool, true> {};
+  : std::integral_constant<bool, false> {};
 
 template<>
 struct is_message<auro_interfaces::srv::Task_Request>

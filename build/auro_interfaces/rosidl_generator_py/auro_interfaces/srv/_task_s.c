@@ -16,6 +16,9 @@
 #include "auro_interfaces/srv/detail/task__struct.h"
 #include "auro_interfaces/srv/detail/task__functions.h"
 
+#include "rosidl_runtime_c/string.h"
+#include "rosidl_runtime_c/string_functions.h"
+
 
 ROSIDL_GENERATOR_C_EXPORT
 bool auro_interfaces__srv__task__request__convert_from_py(PyObject * _pymsg, void * _ros_message)
@@ -68,6 +71,21 @@ bool auro_interfaces__srv__task__request__convert_from_py(PyObject * _pymsg, voi
     ros_message->move_to_target = (Py_True == field);
     Py_DECREF(field);
   }
+  {  // colour
+    PyObject * field = PyObject_GetAttrString(_pymsg, "colour");
+    if (!field) {
+      return false;
+    }
+    assert(PyUnicode_Check(field));
+    PyObject * encoded_field = PyUnicode_AsUTF8String(field);
+    if (!encoded_field) {
+      Py_DECREF(field);
+      return false;
+    }
+    rosidl_runtime_c__String__assign(&ros_message->colour, PyBytes_AS_STRING(encoded_field));
+    Py_DECREF(encoded_field);
+    Py_DECREF(field);
+  }
 
   return true;
 }
@@ -106,6 +124,23 @@ PyObject * auro_interfaces__srv__task__request__convert_to_py(void * raw_ros_mes
     field = PyBool_FromLong(ros_message->move_to_target ? 1 : 0);
     {
       int rc = PyObject_SetAttrString(_pymessage, "move_to_target", field);
+      Py_DECREF(field);
+      if (rc) {
+        return NULL;
+      }
+    }
+  }
+  {  // colour
+    PyObject * field = NULL;
+    field = PyUnicode_DecodeUTF8(
+      ros_message->colour.data,
+      strlen(ros_message->colour.data),
+      "replace");
+    if (!field) {
+      return NULL;
+    }
+    {
+      int rc = PyObject_SetAttrString(_pymessage, "colour", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;

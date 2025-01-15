@@ -21,16 +21,32 @@ namespace srv
 namespace builder
 {
 
+class Init_Task_Request_colour
+{
+public:
+  explicit Init_Task_Request_colour(::auro_interfaces::srv::Task_Request & msg)
+  : msg_(msg)
+  {}
+  ::auro_interfaces::srv::Task_Request colour(::auro_interfaces::srv::Task_Request::_colour_type arg)
+  {
+    msg_.colour = std::move(arg);
+    return std::move(msg_);
+  }
+
+private:
+  ::auro_interfaces::srv::Task_Request msg_;
+};
+
 class Init_Task_Request_move_to_target
 {
 public:
   explicit Init_Task_Request_move_to_target(::auro_interfaces::srv::Task_Request & msg)
   : msg_(msg)
   {}
-  ::auro_interfaces::srv::Task_Request move_to_target(::auro_interfaces::srv::Task_Request::_move_to_target_type arg)
+  Init_Task_Request_colour move_to_target(::auro_interfaces::srv::Task_Request::_move_to_target_type arg)
   {
     msg_.move_to_target = std::move(arg);
-    return std::move(msg_);
+    return Init_Task_Request_colour(msg_);
   }
 
 private:

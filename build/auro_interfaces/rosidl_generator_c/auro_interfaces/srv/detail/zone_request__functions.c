@@ -12,6 +12,7 @@
 
 // Include directives for member types
 // Member `robot_id`
+// Member `colour`
 #include "rosidl_runtime_c/string_functions.h"
 
 bool
@@ -27,6 +28,11 @@ auro_interfaces__srv__ZoneRequest_Request__init(auro_interfaces__srv__ZoneReques
   }
   // x
   // y
+  // colour
+  if (!rosidl_runtime_c__String__init(&msg->colour)) {
+    auro_interfaces__srv__ZoneRequest_Request__fini(msg);
+    return false;
+  }
   return true;
 }
 
@@ -40,6 +46,8 @@ auro_interfaces__srv__ZoneRequest_Request__fini(auro_interfaces__srv__ZoneReques
   rosidl_runtime_c__String__fini(&msg->robot_id);
   // x
   // y
+  // colour
+  rosidl_runtime_c__String__fini(&msg->colour);
 }
 
 bool
@@ -60,6 +68,12 @@ auro_interfaces__srv__ZoneRequest_Request__are_equal(const auro_interfaces__srv_
   }
   // y
   if (lhs->y != rhs->y) {
+    return false;
+  }
+  // colour
+  if (!rosidl_runtime_c__String__are_equal(
+      &(lhs->colour), &(rhs->colour)))
+  {
     return false;
   }
   return true;
@@ -83,6 +97,12 @@ auro_interfaces__srv__ZoneRequest_Request__copy(
   output->x = input->x;
   // y
   output->y = input->y;
+  // colour
+  if (!rosidl_runtime_c__String__copy(
+      &(input->colour), &(output->colour)))
+  {
+    return false;
+  }
   return true;
 }
 

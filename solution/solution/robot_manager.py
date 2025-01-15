@@ -16,32 +16,52 @@ class RobotManager(Node):
     def __init__(self):
         super().__init__('robot_manager')
         
+        self.num_robots = 1 
+        if '--num_robots' in sys.argv: 
+             num_robots_index = sys.argv.index('--num_robots') + 1 
+             if num_robots_index < len(sys.argv): 
+                self.num_robots = int(sys.argv[num_robots_index])
+        
+        # Used for multiple robot solution
         self.available_zones = ["cyan", "purple", "pink", "green"]
         self.zones = {"cyan": [-3.5, 2.2], "pink": [2.5, 2.2], "purple": [-3.5, -2.2], "green": [2.5, -2.2]}
+        
+        # Single robot solution
+        self.single_colour_zones = {"RED": [-3.5, 2.2], "BLUE": [2.5, 2.2], "GREEN": [2.5, -2.2]}
+        
         
         self.zone_service = self.create_service(ZoneRequest, '/zone_service', self.service_request)
     
     
     
     def service_request(self, request, response):
-        robot_id = request.robot_id
-        current_x = request.x
-        current_y = request.y
-        closest_sector = None
-        lowest_distance = 100000000
+    
+        colour = request.colour
+    
+        if self.num_robots != 1:
+           robot_id = request.robot_id
+           current_x = request.x
+           current_y = request.y
+           closest_sector = None
+           lowest_distance = 100000000
         
-        for zone in self.available_zones:
-           zone_cords = self.zones.get(zone, -1)
-           distance = math.sqrt((zone_cords[0]-current_x)**2 + (zone_cords[1]-current_y)**2)
+           for zone in self.available_zones:
+              zone_cords = self.zones.get(zone, -1)
+              distance = math.sqrt((zone_cords[0]-current_x)**2 + (zone_cords[1]-current_y)**2)
            
-           if distance < lowest_distance:
-               lowest_distance = distance
-               closest_zone = zone
+              if distance < lowest_distance:
+                 lowest_distance = distance
+                 closest_zone = zone
         
-        self.available_zones.remove(closest_zone)
-        chosen_zone = self.zones[closest_zone]
-        response.x = chosen_zone[0]
-        response.y = chosen_zone[1]
+           self.available_zones.remove(closest_zone)
+           chosen_zone = self.zones[closest_zone]
+           response.x = chosen_zone[0]
+           response.y = chosen_zone[1]
+        else:
+           zone_cords = self.single_colour_zones.get(colour)
+           response.x = zone_cords[0]
+           response.y = zone_cords[1]
+        
         return response
         
         

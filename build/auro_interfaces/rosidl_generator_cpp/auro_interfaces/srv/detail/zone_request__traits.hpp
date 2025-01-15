@@ -43,6 +43,13 @@ inline void to_flow_style_yaml(
   {
     out << "y: ";
     rosidl_generator_traits::value_to_yaml(msg.y, out);
+    out << ", ";
+  }
+
+  // member: colour
+  {
+    out << "colour: ";
+    rosidl_generator_traits::value_to_yaml(msg.colour, out);
   }
   out << "}";
 }  // NOLINT(readability/fn_size)
@@ -78,6 +85,16 @@ inline void to_block_style_yaml(
     }
     out << "y: ";
     rosidl_generator_traits::value_to_yaml(msg.y, out);
+    out << "\n";
+  }
+
+  // member: colour
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    out << "colour: ";
+    rosidl_generator_traits::value_to_yaml(msg.colour, out);
     out << "\n";
   }
 }  // NOLINT(readability/fn_size)

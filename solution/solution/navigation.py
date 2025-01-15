@@ -40,21 +40,27 @@ class Navigation(Node):
         self.declare_parameter('y', 0.0)
         self.declare_parameter('yaw', 0.0)
         self.declare_parameter("robot_name", "default")
+        self.declare_parameter("num_robots", 1)
         
         
         self.x = self.get_parameter('x').get_parameter_value().double_value
         self.y = self.get_parameter('y').get_parameter_value().double_value
         self.yaw = self.get_parameter('yaw').get_parameter_value().double_value
         self.robot_name = self.get_parameter("robot_name").get_parameter_value().string_value
+        self.num_robots = self.get_parameter("num_robots").get_parameter_value().integer_value
         self.tf_buffer = Buffer()
         self.tf_listener = TransformListener(self.tf_buffer, self)
         
-        if self.robot_name == "robot1":
-           self.colour = "GREEN"
-        elif self.robot_name == "robot2":
-           self.colour = "RED"
-        elif self.robot_name == "robot3":
-           self.colour = "GREEN"
+        if self.num_robots == 1:
+           self.colour = "any"
+        else:
+           if self.robot_name == "robot1":
+             self.colour = "BLUE"
+           elif self.robot_name == "robot2":
+             self.colour = "RED"
+           elif self.robot_name == "robot3":
+             self.colour = "GREEN"
+        
         
         self.control_loop_rate = 1/10
         self.zone = None
@@ -67,6 +73,7 @@ class Navigation(Node):
         self.collected_balls = []
         self.balls_collected = 0
         self.previous_ball = [None, None]
+        self.current_ball_colour = None
 
         self.logger = logging.getLogger('navigation ' + self.robot_name)
         self.logger.setLevel(logging.DEBUG)
@@ -102,6 +109,7 @@ class Navigation(Node):
     def service_task(self, request, response):
         move_to_target = request.move_to_target
         diameter = request.diameter
+        self.current_ball_colour = request.colour
         
         if self.state == State.IDLE:
            if move_to_target:
@@ -132,6 +140,7 @@ class Navigation(Node):
         result = future.result()
         goal = [result.x, result.y]
         self.zone = goal
+        self.logger.info("goal")
         self.state = State.GO_TO_ZONE   
         
     
@@ -169,11 +178,14 @@ class Navigation(Node):
     def move_result_callback(self, future):
        result = future.result().result
        self.logger.info(f'Result: {result.status}')
+       self.logger.info("Movement call back")
+       self.logger.info(self.previous_state)
     
        if result.status == "Target Reached":
            if self.previous_state == State.GO_TO_TARGET:
                self.state = State.PICK_UP_BALL
            elif self.previous_state == State.GO_TO_ZONE:
+               self.logger.info("Here")
                self.state = State.DROP_OFF_BALL
            elif self.previous_state == State.DROP_OFF_BALL:
                self.state = State.HEAD_TO_PREVIOUS_BALL
@@ -284,15 +296,18 @@ class Navigation(Node):
                 self.send_movement_goal(new_x, new_y)
            
            case State.GO_TO_ZONE:
+                self.logger.info("going to zone")
                 self.set_to_busy(State.GO_TO_ZONE)
                 if self.zone == None:
                    request = ZoneRequest.Request()
                    request.x = self.x
                    request.y = self.y
+                   request.colour = self.current_ball_colour
                    future = self.zone_client.call_async(request)
                    future.add_done_callback(self.zone_service_callback)
                 else:
                    self.send_movement_goal(self.zone[0], self.zone[1])
+                   
                    
                    
            case State.HEAD_TO_PREVIOUS_BALL:
@@ -328,7 +343,10 @@ class Navigation(Node):
            case State.REQUEST_RANDOM_WALK:
                 self.set_to_busy(State.REQUEST_RANDOM_WALK)
                 
-                if self.colour == "GREEN":
+                if self.colour == "any":
+                   rand_x = random.uniform(-2, 2)
+                   rand_y = random.uniform(-2.2, 2)  
+                elif self.colour == "GREEN":
                    rand_x = random.uniform(0, 2.2)
                    rand_y = random.uniform(0, -2)
                 elif self.colour == "RED":
@@ -363,6 +381,9 @@ class Navigation(Node):
                 
            case State.DROP_OFF_BALL:
                 self.set_to_busy(State.DROP_OFF_BALL)
+                if self.num_robots == 1:
+                   self.zone = None
+                
                 request = ItemRequest.Request()
                 request.robot_id = self.robot_name
                 future = self.drop_off_client.call_async(request)

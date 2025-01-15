@@ -36,6 +36,8 @@ cdr_serialize(
   cdr << ros_message.diameter;
   // Member: move_to_target
   cdr << (ros_message.move_to_target ? true : false);
+  // Member: colour
+  cdr << ros_message.colour;
   return true;
 }
 
@@ -54,6 +56,9 @@ cdr_deserialize(
     cdr >> tmp;
     ros_message.move_to_target = tmp ? true : false;
   }
+
+  // Member: colour
+  cdr >> ros_message.colour;
 
   return true;
 }
@@ -83,6 +88,10 @@ get_serialized_size(
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
+  // Member: colour
+  current_alignment += padding +
+    eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
+    (ros_message.colour.size() + 1);
 
   return current_alignment - initial_alignment;
 }
@@ -124,6 +133,19 @@ max_serialized_size_Task_Request(
     current_alignment += array_size * sizeof(uint8_t);
   }
 
+  // Member: colour
+  {
+    size_t array_size = 1;
+
+    full_bounded = false;
+    is_plain = false;
+    for (size_t index = 0; index < array_size; ++index) {
+      current_alignment += padding +
+        eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
+        1;
+    }
+  }
+
   size_t ret_val = current_alignment - initial_alignment;
   if (is_plain) {
     // All members are plain, and type is not empty.
@@ -132,7 +154,7 @@ max_serialized_size_Task_Request(
     using DataType = auro_interfaces::srv::Task_Request;
     is_plain =
       (
-      offsetof(DataType, move_to_target) +
+      offsetof(DataType, colour) +
       last_member_size
       ) == ret_val;
   }
