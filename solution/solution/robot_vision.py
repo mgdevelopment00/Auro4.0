@@ -66,9 +66,9 @@ class RobotVision(Node):
                self.colour = "GREEN"
         
         self.item_subscription = self.create_subscription(ItemList, 'items', self.item_callback, 1)
-        self.rotate_client = self.create_client(Rotate, '/rotate_robot')
-        self.navigation_client = self.create_client(Task, '/navigate')
-        self.vision_service = self.create_service(FindTarget, '/find_target', self.service_vision)
+        self.rotate_client = self.create_client(Rotate, '/'+ self.robot_name +  '/rotate_robot')
+        self.navigation_client = self.create_client(Task, '/'+ self.robot_name + '/navigate')
+        self.vision_service = self.create_service(FindTarget, '/'+ self.robot_name + '/find_target', self.service_vision)
         
         
         # Deal with this
@@ -206,8 +206,8 @@ class RobotVision(Node):
                 
                 self.logger.info("rotate count: " + str(self.rotate_count))
                 
-                if self.time_difference(self.get_clock().now(), self.start_time) < self.load_up_time:
-                     return
+                #if self.time_difference(self.get_clock().now(), self.start_time) < self.load_up_time:
+                     #return
                 
                 self.set_to_busy(State.FIND_TARGET)
                 data = self.items

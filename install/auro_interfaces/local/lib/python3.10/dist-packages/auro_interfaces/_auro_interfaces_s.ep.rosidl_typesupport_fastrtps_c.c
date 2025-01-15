@@ -1,1 +1,1 @@
-/home/auro/AURO-Revised/build/auro_interfaces/rosidl_generator_py/auro_interfaces/_auro_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+/home/auro/Auro3.0/build/auro_interfaces/rosidl_generator_py/auro_interfaces/_auro_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c

@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/auro/AURO-Revised/auro_interfaces
+CMAKE_SOURCE_DIR = /home/auro/Auro3.0/auro_interfaces
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/auro/AURO-Revised/build/auro_interfaces
+CMAKE_BINARY_DIR = /home/auro/Auro3.0/build/auro_interfaces
 
 # Utility rule file for auro_interfaces__cpp.
 
@@ -209,8 +209,8 @@ rosidl_generator_cpp/auro_interfaces/msg/string_with_pose.hpp: /opt/ros/humble/s
 rosidl_generator_cpp/auro_interfaces/msg/string_with_pose.hpp: /opt/ros/humble/share/builtin_interfaces/msg/Duration.idl
 rosidl_generator_cpp/auro_interfaces/msg/string_with_pose.hpp: /opt/ros/humble/share/builtin_interfaces/msg/Time.idl
 rosidl_generator_cpp/auro_interfaces/msg/string_with_pose.hpp: /opt/ros/humble/share/unique_identifier_msgs/msg/UUID.idl
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/auro/AURO-Revised/build/auro_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code for ROS interfaces"
-	/usr/bin/python3 /opt/ros/humble/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp --generator-arguments-file /home/auro/AURO-Revised/build/auro_interfaces/rosidl_generator_cpp__arguments.json
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/auro/Auro3.0/build/auro_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code for ROS interfaces"
+	/usr/bin/python3 /opt/ros/humble/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp --generator-arguments-file /home/auro/Auro3.0/build/auro_interfaces/rosidl_generator_cpp__arguments.json
 
 rosidl_generator_cpp/auro_interfaces/msg/detail/string_with_pose__builder.hpp: rosidl_generator_cpp/auro_interfaces/msg/string_with_pose.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/auro_interfaces/msg/detail/string_with_pose__builder.hpp
@@ -414,6 +414,6 @@ CMakeFiles/auro_interfaces__cpp.dir/clean:
 .PHONY : CMakeFiles/auro_interfaces__cpp.dir/clean
 
 CMakeFiles/auro_interfaces__cpp.dir/depend:
-	cd /home/auro/AURO-Revised/build/auro_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/auro/AURO-Revised/auro_interfaces /home/auro/AURO-Revised/auro_interfaces /home/auro/AURO-Revised/build/auro_interfaces /home/auro/AURO-Revised/build/auro_interfaces /home/auro/AURO-Revised/build/auro_interfaces/CMakeFiles/auro_interfaces__cpp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/auro/Auro3.0/build/auro_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/auro/Auro3.0/auro_interfaces /home/auro/Auro3.0/auro_interfaces /home/auro/Auro3.0/build/auro_interfaces /home/auro/Auro3.0/build/auro_interfaces /home/auro/Auro3.0/build/auro_interfaces/CMakeFiles/auro_interfaces__cpp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/auro_interfaces__cpp.dir/depend
 

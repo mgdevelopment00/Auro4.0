@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/auro/AURO-Revised/assessment_interfaces
+CMAKE_SOURCE_DIR = /home/auro/Auro3.0/assessment_interfaces
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/auro/AURO-Revised/build/assessment_interfaces
+CMAKE_BINARY_DIR = /home/auro/Auro3.0/build/assessment_interfaces
 
 # Utility rule file for assessment_interfaces__cpp.
 
@@ -127,8 +127,8 @@ rosidl_generator_cpp/assessment_interfaces/msg/item_log.hpp: rosidl_adapter/asse
 rosidl_generator_cpp/assessment_interfaces/msg/item_log.hpp: rosidl_adapter/assessment_interfaces/msg/ZoneList.idl
 rosidl_generator_cpp/assessment_interfaces/msg/item_log.hpp: rosidl_adapter/assessment_interfaces/msg/Robot.idl
 rosidl_generator_cpp/assessment_interfaces/msg/item_log.hpp: rosidl_adapter/assessment_interfaces/msg/RobotList.idl
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/auro/AURO-Revised/build/assessment_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code for ROS interfaces"
-	/usr/bin/python3 /opt/ros/humble/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp --generator-arguments-file /home/auro/AURO-Revised/build/assessment_interfaces/rosidl_generator_cpp__arguments.json
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/auro/Auro3.0/build/assessment_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code for ROS interfaces"
+	/usr/bin/python3 /opt/ros/humble/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp --generator-arguments-file /home/auro/Auro3.0/build/assessment_interfaces/rosidl_generator_cpp__arguments.json
 
 rosidl_generator_cpp/assessment_interfaces/msg/detail/item_log__builder.hpp: rosidl_generator_cpp/assessment_interfaces/msg/item_log.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/assessment_interfaces/msg/detail/item_log__builder.hpp
@@ -284,6 +284,6 @@ CMakeFiles/assessment_interfaces__cpp.dir/clean:
 .PHONY : CMakeFiles/assessment_interfaces__cpp.dir/clean
 
 CMakeFiles/assessment_interfaces__cpp.dir/depend:
-	cd /home/auro/AURO-Revised/build/assessment_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/auro/AURO-Revised/assessment_interfaces /home/auro/AURO-Revised/assessment_interfaces /home/auro/AURO-Revised/build/assessment_interfaces /home/auro/AURO-Revised/build/assessment_interfaces /home/auro/AURO-Revised/build/assessment_interfaces/CMakeFiles/assessment_interfaces__cpp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/auro/Auro3.0/build/assessment_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/auro/Auro3.0/assessment_interfaces /home/auro/Auro3.0/assessment_interfaces /home/auro/Auro3.0/build/assessment_interfaces /home/auro/Auro3.0/build/assessment_interfaces /home/auro/Auro3.0/build/assessment_interfaces/CMakeFiles/assessment_interfaces__cpp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/assessment_interfaces__cpp.dir/depend
 

@@ -1,1 +1,1 @@
-/home/auro/AURO-Revised/build/auro_interfaces/rosidl_generator_c/auro_interfaces/srv/check_goal.h
+/home/auro/Auro3.0/build/auro_interfaces/rosidl_generator_c/auro_interfaces/srv/check_goal.h

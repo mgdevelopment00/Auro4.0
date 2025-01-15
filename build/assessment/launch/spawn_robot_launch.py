@@ -1,1 +1,1 @@
-/home/auro/AURO-Revised/assessment/launch/spawn_robot_launch.py
+/home/auro/Auro3.0/assessment/launch/spawn_robot_launch.py

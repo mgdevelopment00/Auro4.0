@@ -1,1 +1,1 @@
-/home/auro/AURO-Revised/assessment_interfaces/msg/ItemLog.msg
+/home/auro/Auro3.0/assessment_interfaces/msg/ItemLog.msg

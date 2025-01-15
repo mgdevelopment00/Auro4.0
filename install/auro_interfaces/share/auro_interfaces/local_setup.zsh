@@ -1,1 +1,1 @@
-/home/auro/AURO-Revised/build/auro_interfaces/ament_cmake_environment_hooks/local_setup.zsh
+/home/auro/Auro3.0/build/auro_interfaces/ament_cmake_environment_hooks/local_setup.zsh

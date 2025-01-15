@@ -1,1 +1,1 @@
-/home/auro/AURO-Revised/build/auro_interfaces/rosidl_generator_cpp/auro_interfaces/action/detail/move__struct.hpp
+/home/auro/Auro3.0/build/auro_interfaces/rosidl_generator_cpp/auro_interfaces/action/detail/move__struct.hpp

@@ -1,1 +1,1 @@
-/home/auro/AURO-Revised/assessment_interfaces/msg/ItemHolder.msg
+/home/auro/Auro3.0/assessment_interfaces/msg/ItemHolder.msg

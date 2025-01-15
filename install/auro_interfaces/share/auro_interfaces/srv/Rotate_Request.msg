@@ -1,1 +1,1 @@
-/home/auro/AURO-Revised/build/auro_interfaces/rosidl_cmake/srv/Rotate_Request.msg
+/home/auro/Auro3.0/build/auro_interfaces/rosidl_cmake/srv/Rotate_Request.msg

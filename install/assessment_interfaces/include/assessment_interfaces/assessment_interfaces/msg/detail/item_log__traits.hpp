@@ -1,1 +1,1 @@
-/home/auro/AURO-Revised/build/assessment_interfaces/rosidl_generator_cpp/assessment_interfaces/msg/detail/item_log__traits.hpp
+/home/auro/Auro3.0/build/assessment_interfaces/rosidl_generator_cpp/assessment_interfaces/msg/detail/item_log__traits.hpp

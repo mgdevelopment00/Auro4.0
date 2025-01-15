@@ -92,8 +92,8 @@ class Navigation(Node):
         self.manager_client = self.create_client(ZoneRequest, '/zone_service')
         self.pick_up_client = self.create_client(ItemRequest, '/pick_up_item')
         self.drop_off_client = self.create_client(ItemRequest, '/offload_item')
-        self.navigation_service = self.create_service(Task, '/navigate', self.service_task)
-        self.vision_client = self.create_client(FindTarget, '/find_target')
+        self.navigation_service = self.create_service(Task, '/'+ self.robot_name + '/navigate', self.service_task)
+        self.vision_client = self.create_client(FindTarget, '/'+ self.robot_name +'/find_target')
         self.collision_client = self.create_client(Collision, '/collision_avoidance')
         self.zone_client = self.create_client(ZoneRequest, '/zone_service')
         

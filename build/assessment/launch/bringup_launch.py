@@ -1,1 +1,1 @@
-/home/auro/AURO-Revised/assessment/launch/bringup_launch.py
+/home/auro/Auro3.0/assessment/launch/bringup_launch.py

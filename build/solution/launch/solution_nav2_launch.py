@@ -1,1 +1,1 @@
-/home/auro/AURO-Revised/solution/launch/solution_nav2_launch.py
+/home/auro/Auro3.0/solution/launch/solution_nav2_launch.py

@@ -69,7 +69,7 @@ class RobotController(Node):
         self.goal_reached = False
 
         self.twist_publisher = self.create_publisher(Twist, 'cmd_vel', 1)
-        self.rotate_service = self.create_service(Rotate, '/rotate_robot', self.service_rotate)
+        self.rotate_service = self.create_service(Rotate, '/'+ self.robot_name + '/rotate_robot', self.service_rotate)
         self.move_action_server = ActionServer(self, Move,  self.robot_name + '/move_robot', self.move_callback)
     
     

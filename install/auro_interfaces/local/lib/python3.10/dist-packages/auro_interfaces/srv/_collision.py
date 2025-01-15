@@ -1,1 +1,1 @@
-/home/auro/AURO-Revised/build/auro_interfaces/rosidl_generator_py/auro_interfaces/srv/_collision.py
+/home/auro/Auro3.0/build/auro_interfaces/rosidl_generator_py/auro_interfaces/srv/_collision.py

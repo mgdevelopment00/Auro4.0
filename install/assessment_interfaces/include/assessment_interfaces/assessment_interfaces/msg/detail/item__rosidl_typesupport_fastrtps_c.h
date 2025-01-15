@@ -1,1 +1,1 @@
-/home/auro/AURO-Revised/build/assessment_interfaces/rosidl_typesupport_fastrtps_c/assessment_interfaces/msg/detail/item__rosidl_typesupport_fastrtps_c.h
+/home/auro/Auro3.0/build/assessment_interfaces/rosidl_typesupport_fastrtps_c/assessment_interfaces/msg/detail/item__rosidl_typesupport_fastrtps_c.h

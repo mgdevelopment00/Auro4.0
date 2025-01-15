@@ -1,17 +1,17 @@
 {
   "package_name": "assessment_interfaces",
-  "output_dir": "/home/auro/AURO-Revised/build/assessment_interfaces/rosidl_generator_py/assessment_interfaces",
+  "output_dir": "/home/auro/Auro3.0/build/assessment_interfaces/rosidl_generator_py/assessment_interfaces",
   "template_dir": "/opt/ros/humble/share/rosidl_generator_py/cmake/../resource",
   "idl_tuples": [
-    "/home/auro/AURO-Revised/build/assessment_interfaces/rosidl_adapter/assessment_interfaces:msg/ItemLog.idl",
-    "/home/auro/AURO-Revised/build/assessment_interfaces/rosidl_adapter/assessment_interfaces:msg/ItemHolder.idl",
-    "/home/auro/AURO-Revised/build/assessment_interfaces/rosidl_adapter/assessment_interfaces:msg/ItemHolders.idl",
-    "/home/auro/AURO-Revised/build/assessment_interfaces/rosidl_adapter/assessment_interfaces:msg/Item.idl",
-    "/home/auro/AURO-Revised/build/assessment_interfaces/rosidl_adapter/assessment_interfaces:msg/ItemList.idl",
-    "/home/auro/AURO-Revised/build/assessment_interfaces/rosidl_adapter/assessment_interfaces:msg/Zone.idl",
-    "/home/auro/AURO-Revised/build/assessment_interfaces/rosidl_adapter/assessment_interfaces:msg/ZoneList.idl",
-    "/home/auro/AURO-Revised/build/assessment_interfaces/rosidl_adapter/assessment_interfaces:msg/Robot.idl",
-    "/home/auro/AURO-Revised/build/assessment_interfaces/rosidl_adapter/assessment_interfaces:msg/RobotList.idl"
+    "/home/auro/Auro3.0/build/assessment_interfaces/rosidl_adapter/assessment_interfaces:msg/ItemLog.idl",
+    "/home/auro/Auro3.0/build/assessment_interfaces/rosidl_adapter/assessment_interfaces:msg/ItemHolder.idl",
+    "/home/auro/Auro3.0/build/assessment_interfaces/rosidl_adapter/assessment_interfaces:msg/ItemHolders.idl",
+    "/home/auro/Auro3.0/build/assessment_interfaces/rosidl_adapter/assessment_interfaces:msg/Item.idl",
+    "/home/auro/Auro3.0/build/assessment_interfaces/rosidl_adapter/assessment_interfaces:msg/ItemList.idl",
+    "/home/auro/Auro3.0/build/assessment_interfaces/rosidl_adapter/assessment_interfaces:msg/Zone.idl",
+    "/home/auro/Auro3.0/build/assessment_interfaces/rosidl_adapter/assessment_interfaces:msg/ZoneList.idl",
+    "/home/auro/Auro3.0/build/assessment_interfaces/rosidl_adapter/assessment_interfaces:msg/Robot.idl",
+    "/home/auro/Auro3.0/build/assessment_interfaces/rosidl_adapter/assessment_interfaces:msg/RobotList.idl"
   ],
   "target_dependencies": [
     "/opt/ros/humble/share/rosidl_generator_py/cmake/../../../lib/rosidl_generator_py/rosidl_generator_py",
@@ -27,14 +27,14 @@
     "/opt/ros/humble/share/rosidl_generator_py/cmake/../resource/_msg.py.em",
     "/opt/ros/humble/share/rosidl_generator_py/cmake/../resource/_srv_pkg_typesupport_entry_point.c.em",
     "/opt/ros/humble/share/rosidl_generator_py/cmake/../resource/_srv.py.em",
-    "/home/auro/AURO-Revised/build/assessment_interfaces/rosidl_adapter/assessment_interfaces/msg/ItemLog.idl",
-    "/home/auro/AURO-Revised/build/assessment_interfaces/rosidl_adapter/assessment_interfaces/msg/ItemHolder.idl",
-    "/home/auro/AURO-Revised/build/assessment_interfaces/rosidl_adapter/assessment_interfaces/msg/ItemHolders.idl",
-    "/home/auro/AURO-Revised/build/assessment_interfaces/rosidl_adapter/assessment_interfaces/msg/Item.idl",
-    "/home/auro/AURO-Revised/build/assessment_interfaces/rosidl_adapter/assessment_interfaces/msg/ItemList.idl",
-    "/home/auro/AURO-Revised/build/assessment_interfaces/rosidl_adapter/assessment_interfaces/msg/Zone.idl",
-    "/home/auro/AURO-Revised/build/assessment_interfaces/rosidl_adapter/assessment_interfaces/msg/ZoneList.idl",
-    "/home/auro/AURO-Revised/build/assessment_interfaces/rosidl_adapter/assessment_interfaces/msg/Robot.idl",
-    "/home/auro/AURO-Revised/build/assessment_interfaces/rosidl_adapter/assessment_interfaces/msg/RobotList.idl"
+    "/home/auro/Auro3.0/build/assessment_interfaces/rosidl_adapter/assessment_interfaces/msg/ItemLog.idl",
+    "/home/auro/Auro3.0/build/assessment_interfaces/rosidl_adapter/assessment_interfaces/msg/ItemHolder.idl",
+    "/home/auro/Auro3.0/build/assessment_interfaces/rosidl_adapter/assessment_interfaces/msg/ItemHolders.idl",
+    "/home/auro/Auro3.0/build/assessment_interfaces/rosidl_adapter/assessment_interfaces/msg/Item.idl",
+    "/home/auro/Auro3.0/build/assessment_interfaces/rosidl_adapter/assessment_interfaces/msg/ItemList.idl",
+    "/home/auro/Auro3.0/build/assessment_interfaces/rosidl_adapter/assessment_interfaces/msg/Zone.idl",
+    "/home/auro/Auro3.0/build/assessment_interfaces/rosidl_adapter/assessment_interfaces/msg/ZoneList.idl",
+    "/home/auro/Auro3.0/build/assessment_interfaces/rosidl_adapter/assessment_interfaces/msg/Robot.idl",
+    "/home/auro/Auro3.0/build/assessment_interfaces/rosidl_adapter/assessment_interfaces/msg/RobotList.idl"
   ]
 }

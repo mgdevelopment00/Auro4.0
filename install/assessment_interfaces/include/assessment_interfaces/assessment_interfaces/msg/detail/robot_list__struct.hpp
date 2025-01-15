@@ -1,1 +1,1 @@
-/home/auro/AURO-Revised/build/assessment_interfaces/rosidl_generator_cpp/assessment_interfaces/msg/detail/robot_list__struct.hpp
+/home/auro/Auro3.0/build/assessment_interfaces/rosidl_generator_cpp/assessment_interfaces/msg/detail/robot_list__struct.hpp

@@ -1,1 +1,1 @@
-/home/auro/AURO-Revised/auro_interfaces/msg/ItemList.msg
+/home/auro/Auro3.0/auro_interfaces/msg/ItemList.msg
